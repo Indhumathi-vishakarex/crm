@@ -7,7 +7,7 @@
   data-sidebar-size="lg"
   data-sidebar-image="none"
 >
-  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/chat by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:21:42 GMT -->
+  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/file-manager by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:22:30 GMT -->
   <!-- Added by HTTrack --><meta
     http-equiv="content-type"
     content="text/html;charset=UTF-8"
@@ -18,21 +18,24 @@
     <meta name="description" content="Smarthr - Bootstrap Admin Template" />
     <meta name="keywords" content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern, accounts, invoice, html5, responsive, CRM, Projects" />
     <meta name="author" content="Dreamstechnologies - Bootstrap Admin Template" />
-    <title>Chat - HRMS admin template</title>
+    <title>File Manager - HRMS admin template</title>
 
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}">
 
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+
     <link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/fontawesome.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/all.min.css') }}">
+
     <link rel="stylesheet" href="{{ asset('assets/css/line-awesome.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/material.css') }}">
+
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 </head>
 
   <body>
     <div class="main-wrapper">
-      @include('layouts.header')
+ @include('layouts.header')
 
         @include('layouts.sidebar')
 
@@ -550,7 +553,7 @@
                 <p>App</p>
                 <ul>
                   <li>
-                    <a class="active" href="chat.html" class="active">Chat</a>
+                    <a class href="chat.html" class="active">Chat</a>
                   </li>
                   <li class="sub-menu">
                     <a href="#">Calls <span class="menu-arrow"></span></a>
@@ -575,7 +578,7 @@
                     <a class href="inbox.html">Email</a>
                   </li>
                   <li>
-                    <a class href="file-manager.html">File Manager</a>
+                    <a class="active" href="file-manager.html">File Manager</a>
                   </li>
                 </ul>
               </div>
@@ -1274,1472 +1277,774 @@
       </div>
 
       <div class="page-wrapper">
-        <div class="chat-main-row">
-          <div class="chat-main-wrapper">
-            <div class="col-lg-9 message-view task-view">
-              <div class="chat-window">
-                <div class="fixed-header">
-                  <div class="navbar">
-                    <div class="user-details me-auto">
-                      <div class="float-start user-img">
+        <div class="content container-fluid">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="file-wrap">
+                <div class="file-sidebar">
+                  <div class="file-header justify-content-center">
+                    <span>Projects</span>
+                    <a href="javascript:void(0);" class="file-side-close"
+                      ><i class="fa fa-times"></i
+                    ></a>
+                  </div>
+                  <form class="file-search">
+                    <div class="input-group">
+                      <div class="input-group-text">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </div>
+                      <input
+                        type="text"
+                        class="form-control rounded-pill"
+                        placeholder="Search"
+                      />
+                    </div>
+                  </form>
+                  <div class="file-pro-list">
+                    <div class="file-scroll">
+                      <ul class="file-menu">
+                        <li class="active">
+                          <a href="#">All Projects</a>
+                        </li>
+                        <li>
+                          <a href="#">Office Management</a>
+                        </li>
+                        <li>
+                          <a href="#">Video Calling App</a>
+                        </li>
+                        <li>
+                          <a href="#">Hospital Administration</a>
+                        </li>
+                        <li>
+                          <a href="#">Virtual Host</a>
+                        </li>
+                      </ul>
+                      <div class="show-more">
+                        <a href="#">Show More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="file-cont-wrap">
+                  <div class="file-cont-inner">
+                    <div class="file-cont-header">
+                      <div class="file-options">
                         <a
-                          class="avatar"
-                          href="profile.html"
-                          title="Mike Litorus"
+                          href="javascript:void(0)"
+                          id="file_sidebar_toggle"
+                          class="file-sidebar-toggle"
                         >
-                          <img
-                            src="assets/img/profiles/avatar-05.jpg"
-                            alt="User Image"
-                            class="rounded-circle"
-                          />
-                          <span class="status online"></span>
+                          <i class="fa fa-bars"></i>
                         </a>
                       </div>
-                      <div class="user-info float-start">
-                        <a href="profile.html" title="Mike Litorus"
-                          ><span>Mike Litorus</span>
-                          <i class="typing-text">Typing...</i></a
-                        >
-                        <span class="last-seen"
-                          >Last seen today at 7:50 AM</span
-                        >
+                      <span>File Manager</span>
+                      <div class="file-options">
+                        <span class="btn-file"
+                          ><input type="file" class="upload" /><i
+                            class="fa fa-upload"
+                          ></i
+                        ></span>
                       </div>
                     </div>
-                    <div class="search-box">
-                      <div class="input-group input-group-sm">
-                        <input
-                          type="text"
-                          placeholder="Search"
-                          class="form-control"
-                        />
-                        <button type="button" class="btn">
-                          <i class="fa-solid fa-magnifying-glass"></i>
-                        </button>
-                      </div>
-                    </div>
-                    <ul class="nav custom-menu">
-                      <li class="nav-item">
-                        <a
-                          class="nav-link task-chat profile-rightbar float-end"
-                          id="task_chat"
-                          href="#task_window"
-                          ><i class="fa-solid fa-user"></i
-                        ></a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="voice-call.html" class="nav-link"
-                          ><i class="fa-solid fa-phone"></i
-                        ></a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="video-call.html" class="nav-link"
-                          ><i class="fa-solid fa-video"></i
-                        ></a>
-                      </li>
-                      <li class="nav-item dropdown dropdown-action">
-                        <a
-                          aria-expanded="false"
-                          data-bs-toggle="dropdown"
-                          class="nav-link dropdown-toggle"
-                          href
-                          ><i class="fa-solid fa-gear"></i
-                        ></a>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a href="javascript:void(0)" class="dropdown-item"
-                            >Delete Conversations</a
-                          >
-                          <a href="javascript:void(0)" class="dropdown-item"
-                            >Settings</a
-                          >
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="chat-contents">
-                  <div class="chat-content-wrap">
-                    <div class="chat-wrap-inner">
-                      <div class="chat-box">
-                        <div class="chats">
-                          <div class="chat chat-right">
-                            <div class="chat-body">
-                              <div class="chat-bubble">
-                                <div class="chat-content">
-                                  <p>Hello. What can I do for you?</p>
-                                  <span class="chat-time">8:30 am</span>
-                                </div>
-                                <div class="chat-action-btns">
-                                  <ul>
-                                    <li>
-                                      <a
-                                        href="#"
-                                        class="share-msg"
-                                        title="Share"
-                                        ><i class="fa-solid fa-share-nodes"></i
-                                      ></a>
-                                    </li>
-                                    <li>
-                                      <a href="#" class="edit-msg"
-                                        ><i class="fa-solid fa-pencil"></i
-                                      ></a>
-                                    </li>
-                                    <li>
-                                      <a href="#" class="del-msg"
-                                        ><i class="fa-regular fa-trash-can"></i
-                                      ></a>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="chat-line">
-                            <span class="chat-date">October 8th, 2018</span>
-                          </div>
-                          <div class="chat chat-left">
-                            <div class="chat-avatar">
-                              <a href="profile.html" class="avatar">
-                                <img
-                                  src="assets/img/profiles/avatar-05.jpg"
-                                  alt="User Image"
-                                />
-                              </a>
-                            </div>
-                            <div class="chat-body">
-                              <div class="chat-bubble">
-                                <div class="chat-content">
-                                  <p>I'm just looking around.</p>
-                                  <p>
-                                    Will you tell me something about yourself?
-                                  </p>
-                                  <span class="chat-time">8:35 am</span>
-                                </div>
-                                <div class="chat-action-btns">
-                                  <ul>
-                                    <li>
-                                      <a
-                                        href="#"
-                                        class="share-msg"
-                                        title="Share"
-                                        ><i class="fa-solid fa-share-nodes"></i
-                                      ></a>
-                                    </li>
-                                    <li>
-                                      <a href="#" class="edit-msg"
-                                        ><i class="fa-solid fa-pencil"></i
-                                      ></a>
-                                    </li>
-                                    <li>
-                                      <a href="#" class="del-msg"
-                                        ><i class="fa-regular fa-trash-can"></i
-                                      ></a>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                              <div class="chat-bubble">
-                                <div class="chat-content">
-                                  <p>Are you there? That time!</p>
-                                  <span class="chat-time">8:40 am</span>
-                                </div>
-                                <div class="chat-action-btns">
-                                  <ul>
-                                    <li>
-                                      <a
-                                        href="#"
-                                        class="share-msg"
-                                        title="Share"
-                                        ><i class="fa-solid fa-share-nodes"></i
-                                      ></a>
-                                    </li>
-                                    <li>
-                                      <a href="#" class="edit-msg"
-                                        ><i class="fa-solid fa-pencil"></i
-                                      ></a>
-                                    </li>
-                                    <li>
-                                      <a href="#" class="del-msg"
-                                        ><i class="fa-regular fa-trash-can"></i
-                                      ></a>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="chat chat-right">
-                            <div class="chat-body">
-                              <div class="chat-bubble">
-                                <div class="chat-content">
-                                  <p>Where?</p>
-                                  <span class="chat-time">8:35 am</span>
-                                </div>
-                                <div class="chat-action-btns">
-                                  <ul>
-                                    <li>
-                                      <a
-                                        href="#"
-                                        class="share-msg"
-                                        title="Share"
-                                        ><i class="fa-solid fa-share-nodes"></i
-                                      ></a>
-                                    </li>
-                                    <li>
-                                      <a href="#" class="edit-msg"
-                                        ><i class="fa-solid fa-pencil"></i
-                                      ></a>
-                                    </li>
-                                    <li>
-                                      <a href="#" class="del-msg"
-                                        ><i class="fa-regular fa-trash-can"></i
-                                      ></a>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                              <div class="chat-bubble">
-                                <div class="chat-content">
-                                  <p>
-                                    OK, my name is Limingqiang. I like singing,
-                                    playing basketballand so on.
-                                  </p>
-                                  <span class="chat-time">8:42 am</span>
-                                </div>
-                                <div class="chat-action-btns">
-                                  <ul>
-                                    <li>
-                                      <a
-                                        href="#"
-                                        class="share-msg"
-                                        title="Share"
-                                        ><i class="fa-solid fa-share-nodes"></i
-                                      ></a>
-                                    </li>
-                                    <li>
-                                      <a href="#" class="edit-msg"
-                                        ><i class="fa-solid fa-pencil"></i
-                                      ></a>
-                                    </li>
-                                    <li>
-                                      <a href="#" class="del-msg"
-                                        ><i class="fa-regular fa-trash-can"></i
-                                      ></a>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="chat chat-left">
-                            <div class="chat-avatar">
-                              <a href="profile.html" class="avatar">
-                                <img
-                                  src="assets/img/profiles/avatar-05.jpg"
-                                  alt="User Image"
-                                />
-                              </a>
-                            </div>
-                            <div class="chat-body">
-                              <div class="chat-bubble">
-                                <div class="chat-content">
-                                  <p>You wait for notice.</p>
-                                  <span class="chat-time">8:30 am</span>
-                                </div>
-                                <div class="chat-action-btns">
-                                  <ul>
-                                    <li>
-                                      <a
-                                        href="#"
-                                        class="share-msg"
-                                        title="Share"
-                                        ><i class="fa-solid fa-share-nodes"></i
-                                      ></a>
-                                    </li>
-                                    <li>
-                                      <a href="#" class="edit-msg"
-                                        ><i class="fa-solid fa-pencil"></i
-                                      ></a>
-                                    </li>
-                                    <li>
-                                      <a href="#" class="del-msg"
-                                        ><i class="fa-regular fa-trash-can"></i
-                                      ></a>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                              <div class="chat-bubble">
-                                <div class="chat-content">
-                                  <p>Consectetuorem ipsum dolor sit?</p>
-                                  <span class="chat-time">8:50 am</span>
-                                </div>
-                                <div class="chat-action-btns">
-                                  <ul>
-                                    <li>
-                                      <a
-                                        href="#"
-                                        class="share-msg"
-                                        title="Share"
-                                        ><i class="fa-solid fa-share-nodes"></i
-                                      ></a>
-                                    </li>
-                                    <li>
-                                      <a href="#" class="edit-msg"
-                                        ><i class="fa-solid fa-pencil"></i
-                                      ></a>
-                                    </li>
-                                    <li>
-                                      <a href="#" class="del-msg"
-                                        ><i class="fa-regular fa-trash-can"></i
-                                      ></a>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                              <div class="chat-bubble">
-                                <div class="chat-content">
-                                  <p>OK?</p>
-                                  <span class="chat-time">8:55 am</span>
-                                </div>
-                                <div class="chat-action-btns">
-                                  <ul>
-                                    <li>
-                                      <a
-                                        href="#"
-                                        class="share-msg"
-                                        title="Share"
-                                        ><i class="fa-solid fa-share-nodes"></i
-                                      ></a>
-                                    </li>
-                                    <li>
-                                      <a href="#" class="edit-msg"
-                                        ><i class="fa-solid fa-pencil"></i
-                                      ></a>
-                                    </li>
-                                    <li>
-                                      <a href="#" class="del-msg"
-                                        ><i class="fa-regular fa-trash-can"></i
-                                      ></a>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                              <div class="chat-bubble">
-                                <div class="chat-content img-content">
-                                  <div class="chat-img-group clearfix">
-                                    <p>Uploaded 3 Images</p>
-                                    <a class="chat-img-attach" href="#">
-                                      <img
-                                        width="182"
-                                        height="137"
-                                        src="assets/img/placeholder.jpg"
-                                        alt="Placeholder Image"
-                                      />
-                                      <div class="chat-placeholder">
-                                        <div class="chat-img-name">
-                                          placeholder.jpg
-                                        </div>
-                                        <div class="chat-file-desc">842 KB</div>
-                                      </div>
-                                    </a>
-                                    <a class="chat-img-attach" href="#">
-                                      <img
-                                        width="182"
-                                        height="137"
-                                        src="assets/img/placeholder.jpg"
-                                        alt="Placeholder Image"
-                                      />
-                                      <div class="chat-placeholder">
-                                        <div class="chat-img-name">842 KB</div>
-                                      </div>
-                                    </a>
-                                    <a class="chat-img-attach" href="#">
-                                      <img
-                                        width="182"
-                                        height="137"
-                                        src="assets/img/placeholder.jpg"
-                                        alt="Placeholder Image"
-                                      />
-                                      <div class="chat-placeholder">
-                                        <div class="chat-img-name">
-                                          placeholder.jpg
-                                        </div>
-                                        <div class="chat-file-desc">842 KB</div>
-                                      </div>
-                                    </a>
-                                  </div>
-                                  <span class="chat-time">9:00 am</span>
-                                </div>
-                                <div class="chat-action-btns">
-                                  <ul>
-                                    <li>
-                                      <a
-                                        href="#"
-                                        class="share-msg"
-                                        title="Share"
-                                        ><i class="fa-solid fa-share-nodes"></i
-                                      ></a>
-                                    </li>
-                                    <li>
-                                      <a href="#" class="edit-msg"
-                                        ><i class="fa-solid fa-pencil"></i
-                                      ></a>
-                                    </li>
-                                    <li>
-                                      <a href="#" class="del-msg"
-                                        ><i class="fa-regular fa-trash-can"></i
-                                      ></a>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="chat chat-right">
-                            <div class="chat-body">
-                              <div class="chat-bubble">
-                                <div class="chat-content">
-                                  <p>OK!</p>
-                                  <span class="chat-time">9:00 am</span>
-                                </div>
-                                <div class="chat-action-btns">
-                                  <ul>
-                                    <li>
-                                      <a
-                                        href="#"
-                                        class="share-msg"
-                                        title="Share"
-                                        ><i class="fa-solid fa-share-nodes"></i
-                                      ></a>
-                                    </li>
-                                    <li>
-                                      <a href="#" class="edit-msg"
-                                        ><i class="fa-solid fa-pencil"></i
-                                      ></a>
-                                    </li>
-                                    <li>
-                                      <a href="#" class="del-msg"
-                                        ><i class="fa-regular fa-trash-can"></i
-                                      ></a>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="chat chat-left">
-                            <div class="chat-avatar">
-                              <a href="profile.html" class="avatar">
-                                <img
-                                  src="assets/img/profiles/avatar-05.jpg"
-                                  alt="User Image"
-                                />
-                              </a>
-                            </div>
-                            <div class="chat-body">
-                              <div class="chat-bubble">
-                                <div class="chat-content">
-                                  <p>Uploaded 3 files</p>
-                                  <ul class="attach-list">
-                                    <li>
-                                      <i class="fa fa-file"></i>
-                                      <a href="#">example.avi</a>
-                                    </li>
-                                    <li>
-                                      <i class="fa fa-file"></i>
-                                      <a href="#">activity.psd</a>
-                                    </li>
-                                    <li>
-                                      <i class="fa fa-file"></i>
-                                      <a href="#">example.psd</a>
-                                    </li>
-                                  </ul>
-                                </div>
-                                <div class="chat-action-btns">
-                                  <ul>
-                                    <li>
-                                      <a
-                                        href="#"
-                                        class="share-msg"
-                                        title="Share"
-                                        ><i class="fa-solid fa-share-nodes"></i
-                                      ></a>
-                                    </li>
-                                    <li>
-                                      <a href="#" class="edit-msg"
-                                        ><i class="fa-solid fa-pencil"></i
-                                      ></a>
-                                    </li>
-                                    <li>
-                                      <a href="#" class="del-msg"
-                                        ><i class="fa-regular fa-trash-can"></i
-                                      ></a>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                              <div class="chat-bubble">
-                                <div class="chat-content">
-                                  <p>Consectetuorem ipsum dolor sit?</p>
-                                  <span class="chat-time">8:50 am</span>
-                                </div>
-                                <div class="chat-action-btns">
-                                  <ul>
-                                    <li>
-                                      <a
-                                        href="#"
-                                        class="share-msg"
-                                        title="Share"
-                                        ><i class="fa-solid fa-share-nodes"></i
-                                      ></a>
-                                    </li>
-                                    <li>
-                                      <a href="#" class="edit-msg"
-                                        ><i class="fa-solid fa-pencil"></i
-                                      ></a>
-                                    </li>
-                                    <li>
-                                      <a href="#" class="del-msg"
-                                        ><i class="fa-regular fa-trash-can"></i
-                                      ></a>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                              <div class="chat-bubble">
-                                <div class="chat-content">
-                                  <p>OK?</p>
-                                  <span class="chat-time">8:55 am</span>
-                                </div>
-                                <div class="chat-action-btns">
-                                  <ul>
-                                    <li>
-                                      <a
-                                        href="#"
-                                        class="share-msg"
-                                        title="Share"
-                                        ><i class="fa-solid fa-share-nodes"></i
-                                      ></a>
-                                    </li>
-                                    <li>
-                                      <a href="#" class="edit-msg"
-                                        ><i class="fa-solid fa-pencil"></i
-                                      ></a>
-                                    </li>
-                                    <li>
-                                      <a href="#" class="del-msg"
-                                        ><i class="fa-regular fa-trash-can"></i
-                                      ></a>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="chat chat-right">
-                            <div class="chat-body">
-                              <div class="chat-bubble">
-                                <div class="chat-content img-content">
-                                  <div class="chat-img-group clearfix">
-                                    <p>Uploaded 6 Images</p>
-                                    <a class="chat-img-attach" href="#">
-                                      <img
-                                        width="182"
-                                        height="137"
-                                        src="assets/img/placeholder.jpg"
-                                        alt="Placeholder Image"
-                                      />
-                                      <div class="chat-placeholder">
-                                        <div class="chat-img-name">
-                                          placeholder.jpg
-                                        </div>
-                                        <div class="chat-file-desc">842 KB</div>
-                                      </div>
-                                    </a>
-                                    <a class="chat-img-attach" href="#">
-                                      <img
-                                        width="182"
-                                        height="137"
-                                        src="assets/img/placeholder.jpg"
-                                        alt="Placeholder Image"
-                                      />
-                                      <div class="chat-placeholder">
-                                        <div class="chat-img-name">842 KB</div>
-                                      </div>
-                                    </a>
-                                    <a class="chat-img-attach" href="#">
-                                      <img
-                                        width="182"
-                                        height="137"
-                                        src="assets/img/placeholder.jpg"
-                                        alt="Placeholder Image"
-                                      />
-                                      <div class="chat-placeholder">
-                                        <div class="chat-img-name">
-                                          placeholder.jpg
-                                        </div>
-                                        <div class="chat-file-desc">842 KB</div>
-                                      </div>
-                                    </a>
-                                    <a class="chat-img-attach" href="#">
-                                      <img
-                                        width="182"
-                                        height="137"
-                                        src="assets/img/placeholder.jpg"
-                                        alt="Placeholder Image"
-                                      />
-                                      <div class="chat-placeholder">
-                                        <div class="chat-img-name">
-                                          placeholder.jpg
-                                        </div>
-                                        <div class="chat-file-desc">842 KB</div>
-                                      </div>
-                                    </a>
-                                    <a class="chat-img-attach" href="#">
-                                      <img
-                                        width="182"
-                                        height="137"
-                                        src="assets/img/placeholder.jpg"
-                                        alt="Placeholder Image"
-                                      />
-                                      <div class="chat-placeholder">
-                                        <div class="chat-img-name">
-                                          placeholder.jpg
-                                        </div>
-                                        <div class="chat-file-desc">842 KB</div>
-                                      </div>
-                                    </a>
-                                    <a class="chat-img-attach" href="#">
-                                      <img
-                                        width="182"
-                                        height="137"
-                                        src="assets/img/placeholder.jpg"
-                                        alt="Placeholder Image"
-                                      />
-                                      <div class="chat-placeholder">
-                                        <div class="chat-img-name">
-                                          placeholder.jpg
-                                        </div>
-                                        <div class="chat-file-desc">842 KB</div>
-                                      </div>
-                                    </a>
-                                  </div>
-                                  <span class="chat-time">9:00 am</span>
-                                </div>
-                                <div class="chat-action-btns">
-                                  <ul>
-                                    <li>
-                                      <a
-                                        href="#"
-                                        class="share-msg"
-                                        title="Share"
-                                        ><i class="fa-solid fa-share-nodes"></i
-                                      ></a>
-                                    </li>
-                                    <li>
-                                      <a href="#" class="edit-msg"
-                                        ><i class="fa-solid fa-pencil"></i
-                                      ></a>
-                                    </li>
-                                    <li>
-                                      <a href="#" class="del-msg"
-                                        ><i class="fa-regular fa-trash-can"></i
-                                      ></a>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="chat chat-left">
-                            <div class="chat-avatar">
-                              <a href="profile.html" class="avatar">
-                                <img
-                                  src="assets/img/profiles/avatar-05.jpg"
-                                  alt="User Image"
-                                />
-                              </a>
-                            </div>
-                            <div class="chat-body">
-                              <div class="chat-bubble">
-                                <div class="chat-content">
-                                  <ul class="attach-list">
-                                    <li class="pdf-file">
-                                      <i class="fa-regular fa-file-pdf"></i>
-                                      <a href="#">Document_2016.pdf</a>
-                                    </li>
-                                  </ul>
-                                  <span class="chat-time">9:00 am</span>
-                                </div>
-                                <div class="chat-action-btns">
-                                  <ul>
-                                    <li>
-                                      <a
-                                        href="#"
-                                        class="share-msg"
-                                        title="Share"
-                                        ><i class="fa-solid fa-share-nodes"></i
-                                      ></a>
-                                    </li>
-                                    <li>
-                                      <a href="#" class="edit-msg"
-                                        ><i class="fa-solid fa-pencil"></i
-                                      ></a>
-                                    </li>
-                                    <li>
-                                      <a href="#" class="del-msg"
-                                        ><i class="fa-regular fa-trash-can"></i
-                                      ></a>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="chat chat-right">
-                            <div class="chat-body">
-                              <div class="chat-bubble">
-                                <div class="chat-content">
-                                  <ul class="attach-list">
-                                    <li class="pdf-file">
-                                      <i class="fa-regular fa-file-pdf"></i>
-                                      <a href="#">Document_2016.pdf</a>
-                                    </li>
-                                  </ul>
-                                  <span class="chat-time">9:00 am</span>
-                                </div>
-                                <div class="chat-action-btns">
-                                  <ul>
-                                    <li>
-                                      <a
-                                        href="#"
-                                        class="share-msg"
-                                        title="Share"
-                                        ><i class="fa-solid fa-share-nodes"></i
-                                      ></a>
-                                    </li>
-                                    <li>
-                                      <a href="#" class="edit-msg"
-                                        ><i class="fa-solid fa-pencil"></i
-                                      ></a>
-                                    </li>
-                                    <li>
-                                      <a href="#" class="del-msg"
-                                        ><i class="fa-regular fa-trash-can"></i
-                                      ></a>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="chat chat-left">
-                            <div class="chat-avatar">
-                              <a href="profile.html" class="avatar">
-                                <img
-                                  src="assets/img/profiles/avatar-05.jpg"
-                                  alt="User Image"
-                                />
-                              </a>
-                            </div>
-                            <div class="chat-body">
-                              <div class="chat-bubble">
-                                <div class="chat-content">
-                                  <p>Typing ...</p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="chat-footer">
-                  <div class="message-bar">
-                    <div class="message-inner">
-                      <a
-                        class="link attach-icon"
-                        href="#"
-                        data-bs-toggle="modal"
-                        data-bs-target="#drag_files"
-                        ><img
-                          src="assets/img/attachment.png"
-                          alt="Attachment Icon"
-                      /></a>
-                      <div class="message-area">
+                    <div class="file-content">
+                      <form class="file-search">
                         <div class="input-group">
-                          <textarea
-                            class="form-control"
-                            placeholder="Type message..."
-                          ></textarea>
-                          <button class="btn btn-custom" type="button">
-                            <i class="fa-solid fa-paper-plane"></i>
-                          </button>
+                          <div class="input-group-text">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <input
+                            type="text"
+                            class="form-control rounded-pill"
+                            placeholder="Search"
+                          />
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-3 message-view chat-profile-view chat-sidebar"
-              id="task_window"
-            >
-              <div class="chat-window video-window">
-                <div class="fixed-header">
-                  <ul class="nav nav-tabs nav-tabs-bottom">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#calls_tab" data-bs-toggle="tab"
-                        >Calls</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        class="nav-link active"
-                        href="#profile_tab"
-                        data-bs-toggle="tab"
-                        >Profile</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-                <div class="tab-content chat-contents">
-                  <div class="content-full tab-pane" id="calls_tab">
-                    <div class="chat-wrap-inner">
-                      <div class="chat-box">
-                        <div class="chats">
-                          <div class="chat chat-left">
-                            <div class="chat-avatar">
-                              <a href="profile.html" class="avatar">
-                                <img
-                                  src="assets/img/profiles/avatar-02.jpg"
-                                  alt="User Image"
-                                />
-                              </a>
-                            </div>
-                            <div class="chat-body">
-                              <div class="chat-bubble">
-                                <div class="chat-content">
-                                  <span class="task-chat-user">You</span>
-                                  <span class="chat-time">8:35 am</span>
-                                  <div class="call-details">
-                                    <i class="material-icons">phone_missed</i>
-                                    <div class="call-info">
-                                      <div class="call-user-details">
-                                        <span class="call-description"
-                                          >Jeffrey Warden missed the call</span
-                                        >
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="chat chat-left">
-                            <div class="chat-avatar">
-                              <a href="profile.html" class="avatar">
-                                <img
-                                  src="assets/img/profiles/avatar-02.jpg"
-                                  alt="User Image"
-                                />
-                              </a>
-                            </div>
-                            <div class="chat-body">
-                              <div class="chat-bubble">
-                                <div class="chat-content">
-                                  <span class="task-chat-user">John Doe</span>
-                                  <span class="chat-time">8:35 am</span>
-                                  <div class="call-details">
-                                    <i class="material-icons">call_end</i>
-                                    <div class="call-info">
-                                      <div class="call-user-details">
-                                        <span class="call-description"
-                                          >This call has ended</span
-                                        >
-                                      </div>
-                                      <div class="call-timing">
-                                        Duration: <strong>5 min 57 sec</strong>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="chat-line">
-                            <span class="chat-date">January 29th, 2019</span>
-                          </div>
-                          <div class="chat chat-left">
-                            <div class="chat-avatar">
-                              <a href="profile.html" class="avatar">
-                                <img
-                                  src="assets/img/profiles/avatar-05.jpg"
-                                  alt="User Image"
-                                />
-                              </a>
-                            </div>
-                            <div class="chat-body">
-                              <div class="chat-bubble">
-                                <div class="chat-content">
-                                  <span class="task-chat-user"
-                                    >Richard Miles</span
-                                  >
-                                  <span class="chat-time">8:35 am</span>
-                                  <div class="call-details">
-                                    <i class="material-icons">phone_missed</i>
-                                    <div class="call-info">
-                                      <div class="call-user-details">
-                                        <span class="call-description"
-                                          >You missed the call</span
-                                        >
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="chat chat-left">
-                            <div class="chat-avatar">
-                              <a href="profile.html" class="avatar">
-                                <img
-                                  src="assets/img/profiles/avatar-02.jpg"
-                                  alt="User Image"
-                                />
-                              </a>
-                            </div>
-                            <div class="chat-body">
-                              <div class="chat-bubble">
-                                <div class="chat-content">
-                                  <span class="task-chat-user">You</span>
-                                  <span class="chat-time">8:35 am</span>
-                                  <div class="call-details">
-                                    <i class="material-icons">ring_volume</i>
-                                    <div class="call-info">
-                                      <div class="call-user-details">
-                                        <a
-                                          href="#"
-                                          class="call-description call-description--linked"
-                                          data-qa="call_attachment_link"
-                                          >Calling John Smith ...</a
-                                        >
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="content-full tab-pane show active"
-                    id="profile_tab"
-                  >
-                    <div class="display-table">
-                      <div class="table-row">
-                        <div class="table-body">
-                          <div class="table-content">
-                            <div class="chat-profile-img">
-                              <div class="edit-profile-img">
-                                <img
-                                  src="assets/img/profiles/avatar-02.jpg"
-                                  alt="User Image"
-                                />
-                                <span class="change-img">Change Image</span>
-                              </div>
-                              <h3 class="user-name m-t-10 mb-0">John Doe</h3>
-                              <small class="text-muted">Web Designer</small>
-                              <a
-                                href="javascript:void(0);"
-                                class="btn btn-primary edit-btn"
-                                ><i class="fa-solid fa-pencil"></i
-                              ></a>
-                            </div>
-                            <div class="chat-profile-info">
-                              <ul class="user-det-list">
-                                <li>
-                                  <span>Username:</span>
-                                  <span class="float-end text-muted"
-                                    >johndoe</span
-                                  >
-                                </li>
-                                <li>
-                                  <span>DOB:</span>
-                                  <span class="float-end text-muted"
-                                    >24 July</span
-                                  >
-                                </li>
-                                <li>
-                                  <span>Email:</span>
-                                  <span class="float-end text-muted"
-                                    ><a
-                                      href="https://smarthr.dreamstechnologies.com/cdn-cgi/l/email-protection"
-                                      class="__cf_email__"
-                                      data-cfemail="afc5c0c7c1cbc0caefcad7cec2dfc3ca81ccc0c2"
-                                      >[email&#160;protected]</a
-                                    ></span
-                                  >
-                                </li>
-                                <li>
-                                  <span>Phone:</span>
-                                  <span class="float-end text-muted"
-                                    >9876543210</span
-                                  >
-                                </li>
-                              </ul>
-                            </div>
-                            <div class="transfer-files">
-                              <ul
-                                class="nav nav-tabs nav-tabs-solid nav-justified mb-0"
-                              >
-                                <li class="nav-item">
-                                  <a
-                                    class="nav-link active"
-                                    href="#all_files"
-                                    data-bs-toggle="tab"
-                                    >All Files</a
-                                  >
-                                </li>
-                                <li class="nav-item">
-                                  <a
-                                    class="nav-link"
-                                    href="#my_files"
-                                    data-bs-toggle="tab"
-                                    >My Files</a
-                                  >
-                                </li>
-                              </ul>
-                              <div class="tab-content">
-                                <div
-                                  class="tab-pane show active"
-                                  id="all_files"
-                                >
-                                  <ul class="files-list">
-                                    <li>
-                                      <div class="files-cont">
-                                        <div class="file-type">
-                                          <span class="files-icon"
-                                            ><i
-                                              class="fa-regular fa-file-pdf"
-                                            ></i
-                                          ></span>
-                                        </div>
-                                        <div class="files-info">
-                                          <span class="file-name text-ellipsis"
-                                            >AHA Selfcare Mobile Application
-                                            Test-Cases.xls</span
-                                          >
-                                          <span class="file-author"
-                                            ><a href="#">Loren Gatlin</a></span
-                                          >
-                                          <span class="file-date"
-                                            >May 31st at 6:53 PM</span
-                                          >
-                                        </div>
-                                        <ul class="files-action">
-                                          <li class="dropdown dropdown-action">
-                                            <a
-                                              href
-                                              class="dropdown-toggle"
-                                              data-bs-toggle="dropdown"
-                                              aria-expanded="false"
-                                              ><i class="material-icons"
-                                                >more_horiz</i
-                                              ></a
-                                            >
-                                            <div class="dropdown-menu">
-                                              <a
-                                                class="dropdown-item"
-                                                href="javascript:void(0)"
-                                                >Download</a
-                                              >
-                                              <a
-                                                class="dropdown-item"
-                                                href="#"
-                                                data-bs-toggle="modal"
-                                                data-bs-target="#share_files"
-                                                >Share</a
-                                              >
-                                            </div>
-                                          </li>
-                                        </ul>
-                                      </div>
-                                    </li>
-                                  </ul>
-                                </div>
-                                <div class="tab-pane" id="my_files">
-                                  <ul class="files-list">
-                                    <li>
-                                      <div class="files-cont">
-                                        <div class="file-type">
-                                          <span class="files-icon"
-                                            ><i
-                                              class="fa-regular fa-file-pdf"
-                                            ></i
-                                          ></span>
-                                        </div>
-                                        <div class="files-info">
-                                          <span class="file-name text-ellipsis"
-                                            >AHA Selfcare Mobile Application
-                                            Test-Cases.xls</span
-                                          >
-                                          <span class="file-author"
-                                            ><a href="#">John Doe</a></span
-                                          >
-                                          <span class="file-date"
-                                            >May 31st at 6:53 PM</span
-                                          >
-                                        </div>
-                                        <ul class="files-action">
-                                          <li class="dropdown dropdown-action">
-                                            <a
-                                              href
-                                              class="dropdown-toggle"
-                                              data-bs-toggle="dropdown"
-                                              aria-expanded="false"
-                                              ><i class="material-icons"
-                                                >more_horiz</i
-                                              ></a
-                                            >
-                                            <div class="dropdown-menu">
-                                              <a
-                                                class="dropdown-item"
-                                                href="javascript:void(0)"
-                                                >Download</a
-                                              >
-                                              <a
-                                                class="dropdown-item"
-                                                href="#"
-                                                data-bs-toggle="modal"
-                                                data-bs-target="#share_files"
-                                                >Share</a
-                                              >
-                                            </div>
-                                          </li>
-                                        </ul>
-                                      </div>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div id="drag_files" class="modal custom-modal fade" role="dialog">
-              <div
-                class="modal-dialog modal-dialog-centered modal-md"
-                role="document"
-              >
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title">Drag and drop files upload</h5>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    >
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <form id="js-upload-form">
-                      <div class="upload-drop-zone" id="drop-zone">
-                        <i class="fa fa-cloud-upload fa-2x"></i>
-                        <span class="upload-text"
-                          >Just drag and drop files here</span
-                        >
-                      </div>
-                      <h4>Uploading</h4>
-                      <ul class="upload-list">
-                        <li class="file-list">
-                          <div class="upload-wrap">
-                            <div class="file-name">
-                              <i class="fa fa-photo"></i>
-                              photo.png
-                            </div>
-                            <div class="file-size">1.07 gb</div>
-                            <button type="button" class="file-close">
-                              <i class="fa fa-close"></i>
-                            </button>
-                          </div>
-                          <div class="progress progress-xs progress-striped">
-                            <div
-                              class="progress-bar bg-success"
-                              role="progressbar"
-                              style="width: 65%"
-                            ></div>
-                          </div>
-                          <div class="upload-process">37% done</div>
-                        </li>
-                        <li class="file-list">
-                          <div class="upload-wrap">
-                            <div class="file-name">
-                              <i class="fa fa-file"></i>
-                              task.doc
-                            </div>
-                            <div class="file-size">5.8 kb</div>
-                            <button type="button" class="file-close">
-                              <i class="fa fa-close"></i>
-                            </button>
-                          </div>
-                          <div class="progress progress-xs progress-striped">
-                            <div
-                              class="progress-bar bg-success"
-                              role="progressbar"
-                              style="width: 65%"
-                            ></div>
-                          </div>
-                          <div class="upload-process">37% done</div>
-                        </li>
-                        <li class="file-list">
-                          <div class="upload-wrap">
-                            <div class="file-name">
-                              <i class="fa fa-photo"></i>
-                              dashboard.png
-                            </div>
-                            <div class="file-size">2.1 mb</div>
-                            <button type="button" class="file-close">
-                              <i class="fa fa-close"></i>
-                            </button>
-                          </div>
-                          <div class="progress progress-xs progress-striped">
-                            <div
-                              class="progress-bar bg-success"
-                              role="progressbar"
-                              style="width: 65%"
-                            ></div>
-                          </div>
-                          <div class="upload-process">Completed</div>
-                        </li>
-                      </ul>
-                    </form>
-                    <div class="submit-section">
-                      <button class="btn btn-primary submit-btn">Submit</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div id="add_group" class="modal custom-modal fade" role="dialog">
-              <div
-                class="modal-dialog modal-dialog-centered modal-md"
-                role="document"
-              >
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title">Create a group</h5>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    >
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <p>
-                      Groups are where your team communicates. They’re best when
-                      organized around a topic — #leads, for example.
-                    </p>
-                    <form>
-                      <div class="input-block mb-3">
-                        <label class="col-form-label"
-                          >Group Name <span class="text-danger">*</span></label
-                        >
-                        <input class="form-control" type="text" />
-                      </div>
-                      <div class="input-block mb-3">
-                        <label class="col-form-label"
-                          >Send invites to:
-                          <span class="text-muted-light"
-                            >(optional)</span
-                          ></label
-                        >
-                        <input class="form-control" type="text" />
-                      </div>
-                      <div class="submit-section">
-                        <button class="btn btn-primary submit-btn">
-                          Submit
-                        </button>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              id="add_chat_user"
-              class="modal custom-modal fade"
-              role="dialog"
-            >
-              <div
-                class="modal-dialog modal-dialog-centered modal-md"
-                role="document"
-              >
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title">Direct Chat</h5>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    >
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="input-group m-b-30">
-                      <input
-                        placeholder="Search to start a chat"
-                        class="form-control search-input"
-                        type="text"
-                      />
-                      <button class="btn btn-primary">Search</button>
-                    </div>
-                    <div>
-                      <h5>Recent Conversations</h5>
-                      <ul class="chat-user-list">
-                        <li>
-                          <a href="#">
-                            <div class="chat-block d-flex">
-                              <span
-                                class="avatar align-self-center flex-shrink-0"
-                              >
-                                <img
-                                  src="assets/img/profiles/avatar-16.jpg"
-                                  alt="User Image"
-                                />
-                              </span>
+                      </form>
+                      <div class="file-body">
+                        <div class="file-scroll">
+                          <div class="file-content-inner">
+                            <h4>Recent Files</h4>
+                            <div class="row row-sm">
                               <div
-                                class="media-body align-self-center text-nowrap flex-grow-1"
+                                class="col-6 col-sm-4 col-md-3 col-lg-4 col-xl-3"
                               >
-                                <div class="user-name">Jeffery Lalor</div>
-                                <span class="designation">Team Leader</span>
+                                <div class="card card-file">
+                                  <div class="dropdown-file">
+                                    <a
+                                      href
+                                      class="dropdown-link"
+                                      data-bs-toggle="dropdown"
+                                      ><i class="fa fa-ellipsis-v"></i
+                                    ></a>
+                                    <div
+                                      class="dropdown-menu dropdown-menu-right"
+                                    >
+                                      <a href="#" class="dropdown-item"
+                                        >View Details</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Share</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Download</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Rename</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Delete</a
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="card-file-thumb">
+                                    <i class="fa-regular fa-file-pdf"></i>
+                                  </div>
+                                  <div class="card-body">
+                                    <h6><a href>Sample.pdf</a></h6>
+                                    <span>10.45kb</span>
+                                  </div>
+                                  <div class="card-footer">
+                                    <span class="d-none d-sm-inline"
+                                      >Last Modified: </span
+                                    >1 min ago
+                                  </div>
+                                </div>
                               </div>
-                              <div class="text-nowrap align-self-center">
-                                <div class="online-date">1 day ago</div>
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <div class="chat-block d-flex">
-                              <span
-                                class="avatar align-self-center flex-shrink-0"
-                              >
-                                <img
-                                  src="assets/img/profiles/avatar-13.jpg"
-                                  alt="User Image"
-                                />
-                              </span>
                               <div
-                                class="media-body align-self-center text-nowrap flex-grow-1"
+                                class="col-6 col-sm-4 col-md-3 col-lg-4 col-xl-3"
                               >
-                                <div class="user-name">Bernardo Galaviz</div>
-                                <span class="designation">Web Developer</span>
+                                <div class="card card-file">
+                                  <div class="dropdown-file">
+                                    <a
+                                      href
+                                      class="dropdown-link"
+                                      data-bs-toggle="dropdown"
+                                      ><i class="fa fa-ellipsis-v"></i
+                                    ></a>
+                                    <div
+                                      class="dropdown-menu dropdown-menu-right"
+                                    >
+                                      <a href="#" class="dropdown-item"
+                                        >View Details</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Share</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Download</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Rename</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Delete</a
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="card-file-thumb">
+                                    <i class="fa-regular fa-file-word"></i>
+                                  </div>
+                                  <div class="card-body">
+                                    <h6><a href>Document.docx</a></h6>
+                                    <span>22.67kb</span>
+                                  </div>
+                                  <div class="card-footer">
+                                    <span class="d-none d-sm-inline"
+                                      >Last Modified: </span
+                                    >30 mins ago
+                                  </div>
+                                </div>
                               </div>
-                              <div class="align-self-center text-nowrap">
-                                <div class="online-date">3 days ago</div>
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <div class="chat-block d-flex">
-                              <span
-                                class="avatar align-self-center flex-shrink-0"
-                              >
-                                <img
-                                  src="assets/img/profiles/avatar-02.jpg"
-                                  alt="User Image"
-                                />
-                              </span>
                               <div
-                                class="media-body text-nowrap align-self-center flex-grow-1"
+                                class="col-6 col-sm-4 col-md-3 col-lg-4 col-xl-3"
                               >
-                                <div class="user-name">John Doe</div>
-                                <span class="designation">Web Designer</span>
+                                <div class="card card-file">
+                                  <div class="dropdown-file">
+                                    <a
+                                      href
+                                      class="dropdown-link"
+                                      data-bs-toggle="dropdown"
+                                      ><i class="fa fa-ellipsis-v"></i
+                                    ></a>
+                                    <div
+                                      class="dropdown-menu dropdown-menu-right"
+                                    >
+                                      <a href="#" class="dropdown-item"
+                                        >View Details</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Share</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Download</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Rename</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Delete</a
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="card-file-thumb">
+                                    <i class="fa-regular fa-file-image"></i>
+                                  </div>
+                                  <div class="card-body">
+                                    <h6><a href>icon.png</a></h6>
+                                    <span>12.47kb</span>
+                                  </div>
+                                  <div class="card-footer">
+                                    <span class="d-none d-sm-inline"
+                                      >Last Modified: </span
+                                    >1 hour ago
+                                  </div>
+                                </div>
                               </div>
-                              <div class="align-self-center text-nowrap">
-                                <div class="online-date">7 months ago</div>
+                              <div
+                                class="col-6 col-sm-4 col-md-3 col-lg-4 col-xl-3"
+                              >
+                                <div class="card card-file">
+                                  <div class="dropdown-file">
+                                    <a
+                                      href
+                                      class="dropdown-link"
+                                      data-bs-toggle="dropdown"
+                                      ><i class="fa fa-ellipsis-v"></i
+                                    ></a>
+                                    <div
+                                      class="dropdown-menu dropdown-menu-right"
+                                    >
+                                      <a href="#" class="dropdown-item"
+                                        >View Details</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Share</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Download</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Rename</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Delete</a
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="card-file-thumb">
+                                    <i class="fa-regular fa-file-excel"></i>
+                                  </div>
+                                  <div class="card-body">
+                                    <h6><a href>Users.xls</a></h6>
+                                    <span>35.11kb</span>
+                                  </div>
+                                  <div class="card-footer">23 Jul 6:30 PM</div>
+                                </div>
                               </div>
                             </div>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="submit-section">
-                      <button class="btn btn-primary submit-btn">Submit</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div id="share_files" class="modal custom-modal fade" role="dialog">
-              <div
-                class="modal-dialog modal-dialog-centered modal-md"
-                role="document"
-              >
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title">Share File</h5>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    >
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="files-share-list">
-                      <div class="files-cont">
-                        <div class="file-type">
-                          <span class="files-icon"
-                            ><i class="fa-regular fa-file-pdf"></i
-                          ></span>
-                        </div>
-                        <div class="files-info">
-                          <span class="file-name text-ellipsis"
-                            >AHA Selfcare Mobile Application
-                            Test-Cases.xls</span
-                          >
-                          <span class="file-author"
-                            ><a href="#">Bernardo Galaviz</a></span
-                          >
-                          <span class="file-date">May 31st at 6:53 PM</span>
+                            <h4>Files</h4>
+                            <div class="row row-sm">
+                              <div
+                                class="col-6 col-sm-4 col-md-3 col-lg-4 col-xl-3"
+                              >
+                                <div class="card card-file">
+                                  <div class="dropdown-file">
+                                    <a
+                                      href
+                                      class="dropdown-link"
+                                      data-bs-toggle="dropdown"
+                                      ><i class="fa fa-ellipsis-v"></i
+                                    ></a>
+                                    <div
+                                      class="dropdown-menu dropdown-menu-right"
+                                    >
+                                      <a href="#" class="dropdown-item"
+                                        >View Details</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Share</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Download</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Rename</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Delete</a
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="card-file-thumb">
+                                    <i class="fa-regular fa-file-word"></i>
+                                  </div>
+                                  <div class="card-body">
+                                    <h6><a href>Updates.docx</a></h6>
+                                    <span>12mb</span>
+                                  </div>
+                                  <div class="card-footer">9 Aug 1:17 PM</div>
+                                </div>
+                              </div>
+                              <div
+                                class="col-6 col-sm-4 col-md-3 col-lg-4 col-xl-3"
+                              >
+                                <div class="card card-file">
+                                  <div class="dropdown-file">
+                                    <a
+                                      href
+                                      class="dropdown-link"
+                                      data-bs-toggle="dropdown"
+                                      ><i class="fa fa-ellipsis-v"></i
+                                    ></a>
+                                    <div
+                                      class="dropdown-menu dropdown-menu-right"
+                                    >
+                                      <a href="#" class="dropdown-item"
+                                        >View Details</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Share</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Download</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Rename</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Delete</a
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="card-file-thumb">
+                                    <i
+                                      class="fa-regular fa-file-powerpoint"
+                                    ></i>
+                                  </div>
+                                  <div class="card-body">
+                                    <h6><a href>Vision.ppt</a></h6>
+                                    <span>72.50kb</span>
+                                  </div>
+                                  <div class="card-footer">6 Aug 11:42 AM</div>
+                                </div>
+                              </div>
+                              <div
+                                class="col-6 col-sm-4 col-md-3 col-lg-4 col-xl-3"
+                              >
+                                <div class="card card-file">
+                                  <div class="dropdown-file">
+                                    <a
+                                      href
+                                      class="dropdown-link"
+                                      data-bs-toggle="dropdown"
+                                      ><i class="fa fa-ellipsis-v"></i
+                                    ></a>
+                                    <div
+                                      class="dropdown-menu dropdown-menu-right"
+                                    >
+                                      <a href="#" class="dropdown-item"
+                                        >View Details</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Share</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Download</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Rename</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Delete</a
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="card-file-thumb">
+                                    <i class="fa-regular fa-file-audio"></i>
+                                  </div>
+                                  <div class="card-body">
+                                    <h6><a href>Voice.mp3</a></h6>
+                                    <span>2.17mb</span>
+                                  </div>
+                                  <div class="card-footer">
+                                    <span class="d-none d-sm-inline"
+                                      >Last Modified: </span
+                                    >30 Jul 9:00 PM
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="col-6 col-sm-4 col-md-3 col-lg-4 col-xl-3"
+                              >
+                                <div class="card card-file">
+                                  <div class="dropdown-file">
+                                    <a
+                                      href
+                                      class="dropdown-link"
+                                      data-bs-toggle="dropdown"
+                                      ><i class="fa fa-ellipsis-v"></i
+                                    ></a>
+                                    <div
+                                      class="dropdown-menu dropdown-menu-right"
+                                    >
+                                      <a href="#" class="dropdown-item"
+                                        >View Details</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Share</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Download</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Rename</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Delete</a
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="card-file-thumb">
+                                    <i class="fa-regular fa-file-pdf"></i>
+                                  </div>
+                                  <div class="card-body">
+                                    <h6><a href>Tutorials.pdf</a></h6>
+                                    <span>8.2mb</span>
+                                  </div>
+                                  <div class="card-footer">21 Jul 10:45 PM</div>
+                                </div>
+                              </div>
+                              <div
+                                class="col-6 col-sm-4 col-md-3 col-lg-4 col-xl-3"
+                              >
+                                <div class="card card-file">
+                                  <div class="dropdown-file">
+                                    <a
+                                      href
+                                      class="dropdown-link"
+                                      data-bs-toggle="dropdown"
+                                      ><i class="fa fa-ellipsis-v"></i
+                                    ></a>
+                                    <div
+                                      class="dropdown-menu dropdown-menu-right"
+                                    >
+                                      <a href="#" class="dropdown-item"
+                                        >View Details</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Share</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Download</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Rename</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Delete</a
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="card-file-thumb">
+                                    <i class="fa-regular fa-file-excel"></i>
+                                  </div>
+                                  <div class="card-body">
+                                    <h6><a href>Tasks.xls</a></h6>
+                                    <span>92.82kb</span>
+                                  </div>
+                                  <div class="card-footer">16 Jun 4:59 PM</div>
+                                </div>
+                              </div>
+                              <div
+                                class="col-6 col-sm-4 col-md-3 col-lg-4 col-xl-3"
+                              >
+                                <div class="card card-file">
+                                  <div class="dropdown-file">
+                                    <a
+                                      href
+                                      class="dropdown-link"
+                                      data-bs-toggle="dropdown"
+                                      ><i class="fa fa-ellipsis-v"></i
+                                    ></a>
+                                    <div
+                                      class="dropdown-menu dropdown-menu-right"
+                                    >
+                                      <a href="#" class="dropdown-item"
+                                        >View Details</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Share</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Download</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Rename</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Delete</a
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="card-file-thumb">
+                                    <i class="fa-regular fa-file-image"></i>
+                                  </div>
+                                  <div class="card-body">
+                                    <h6><a href>Page.psd</a></h6>
+                                    <span>118.71mb</span>
+                                  </div>
+                                  <div class="card-footer">14 Jun 9:00 AM</div>
+                                </div>
+                              </div>
+                              <div
+                                class="col-6 col-sm-4 col-md-3 col-lg-4 col-xl-3"
+                              >
+                                <div class="card card-file">
+                                  <div class="dropdown-file">
+                                    <a
+                                      href
+                                      class="dropdown-link"
+                                      data-bs-toggle="dropdown"
+                                      ><i class="fa fa-ellipsis-v"></i
+                                    ></a>
+                                    <div
+                                      class="dropdown-menu dropdown-menu-right"
+                                    >
+                                      <a href="#" class="dropdown-item"
+                                        >View Details</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Share</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Download</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Rename</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Delete</a
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="card-file-thumb">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                  </div>
+                                  <div class="card-body">
+                                    <h6><a href>License.txt</a></h6>
+                                    <span>18.7kb</span>
+                                  </div>
+                                  <div class="card-footer">5 May 8:21 PM</div>
+                                </div>
+                              </div>
+                              <div
+                                class="col-6 col-sm-4 col-md-3 col-lg-4 col-xl-3"
+                              >
+                                <div class="card card-file">
+                                  <div class="dropdown-file">
+                                    <a
+                                      href
+                                      class="dropdown-link"
+                                      data-bs-toggle="dropdown"
+                                      ><i class="fa fa-ellipsis-v"></i
+                                    ></a>
+                                    <div
+                                      class="dropdown-menu dropdown-menu-right"
+                                    >
+                                      <a href="#" class="dropdown-item"
+                                        >View Details</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Share</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Download</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Rename</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Delete</a
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="card-file-thumb">
+                                    <i class="fa-regular fa-file-word"></i>
+                                  </div>
+                                  <div class="card-body">
+                                    <h6><a href>Expenses.docx</a></h6>
+                                    <span>66.2kb</span>
+                                  </div>
+                                  <div class="card-footer">24 Apr 7:50 PM</div>
+                                </div>
+                              </div>
+                              <div
+                                class="col-6 col-sm-4 col-md-3 col-lg-4 col-xl-3"
+                              >
+                                <div class="card card-file">
+                                  <div class="dropdown-file">
+                                    <a
+                                      href
+                                      class="dropdown-link"
+                                      data-bs-toggle="dropdown"
+                                      ><i class="fa fa-ellipsis-v"></i
+                                    ></a>
+                                    <div
+                                      class="dropdown-menu dropdown-menu-right"
+                                    >
+                                      <a href="#" class="dropdown-item"
+                                        >View Details</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Share</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Download</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Rename</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Delete</a
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="card-file-thumb">
+                                    <i class="fa-regular fa-file-audio"></i>
+                                  </div>
+                                  <div class="card-body">
+                                    <h6><a href>Music.mp3</a></h6>
+                                    <span>3.6mb</span>
+                                  </div>
+                                  <div class="card-footer">13 Mar 2:00 PM</div>
+                                </div>
+                              </div>
+                              <div
+                                class="col-6 col-sm-4 col-md-3 col-lg-4 col-xl-3"
+                              >
+                                <div class="card card-file">
+                                  <div class="dropdown-file">
+                                    <a
+                                      href
+                                      class="dropdown-link"
+                                      data-bs-toggle="dropdown"
+                                      ><i class="fa fa-ellipsis-v"></i
+                                    ></a>
+                                    <div
+                                      class="dropdown-menu dropdown-menu-right"
+                                    >
+                                      <a href="#" class="dropdown-item"
+                                        >View Details</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Share</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Download</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Rename</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Delete</a
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="card-file-thumb">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                  </div>
+                                  <div class="card-body">
+                                    <h6><a href>Installation.txt</a></h6>
+                                    <span>43.9kb</span>
+                                  </div>
+                                  <div class="card-footer">26 Feb 5:01 PM</div>
+                                </div>
+                              </div>
+                              <div
+                                class="col-6 col-sm-4 col-md-3 col-lg-4 col-xl-3"
+                              >
+                                <div class="card card-file">
+                                  <div class="dropdown-file">
+                                    <a
+                                      href
+                                      class="dropdown-link"
+                                      data-bs-toggle="dropdown"
+                                      ><i class="fa fa-ellipsis-v"></i
+                                    ></a>
+                                    <div
+                                      class="dropdown-menu dropdown-menu-right"
+                                    >
+                                      <a href="#" class="dropdown-item"
+                                        >View Details</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Share</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Download</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Rename</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Delete</a
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="card-file-thumb">
+                                    <i class="fa-regular fa-file-video"></i>
+                                  </div>
+                                  <div class="card-body">
+                                    <h6><a href>Workflow.mp4</a></h6>
+                                    <span>47.65mb</span>
+                                  </div>
+                                  <div class="card-footer">3 Jan 11:35 AM</div>
+                                </div>
+                              </div>
+                              <div
+                                class="col-6 col-sm-4 col-md-3 col-lg-4 col-xl-3"
+                              >
+                                <div class="card card-file">
+                                  <div class="dropdown-file">
+                                    <a
+                                      href
+                                      class="dropdown-link"
+                                      data-bs-toggle="dropdown"
+                                      ><i class="fa fa-ellipsis-v"></i
+                                    ></a>
+                                    <div
+                                      class="dropdown-menu dropdown-menu-right"
+                                    >
+                                      <a href="#" class="dropdown-item"
+                                        >View Details</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Share</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Download</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Rename</a
+                                      >
+                                      <a href="#" class="dropdown-item"
+                                        >Delete</a
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="card-file-thumb">
+                                    <i class="fa-regular fa-file-code"></i>
+                                  </div>
+                                  <div class="card-body">
+                                    <h6><a href>index</a></h6>
+                                    <span>23.7kb</span>
+                                  </div>
+                                  <div class="card-footer">1 Jan 8:55 AM</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="input-block mb-3">
-                      <label class="col-form-label">Share With</label>
-                      <input class="form-control" type="text" />
-                    </div>
-                    <div class="submit-section">
-                      <button class="btn btn-primary submit-btn">Share</button>
                     </div>
                   </div>
                 </div>
@@ -3313,28 +2618,21 @@
         </div>
       </div>
     </div>
-    <!-- Cloudflare Email Decode -->
-<script data-cfasync="false" src="{{ asset('cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js') }}"></script>
-
-<!-- Core JS -->
+    <!-- JavaScript Assets in Laravel -->
 <script src="{{ asset('assets/js/jquery-3.7.1.min.js') }}"></script>
 <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
 <script src="{{ asset('assets/js/jquery.slimscroll.min.js') }}"></script>
-<script src="{{ asset('assets/js/dropfiles.js') }}"></script>
-
-<!-- Feather Icons -->
 <script src="{{ asset('assets/js/feather.min.js') }}"></script>
-
-<!-- Layout and Settings -->
 <script src="{{ asset('assets/js/layout.js') }}"></script>
 <script src="{{ asset('assets/js/theme-settings.js') }}"></script>
 <script src="{{ asset('assets/js/greedynav.js') }}"></script>
 <script src="{{ asset('assets/js/app.js') }}"></script>
 
-<!-- Cloudflare Rocket Loader -->
-<script src="{{ asset('cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js') }}" data-cf-settings="eb312830df3e40b70a9ef3db-|49" defer></script>
+<!-- Optional: Cloudflare Rocket Loader (ensure path is correct) -->
+<script src="{{ asset('cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js') }}"
+        data-cf-settings="1db758d793f2654a326f4c8e-|49" defer></script>
 
   </body>
 
-  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/chat by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:21:46 GMT -->
+  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/file-manager by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:22:30 GMT -->
 </html>

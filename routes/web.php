@@ -75,7 +75,9 @@ Route::get('/client-profile', function () {
 Route::get('/client-list', function () {
     return view('client.client-list');
 });
-
+Route::get('/clients', function () {
+    return view('client.clients');
+});
 
 Route::get('/contact-list', function () {
     return view('contacts.contact-list');
