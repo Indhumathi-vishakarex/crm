@@ -342,7 +342,7 @@ adipiscing</span>
 <nav class="greedy">
 <ul class="link-item">
 <li>
-<a class href="admin-dashboard.html"><i class="la la-home"></i> <span>Back to Home</span></a>
+<a class href="{{url('/admin-dashboard')}}"><i class="la la-home"></i> <span>Back to Home</span></a>
 </li>
 <li class="menu-title"><span>Chat Groups</span> <a href="#" data-bs-toggle="modal" data-bs-target="#add_group"><i class="fa-solid fa-plus"></i></a></li>
 <li>
