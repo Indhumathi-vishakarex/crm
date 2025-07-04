@@ -64,6 +64,9 @@ Route::get('/employees', function () {
     return view('employees.employees');
 });
 
+Route::get('/holidays', function () {
+    return view('employees.holidays');
+});
 
 Route::get('/projects', function () {
     return view('projects.projects');
@@ -165,4 +168,27 @@ Route::get('/chat', function () {
 
 Route::get('/voice-call', function () {
     return view('apps.voice-call');
+});
+
+Route::get('/video-call', function () {
+    return view('apps.video-call');
+});
+
+Route::get('/incoming-call', function () {
+    return view('apps.incoming-call');
+});
+Route::get('/outgoing-call', function () {
+    return view('apps.outgoing-call');
+});
+Route::get('/leaves-employee', function () {
+    return view('employees.leaves-employee');
+});
+
+Route::get('/leave-settings', function () {
+    return view('employees.leave-settings');
+});
+
+
+Route::get('/departments', function () {
+    return view('employees.departments');
 });

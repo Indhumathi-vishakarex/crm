@@ -7,7 +7,7 @@
   data-sidebar-size="lg"
   data-sidebar-image="none"
 >
-  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/employee-dashboard by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:21:57 GMT -->
+  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/incoming-call by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:22:23 GMT -->
   <!-- Added by HTTrack --><meta
     http-equiv="content-type"
     content="text/html;charset=UTF-8"
@@ -24,32 +24,563 @@
       name="author"
       content="Dreamstechnologies - Bootstrap Admin Template"
     />
-    <title>Employee Dashboard - HRMS admin template</title>
-<link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}">
+    <title>Incoming Call - HRMS admin template</title>
+<!-- Favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}" />
 
-<link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}" />
 
-<link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/fontawesome.min.css') }}">
-<link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/all.min.css') }}">
+<!-- FontAwesome CSS -->
+<link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/fontawesome.min.css') }}" />
+<link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/all.min.css') }}" />
 
-<link rel="stylesheet" href="{{ asset('assets/css/line-awesome.min.css') }}">
+<!-- Line Awesome CSS -->
+<link rel="stylesheet" href="{{ asset('assets/css/line-awesome.min.css') }}" />
 
-<link rel="stylesheet" href="{{ asset('assets/css/material.css') }}">
+<!-- Material Design CSS -->
+<link rel="stylesheet" href="{{ asset('assets/css/material.css') }}" />
 
-<link rel="stylesheet" href="{{ asset('assets/plugins/morris/morris.css') }}">
+<!-- Main Style CSS -->
+<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
 
-<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
-
+    
   </head>
   <body>
     <div class="main-wrapper">
-    
-@include('layouts.header')
-@include('layouts.sidebar')
+      <div class="header">
+        <div class="header-left">
+          <a href="admin-dashboard.html" class="logo">
+            <img src="assets/img/logo.svg" alt="Logo" />
+          </a>
+          <a href="admin-dashboard.html" class="logo collapse-logo">
+            <img src="assets/img/collapse-logo.svg" alt="Logo" />
+          </a>
+          <a href="admin-dashboard.html" class="logo2">
+            <img src="assets/img/logo2.png" width="40" height="40" alt="Logo" />
+          </a>
+        </div>
 
+        <a id="toggle_btn" href="javascript:void(0);">
+          <span class="bar-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </a>
+
+        <div class="page-title-box">
+          <h3>Winngoo CRM</h3>
+        </div>
+
+        <a id="mobile_btn" class="mobile_btn" href="#sidebar"
+          ><i class="fa-solid fa-bars"></i
+        ></a>
+
+        <ul class="nav user-menu">
+          <li class="nav-item">
+            <div class="top-nav-search">
+              <a href="javascript:void(0);" class="responsive-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+              <form
+                action="https://smarthr.dreamstechnologies.com/laravel/template/public/search"
+              >
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="Search here"
+                />
+                <button class="btn" type="submit">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </form>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown has-arrow flag-nav">
+            <a
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              href="#"
+              role="button"
+            >
+              <img src="assets/img/flags/us.png" alt="Flag" height="20" />
+              <span>English</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a href="javascript:void(0);" class="dropdown-item">
+                <img src="assets/img/flags/us.png" alt="Flag" height="16" />
+                English
+              </a>
+              <a href="javascript:void(0);" class="dropdown-item">
+                <img src="assets/img/flags/fr.png" alt="Flag" height="16" />
+                French
+              </a>
+              <a href="javascript:void(0);" class="dropdown-item">
+                <img src="assets/img/flags/es.png" alt="Flag" height="16" />
+                Spanish
+              </a>
+              <a href="javascript:void(0);" class="dropdown-item">
+                <img src="assets/img/flags/de.png" alt="Flag" height="16" />
+                German
+              </a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              href="#"
+              class="dropdown-toggle nav-link"
+              data-bs-toggle="dropdown"
+            >
+              <i class="fa-regular fa-bell"></i>
+              <span class="badge rounded-pill">3</span>
+            </a>
+            <div class="dropdown-menu notifications">
+              <div class="topnav-dropdown-header">
+                <span class="notification-title">Notifications</span>
+                <a href="javascript:void(0)" class="clear-noti"> Clear All </a>
+              </div>
+              <div class="noti-content">
+                <ul class="notification-list">
+                  <li class="notification-message">
+                    <a href="activities.html">
+                      <div class="chat-block d-flex">
+                        <span class="avatar flex-shrink-0">
+                          <img
+                            src="assets/img/profiles/avatar-02.jpg"
+                            alt="User Image"
+                          />
+                        </span>
+                        <div class="media-body flex-grow-1">
+                          <p class="noti-details">
+                            <span class="noti-title">John Doe</span> added new
+                            task
+                            <span class="noti-title"
+                              >Patient appointment booking</span
+                            >
+                          </p>
+                          <p class="noti-time">
+                            <span class="notification-time">4 mins ago</span>
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notification-message">
+                    <a href="activities.html">
+                      <div class="chat-block d-flex">
+                        <span class="avatar flex-shrink-0">
+                          <img
+                            src="assets/img/profiles/avatar-03.jpg"
+                            alt="User Image"
+                          />
+                        </span>
+                        <div class="media-body flex-grow-1">
+                          <p class="noti-details">
+                            <span class="noti-title">Tarah Shropshire</span>
+                            changed the task name
+                            <span class="noti-title"
+                              >Appointment booking with payment gateway</span
+                            >
+                          </p>
+                          <p class="noti-time">
+                            <span class="notification-time">6 mins ago</span>
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notification-message">
+                    <a href="activities.html">
+                      <div class="chat-block d-flex">
+                        <span class="avatar flex-shrink-0">
+                          <img
+                            src="assets/img/profiles/avatar-06.jpg"
+                            alt="User Image"
+                          />
+                        </span>
+                        <div class="media-body flex-grow-1">
+                          <p class="noti-details">
+                            <span class="noti-title">Misty Tison</span> added
+                            <span class="noti-title">Domenic Houston</span> and
+                            <span class="noti-title">Claire Mapes</span> to
+                            project
+                            <span class="noti-title"
+                              >Doctor available module</span
+                            >
+                          </p>
+                          <p class="noti-time">
+                            <span class="notification-time">8 mins ago</span>
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notification-message">
+                    <a href="activities.html">
+                      <div class="chat-block d-flex">
+                        <span class="avatar flex-shrink-0">
+                          <img
+                            src="assets/img/profiles/avatar-17.jpg"
+                            alt="User Image"
+                          />
+                        </span>
+                        <div class="media-body flex-grow-1">
+                          <p class="noti-details">
+                            <span class="noti-title">Rolland Webber</span>
+                            completed task
+                            <span class="noti-title"
+                              >Patient and Doctor video conferencing</span
+                            >
+                          </p>
+                          <p class="noti-time">
+                            <span class="notification-time">12 mins ago</span>
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notification-message">
+                    <a href="activities.html">
+                      <div class="chat-block d-flex">
+                        <span class="avatar flex-shrink-0">
+                          <img
+                            src="assets/img/profiles/avatar-13.jpg"
+                            alt="User Image"
+                          />
+                        </span>
+                        <div class="media-body flex-grow-1">
+                          <p class="noti-details">
+                            <span class="noti-title">Bernardo Galaviz</span>
+                            added new task
+                            <span class="noti-title">Private chat module</span>
+                          </p>
+                          <p class="noti-time">
+                            <span class="notification-time">2 days ago</span>
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="topnav-dropdown-footer">
+                <a href="activities.html">View all Notifications</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              href="#"
+              class="dropdown-toggle nav-link"
+              data-bs-toggle="dropdown"
+            >
+              <i class="fa-regular fa-comment"></i
+              ><span class="badge rounded-pill">8</span>
+            </a>
+            <div class="dropdown-menu notifications">
+              <div class="topnav-dropdown-header">
+                <span class="notification-title">Messages</span>
+                <a href="javascript:void(0)" class="clear-noti"> Clear All </a>
+              </div>
+              <div class="noti-content">
+                <ul class="notification-list">
+                  <li class="notification-message">
+                    <a href="chat.html">
+                      <div class="list-item">
+                        <div class="list-left">
+                          <span class="avatar">
+                            <img
+                              src="assets/img/profiles/avatar-09.jpg"
+                              alt="User Image"
+                            />
+                          </span>
+                        </div>
+                        <div class="list-body">
+                          <span class="message-author">Richard Miles </span>
+                          <span class="message-time">12:28 AM</span>
+                          <div class="clearfix"></div>
+                          <span class="message-content"
+                            >Lorem ipsum dolor sit amet, consectetur
+                            adipiscing</span
+                          >
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notification-message">
+                    <a href="chat.html">
+                      <div class="list-item">
+                        <div class="list-left">
+                          <span class="avatar">
+                            <img
+                              src="assets/img/profiles/avatar-02.jpg"
+                              alt="User Image"
+                            />
+                          </span>
+                        </div>
+                        <div class="list-body">
+                          <span class="message-author">John Doe</span>
+                          <span class="message-time">6 Mar</span>
+                          <div class="clearfix"></div>
+                          <span class="message-content"
+                            >Lorem ipsum dolor sit amet, consectetur
+                            adipiscing</span
+                          >
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notification-message">
+                    <a href="chat.html">
+                      <div class="list-item">
+                        <div class="list-left">
+                          <span class="avatar">
+                            <img
+                              src="assets/img/profiles/avatar-03.jpg"
+                              alt="User Image"
+                            />
+                          </span>
+                        </div>
+                        <div class="list-body">
+                          <span class="message-author"> Tarah Shropshire </span>
+                          <span class="message-time">5 Mar</span>
+                          <div class="clearfix"></div>
+                          <span class="message-content"
+                            >Lorem ipsum dolor sit amet, consectetur
+                            adipiscing</span
+                          >
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notification-message">
+                    <a href="chat.html">
+                      <div class="list-item">
+                        <div class="list-left">
+                          <span class="avatar">
+                            <img
+                              src="assets/img/profiles/avatar-05.jpg"
+                              alt="User Image"
+                            />
+                          </span>
+                        </div>
+                        <div class="list-body">
+                          <span class="message-author">Mike Litorus</span>
+                          <span class="message-time">3 Mar</span>
+                          <div class="clearfix"></div>
+                          <span class="message-content"
+                            >Lorem ipsum dolor sit amet, consectetur
+                            adipiscing</span
+                          >
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notification-message">
+                    <a href="chat.html">
+                      <div class="list-item">
+                        <div class="list-left">
+                          <span class="avatar">
+                            <img
+                              src="assets/img/profiles/avatar-08.jpg"
+                              alt="User Image"
+                            />
+                          </span>
+                        </div>
+                        <div class="list-body">
+                          <span class="message-author">
+                            Catherine Manseau
+                          </span>
+                          <span class="message-time">27 Feb</span>
+                          <div class="clearfix"></div>
+                          <span class="message-content"
+                            >Lorem ipsum dolor sit amet, consectetur
+                            adipiscing</span
+                          >
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="topnav-dropdown-footer">
+                <a href="chat.html">View all Messages</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown has-arrow main-drop">
+            <a
+              href="#"
+              class="dropdown-toggle nav-link"
+              data-bs-toggle="dropdown"
+            >
+              <span class="user-img"
+                ><img src="assets/img/avatar/avatar-27.jpg" alt="User Image" />
+                <span class="status online"></span
+              ></span>
+              <span>Admin</span>
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="profile.html">My Profile</a>
+              <a class="dropdown-item" href="settings.html">Settings</a>
+              <a class="dropdown-item" href="index.html">Logout</a>
+            </div>
+          </li>
+        </ul>
+
+        <div class="dropdown mobile-user-menu">
+          <a
+            href="#"
+            class="nav-link dropdown-toggle"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            ><i class="fa-solid fa-ellipsis-vertical"></i
+          ></a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <a class="dropdown-item" href="profile.html">My Profile</a>
+            <a class="dropdown-item" href="settings.html">Settings</a>
+            <a class="dropdown-item" href="index.html">Logout</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar" id="sidebar">
+        <div class="sidebar-inner slimscroll">
+          <div id="sidebar-menu" class="sidebar-menu">
+            <nav class="greedy">
+              <ul class="link-item">
+                <li>
+                  <a class href="admin-dashboard.html"
+                    ><i class="la la-home"></i> <span>Back to Home</span></a
+                  >
+                </li>
+                <li class="menu-title">
+                  <span>Chat Groups</span>
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#add_group"
+                    ><i class="fa-solid fa-plus"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class href="chat.html">
+                    <span class="chat-avatar-sm user-img">
+                      <img
+                        class="rounded-circle"
+                        src="assets/img/user.jpg"
+                        alt="User Image"
+                      />
+                    </span>
+                    <span class="chat-user">#General</span>
+                  </a>
+                </li>
+                <li>
+                  <a class href="chat.html">
+                    <span class="chat-avatar-sm user-img">
+                      <img
+                        class="rounded-circle"
+                        src="assets/img/user.jpg"
+                        alt="User Image"
+                      />
+                    </span>
+                    <span class="chat-user">#Video Responsive Survey</span>
+                  </a>
+                </li>
+                <li>
+                  <a class href="chat.html">
+                    <span class="chat-avatar-sm user-img">
+                      <img
+                        class="rounded-circle"
+                        src="assets/img/user.jpg"
+                        alt="User Image')}}"
+                      />
+                    </span>
+                    <span class="chat-user">#500rs</span>
+                  </a>
+                </li>
+                <li>
+                  <a class href="chat.html">
+                    <span class="chat-avatar-sm user-img">
+                      <img
+                        class="rounded-circle"
+                        src="assets/img/user.jpg"
+                        alt="User Image"
+                      />
+                    </span>
+                    <span class="chat-user">#warehouse</span>
+                  </a>
+                </li>
+                <li class="menu-title">
+                  Direct Chats
+                  <a
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#add_chat_user"
+                    ><i class="fa-solid fa-plus"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class href="chat.html">
+                    <span class="chat-avatar-sm user-img">
+                      <img
+                        class="rounded-circle"
+                        src="assets/img/profiles/avatar-02.jpg"
+                        alt="User Image"
+                      /><span class="status online"></span>
+                    </span>
+                    <span class="chat-user">John Doe</span>
+                    <span class="badge rounded-pill bg-danger">1</span>
+                  </a>
+                </li>
+                <li>
+                  <a class href="chat.html">
+                    <span class="chat-avatar-sm user-img">
+                      <img
+                        class="rounded-circle"
+                        src="assets/img/profiles/avatar-09.jpg"
+                        alt="User Image"
+                      /><span class="status offline"></span>
+                    </span>
+                    <span class="chat-user">Richard Miles</span>
+                    <span class="badge rounded-pill bg-danger">7</span>
+                  </a>
+                </li>
+                <li>
+                  <a class href="chat.html">
+                    <span class="chat-avatar-sm user-img">
+                      <img
+                        class="rounded-circle"
+                        src="assets/img/profiles/avatar-10.jpg"
+                        alt="User Image"
+                      /><span class="status away"></span>
+                    </span>
+                    <span class="chat-user">John Smith</span>
+                  </a>
+                </li>
+                <li class="active">
+                  <a class href="chat.html">
+                    <span class="chat-avatar-sm user-img">
+                      <img
+                        class="rounded-circle"
+                        src="assets/img/profiles/avatar-05.jpg"
+                        alt="User Image"
+                      /><span class="status online"></span>
+                    </span>
+                    <span class="chat-user">Mike Litorus</span>
+                    <span class="badge rounded-pill bg-danger">2</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
 
       <div class="two-col-bar" id="two-col-bar">
-        <div class="sidebar sidebar-twocol" id="navbar-nav">
+        <div class="sidebar sidebar-twocol">
           <div class="sidebar-left slimscroll">
             <div
               class="nav flex-column nav-pills"
@@ -58,7 +589,7 @@
               aria-orientation="vertical"
             >
               <a
-                class="nav-link active"
+                class="nav-link"
                 id="v-pills-dashboard-tab"
                 title="Dashboard"
                 data-bs-toggle="pill"
@@ -70,7 +601,7 @@
                 <span class="material-icons-outlined"> home </span>
               </a>
               <a
-                class="nav-link"
+                class="nav-link active"
                 id="v-pills-apps-tab"
                 title="Apps"
                 data-bs-toggle="pill"
@@ -530,7 +1061,7 @@
           <div class="sidebar-right">
             <div class="tab-content" id="v-pills-tabContent">
               <div
-                class="tab-pane fade show active"
+                class="tab-pane fade"
                 id="v-pills-dashboard"
                 role="tabpanel"
                 aria-labelledby="v-pills-dashboard-tab"
@@ -541,7 +1072,7 @@
                     <a class href="admin-dashboard.html">Admin Dashboard</a>
                   </li>
                   <li>
-                    <a class="active" href="employee-dashboard.html"
+                    <a class href="employee-dashboard.html"
                       >Employee Dashboard</a
                     >
                   </li>
@@ -554,7 +1085,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade"
+                class="tab-pane fade show active"
                 id="v-pills-apps"
                 role="tabpanel"
                 aria-labelledby="v-pills-apps-tab"
@@ -562,7 +1093,7 @@
                 <p>App</p>
                 <ul>
                   <li>
-                    <a class href="chat.html">Chat</a>
+                    <a class href="chat.html" class="active">Chat</a>
                   </li>
                   <li class="sub-menu">
                     <a href="#">Calls <span class="menu-arrow"></span></a>
@@ -573,7 +1104,9 @@
                         <a class href="outgoing-call.html">Outgoing Call</a>
                       </li>
                       <li>
-                        <a class href="incoming-call.html">Incoming Call</a>
+                        <a class="active" href="incoming-call.html"
+                          >Incoming Call</a
+                        >
                       </li>
                     </ul>
                   </li>
@@ -592,7 +1125,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-employees"
                 role="tabpanel"
                 aria-labelledby="v-pills-employees-tab"
@@ -633,7 +1166,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-clients"
                 role="tabpanel"
                 aria-labelledby="v-pills-clients-tab"
@@ -644,7 +1177,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-projects"
                 role="tabpanel"
                 aria-labelledby="v-pills-projects-tab"
@@ -657,7 +1190,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-leads"
                 role="tabpanel"
                 aria-labelledby="v-pills-leads-tab"
@@ -685,7 +1218,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-tickets"
                 role="tabpanel"
                 aria-labelledby="v-pills-tickets-tab"
@@ -699,7 +1232,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-sales"
                 role="tabpanel"
                 aria-labelledby="v-pills-sales-tab"
@@ -717,7 +1250,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-accounting"
                 role="tabpanel"
                 aria-labelledby="v-pills-accounting-tab"
@@ -735,7 +1268,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-payroll"
                 role="tabpanel"
                 aria-labelledby="v-pills-payroll-tab"
@@ -750,7 +1283,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-policies"
                 role="tabpanel"
                 aria-labelledby="v-pills-policies-tab"
@@ -761,7 +1294,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-reports"
                 role="tabpanel"
                 aria-labelledby="v-pills-reports-tab"
@@ -798,7 +1331,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-performance"
                 role="tabpanel"
                 aria-labelledby="v-pills-performance-tab"
@@ -821,7 +1354,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-goals"
                 role="tabpanel"
                 aria-labelledby="v-pills-goals-tab"
@@ -833,7 +1366,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-training"
                 role="tabpanel"
                 aria-labelledby="v-pills-training-tab"
@@ -848,7 +1381,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-promotion"
                 role="tabpanel"
                 aria-labelledby="v-pills-promotion-tab"
@@ -859,7 +1392,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-resignation"
                 role="tabpanel"
                 aria-labelledby="v-pills-resignation-tab"
@@ -870,7 +1403,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-termination"
                 role="tabpanel"
                 aria-labelledby="v-pills-termination-tab"
@@ -881,7 +1414,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-assets"
                 role="tabpanel"
                 aria-labelledby="v-pills-assets-tab"
@@ -892,7 +1425,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-jobs"
                 role="tabpanel"
                 aria-labelledby="v-pills-jobs-tab"
@@ -940,7 +1473,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-knowledgebase"
                 role="tabpanel"
                 aria-labelledby="v-pills-knowledgebase-tab"
@@ -953,7 +1486,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-activities"
                 role="tabpanel"
                 aria-labelledby="v-pills-activities-tab"
@@ -964,7 +1497,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-users"
                 role="tabpanel"
                 aria-labelledby="v-pills-activities-tab"
@@ -975,7 +1508,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-settings"
                 role="tabpanel"
                 aria-labelledby="v-pills-settings-tab"
@@ -986,7 +1519,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-profile"
                 role="tabpanel"
                 aria-labelledby="v-pills-profile-tab"
@@ -1000,7 +1533,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-authentication"
                 role="tabpanel"
                 aria-labelledby="v-pills-authentication-tab"
@@ -1017,7 +1550,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-errorpages"
                 role="tabpanel"
                 aria-labelledby="v-pills-errorpages-tab"
@@ -1029,7 +1562,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-subscriptions"
                 role="tabpanel"
                 aria-labelledby="v-pills-subscriptions-tab"
@@ -1054,7 +1587,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-pages"
                 role="tabpanel"
                 aria-labelledby="v-pills-pages-tab"
@@ -1068,16 +1601,16 @@
                     <a class href="privacy-policy.html"> Privacy Policy </a>
                   </li>
                   <li><a class href="blank-page.html"> Blank Page </a></li>
-                  <li><a class href="coming-soon.html"> Coming Soon </a></li>
+                  <li><a class href="coming-soon.html">Coming Soon </a></li>
                   <li>
-                    <a class href="under-maintenance.html">
-                      Under Maintanance
+                    <a class href="under-maintenance.html"
+                      >Under Maintanance
                     </a>
                   </li>
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-baseui"
                 role="tabpanel"
                 aria-labelledby="v-pills-baseui-tab"
@@ -1120,7 +1653,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-elements"
                 role="tabpanel"
                 aria-labelledby="v-pills-elements-tab"
@@ -1140,7 +1673,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-charts"
                 role="tabpanel"
                 aria-labelledby="v-pills-charts-tab"
@@ -1156,7 +1689,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-icons"
                 role="tabpanel"
                 aria-labelledby="v-pills-icons-tab"
@@ -1180,7 +1713,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-forms"
                 role="tabpanel"
                 aria-labelledby="v-pills-forms-tab"
@@ -1214,7 +1747,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-tables"
                 role="tabpanel"
                 aria-labelledby="v-pills-tables-tab"
@@ -1286,1333 +1819,304 @@
       </div>
 
       <div class="page-wrapper">
-        <div class="content container-fluid pb-0">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="employee-alert-box">
-                <div
-                  class="alert alert-outline-success alert-dismissible fade show"
+        <div class="call-box incoming-box">
+          <div class="call-wrapper">
+            <div class="call-inner">
+              <div class="call-user">
+                <img
+                  class="call-avatar"
+                  src="assets/img/profiles/avatar-11.jpg"
+                  alt
+                />
+                <h4>Wilmer Deluna</h4>
+                <span>Calling ...</span>
+              </div>
+              <div class="call-items">
+                <a href="chat.html" class="btn call-item call-end"
+                  ><i class="material-icons">call_end</i></a
                 >
-                  <div class="employee-alert-request">
-                    <i class="far fa-circle-question"></i>
-                    Your Leave Request on <span>“24th April 2024”</span> has
-                    been Approved!!!
-                  </div>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="alert"
-                    aria-label="Close"
-                  >
-                    <i class="fas fa-xmark"></i>
-                  </button>
-                </div>
+                <a href="video-call.html" class="btn call-item call-start"
+                  ><i class="material-icons">call</i></a
+                >
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
 
-          <div class="row">
-            <div class="col-xxl-8 col-lg-12 col-md-12">
-              <div class="row">
-                <div class="col-lg-6 col-md-12">
-                  <div class="card employee-welcome-card flex-fill">
-                    <div class="card-body">
-                      <div class="welcome-info">
-                        <div class="welcome-content">
-                          <h4>Welcome Back, Darlee</h4>
-                          <p>You have <span>4 meetings</span> today,</p>
-                        </div>
-                        <div class="welcome-img">
-                          <img
-                            src="assets/img/avatar/avatar-19.jpg"
-                            class="img-fluid"
-                            alt="User"
-                          />
-                        </div>
-                      </div>
-                      <div class="welcome-btn">
-                        <a href="profile.html" class="btn">View Profile</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card flex-fill">
-                    <div class="card-body">
-                      <div class="statistic-header">
-                        <h4>Statistics</h4>
-                        <div class="dropdown statistic-dropdown">
-                          <a
-                            class="dropdown-toggle"
-                            data-bs-toggle="dropdown"
-                            href="javascript:void(0);"
-                          >
-                            Today
-                          </a>
-                          <div class="dropdown-menu dropdown-menu-end">
-                            <a href="javascript:void(0);" class="dropdown-item">
-                              Week
-                            </a>
-                            <a href="javascript:void(0);" class="dropdown-item">
-                              Month
-                            </a>
-                            <a href="javascript:void(0);" class="dropdown-item">
-                              Year
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="clock-in-info">
-                        <div class="clock-in-content">
-                          <p>Work Time</p>
-                          <h4>6 Hrs : 54 Min</h4>
-                        </div>
-                        <div class="clock-in-btn">
-                          <a href="javascript:void(0);" class="btn btn-primary">
-                            <img
-                              src="assets/img/icons/clock-in.svg"
-                              alt="Icon"
-                            />
-                            Clock-In
-                          </a>
-                        </div>
-                      </div>
-                      <div class="clock-in-list">
-                        <ul class="nav">
-                          <li>
-                            <p>Remaining</p>
-                            <h6>2 Hrs 36 Min</h6>
-                          </li>
-                          <li>
-                            <p>Overtime</p>
-                            <h6>0 Hrs 00 Min</h6>
-                          </li>
-                          <li>
-                            <p>Break</p>
-                            <h6>1 Hrs 20 Min</h6>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="view-attendance">
-                        <a href="attendance.html">
-                          View Attendance
-                          <i class="fe fe-arrow-right-circle"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card info-card flex-fill">
-                    <div class="card-body">
-                      <h4>Upcoming Holidays</h4>
-                      <div class="holiday-details">
-                        <div class="holiday-calendar">
-                          <div class="holiday-calendar-icon">
-                            <img
-                              src="assets/img/icons/holiday-calendar.svg"
-                              alt="Icon"
-                            />
-                          </div>
-                          <div class="holiday-calendar-content">
-                            <h6>Ramzan</h6>
-                            <p>Mon 20 May 2024</p>
-                          </div>
-                        </div>
-                        <div class="holiday-btn">
-                          <a href="holidays.html" class="btn">View All</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-6 col-md-12">
-                  <div class="card flex-fill">
-                    <div class="card-body">
-                      <div class="statistic-header">
-                        <h4>Attendance & Leaves</h4>
-                        <div class="dropdown statistic-dropdown">
-                          <a
-                            class="dropdown-toggle"
-                            data-bs-toggle="dropdown"
-                            href="javascript:void(0);"
-                          >
-                            2024
-                          </a>
-                          <div class="dropdown-menu dropdown-menu-end">
-                            <a href="javascript:void(0);" class="dropdown-item">
-                              2025
-                            </a>
-                            <a href="javascript:void(0);" class="dropdown-item">
-                              2026
-                            </a>
-                            <a href="javascript:void(0);" class="dropdown-item">
-                              2027
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="attendance-list">
-                        <div class="row">
-                          <div class="col-md-4">
-                            <div class="attendance-details">
-                              <h4 class="text-primary">9</h4>
-                              <p>Total Leaves</p>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="attendance-details">
-                              <h4 class="text-pink">5.5</h4>
-                              <p>Leaves Taken</p>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="attendance-details">
-                              <h4 class="text-success">04</h4>
-                              <p>Leaves Absent</p>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="attendance-details">
-                              <h4 class="text-purple">0</h4>
-                              <p>Pending Approval</p>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="attendance-details">
-                              <h4 class="text-info">214</h4>
-                              <p>Working Days</p>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="attendance-details">
-                              <h4 class="text-danger">2</h4>
-                              <p>Loss of Pay</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="view-attendance">
-                        <a href="leaves-employee.html">
-                          Apply Leave <i class="fe fe-arrow-right-circle"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card flex-fill">
-                    <div class="card-body">
-                      <div class="statistic-header">
-                        <h4>Working hours</h4>
-                        <div class="dropdown statistic-dropdown">
-                          <a
-                            class="dropdown-toggle"
-                            data-bs-toggle="dropdown"
-                            href="javascript:void(0);"
-                          >
-                            This Week
-                          </a>
-                          <div class="dropdown-menu dropdown-menu-end">
-                            <a href="javascript:void(0);" class="dropdown-item">
-                              Last Week
-                            </a>
-                            <a href="javascript:void(0);" class="dropdown-item">
-                              This Month
-                            </a>
-                            <a href="javascript:void(0);" class="dropdown-item">
-                              Last 30 Days
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="working-hour-info">
-                        <div id="working_chart"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+    <div id="drag_files" class="modal custom-modal fade" role="dialog">
+      <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Drag and drop files upload</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="js-upload-form">
+              <div class="upload-drop-zone" id="drop-zone">
+                <i class="fa fa-cloud-upload fa-2x"></i>
+                <span class="upload-text">Just drag and drop files here</span>
               </div>
-            </div>
-
-            <div class="col-xxl-4 col-lg-12 col-md-12 d-flex">
-              <div class="card flex-fill">
-                <div class="card-body">
-                  <div class="statistic-header">
-                    <h4>Important</h4>
-                    <div class="important-notification">
-                      <a href="activities.html">
-                        View All <i class="fe fe-arrow-right-circle"></i>
-                      </a>
+              <h4>Uploading</h4>
+              <ul class="upload-list">
+                <li class="file-list">
+                  <div class="upload-wrap">
+                    <div class="file-name">
+                      <i class="fa fa-photo"></i>
+                      photo.png
                     </div>
+                    <div class="file-size">1.07 gb</div>
+                    <button type="button" class="file-close">
+                      <i class="fa fa-close"></i>
+                    </button>
                   </div>
-                  <div class="notification-tab">
-                    <ul class="nav nav-tabs">
-                      <li>
-                        <a
-                          href="#"
-                          class="active"
-                          data-bs-toggle="tab"
-                          data-bs-target="#notification_tab"
-                        >
-                          <i class="la la-bell"></i> Notifications
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          data-bs-toggle="tab"
-                          data-bs-target="#schedule_tab"
-                        >
-                          <i class="la la-list-alt"></i> Schedules
-                        </a>
-                      </li>
-                    </ul>
-                    <div class="tab-content">
-                      <div class="tab-pane active" id="notification_tab">
-                        <div class="employee-noti-content">
-                          <ul class="employee-notification-list">
-                            <li class="employee-notification-grid">
-                              <div class="employee-notification-icon">
-                                <a href="activities.html">
-                                  <span class="badge-soft-danger rounded-circle"
-                                    >HR</span
-                                  >
-                                </a>
-                              </div>
-                              <div class="employee-notification-content">
-                                <h6>
-                                  <a href="activities.html">
-                                    Your leave request has been
-                                  </a>
-                                </h6>
-                                <ul class="nav">
-                                  <li>02:10 PM</li>
-                                  <li>21 Apr 2024</li>
-                                </ul>
-                              </div>
-                            </li>
-                            <li class="employee-notification-grid">
-                              <div class="employee-notification-icon">
-                                <a href="activities.html">
-                                  <span class="badge-soft-info rounded-circle"
-                                    >ER</span
-                                  >
-                                </a>
-                              </div>
-                              <div class="employee-notification-content">
-                                <h6>
-                                  <a href="activities.html">
-                                    You’re enrolled in upcom....
-                                  </a>
-                                </h6>
-                                <ul class="nav">
-                                  <li>12:40 PM</li>
-                                  <li>21 Apr 2024</li>
-                                </ul>
-                              </div>
-                            </li>
-                            <li class="employee-notification-grid">
-                              <div class="employee-notification-icon">
-                                <a href="activities.html">
-                                  <span
-                                    class="badge-soft-warning rounded-circle"
-                                    >SM</span
-                                  >
-                                </a>
-                              </div>
-                              <div class="employee-notification-content">
-                                <h6>
-                                  <a href="activities.html">
-                                    Your annual compliance trai
-                                  </a>
-                                </h6>
-                                <ul class="nav">
-                                  <li>11:00 AM</li>
-                                  <li>21 Apr 2024</li>
-                                </ul>
-                              </div>
-                            </li>
-                            <li class="employee-notification-grid">
-                              <div class="employee-notification-icon">
-                                <a href="activities.html">
-                                  <span class="rounded-circle">
-                                    <img
-                                      src="assets/img/avatar/avatar-1.jpg"
-                                      class="img-fluid rounded-circle"
-                                      alt="User"
-                                    />
-                                  </span>
-                                </a>
-                              </div>
-                              <div class="employee-notification-content">
-                                <h6>
-                                  <a href="activities.html">
-                                    Jessica has requested feedba
-                                  </a>
-                                </h6>
-                                <ul class="nav">
-                                  <li>10:30 AM</li>
-                                  <li>21 Apr 2024</li>
-                                </ul>
-                              </div>
-                            </li>
-                            <li class="employee-notification-grid">
-                              <div class="employee-notification-icon">
-                                <a href="activities.html">
-                                  <span
-                                    class="badge-soft-warning rounded-circle"
-                                    >DT</span
-                                  >
-                                </a>
-                              </div>
-                              <div class="employee-notification-content">
-                                <h6>
-                                  <a href="activities.html">
-                                    Gentle remainder about train
-                                  </a>
-                                </h6>
-                                <ul class="nav">
-                                  <li>09:00 AM</li>
-                                  <li>21 Apr 2024</li>
-                                </ul>
-                              </div>
-                            </li>
-                            <li class="employee-notification-grid">
-                              <div class="employee-notification-icon">
-                                <a href="activities.html">
-                                  <span class="badge-soft-danger rounded-circle"
-                                    >AU</span
-                                  >
-                                </a>
-                              </div>
-                              <div class="employee-notification-content">
-                                <h6>
-                                  <a href="activities.html">
-                                    Our HR system will be down
-                                  </a>
-                                </h6>
-                                <ul class="nav">
-                                  <li>11:50 AM</li>
-                                  <li>21 Apr 2024</li>
-                                </ul>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="tab-pane fade" id="schedule_tab">
-                        <div class="employee-noti-content">
-                          <ul class="employee-notification-list">
-                            <li class="employee-notification-grid">
-                              <div class="employee-notification-icon">
-                                <a href="activities.html">
-                                  <span class="rounded-circle">
-                                    <img
-                                      src="assets/img/avatar/avatar-2.jpg"
-                                      class="img-fluid rounded-circle"
-                                      alt="User"
-                                    />
-                                  </span>
-                                </a>
-                              </div>
-                              <div class="employee-notification-content">
-                                <h6>
-                                  <a href="activities.html">
-                                    John has requested feedba
-                                  </a>
-                                </h6>
-                                <ul class="nav">
-                                  <li>10:30 AM</li>
-                                  <li>21 Apr 2024</li>
-                                </ul>
-                              </div>
-                            </li>
-                            <li class="employee-notification-grid">
-                              <div class="employee-notification-icon">
-                                <a href="activities.html">
-                                  <span class="badge-soft-danger rounded-circle"
-                                    >HR</span
-                                  >
-                                </a>
-                              </div>
-                              <div class="employee-notification-content">
-                                <h6>
-                                  <a href="activities.html">
-                                    Your leave request has been
-                                  </a>
-                                </h6>
-                                <ul class="nav">
-                                  <li>02:10 PM</li>
-                                  <li>21 Apr 2024</li>
-                                </ul>
-                              </div>
-                            </li>
-                            <li class="employee-notification-grid">
-                              <div class="employee-notification-icon">
-                                <a href="activities.html">
-                                  <span class="badge-soft-info rounded-circle"
-                                    >ER</span
-                                  >
-                                </a>
-                              </div>
-                              <div class="employee-notification-content">
-                                <h6>
-                                  <a href="activities.html">
-                                    You’re enrolled in upcom....
-                                  </a>
-                                </h6>
-                                <ul class="nav">
-                                  <li>12:40 PM</li>
-                                  <li>21 Apr 2024</li>
-                                </ul>
-                              </div>
-                            </li>
-                            <li class="employee-notification-grid">
-                              <div class="employee-notification-icon">
-                                <a href="activities.html">
-                                  <span
-                                    class="badge-soft-warning rounded-circle"
-                                    >SM</span
-                                  >
-                                </a>
-                              </div>
-                              <div class="employee-notification-content">
-                                <h6>
-                                  <a href="activities.html">
-                                    Your annual compliance trai
-                                  </a>
-                                </h6>
-                                <ul class="nav">
-                                  <li>11:00 AM</li>
-                                  <li>21 Apr 2024</li>
-                                </ul>
-                              </div>
-                            </li>
-                            <li class="employee-notification-grid">
-                              <div class="employee-notification-icon">
-                                <a href="activities.html">
-                                  <span
-                                    class="badge-soft-warning rounded-circle"
-                                    >DT</span
-                                  >
-                                </a>
-                              </div>
-                              <div class="employee-notification-content">
-                                <h6>
-                                  <a href="activities.html">
-                                    Gentle remainder about train
-                                  </a>
-                                </h6>
-                                <ul class="nav">
-                                  <li>09:00 AM</li>
-                                  <li>21 Apr 2024</li>
-                                </ul>
-                              </div>
-                            </li>
-                            <li class="employee-notification-grid">
-                              <div class="employee-notification-icon">
-                                <a href="activities.html">
-                                  <span class="badge-soft-danger rounded-circle"
-                                    >AU</span
-                                  >
-                                </a>
-                              </div>
-                              <div class="employee-notification-content">
-                                <h6>
-                                  <a href="activities.html">
-                                    Our HR system will be down
-                                  </a>
-                                </h6>
-                                <ul class="nav">
-                                  <li>11:50 AM</li>
-                                  <li>21 Apr 2024</li>
-                                </ul>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
+                  <div class="progress progress-xs progress-striped">
+                    <div
+                      class="progress-bar bg-success"
+                      role="progressbar"
+                      style="width: 65%"
+                    ></div>
+                  </div>
+                  <div class="upload-process">37% done</div>
+                </li>
+                <li class="file-list">
+                  <div class="upload-wrap">
+                    <div class="file-name">
+                      <i class="fa fa-file"></i>
+                      task.doc
                     </div>
+                    <div class="file-size">5.8 kb</div>
+                    <button type="button" class="file-close">
+                      <i class="fa fa-close"></i>
+                    </button>
                   </div>
-                </div>
-              </div>
+                  <div class="progress progress-xs progress-striped">
+                    <div
+                      class="progress-bar bg-success"
+                      role="progressbar"
+                      style="width: 65%"
+                    ></div>
+                  </div>
+                  <div class="upload-process">37% done</div>
+                </li>
+                <li class="file-list">
+                  <div class="upload-wrap">
+                    <div class="file-name">
+                      <i class="fa fa-photo"></i>
+                      dashboard.png
+                    </div>
+                    <div class="file-size">2.1 mb</div>
+                    <button type="button" class="file-close">
+                      <i class="fa fa-close"></i>
+                    </button>
+                  </div>
+                  <div class="progress progress-xs progress-striped">
+                    <div
+                      class="progress-bar bg-success"
+                      role="progressbar"
+                      style="width: 65%"
+                    ></div>
+                  </div>
+                  <div class="upload-process">Completed</div>
+                </li>
+              </ul>
+            </form>
+            <div class="submit-section">
+              <button class="btn btn-primary submit-btn">Submit</button>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-12">
-              <div class="card">
-                <div class="card-body">
-                  <div class="row align-items-center">
-                    <div class="col-sm-8">
-                      <div class="statistic-header">
-                        <h4>On Going Projects</h4>
-                      </div>
-                    </div>
-                    <div class="col-sm-4 text-sm-end">
-                      <div class="owl-nav project-nav nav-control"></div>
-                    </div>
-                  </div>
-                  <div class="project-slider owl-carousel">
-                    <div class="project-grid">
-                      <div class="project-top">
-                        <h6>
-                          <a href="project-view.html">Deadline : 10 Feb 2024</a>
-                        </h6>
-                        <h5>
-                          <a href="project-view.html">Office Management</a>
-                        </h5>
-                        <p>
-                          Creating an online platform that enables various
-                          administrative tasks within an organization
-                        </p>
-                      </div>
-                      <div class="project-middle">
-                        <ul class="nav">
-                          <li>
-                            <div class="project-tasks">
-                              <h4>20</h4>
-                              <p>Total Tasks</p>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="project-tasks">
-                              <h4>15</h4>
-                              <p>Total Completed</p>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="project-bottom">
-                        <div class="project-leader">
-                          <ul class="nav">
-                            <li>Project Leader :</li>
-                            <li>
-                              <a
-                                href="project-view.html"
-                                data-bs-toggle="tooltip"
-                                aria-label="Jeffery Lalor"
-                                data-bs-original-title="Jeffery Lalor"
-                              >
-                                <img
-                                  src="assets/img/avatar/avatar-19.jpg"
-                                  alt="User"
-                                />
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="project-leader">
-                          <ul class="nav">
-                            <li>Members :</li>
-                            <li>
-                              <a
-                                href="project-view.html"
-                                data-bs-toggle="tooltip"
-                                aria-label="Lesley Grauer"
-                                data-bs-original-title="Lesley Grauer"
-                              >
-                                <img
-                                  src="assets/img/avatar/avatar-20.jpg"
-                                  alt="User"
-                                />
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="project-view.html"
-                                data-bs-toggle="tooltip"
-                                aria-label="Richard Miles"
-                                data-bs-original-title="Richard Miles"
-                              >
-                                <img
-                                  src="assets/img/avatar/avatar-21.jpg"
-                                  alt="User"
-                                />
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="project-view.html"
-                                data-bs-toggle="tooltip"
-                                aria-label="Loren Gatlin"
-                                data-bs-original-title="Loren Gatlin"
-                              >
-                                <img
-                                  src="assets/img/avatar/avatar-1.jpg"
-                                  alt="User"
-                                />
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="project-view.html"
-                                data-bs-toggle="tooltip"
-                                aria-label="Jeffery Lalor"
-                                data-bs-original-title="Jeffery Lalor"
-                              >
-                                <img
-                                  src="assets/img/avatar/avatar-16.jpg"
-                                  alt="User"
-                                />
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="project-view.html"
-                                data-bs-toggle="tooltip"
-                                aria-label="Tarah Shropshire"
-                                data-bs-original-title="Tarah Shropshire"
-                              >
-                                <img
-                                  src="assets/img/avatar/avatar-23.jpg"
-                                  alt="User"
-                                />
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="javascript:void(0);"
-                                class="more-team-members"
-                                >+16</a
-                              >
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
+        </div>
+      </div>
+    </div>
 
-                    <div class="project-grid">
-                      <div class="project-top">
-                        <h6>
-                          <a href="project-view.html">Deadline : 15 Feb 2024</a>
-                        </h6>
-                        <h5>
-                          <a href="project-view.html">Video Calling App</a>
-                        </h5>
-                        <p>
-                          Design and developing a software application that
-                          enables users to make video calls over the internet.
-                        </p>
-                      </div>
-                      <div class="project-middle">
-                        <ul class="nav">
-                          <li>
-                            <div class="project-tasks">
-                              <h4>30</h4>
-                              <p>Total Tasks</p>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="project-tasks">
-                              <h4>12</h4>
-                              <p>Total Completed</p>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="project-bottom">
-                        <div class="project-leader">
-                          <ul class="nav">
-                            <li>Project Leader :</li>
-                            <li>
-                              <a
-                                href="project-view.html"
-                                data-bs-toggle="tooltip"
-                                aria-label="Catherine Manseau"
-                                data-bs-original-title="Catherine Manseau"
-                              >
-                                <img
-                                  src="assets/img/avatar/avatar-18.jpg"
-                                  alt="User"
-                                />
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="project-leader">
-                          <ul class="nav">
-                            <li>Members :</li>
-                            <li>
-                              <a
-                                href="project-view.html"
-                                data-bs-toggle="tooltip"
-                                aria-label="Richard Miles"
-                                data-bs-original-title="Richard Miles"
-                              >
-                                <img
-                                  src="assets/img/avatar/avatar-21.jpg"
-                                  alt="User"
-                                />
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="project-view.html"
-                                data-bs-toggle="tooltip"
-                                aria-label="Jeffery Lalor"
-                                data-bs-original-title="Jeffery Lalor"
-                              >
-                                <img
-                                  src="assets/img/avatar/avatar-16.jpg"
-                                  alt="User"
-                                />
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="project-view.html"
-                                data-bs-toggle="tooltip"
-                                aria-label="Lesley Grauer"
-                                data-bs-original-title="Lesley Grauer"
-                              >
-                                <img
-                                  src="assets/img/avatar/avatar-20.jpg"
-                                  alt="User"
-                                />
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="project-view.html"
-                                data-bs-toggle="tooltip"
-                                aria-label="Loren Gatlin"
-                                data-bs-original-title="Loren Gatlin"
-                              >
-                                <img
-                                  src="assets/img/avatar/avatar-1.jpg"
-                                  alt="User"
-                                />
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="project-view.html"
-                                data-bs-toggle="tooltip"
-                                aria-label="Tarah Shropshire"
-                                data-bs-original-title="Tarah Shropshire"
-                              >
-                                <img
-                                  src="assets/img/avatar/avatar-23.jpg"
-                                  alt="User"
-                                />
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="javascript:void(0);"
-                                class="more-team-members"
-                                >+10</a
-                              >
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="project-grid">
-                      <div class="project-top">
-                        <h6>
-                          <a href="project-view.html">Deadline : 12 Apr 2024</a>
-                        </h6>
-                        <h5>
-                          <a href="project-view.html"
-                            >Hospital Administration</a
-                          >
-                        </h5>
-                        <p>
-                          Creating an online platform that serves as a central
-                          hub for hospital admin, staff, patients.
-                        </p>
-                      </div>
-                      <div class="project-middle">
-                        <ul class="nav">
-                          <li>
-                            <div class="project-tasks">
-                              <h4>40</h4>
-                              <p>Total Tasks</p>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="project-tasks">
-                              <h4>02</h4>
-                              <p>Total Completed</p>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="project-bottom">
-                        <div class="project-leader">
-                          <ul class="nav">
-                            <li>Project Leader :</li>
-                            <li>
-                              <a
-                                href="project-view.html"
-                                data-bs-toggle="tooltip"
-                                aria-label="John Smith"
-                                data-bs-original-title="John Smith"
-                              >
-                                <img
-                                  src="assets/img/avatar/avatar-4.jpg"
-                                  alt="User"
-                                />
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="project-leader">
-                          <ul class="nav">
-                            <li>Members :</li>
-                            <li>
-                              <a
-                                href="project-view.html"
-                                data-bs-toggle="tooltip"
-                                aria-label="Richard Miles"
-                                data-bs-original-title="Richard Miles"
-                              >
-                                <img
-                                  src="assets/img/avatar/avatar-6.jpg"
-                                  alt="User"
-                                />
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="project-view.html"
-                                data-bs-toggle="tooltip"
-                                aria-label="Jeffery Lalor"
-                                data-bs-original-title="Jeffery Lalor"
-                              >
-                                <img
-                                  src="assets/img/avatar/avatar-13.jpg"
-                                  alt="User"
-                                />
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="project-view.html"
-                                data-bs-toggle="tooltip"
-                                aria-label="Lesley Grauer"
-                                data-bs-original-title="Lesley Grauer"
-                              >
-                                <img
-                                  src="assets/img/avatar/avatar-18.jpg"
-                                  alt="User"
-                                />
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="project-view.html"
-                                data-bs-toggle="tooltip"
-                                aria-label="Tarah Shropshire"
-                                data-bs-original-title="Tarah Shropshire"
-                              >
-                                <img
-                                  src="assets/img/avatar/avatar-23.jpg"
-                                  alt="User"
-                                />
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="project-view.html"
-                                data-bs-toggle="tooltip"
-                                aria-label="Loren Gatlin"
-                                data-bs-original-title="Loren Gatlin"
-                              >
-                                <img
-                                  src="assets/img/avatar/avatar-1.jpg"
-                                  alt="User"
-                                />
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="javascript:void(0);"
-                                class="more-team-members"
-                                >+12</a
-                              >
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="project-grid">
-                      <div class="project-top">
-                        <h6>
-                          <a href="project-view.html">Deadline : 25 Apr 2024</a>
-                        </h6>
-                        <h5>
-                          <a href="project-view.html">Digital Marketpace</a>
-                        </h5>
-                        <p>
-                          Creating an online platform that connects sellers with
-                          buyers, facilitating the exchange of goods,
-                        </p>
-                      </div>
-                      <div class="project-middle">
-                        <ul class="nav">
-                          <li>
-                            <div class="project-tasks">
-                              <h4>50</h4>
-                              <p>Total Tasks</p>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="project-tasks">
-                              <h4>10</h4>
-                              <p>Total Completed</p>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="project-bottom">
-                        <div class="project-leader">
-                          <ul class="nav">
-                            <li>Project Leader :</li>
-                            <li>
-                              <a
-                                href="project-view.html"
-                                data-bs-toggle="tooltip"
-                                aria-label="Jeffery Lalor"
-                                data-bs-original-title="Jeffery Lalor"
-                              >
-                                <img
-                                  src="assets/img/avatar/avatar-1.jpg"
-                                  alt="User"
-                                />
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="project-leader">
-                          <ul class="nav">
-                            <li>Members :</li>
-                            <li>
-                              <a
-                                href="project-view.html"
-                                data-bs-toggle="tooltip"
-                                aria-label="Loren Gatlin"
-                                data-bs-original-title="Loren Gatlin"
-                              >
-                                <img
-                                  src="assets/img/avatar/avatar-26.jpg"
-                                  alt="User"
-                                />
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="project-view.html"
-                                data-bs-toggle="tooltip"
-                                aria-label="Lesley Grauer"
-                                data-bs-original-title="Lesley Grauer"
-                              >
-                                <img
-                                  src="assets/img/avatar/avatar-18.jpg"
-                                  alt="User"
-                                />
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="project-view.html"
-                                data-bs-toggle="tooltip"
-                                aria-label="Richard Miles"
-                                data-bs-original-title="Richard Miles"
-                              >
-                                <img
-                                  src="assets/img/avatar/avatar-6.jpg"
-                                  alt="User"
-                                />
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="project-view.html"
-                                data-bs-toggle="tooltip"
-                                aria-label="Jeffery Lalor"
-                                data-bs-original-title="Jeffery Lalor"
-                              >
-                                <img
-                                  src="assets/img/avatar/avatar-13.jpg"
-                                  alt="User"
-                                />
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="project-view.html"
-                                data-bs-toggle="tooltip"
-                                aria-label="Tarah Shropshire"
-                                data-bs-original-title="Tarah Shropshire"
-                              >
-                                <img
-                                  src="assets/img/avatar/avatar-8.jpg"
-                                  alt="User"
-                                />
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="javascript:void(0);"
-                                class="more-team-members"
-                                >+13</a
-                              >
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="project-grid">
-                      <div class="project-top">
-                        <h6>
-                          <a href="project-view.html">Deadline : 15 Feb 2024</a>
-                        </h6>
-                        <h5>
-                          <a href="project-view.html">Video Calling App</a>
-                        </h5>
-                        <p>
-                          Design and developing a software application that
-                          enables users to make video calls over the internet.
-                        </p>
-                      </div>
-                      <div class="project-middle">
-                        <ul class="nav">
-                          <li>
-                            <div class="project-tasks">
-                              <h4>30</h4>
-                              <p>Total Tasks</p>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="project-tasks">
-                              <h4>12</h4>
-                              <p>Total Completed</p>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="project-bottom">
-                        <div class="project-leader">
-                          <ul class="nav">
-                            <li>Project Leader :</li>
-                            <li>
-                              <a
-                                href="project-view.html"
-                                data-bs-toggle="tooltip"
-                                aria-label="Catherine Manseau"
-                                data-bs-original-title="Catherine Manseau"
-                              >
-                                <img
-                                  src="assets/img/avatar/avatar-18.jpg"
-                                  alt="User"
-                                />
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="project-leader">
-                          <ul class="nav">
-                            <li>Members :</li>
-                            <li>
-                              <a
-                                href="project-view.html"
-                                data-bs-toggle="tooltip"
-                                aria-label="Richard Miles"
-                                data-bs-original-title="Richard Miles"
-                              >
-                                <img
-                                  src="assets/img/avatar/avatar-21.jpg"
-                                  alt="User"
-                                />
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="project-view.html"
-                                data-bs-toggle="tooltip"
-                                aria-label="Jeffery Lalor"
-                                data-bs-original-title="Jeffery Lalor"
-                              >
-                                <img
-                                  src="assets/img/avatar/avatar-16.jpg"
-                                  alt="User"
-                                />
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="project-view.html"
-                                data-bs-toggle="tooltip"
-                                aria-label="Lesley Grauer"
-                                data-bs-original-title="Lesley Grauer"
-                              >
-                                <img
-                                  src="assets/img/avatar/avatar-20.jpg"
-                                  alt="User"
-                                />
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="project-view.html"
-                                data-bs-toggle="tooltip"
-                                aria-label="Loren Gatlin"
-                                data-bs-original-title="Loren Gatlin"
-                              >
-                                <img
-                                  src="assets/img/avatar/avatar-1.jpg"
-                                  alt="User"
-                                />
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="project-view.html"
-                                data-bs-toggle="tooltip"
-                                aria-label="Tarah Shropshire"
-                                data-bs-original-title="Tarah Shropshire"
-                              >
-                                <img
-                                  src="assets/img/avatar/avatar-23.jpg"
-                                  alt="User"
-                                />
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="javascript:void(0);"
-                                class="more-team-members"
-                                >+10</a
-                              >
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <div id="add_group" class="modal custom-modal fade" role="dialog">
+      <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Create a group</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-          <div class="row">
-            <div class="col-xl-6 col-md-12 d-flex">
-              <div class="card employee-month-card flex-fill">
-                <div class="card-body">
-                  <div class="row align-items-center">
-                    <div class="col-lg-9 col-md-12">
-                      <div class="employee-month-details">
-                        <h4>Employee of the month</h4>
-                        <p>
-                          We are really proud of the difference you have made
-                          which gives everybody the reason to applaud &
-                          appreciate
-                        </p>
-                      </div>
-                      <div class="employee-month-content">
-                        <h6>Congrats, Hanna</h6>
-                        <p>UI/UX Team Lead</p>
-                      </div>
-                    </div>
-                    <div class="col-lg-3 col-md-12">
-                      <div class="employee-month-img">
+          <div class="modal-body">
+            <p>
+              Groups are where your team communicates. They’re best when
+              organized around a topic — #leads, for example.
+            </p>
+            <form>
+              <div class="input-block mb-3">
+                <label class="col-form-label"
+                  >Group Name <span class="text-danger">*</span></label
+                >
+                <input class="form-control" type="text" />
+              </div>
+              <div class="input-block mb-3">
+                <label class="col-form-label"
+                  >Send invites to:
+                  <span class="text-muted-light">(optional)</span></label
+                >
+                <input class="form-control" type="text" />
+              </div>
+              <div class="submit-section">
+                <button class="btn btn-primary submit-btn">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="add_chat_user" class="modal custom-modal fade" role="dialog">
+      <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Direct Chat</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="input-group m-b-30">
+              <input
+                placeholder="Search to start a chat"
+                class="form-control search-input"
+                type="text"
+              />
+              <button class="btn btn-primary">Search</button>
+            </div>
+            <div>
+              <h5>Recent Conversations</h5>
+              <ul class="chat-user-list">
+                <li>
+                  <a href="#">
+                    <div class="chat-block d-flex">
+                      <span class="avatar align-self-center flex-shrink-0">
                         <img
-                          src="assets/img/employee-img.png"
-                          class="img-fluid"
-                          alt="User"
+                          src="assets/img/profiles/avatar-16.jpg"
+                          alt="User Image"
                         />
+                      </span>
+                      <div
+                        class="media-body align-self-center text-nowrap flex-grow-1"
+                      >
+                        <div class="user-name">Jeffery Lalor</div>
+                        <span class="designation">Team Leader</span>
+                      </div>
+                      <div class="text-nowrap align-self-center">
+                        <div class="online-date">1 day ago</div>
                       </div>
                     </div>
-                  </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="chat-block d-flex">
+                      <span class="avatar align-self-center flex-shrink-0">
+                        <img
+                          src="assets/img/profiles/avatar-13.jpg"
+                          alt="User Image"
+                        />
+                      </span>
+                      <div
+                        class="media-body align-self-center text-nowrap flex-grow-1"
+                      >
+                        <div class="user-name">Bernardo Galaviz</div>
+                        <span class="designation">Web Developer</span>
+                      </div>
+                      <div class="align-self-center text-nowrap">
+                        <div class="online-date">3 days ago</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="chat-block d-flex">
+                      <span class="avatar align-self-center flex-shrink-0">
+                        <img
+                          src="assets/img/profiles/avatar-02.jpg"
+                          alt="User Image"
+                        />
+                      </span>
+                      <div
+                        class="media-body text-nowrap align-self-center flex-grow-1"
+                      >
+                        <div class="user-name">John Doe</div>
+                        <span class="designation">Web Designer</span>
+                      </div>
+                      <div class="align-self-center text-nowrap">
+                        <div class="online-date">7 months ago</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="submit-section">
+              <button class="btn btn-primary submit-btn">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="share_files" class="modal custom-modal fade" role="dialog">
+      <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Share File</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="files-share-list">
+              <div class="files-cont">
+                <div class="file-type">
+                  <span class="files-icon"
+                    ><i class="fa-regular fa-file-pdf"></i
+                  ></span>
+                </div>
+                <div class="files-info">
+                  <span class="file-name text-ellipsis"
+                    >AHA Selfcare Mobile Application Test-Cases.xls</span
+                  >
+                  <span class="file-author"
+                    ><a href="#">Bernardo Galaviz</a></span
+                  >
+                  <span class="file-date">May 31st at 6:53 PM</span>
                 </div>
               </div>
             </div>
-
-            <div class="col-xl-6 col-md-12 d-flex">
-              <div class="card flex-fill">
-                <div class="card-body">
-                  <div class="row align-items-center">
-                    <div class="col-sm-8">
-                      <div class="statistic-header">
-                        <h4>Company Policy</h4>
-                      </div>
-                    </div>
-                    <div class="col-sm-4 text-sm-end">
-                      <div class="owl-nav company-nav nav-control"></div>
-                    </div>
-                  </div>
-                  <div class="company-slider owl-carousel">
-                    <div class="company-grid company-soft-tertiary">
-                      <div class="company-top">
-                        <div class="company-icon">
-                          <span class="company-icon-tertiary rounded-circle"
-                            >HR</span
-                          >
-                        </div>
-                        <div class="company-link">
-                          <a href="companies.html">HR Policy</a>
-                        </div>
-                      </div>
-                      <div class="company-bottom d-flex">
-                        <ul>
-                          <li>Policy Name : Work policy</li>
-                          <li>Updated on : Today</li>
-                        </ul>
-                        <div class="company-bottom-links">
-                          <a href="#"><i class="la la-download"></i></a>
-                          <a href="#"><i class="la la-eye"></i></a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="company-grid company-soft-success">
-                      <div class="company-top">
-                        <div class="company-icon">
-                          <span class="company-icon-success rounded-circle"
-                            >EP</span
-                          >
-                        </div>
-                        <div class="company-link">
-                          <a href="companies.html">Employer Policy</a>
-                        </div>
-                      </div>
-                      <div class="company-bottom d-flex">
-                        <ul>
-                          <li>Policy Name : Parking</li>
-                          <li>Updated on : 25 Jan 2024</li>
-                        </ul>
-                        <div class="company-bottom-links">
-                          <a href="#"><i class="la la-download"></i></a>
-                          <a href="#"><i class="la la-eye"></i></a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="company-grid company-soft-info">
-                      <div class="company-top">
-                        <div class="company-icon">
-                          <span class="company-icon-info rounded-circle"
-                            >LP</span
-                          >
-                        </div>
-                        <div class="company-link">
-                          <a href="companies.html">Leave Policy</a>
-                        </div>
-                      </div>
-                      <div class="company-bottom d-flex">
-                        <ul>
-                          <li>Policy Name : Annual Leave</li>
-                          <li>Updated on : 25 Jan 2023</li>
-                        </ul>
-                        <div class="company-bottom-links">
-                          <a href="#"><i class="la la-download"></i></a>
-                          <a href="#"><i class="la la-eye"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="input-block mb-3">
+              <label class="col-form-label">Share With</label>
+              <input class="form-control" type="text" />
+            </div>
+            <div class="submit-section">
+              <button class="btn btn-primary submit-btn">Share</button>
             </div>
           </div>
         </div>
@@ -3182,42 +2686,25 @@
         </div>
       </div>
     </div>
- <!-- Cloudflare Email Decode -->
-<script data-cfasync="false" src="{{ asset('../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js') }}"></script>
+<script src="{{ asset('assets/js/jquery-3.7.1.min.js') }}" type="4c14fb341c4556785564cd28-text/javascript"></script>
 
-<!-- jQuery -->
-<script src="{{ asset('assets/js/jquery-3.7.1.min.js') }}"></script>
+<script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}" type="4c14fb341c4556785564cd28-text/javascript"></script>
 
-<!-- Bootstrap Bundle -->
-<script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ asset('assets/js/jquery.slimscroll.min.js') }}" type="4c14fb341c4556785564cd28-text/javascript"></script>
 
-<!-- Slimscroll -->
-<script src="{{ asset('assets/js/jquery.slimscroll.min.js') }}"></script>
+<script src="{{ asset('assets/js/feather.min.js') }}" type="4c14fb341c4556785564cd28-text/javascript"></script>
 
-<!-- Morris.js Charts -->
-<script src="{{ asset('assets/plugins/morris/morris.min.js') }}"></script>
-<script src="{{ asset('assets/plugins/raphael/raphael.min.js') }}"></script>
-<script src="{{ asset('assets/js/chart.js') }}"></script>
+<script src="{{ asset('assets/js/layout.js') }}" type="4c14fb341c4556785564cd28-text/javascript"></script>
+<script src="{{ asset('assets/js/theme-settings.js') }}" type="4c14fb341c4556785564cd28-text/javascript"></script>
+<script src="{{ asset('assets/js/greedynav.js') }}" type="4c14fb341c4556785564cd28-text/javascript"></script>
 
-<!-- Greedy Nav -->
-<script src="{{ asset('assets/js/greedynav.js') }}"></script>
+<script src="{{ asset('assets/js/app.js') }}" type="4c14fb341c4556785564cd28-text/javascript"></script>
 
-<!-- Feather Icons -->
-<script src="{{ asset('assets/js/feather.min.js') }}"></script>
+<script src="{{ asset('../../../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js') }}" data-cf-settings="4c14fb341c4556785564cd28-|49" defer></script>
 
-<!-- Layout Scripts -->
-<script src="{{ asset('assets/js/layout.js') }}"></script>
-<script src="{{ asset('assets/js/theme-settings.js') }}"></script>
-
-<!-- App Script -->
-<script src="{{ asset('assets/js/app.js') }}"></script>
-
-<!-- Cloudflare Rocket Loader -->
-<script src="{{ asset('../../../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js') }}"
-        data-cf-settings="df34b4036a34bdaddca43b5b-|49" defer></script>
 
 
   </body>
 
-  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/employee-dashboard by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:22:18 GMT -->
+  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/incoming-call by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:22:24 GMT -->
 </html>
