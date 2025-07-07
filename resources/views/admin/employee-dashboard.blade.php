@@ -1285,7 +1285,7 @@
                                             </ul>
                                         </div>
                                         <div class="view-attendance">
-                                            <a href="attendance.html">
+                                            <a href="{{route('attendance-admin')}}">
                                                 View Attendance
                                                 <i class="fe fe-arrow-right-circle"></i>
                                             </a>
@@ -1308,7 +1308,7 @@
                                                 </div>
                                             </div>
                                             <div class="holiday-btn">
-                                                <a href="holidays.html" class="btn">View All</a>
+                                                <a href="{{route('holidays')}}" class="btn">View All</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1381,7 +1381,7 @@
                                             </div>
                                         </div>
                                         <div class="view-attendance">
-                                            <a href="leaves-employee.html">
+                                            <a href="{{route('leaves-employee')}}">
                                                 Apply Leave <i class="fe fe-arrow-right-circle"></i>
                                             </a>
                                         </div>
@@ -1426,7 +1426,7 @@
                                 <div class="statistic-header">
                                     <h4>Important</h4>
                                     <div class="important-notification">
-                                        <a href="activities.html">
+                                        <a href="{{route('activities')}}">
                                             View All <i class="fe fe-arrow-right-circle"></i>
                                         </a>
                                     </div>
@@ -1718,10 +1718,10 @@
                                     <div class="project-grid">
                                         <div class="project-top">
                                             <h6>
-                                                <a href="project-view.html">Deadline : 10 Feb 2024</a>
+                                                <a href="{{route('project-view')}}">Deadline : 10 Feb 2024</a>
                                             </h6>
                                             <h5>
-                                                <a href="project-view.html">Office Management</a>
+                                                <a href="{{route('project-view')}}">Office Management</a>
                                             </h5>
                                             <p>
                                                 Creating an online platform that enables various
@@ -1750,7 +1750,7 @@
                                                     <li>Project Leader :</li>
                                                     <li>
                                                         <a
-                                                            href="project-view.html"
+                                                            href="{{route('project-view')}}"
                                                             data-bs-toggle="tooltip"
                                                             aria-label="Jeffery Lalor"
                                                             data-bs-original-title="Jeffery Lalor">
@@ -1766,7 +1766,7 @@
                                                     <li>Members :</li>
                                                     <li>
                                                         <a
-                                                            href="project-view.html"
+                                                            href="{{route('project-view')}}"
                                                             data-bs-toggle="tooltip"
                                                             aria-label="Lesley Grauer"
                                                             data-bs-original-title="Lesley Grauer">
@@ -1777,7 +1777,7 @@
                                                     </li>
                                                     <li>
                                                         <a
-                                                            href="project-view.html"
+                                                            href="{{route('project-view')}}"
                                                             data-bs-toggle="tooltip"
                                                             aria-label="Richard Miles"
                                                             data-bs-original-title="Richard Miles">
@@ -1788,7 +1788,7 @@
                                                     </li>
                                                     <li>
                                                         <a
-                                                            href="project-view.html"
+                                                            href="{{route('project-view')}}"
                                                             data-bs-toggle="tooltip"
                                                             aria-label="Loren Gatlin"
                                                             data-bs-original-title="Loren Gatlin">
@@ -1799,7 +1799,7 @@
                                                     </li>
                                                     <li>
                                                         <a
-                                                            href="project-view.html"
+                                                            href="{{route('project-view')}}"
                                                             data-bs-toggle="tooltip"
                                                             aria-label="Jeffery Lalor"
                                                             data-bs-original-title="Jeffery Lalor">
@@ -1810,7 +1810,7 @@
                                                     </li>
                                                     <li>
                                                         <a
-                                                            href="project-view.html"
+                                                            href="{{route('project-view')}}"
                                                             data-bs-toggle="tooltip"
                                                             aria-label="Tarah Shropshire"
                                                             data-bs-original-title="Tarah Shropshire">
@@ -1832,10 +1832,10 @@
                                     <div class="project-grid">
                                         <div class="project-top">
                                             <h6>
-                                                <a href="project-view.html">Deadline : 15 Feb 2024</a>
+                                                <a href="{{route('project-view')}}">Deadline : 15 Feb 2024</a>
                                             </h6>
                                             <h5>
-                                                <a href="project-view.html">Video Calling App</a>
+                                                <a href="{{route('project-view')}}">Video Calling App</a>
                                             </h5>
                                             <p>
                                                 Design and developing a software application that
@@ -1864,7 +1864,7 @@
                                                     <li>Project Leader :</li>
                                                     <li>
                                                         <a
-                                                            href="project-view.html"
+                                                            href="{{route('project-view')}}"
                                                             data-bs-toggle="tooltip"
                                                             aria-label="Catherine Manseau"
                                                             data-bs-original-title="Catherine Manseau">
@@ -1880,7 +1880,7 @@
                                                     <li>Members :</li>
                                                     <li>
                                                         <a
-                                                            href="project-view.html"
+                                                            href="{{route('project-view')}}"
                                                             data-bs-toggle="tooltip"
                                                             aria-label="Richard Miles"
                                                             data-bs-original-title="Richard Miles">
@@ -1891,7 +1891,7 @@
                                                     </li>
                                                     <li>
                                                         <a
-                                                            href="project-view.html"
+                                                            href="{{route('project-view')}}"
                                                             data-bs-toggle="tooltip"
                                                             aria-label="Jeffery Lalor"
                                                             data-bs-original-title="Jeffery Lalor">
@@ -1902,7 +1902,7 @@
                                                     </li>
                                                     <li>
                                                         <a
-                                                            href="project-view.html"
+                                                            href="{{route('project-view')}}"
                                                             data-bs-toggle="tooltip"
                                                             aria-label="Lesley Grauer"
                                                             data-bs-original-title="Lesley Grauer">
@@ -1913,7 +1913,7 @@
                                                     </li>
                                                     <li>
                                                         <a
-                                                            href="project-view.html"
+                                                            href="{{route('project-view')}}"
                                                             data-bs-toggle="tooltip"
                                                             aria-label="Loren Gatlin"
                                                             data-bs-original-title="Loren Gatlin">
@@ -1924,7 +1924,7 @@
                                                     </li>
                                                     <li>
                                                         <a
-                                                            href="project-view.html"
+                                                            href="{{route('project-view')}}"
                                                             data-bs-toggle="tooltip"
                                                             aria-label="Tarah Shropshire"
                                                             data-bs-original-title="Tarah Shropshire">
@@ -1946,10 +1946,10 @@
                                     <div class="project-grid">
                                         <div class="project-top">
                                             <h6>
-                                                <a href="project-view.html">Deadline : 12 Apr 2024</a>
+                                                <a href="{{route('project-view')}}">Deadline : 12 Apr 2024</a>
                                             </h6>
                                             <h5>
-                                                <a href="project-view.html">Hospital Administration</a>
+                                                <a href="{{route('project-view')}}">Hospital Administration</a>
                                             </h5>
                                             <p>
                                                 Creating an online platform that serves as a central
@@ -1978,7 +1978,7 @@
                                                     <li>Project Leader :</li>
                                                     <li>
                                                         <a
-                                                            href="project-view.html"
+                                                            href="{{route('project-view')}}"
                                                             data-bs-toggle="tooltip"
                                                             aria-label="John Smith"
                                                             data-bs-original-title="John Smith">
@@ -1994,7 +1994,7 @@
                                                     <li>Members :</li>
                                                     <li>
                                                         <a
-                                                            href="project-view.html"
+                                                            href="{{route('project-view')}}"
                                                             data-bs-toggle="tooltip"
                                                             aria-label="Richard Miles"
                                                             data-bs-original-title="Richard Miles">
@@ -2005,7 +2005,7 @@
                                                     </li>
                                                     <li>
                                                         <a
-                                                            href="project-view.html"
+                                                            href="{{route('project-view')}}"
                                                             data-bs-toggle="tooltip"
                                                             aria-label="Jeffery Lalor"
                                                             data-bs-original-title="Jeffery Lalor">
@@ -2016,7 +2016,7 @@
                                                     </li>
                                                     <li>
                                                         <a
-                                                            href="project-view.html"
+                                                            href="{{route('project-view')}}"
                                                             data-bs-toggle="tooltip"
                                                             aria-label="Lesley Grauer"
                                                             data-bs-original-title="Lesley Grauer">
@@ -2027,7 +2027,7 @@
                                                     </li>
                                                     <li>
                                                         <a
-                                                            href="project-view.html"
+                                                            href="{{route('project-view')}}"
                                                             data-bs-toggle="tooltip"
                                                             aria-label="Tarah Shropshire"
                                                             data-bs-original-title="Tarah Shropshire">
@@ -2038,7 +2038,7 @@
                                                     </li>
                                                     <li>
                                                         <a
-                                                            href="project-view.html"
+                                                            href="{{route('project-view')}}"
                                                             data-bs-toggle="tooltip"
                                                             aria-label="Loren Gatlin"
                                                             data-bs-original-title="Loren Gatlin">
@@ -2060,10 +2060,10 @@
                                     <div class="project-grid">
                                         <div class="project-top">
                                             <h6>
-                                                <a href="project-view.html">Deadline : 25 Apr 2024</a>
+                                                <a href="{{route('project-view')}}">Deadline : 25 Apr 2024</a>
                                             </h6>
                                             <h5>
-                                                <a href="project-view.html">Digital Marketpace</a>
+                                                <a href="{{route('project-view')}}">Digital Marketpace</a>
                                             </h5>
                                             <p>
                                                 Creating an online platform that connects sellers with
@@ -2092,7 +2092,7 @@
                                                     <li>Project Leader :</li>
                                                     <li>
                                                         <a
-                                                            href="project-view.html"
+                                                            href="{{route('project-view')}}"
                                                             data-bs-toggle="tooltip"
                                                             aria-label="Jeffery Lalor"
                                                             data-bs-original-title="Jeffery Lalor">
@@ -2108,7 +2108,7 @@
                                                     <li>Members :</li>
                                                     <li>
                                                         <a
-                                                            href="project-view.html"
+                                                            href="{{route('project-view')}}"
                                                             data-bs-toggle="tooltip"
                                                             aria-label="Loren Gatlin"
                                                             data-bs-original-title="Loren Gatlin">
@@ -2119,7 +2119,7 @@
                                                     </li>
                                                     <li>
                                                         <a
-                                                            href="project-view.html"
+                                                            href="{{route('project-view')}}"
                                                             data-bs-toggle="tooltip"
                                                             aria-label="Lesley Grauer"
                                                             data-bs-original-title="Lesley Grauer">
@@ -2130,7 +2130,7 @@
                                                     </li>
                                                     <li>
                                                         <a
-                                                            href="project-view.html"
+                                                            href="{{route('project-view')}}"
                                                             data-bs-toggle="tooltip"
                                                             aria-label="Richard Miles"
                                                             data-bs-original-title="Richard Miles">
@@ -2141,7 +2141,7 @@
                                                     </li>
                                                     <li>
                                                         <a
-                                                            href="project-view.html"
+                                                            href="{{route('project-view')}}"
                                                             data-bs-toggle="tooltip"
                                                             aria-label="Jeffery Lalor"
                                                             data-bs-original-title="Jeffery Lalor">
@@ -2152,7 +2152,7 @@
                                                     </li>
                                                     <li>
                                                         <a
-                                                            href="project-view.html"
+                                                            href="{{route('project-view')}}"
                                                             data-bs-toggle="tooltip"
                                                             aria-label="Tarah Shropshire"
                                                             data-bs-original-title="Tarah Shropshire">
@@ -2174,10 +2174,10 @@
                                     <div class="project-grid">
                                         <div class="project-top">
                                             <h6>
-                                                <a href="project-view.html">Deadline : 15 Feb 2024</a>
+                                                <a href="{{route('project-view')}}">Deadline : 15 Feb 2024</a>
                                             </h6>
                                             <h5>
-                                                <a href="project-view.html">Video Calling App</a>
+                                                <a href="{{route('project-view')}}">Video Calling App</a>
                                             </h5>
                                             <p>
                                                 Design and developing a software application that
@@ -2206,7 +2206,7 @@
                                                     <li>Project Leader :</li>
                                                     <li>
                                                         <a
-                                                            href="project-view.html"
+                                                            href="{{route('project-view')}}"
                                                             data-bs-toggle="tooltip"
                                                             aria-label="Catherine Manseau"
                                                             data-bs-original-title="Catherine Manseau">
@@ -2222,7 +2222,7 @@
                                                     <li>Members :</li>
                                                     <li>
                                                         <a
-                                                            href="project-view.html"
+                                                            href="{{route('project-view')}}"
                                                             data-bs-toggle="tooltip"
                                                             aria-label="Richard Miles"
                                                             data-bs-original-title="Richard Miles">
@@ -2233,7 +2233,7 @@
                                                     </li>
                                                     <li>
                                                         <a
-                                                            href="project-view.html"
+                                                            href="{{route('project-view')}}"
                                                             data-bs-toggle="tooltip"
                                                             aria-label="Jeffery Lalor"
                                                             data-bs-original-title="Jeffery Lalor">
@@ -2244,7 +2244,7 @@
                                                     </li>
                                                     <li>
                                                         <a
-                                                            href="project-view.html"
+                                                            href="{{route('project-view')}}"
                                                             data-bs-toggle="tooltip"
                                                             aria-label="Lesley Grauer"
                                                             data-bs-original-title="Lesley Grauer">
@@ -2255,7 +2255,7 @@
                                                     </li>
                                                     <li>
                                                         <a
-                                                            href="project-view.html"
+                                                            href="{{route('project-view')}}"
                                                             data-bs-toggle="tooltip"
                                                             aria-label="Loren Gatlin"
                                                             data-bs-original-title="Loren Gatlin">
@@ -2266,7 +2266,7 @@
                                                     </li>
                                                     <li>
                                                         <a
-                                                            href="project-view.html"
+                                                            href="{{route('project-view')}}"
                                                             data-bs-toggle="tooltip"
                                                             aria-label="Tarah Shropshire"
                                                             data-bs-original-title="Tarah Shropshire">

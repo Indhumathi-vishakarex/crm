@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-sidebar-image="none">
 
-<!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/voice-call by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:22:21 GMT -->
+<!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/video-call by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:22:21 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
 <meta charset="utf-8">
@@ -9,7 +9,7 @@
 <meta name="description" content="Smarthr - Bootstrap Admin Template">
 <meta name="keywords" content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern, accounts, invoice, html5, responsive, CRM, Projects">
 <meta name="author" content="Dreamstechnologies - Bootstrap Admin Template">
-<title>Voice Call - HRMS admin template</title>
+<title>Video Call - HRMS admin template</title>
 <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}">
 
 <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
@@ -18,6 +18,7 @@
 <link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/all.min.css') }}">
 
 <link rel="stylesheet" href="{{ asset('assets/css/line-awesome.min.css') }}">
+
 <link rel="stylesheet" href="{{ asset('assets/css/material.css') }}">
 
 <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
@@ -28,88 +29,10 @@
 
 <div class="main-wrapper">
 
+
 @include('layouts.header')
 @include('layouts.sidebar')
 
-<div class="sidebar" id="sidebar">
-<div class="sidebar-inner slimscroll">
-<div id="sidebar-menu" class="sidebar-menu">
-<nav class="greedy">
-<ul class="link-item">
-<li>
-<a class href="{{url('admin-dashboard')}}"><i class="la la-home"></i> <span>Back to Home</span></a>
-</li>
-<li class="menu-title"><span>Chat Groups</span> <a href="#" data-bs-toggle="modal" data-bs-target="#add_group"><i class="fa-solid fa-plus"></i></a></li>
-<li>
-<a class href="chat.html">
-<span class="chat-avatar-sm user-img">
-<img class="rounded-circle" src="assets/img/user.jpg" alt="User Image">
-</span>
-<span class="chat-user">#General</span>
-</a>
-</li>
-<li>
-<a class href="chat.html">
-<span class="chat-avatar-sm user-img">
-<img class="rounded-circle" src="assets/img/user.jpg" alt="User Image">
-</span>
-<span class="chat-user">#Video Responsive Survey</span>
-</a>
-</li>
-<li>
-<a class href="chat.html">
-<span class="chat-avatar-sm user-img">
-<img class="rounded-circle" src="assets/img/user.jpg" alt="User Image')}}">
-</span>
-<span class="chat-user">#500rs</span>
-</a>
-</li>
-<li>
-<a class href="chat.html">
-<span class="chat-avatar-sm user-img">
-<img class="rounded-circle" src="assets/img/user.jpg" alt="User Image">
-</span>
-<span class="chat-user">#warehouse</span>
-</a>
-</li>
-<li class="menu-title">Direct Chats <a href="#" data-bs-toggle="modal" data-bs-target="#add_chat_user"><i class="fa-solid fa-plus"></i></a></li>
-<li>
-<a class href="chat.html">
-<span class="chat-avatar-sm user-img">
-<img class="rounded-circle" src="assets/img/profiles/avatar-02.jpg" alt="User Image"><span class="status online"></span>
-</span>
-<span class="chat-user">John Doe</span> <span class="badge rounded-pill bg-danger">1</span>
-</a>
-</li>
-<li>
-<a class href="chat.html">
-<span class="chat-avatar-sm user-img">
-<img class="rounded-circle" src="assets/img/profiles/avatar-09.jpg" alt="User Image"><span class="status offline"></span>
-</span>
-<span class="chat-user">Richard Miles</span> <span class="badge rounded-pill bg-danger">7</span>
-</a>
-</li>
-<li>
-<a class href="chat.html">
-<span class="chat-avatar-sm user-img">
-<img class="rounded-circle" src="assets/img/profiles/avatar-10.jpg" alt="User Image"><span class="status away"></span>
-</span>
-<span class="chat-user">John Smith</span>
-</a>
-</li>
-<li class="active">
-<a class href="chat.html">
-<span class="chat-avatar-sm user-img">
-<img class="rounded-circle" src="assets/img/profiles/avatar-05.jpg" alt="User Image"><span class="status online"></span>
-</span>
-<span class="chat-user">Mike Litorus</span> <span class="badge rounded-pill bg-danger">2</span>
-</a>
-</li>
-</ul>
-</nav>
-</div>
-</div>
-</div>
 
 
 <div class="two-col-bar" id="two-col-bar">
@@ -328,8 +251,8 @@ library_add_check
 <li class="sub-menu">
 <a href="#">Calls <span class="menu-arrow"></span></a>
 <ul>
-<li><a class="active" href="voice-call.html">Voice Call</a></li>
-<li><a class href="video-call.html">Video Call</a></li>
+<li><a class href="voice-call.html">Voice Call</a></li>
+<li><a class="active" href="video-call.html">Video Call</a></li>
 <li><a class href="outgoing-call.html">Outgoing Call</a></li>
 <li><a class href="incoming-call.html">Incoming Call</a></li>
 </ul>
@@ -737,7 +660,7 @@ library_add_check
 <div class="chat-window">
 <div class="fixed-header">
 <div class="navbar">
-<div class="user-details me-auto">
+<div class="user-details">
 <div class="float-start user-img">
 <a class="avatar" href="profile.html" title="Mike Litorus">
 <img src="assets/img/profiles/avatar-05.jpg" alt class="rounded-circle">
@@ -764,30 +687,13 @@ library_add_check
 </div>
 <div class="chat-contents">
 <div class="chat-content-wrap">
-<div class="voice-call-avatar">
-<img src="assets/img/profiles/avatar-02.jpg" alt class="call-avatar">
-<span class="username">John Doe</span>
-<span class="call-timing-count">00:59</span>
+<div class="user-video">
+<img src="assets/img/video-call.jpg" alt>
 </div>
-<div class="call-users">
+<div class="my-video">
 <ul>
 <li>
-<a href="#">
-<img src="assets/img/profiles/avatar-03.jpg" class="img-fluid" alt>
-<span class="call-mute"><i class="fa fa-microphone-slash"></i></span>
-</a>
-</li>
-<li>
-<a href="#">
-<img src="assets/img/profiles/avatar-08.jpg" class="img-fluid" alt>
-<span class="call-mute"><i class="fa fa-microphone-slash"></i></span>
-</a>
-</li>
-<li>
-<a href="#">
-<img src="assets/img/profiles/avatar-05.jpg" class="img-fluid" alt>
-<span class="call-mute"><i class="fa fa-microphone-slash"></i></span>
-</a>
+<img src="assets/img/profiles/avatar-01.jpg" class="img-fluid" alt>
 </li>
 </ul>
 </div>
@@ -795,20 +701,26 @@ library_add_check
 </div>
 <div class="chat-footer">
 <div class="call-icons">
+<span class="call-duration">00:59</span>
 <ul class="call-items">
 <li class="call-item">
-<a href="#" title="Enable Video" data-placement="top" data-bs-toggle="tooltip">
+<a href title="Enable Video" data-placement="top" data-bs-toggle="tooltip">
 <i class="fa fa-video-camera camera"></i>
 </a>
 </li>
 <li class="call-item">
-<a href="#" title="Mute" data-placement="top" data-bs-toggle="tooltip">
+<a href title="Mute Audio" data-placement="top" data-bs-toggle="tooltip">
 <i class="fa fa-microphone microphone"></i>
 </a>
 </li>
 <li class="call-item">
-<a href="#" title="Add User" data-placement="top" data-bs-toggle="tooltip">
+<a href title="Add User" data-placement="top" data-bs-toggle="tooltip">
 <i class="fa fa-user-plus"></i>
+</a>
+</li>
+<li class="call-item">
+<a href title="Full Screen" data-placement="top" data-bs-toggle="tooltip">
+<i class="fa fa-arrows-v full-screen"></i>
 </a>
 </li>
 </ul>
@@ -838,7 +750,7 @@ library_add_check
 <div class="chat chat-left">
 <div class="chat-avatar">
 <a href="profile.html" class="avatar">
-<img alt="John Doe" src="assets/img/profiles/avatar-02.jpg">
+<img alt src="assets/img/profiles/avatar-02.jpg">
 </a>
 </div>
 <div class="chat-body">
@@ -889,7 +801,7 @@ call has ended</span></div>
 <div class="chat chat-left">
 <div class="chat-avatar">
 <a href="profile.html" class="avatar">
-<img alt src="assets/img/profiles/avatar-09.jpg">
+<img alt src="assets/img/profiles/avatar-09.jpg" class="img-fluid rounded-circle">
 </a>
 </div>
 <div class="chat-body">
@@ -911,7 +823,7 @@ call has ended</span></div>
 <div class="chat chat-left">
 <div class="chat-avatar">
 <a href="profile.html" class="avatar">
-<img alt src="assets/img/profiles/avatar-02.jpg">
+<img alt src="assets/img/profiles/avatar-09.jpg">
 </a>
 </div>
 <div class="chat-body">
@@ -945,7 +857,7 @@ am</span>
 <div class="chat chat-left">
 <div class="chat-avatar">
 <a href="profile.html" class="avatar">
-<img alt src="assets/img/profiles/avatar-02.jpg">
+<img alt src="assets/img/profiles/avatar-09.jpg">
 </a>
 </div>
 <div class="chat-body">
@@ -961,7 +873,7 @@ am</span>
 <div class="chat chat-left">
 <div class="chat-avatar">
 <a href="profile.html" class="avatar">
-<img alt src="assets/img/profiles/avatar-02.jpg">
+<img alt src="assets/img/profiles/avatar-09.jpg">
 </a>
 </div>
 <div class="chat-body">
@@ -1044,7 +956,7 @@ am</span>
 <div class="table-content">
 <div class="chat-profile-img">
 <div class="edit-profile-img">
-<img src="assets/img/profiles/avatar-02.jpg" alt>
+<img src="assets/img/profiles/avatar-09.jpg" alt>
 <span class="change-img">Change Image</span>
 </div>
 <h3 class="user-name m-t-10 mb-0">John Doe</h3>
@@ -1063,7 +975,7 @@ am</span>
 </li>
 <li>
 <span>Email:</span>
-<span class="float-end text-muted"><a href="https://smarthr.dreamstechnologies.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d6bcb9beb8b2b9b396b3aeb7bba6bab3f8b5b9bb">[email&#160;protected]</a></span>
+<span class="float-end text-muted"><a href="https://smarthr.dreamstechnologies.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="214b4e494f454e44614459404c514d440f424e4c">[email&#160;protected]</a></span>
 </li>
 <li>
 <span>Phone:</span>
@@ -1671,9 +1583,6 @@ example.</p>
 </div>
 </div>
 
-
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-
 <script src="{{ asset('assets/js/jquery-3.7.1.min.js') }}" type="text/javascript"></script>
 <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}" type="text/javascript"></script>
 <script src="{{ asset('assets/js/jquery.slimscroll.min.js') }}" type="text/javascript"></script>
@@ -1683,8 +1592,5 @@ example.</p>
 <script src="{{ asset('assets/js/greedynav.js') }}" type="text/javascript"></script>
 <script src="{{ asset('assets/js/app.js') }}" type="text/javascript"></script>
 
-<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="fca5c96b6b3d9cbaee4e0be1-|49" defer></script>
-
-</body>
-<!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/voice-call by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:22:21 GMT -->
+<!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/video-call by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:22:23 GMT -->
 </html>

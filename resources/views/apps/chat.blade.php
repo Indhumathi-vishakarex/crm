@@ -32,10 +32,10 @@
 
   <body>
     <div class="main-wrapper">
-      @include('layouts.header')
+   
 
-        @include('layouts.sidebar')
-
+@include('layouts.header')
+@include('layouts.sidebar')
       <div class="two-col-bar" id="two-col-bar">
         <div class="sidebar sidebar-twocol">
           <div class="sidebar-left slimscroll">

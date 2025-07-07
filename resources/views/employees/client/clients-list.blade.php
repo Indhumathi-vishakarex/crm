@@ -7,12 +7,12 @@
   data-sidebar-size="lg"
   data-sidebar-image="none"
 >
-  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/employees by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:22:30 GMT -->
+  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/clients-list by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:25:06 GMT -->
   <!-- Added by HTTrack --><meta
     http-equiv="content-type"
     content="text/html;charset=UTF-8"
   /><!-- /Added by HTTrack -->
- <head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Smarthr - Bootstrap Admin Template" />
@@ -24,58 +24,44 @@
       name="author"
       content="Dreamstechnologies - Bootstrap Admin Template"
     />
-    <title>Employees - HRMS admin template</title>
+    <title>Clients - HRMS admin template</title>
+<link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}" />
 
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="{{ asset('assets/img/favicon.png') }}"
-    />
+<link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}" />
 
-    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}" />
+<link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/fontawesome.min.css') }}" />
+<link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/all.min.css') }}" />
 
-    <link
-      rel="stylesheet"
-      href="{{ asset('assets/plugins/fontawesome/css/fontawesome.min.css') }}"
-    />
-    <link
-      rel="stylesheet"
-      href="{{ asset('assets/plugins/fontawesome/css/all.min.css') }}"
-    />
+<link rel="stylesheet" href="{{ asset('assets/css/line-awesome.min.css') }}" />
+<link rel="stylesheet" href="{{ asset('assets/css/material.css') }}" />
 
-    <link rel="stylesheet" href="{{ asset('assets/css/line-awesome.min.css') }}" />
+<link rel="stylesheet" href="{{ asset('assets/css/dataTables.bootstrap4.min.css') }}" />
 
-    <link rel="stylesheet" href="{{ asset('assets/css/material.css') }}" />
+<link rel="stylesheet" href="{{ asset('assets/css/select2.min.css') }}" />
 
-    <link rel="stylesheet" href="{{ asset('assets/css/select2.min.css') }}" />
+<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
 
-    <link
-      rel="stylesheet"
-      href="{{ asset('assets/css/bootstrap-datetimepicker.min.css') }}"
-    />
-
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
-</head>
-
+  
+  </head>
   <body>
     <div class="main-wrapper">
-      
-  @include('layouts.header')
-  @include('layouts.sidebar')
+     
+@include('layouts.header')
+@include('layouts.sidebar')
 
-   
+
 
       <div class="page-wrapper">
         <div class="content container-fluid">
           <div class="page-header">
             <div class="row align-items-center">
               <div class="col">
-                <h3 class="page-title">Employee</h3>
+                <h3 class="page-title">Clients</h3>
                 <ul class="breadcrumb">
                   <li class="breadcrumb-item">
-                    <a href="{{route('admin-dashboard')}}">Dashboard</a>
+                    <a href="admin-dashboard.html">Dashboard</a>
                   </li>
-                  <li class="breadcrumb-item active">Employee</li>
+                  <li class="breadcrumb-item active">Clients</li>
                 </ul>
               </div>
               <div class="col-auto float-end ms-auto"></div>
@@ -84,14 +70,16 @@
                   href="#"
                   class="btn add-btn"
                   data-bs-toggle="modal"
-                  data-bs-target="#add_employee"
-                  ><i class="fa fa-plus"></i> Add Employee</a
+                  data-bs-target="#add_client"
+                  ><i class="fa fa-plus"></i> Add Client</a
                 >
                 <div class="view-icons">
-                  <a href="{{route('employees')}}" class="grid-view btn btn-link active"
+                  <a href="{{route('clients')}}" class="grid-view btn btn-link"
                     ><i class="fa fa-th"></i
                   ></a>
-                  <a href="{{route('employees-list')}}" class="list-view btn btn-link"
+                  <a
+                    href="{{route('clients-list')}}"
+                    class="list-view btn btn-link active"
                     ><i class="fa fa-bars"></i
                   ></a>
                 </div>
@@ -103,498 +91,696 @@
             <div class="col-sm-6 col-md-3">
               <div class="input-block mb-3 form-focus">
                 <input type="text" class="form-control floating" />
-                <label class="focus-label">Employee ID</label>
+                <label class="focus-label">Client ID</label>
               </div>
             </div>
             <div class="col-sm-6 col-md-3">
               <div class="input-block mb-3 form-focus">
                 <input type="text" class="form-control floating" />
-                <label class="focus-label">Employee Name</label>
+                <label class="focus-label">Client Name</label>
               </div>
             </div>
             <div class="col-sm-6 col-md-3">
               <div class="input-block mb-3 form-focus select-focus">
                 <select class="select floating">
-                  <option>Select Designation</option>
-                  <option>Web Developer</option>
-                  <option>Web Designer</option>
-                  <option>Android Developer</option>
-                  <option>Ios Developer</option>
+                  <option>Select Company</option>
+                  <option>Global Technologies</option>
+                  <option>Delta Infotech</option>
                 </select>
-                <label class="focus-label">Designation</label>
+                <label class="focus-label">Company</label>
               </div>
             </div>
             <div class="col-sm-6 col-md-3">
               <div class="d-grid">
-                <a href="#" class="btn btn-success w-100"> Search </a>
+                <a href="#" class="btn btn-success"> Search </a>
               </div>
             </div>
           </div>
 
-          <div class="row staff-grid-row">
-            <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
-              <div class="profile-widget">
-                <div class="profile-img">
-                  <a href="profile.html" class="avatar"
-                    ><img src="assets/img/profiles/avatar-02.jpg" alt
-                  /></a>
-                </div>
-                <div class="dropdown profile-action">
-                  <a
-                    href="#"
-                    class="action-icon dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    ><i class="material-icons">more_vert</i></a
-                  >
-                  <div class="dropdown-menu dropdown-menu-right">
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#edit_employee"
-                      ><i class="fa fa-pencil m-r-5"></i> Edit</a
-                    >
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#delete_employee"
-                      ><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a
-                    >
-                  </div>
-                </div>
-                <h4 class="user-name m-t-10 mb-0 text-ellipsis">
-                  <a href="profile.html">John Doe</a>
-                </h4>
-                <div class="small text-muted">Web Designer</div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
-              <div class="profile-widget">
-                <div class="profile-img">
-                  <a href="profile.html" class="avatar"
-                    ><img src="assets/img/profiles/avatar-09.jpg" alt
-                  /></a>
-                </div>
-                <div class="dropdown profile-action">
-                  <a
-                    href="#"
-                    class="action-icon dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    ><i class="material-icons">more_vert</i></a
-                  >
-                  <div class="dropdown-menu dropdown-menu-right">
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#edit_employee"
-                      ><i class="fa fa-pencil m-r-5"></i> Edit</a
-                    >
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#delete_employee"
-                      ><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a
-                    >
-                  </div>
-                </div>
-                <h4 class="user-name m-t-10 mb-0 text-ellipsis">
-                  <a href="profile.html">Richard Miles</a>
-                </h4>
-                <div class="small text-muted">Web Developer</div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
-              <div class="profile-widget">
-                <div class="profile-img">
-                  <a href="profile.html" class="avatar"
-                    ><img src="assets/img/profiles/avatar-10.jpg" alt
-                  /></a>
-                </div>
-                <div class="dropdown profile-action">
-                  <a
-                    href="#"
-                    class="action-icon dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    ><i class="material-icons">more_vert</i></a
-                  >
-                  <div class="dropdown-menu dropdown-menu-right">
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#edit_employee"
-                      ><i class="fa fa-pencil m-r-5"></i> Edit</a
-                    >
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#delete_employee"
-                      ><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a
-                    >
-                  </div>
-                </div>
-                <h4 class="user-name m-t-10 mb-0 text-ellipsis">
-                  <a href="profile.html">John Smith</a>
-                </h4>
-                <div class="small text-muted">Android Developer</div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
-              <div class="profile-widget">
-                <div class="profile-img">
-                  <a href="profile.html" class="avatar"
-                    ><img src="assets/img/profiles/avatar-05.jpg" alt
-                  /></a>
-                </div>
-                <div class="dropdown profile-action">
-                  <a
-                    href="#"
-                    class="action-icon dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    ><i class="material-icons">more_vert</i></a
-                  >
-                  <div class="dropdown-menu dropdown-menu-right">
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#edit_employee"
-                      ><i class="fa fa-pencil m-r-5"></i> Edit</a
-                    >
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#delete_employee"
-                      ><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a
-                    >
-                  </div>
-                </div>
-                <h4 class="user-name m-t-10 mb-0 text-ellipsis">
-                  <a href="profile.html">Mike Litorus</a>
-                </h4>
-                <div class="small text-muted">IOS Developer</div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
-              <div class="profile-widget">
-                <div class="profile-img">
-                  <a href="profile.html" class="avatar"
-                    ><img src="assets/img/profiles/avatar-11.jpg" alt
-                  /></a>
-                </div>
-                <div class="dropdown profile-action">
-                  <a
-                    href="#"
-                    class="action-icon dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    ><i class="material-icons">more_vert</i></a
-                  >
-                  <div class="dropdown-menu dropdown-menu-right">
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#edit_employee"
-                      ><i class="fa fa-pencil m-r-5"></i> Edit</a
-                    >
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#delete_employee"
-                      ><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a
-                    >
-                  </div>
-                </div>
-                <h4 class="user-name m-t-10 mb-0 text-ellipsis">
-                  <a href="profile.html">Wilmer Deluna</a>
-                </h4>
-                <div class="small text-muted">Team Leader</div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
-              <div class="profile-widget">
-                <div class="profile-img">
-                  <a href="profile.html" class="avatar"
-                    ><img src="assets/img/profiles/avatar-12.jpg" alt
-                  /></a>
-                </div>
-                <div class="dropdown profile-action">
-                  <a
-                    href="#"
-                    class="action-icon dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    ><i class="material-icons">more_vert</i></a
-                  >
-                  <div class="dropdown-menu dropdown-menu-right">
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#edit_employee"
-                      ><i class="fa fa-pencil m-r-5"></i> Edit</a
-                    >
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#delete_employee"
-                      ><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a
-                    >
-                  </div>
-                </div>
-                <h4 class="user-name m-t-10 mb-0 text-ellipsis">
-                  <a href="profile.html">Jeffrey Warden</a>
-                </h4>
-                <div class="small text-muted">Web Developer</div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
-              <div class="profile-widget">
-                <div class="profile-img">
-                  <a href="profile.html" class="avatar"
-                    ><img src="assets/img/profiles/avatar-13.jpg" alt
-                  /></a>
-                </div>
-                <div class="dropdown profile-action">
-                  <a
-                    href="#"
-                    class="action-icon dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    ><i class="material-icons">more_vert</i></a
-                  >
-                  <div class="dropdown-menu dropdown-menu-right">
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#edit_employee"
-                      ><i class="fa fa-pencil m-r-5"></i> Edit</a
-                    >
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#delete_employee"
-                      ><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a
-                    >
-                  </div>
-                </div>
-                <h4 class="user-name m-t-10 mb-0 text-ellipsis">
-                  <a href="profile.html">Bernardo Galaviz</a>
-                </h4>
-                <div class="small text-muted">Web Developer</div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
-              <div class="profile-widget">
-                <div class="profile-img">
-                  <a href="profile.html" class="avatar"
-                    ><img src="assets/img/profiles/avatar-01.jpg" alt
-                  /></a>
-                </div>
-                <div class="dropdown profile-action">
-                  <a
-                    href="#"
-                    class="action-icon dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    ><i class="material-icons">more_vert</i></a
-                  >
-                  <div class="dropdown-menu dropdown-menu-right">
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#edit_employee"
-                      ><i class="fa fa-pencil m-r-5"></i> Edit</a
-                    >
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#delete_employee"
-                      ><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a
-                    >
-                  </div>
-                </div>
-                <h4 class="user-name m-t-10 mb-0 text-ellipsis">
-                  <a href="profile.html">Lesley Grauer</a>
-                </h4>
-                <div class="small text-muted">Team Leader</div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
-              <div class="profile-widget">
-                <div class="profile-img">
-                  <a href="profile.html" class="avatar"
-                    ><img src="assets/img/profiles/avatar-16.jpg" alt
-                  /></a>
-                </div>
-                <div class="dropdown profile-action">
-                  <a
-                    href="#"
-                    class="action-icon dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    ><i class="material-icons">more_vert</i></a
-                  >
-                  <div class="dropdown-menu dropdown-menu-right">
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#edit_employee"
-                      ><i class="fa fa-pencil m-r-5"></i> Edit</a
-                    >
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#delete_employee"
-                      ><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a
-                    >
-                  </div>
-                </div>
-                <h4 class="user-name m-t-10 mb-0 text-ellipsis">
-                  <a href="profile.html">Jeffery Lalor</a>
-                </h4>
-                <div class="small text-muted">Team Leader</div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
-              <div class="profile-widget">
-                <div class="profile-img">
-                  <a href="profile.html" class="avatar"
-                    ><img src="assets/img/profiles/avatar-04.jpg" alt
-                  /></a>
-                </div>
-                <div class="dropdown profile-action">
-                  <a
-                    href="#"
-                    class="action-icon dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    ><i class="material-icons">more_vert</i></a
-                  >
-                  <div class="dropdown-menu dropdown-menu-right">
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#edit_employee"
-                      ><i class="fa fa-pencil m-r-5"></i> Edit</a
-                    >
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#delete_employee"
-                      ><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a
-                    >
-                  </div>
-                </div>
-                <h4 class="user-name m-t-10 mb-0 text-ellipsis">
-                  <a href="profile.html">Loren Gatlin</a>
-                </h4>
-                <div class="small text-muted">Android Developer</div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
-              <div class="profile-widget">
-                <div class="profile-img">
-                  <a href="profile.html" class="avatar"
-                    ><img src="assets/img/profiles/avatar-03.jpg" alt
-                  /></a>
-                </div>
-                <div class="dropdown profile-action">
-                  <a
-                    href="#"
-                    class="action-icon dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    ><i class="material-icons">more_vert</i></a
-                  >
-                  <div class="dropdown-menu dropdown-menu-right">
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#edit_employee"
-                      ><i class="fa fa-pencil m-r-5"></i> Edit</a
-                    >
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#delete_employee"
-                      ><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a
-                    >
-                  </div>
-                </div>
-                <h4 class="user-name m-t-10 mb-0 text-ellipsis">
-                  <a href="profile.html">Tarah Shropshire</a>
-                </h4>
-                <div class="small text-muted">Android Developer</div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
-              <div class="profile-widget">
-                <div class="profile-img">
-                  <a href="profile.html" class="avatar"
-                    ><img src="assets/img/profiles/avatar-08.jpg" alt
-                  /></a>
-                </div>
-                <div class="dropdown profile-action">
-                  <a
-                    href="#"
-                    class="action-icon dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    ><i class="material-icons">more_vert</i></a
-                  >
-                  <div class="dropdown-menu dropdown-menu-right">
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#edit_employee"
-                      ><i class="fa fa-pencil m-r-5"></i> Edit</a
-                    >
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#delete_employee"
-                      ><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a
-                    >
-                  </div>
-                </div>
-                <h4 class="user-name m-t-10 mb-0 text-ellipsis">
-                  <a href="profile.html">Catherine Manseau</a>
-                </h4>
-                <div class="small text-muted">Android Developer</div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="table-responsive">
+                <table class="table table-striped custom-table datatable">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Client ID</th>
+                      <th>Contact Person</th>
+                      <th>Email</th>
+                      <th>Mobile</th>
+                      <th>Status</th>
+                      <th class="text-end">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <h2 class="table-avatar">
+                          <a href="client-profile.html" class="avatar"
+                            ><img
+                              src="assets/img/profiles/avatar-19.jpg"
+                              alt="User Image"
+                          /></a>
+                          <a href="client-profile.html">Global Technologies</a>
+                        </h2>
+                      </td>
+                      <td>CLT-0001</td>
+                      <td>Barry Cuda</td>
+                      <td>
+                        <a
+                          href="https://smarthr.dreamstechnologies.com/cdn-cgi/l/email-protection"
+                          class="__cf_email__"
+                          data-cfemail="24464556565d4751404564415c45495448410a474b49"
+                          >[email&#160;protected]</a
+                        >
+                      </td>
+                      <td>9876543210</td>
+                      <td>
+                        <div class="dropdown action-label">
+                          <a
+                            href="#"
+                            class="btn btn-white btn-sm btn-rounded dropdown-toggle"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            ><i
+                              class="fa-regular fa-circle-dot text-success"
+                            ></i>
+                            Active
+                          </a>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#"
+                              ><i
+                                class="fa-regular fa-circle-dot text-success"
+                              ></i>
+                              Active</a
+                            >
+                            <a class="dropdown-item" href="#"
+                              ><i
+                                class="fa-regular fa-circle-dot text-danger"
+                              ></i>
+                              Inactive</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                      <td class="text-end">
+                        <div class="dropdown dropdown-action">
+                          <a
+                            href="#"
+                            class="action-icon dropdown-toggle"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            ><i class="material-icons">more_vert</i></a
+                          >
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a
+                              class="dropdown-item"
+                              href="#"
+                              data-bs-toggle="modal"
+                              data-bs-target="#edit_client"
+                              ><i class="fa-solid fa-pencil m-r-5"></i> Edit</a
+                            >
+                            <a
+                              class="dropdown-item"
+                              href="#"
+                              data-bs-toggle="modal"
+                              data-bs-target="#delete_client"
+                              ><i class="fa-regular fa-trash-can m-r-5"></i>
+                              Delete</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h2 class="table-avatar">
+                          <a href="client-profile.html" class="avatar"
+                            ><img
+                              src="assets/img/profiles/avatar-29.jpg"
+                              alt="User Image"
+                          /></a>
+                          <a href="client-profile.html">Delta Infotech</a>
+                        </h2>
+                      </td>
+                      <td>CLT-0002</td>
+                      <td>Tressa Wexler</td>
+                      <td>
+                        <a
+                          href="https://smarthr.dreamstechnologies.com/cdn-cgi/l/email-protection"
+                          class="__cf_email__"
+                          data-cfemail="c4b0b6a1b7b7a5b3a1bca8a1b684a1bca5a9b4a8a1eaa7aba9"
+                          >[email&#160;protected]</a
+                        >
+                      </td>
+                      <td>9876543210</td>
+                      <td>
+                        <div class="dropdown action-label">
+                          <a
+                            href="#"
+                            class="btn btn-white btn-sm btn-rounded dropdown-toggle"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            ><i
+                              class="fa-regular fa-circle-dot text-danger"
+                            ></i>
+                            Inactive
+                          </a>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#"
+                              ><i
+                                class="fa-regular fa-circle-dot text-success"
+                              ></i>
+                              Active</a
+                            >
+                            <a class="dropdown-item" href="#"
+                              ><i
+                                class="fa-regular fa-circle-dot text-danger"
+                              ></i>
+                              Inactive</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                      <td class="text-end">
+                        <div class="dropdown dropdown-action">
+                          <a
+                            href="#"
+                            class="action-icon dropdown-toggle"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            ><i class="material-icons">more_vert</i></a
+                          >
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a
+                              class="dropdown-item"
+                              href="#"
+                              data-bs-toggle="modal"
+                              data-bs-target="#edit_client"
+                              ><i class="fa-solid fa-pencil m-r-5"></i> Edit</a
+                            >
+                            <a
+                              class="dropdown-item"
+                              href="#"
+                              data-bs-toggle="modal"
+                              data-bs-target="#delete_client"
+                              ><i class="fa-regular fa-trash-can m-r-5"></i>
+                              Delete</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h2 class="table-avatar">
+                          <a href="client-profile.html" class="avatar"
+                            ><img
+                              src="assets/img/profiles/avatar-07.jpg"
+                              alt="User Image"
+                          /></a>
+                          <a href="client-profile.html">Cream Inc</a>
+                        </h2>
+                      </td>
+                      <td>CLT-0003</td>
+                      <td>Ruby Bartlett</td>
+                      <td>
+                        <a
+                          href="https://smarthr.dreamstechnologies.com/cdn-cgi/l/email-protection"
+                          class="__cf_email__"
+                          data-cfemail="4d3f382f342f2c3f39212839390d28352c203d2128632e2220"
+                          >[email&#160;protected]</a
+                        >
+                      </td>
+                      <td>9876543210</td>
+                      <td>
+                        <div class="dropdown action-label">
+                          <a
+                            href="#"
+                            class="btn btn-white btn-sm btn-rounded dropdown-toggle"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            ><i
+                              class="fa-regular fa-circle-dot text-success"
+                            ></i>
+                            Active
+                          </a>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#"
+                              ><i
+                                class="fa-regular fa-circle-dot text-success"
+                              ></i>
+                              Active</a
+                            >
+                            <a class="dropdown-item" href="#"
+                              ><i
+                                class="fa-regular fa-circle-dot text-danger"
+                              ></i>
+                              Inactive</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                      <td class="text-end">
+                        <div class="dropdown dropdown-action">
+                          <a
+                            href="#"
+                            class="action-icon dropdown-toggle"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            ><i class="material-icons">more_vert</i></a
+                          >
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a
+                              class="dropdown-item"
+                              href="#"
+                              data-bs-toggle="modal"
+                              data-bs-target="#edit_client"
+                              ><i class="fa-solid fa-pencil m-r-5"></i> Edit</a
+                            >
+                            <a
+                              class="dropdown-item"
+                              href="#"
+                              data-bs-toggle="modal"
+                              data-bs-target="#delete_client"
+                              ><i class="fa-regular fa-trash-can m-r-5"></i>
+                              Delete</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h2 class="table-avatar">
+                          <a href="client-profile.html" class="avatar"
+                            ><img
+                              src="assets/img/profiles/avatar-06.jpg"
+                              alt="User Image"
+                          /></a>
+                          <a href="client-profile.html">Wellware Company</a>
+                        </h2>
+                      </td>
+                      <td>CLT-0004</td>
+                      <td>Misty Tison</td>
+                      <td>
+                        <a
+                          href="https://smarthr.dreamstechnologies.com/cdn-cgi/l/email-protection"
+                          class="__cf_email__"
+                          data-cfemail="92fffbe1e6ebe6fbe1fdfcd2f7eaf3ffe2fef7bcf1fdff"
+                          >[email&#160;protected]</a
+                        >
+                      </td>
+                      <td>9876543210</td>
+                      <td>
+                        <div class="dropdown action-label">
+                          <a
+                            href="#"
+                            class="btn btn-white btn-sm btn-rounded dropdown-toggle"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            ><i
+                              class="fa-regular fa-circle-dot text-success"
+                            ></i>
+                            Active
+                          </a>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#"
+                              ><i
+                                class="fa-regular fa-circle-dot text-success"
+                              ></i>
+                              Active</a
+                            >
+                            <a class="dropdown-item" href="#"
+                              ><i
+                                class="fa-regular fa-circle-dot text-danger"
+                              ></i>
+                              Inactive</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                      <td class="text-end">
+                        <div class="dropdown dropdown-action">
+                          <a
+                            href="#"
+                            class="action-icon dropdown-toggle"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            ><i class="material-icons">more_vert</i></a
+                          >
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a
+                              class="dropdown-item"
+                              href="#"
+                              data-bs-toggle="modal"
+                              data-bs-target="#edit_client"
+                              ><i class="fa-solid fa-pencil m-r-5"></i> Edit</a
+                            >
+                            <a
+                              class="dropdown-item"
+                              href="#"
+                              data-bs-toggle="modal"
+                              data-bs-target="#delete_client"
+                              ><i class="fa-regular fa-trash-can m-r-5"></i>
+                              Delete</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h2 class="table-avatar">
+                          <a href="client-profile.html" class="avatar"
+                            ><img
+                              src="assets/img/profiles/avatar-14.jpg"
+                              alt="User Image"
+                          /></a>
+                          <a href="client-profile.html">Mustang Technologies</a>
+                        </h2>
+                      </td>
+                      <td>CLT-0005</td>
+                      <td>Daniel Deacon</td>
+                      <td>
+                        <a
+                          href="https://smarthr.dreamstechnologies.com/cdn-cgi/l/email-protection"
+                          class="__cf_email__"
+                          data-cfemail="aecacfc0c7cbc2cacbcfcdc1c0eecbd6cfc3dec2cb80cdc1c3"
+                          >[email&#160;protected]</a
+                        >
+                      </td>
+                      <td>9876543210</td>
+                      <td>
+                        <div class="dropdown action-label">
+                          <a
+                            href="#"
+                            class="btn btn-white btn-sm btn-rounded dropdown-toggle"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            ><i
+                              class="fa-regular fa-circle-dot text-success"
+                            ></i>
+                            Active
+                          </a>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#"
+                              ><i
+                                class="fa-regular fa-circle-dot text-success"
+                              ></i>
+                              Active</a
+                            >
+                            <a class="dropdown-item" href="#"
+                              ><i
+                                class="fa-regular fa-circle-dot text-danger"
+                              ></i>
+                              Inactive</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                      <td class="text-end">
+                        <div class="dropdown dropdown-action">
+                          <a
+                            href="#"
+                            class="action-icon dropdown-toggle"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            ><i class="material-icons">more_vert</i></a
+                          >
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a
+                              class="dropdown-item"
+                              href="#"
+                              data-bs-toggle="modal"
+                              data-bs-target="#edit_client"
+                              ><i class="fa-solid fa-pencil m-r-5"></i> Edit</a
+                            >
+                            <a
+                              class="dropdown-item"
+                              href="#"
+                              data-bs-toggle="modal"
+                              data-bs-target="#delete_client"
+                              ><i class="fa-regular fa-trash-can m-r-5"></i>
+                              Delete</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h2 class="table-avatar">
+                          <a href="client-profile.html" class="avatar"
+                            ><img
+                              src="assets/img/profiles/avatar-18.jpg"
+                              alt="User Image"
+                          /></a>
+                          <a href="client-profile.html"
+                            >International Software Inc</a
+                          >
+                        </h2>
+                      </td>
+                      <td>CLT-0006</td>
+                      <td>Walter Weaver</td>
+                      <td>
+                        <a
+                          href="https://smarthr.dreamstechnologies.com/cdn-cgi/l/email-protection"
+                          class="__cf_email__"
+                          data-cfemail="6c1b0d0018091e1b090d1a091e2c09140d011c0009420f0301"
+                          >[email&#160;protected]</a
+                        >
+                      </td>
+                      <td>9876543210</td>
+                      <td>
+                        <div class="dropdown action-label">
+                          <a
+                            href="#"
+                            class="btn btn-white btn-sm btn-rounded dropdown-toggle"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            ><i
+                              class="fa-regular fa-circle-dot text-success"
+                            ></i>
+                            Active
+                          </a>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#"
+                              ><i
+                                class="fa-regular fa-circle-dot text-success"
+                              ></i>
+                              Active</a
+                            >
+                            <a class="dropdown-item" href="#"
+                              ><i
+                                class="fa-regular fa-circle-dot text-danger"
+                              ></i>
+                              Inactive</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                      <td class="text-end">
+                        <div class="dropdown dropdown-action">
+                          <a
+                            href="#"
+                            class="action-icon dropdown-toggle"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            ><i class="material-icons">more_vert</i></a
+                          >
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a
+                              class="dropdown-item"
+                              href="#"
+                              data-bs-toggle="modal"
+                              data-bs-target="#edit_client"
+                              ><i class="fa-solid fa-pencil m-r-5"></i> Edit</a
+                            >
+                            <a
+                              class="dropdown-item"
+                              href="#"
+                              data-bs-toggle="modal"
+                              data-bs-target="#delete_client"
+                              ><i class="fa-regular fa-trash-can m-r-5"></i>
+                              Delete</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h2 class="table-avatar">
+                          <a href="client-profile.html" class="avatar"
+                            ><img
+                              src="assets/img/profiles/avatar-28.jpg"
+                              alt="User Image"
+                          /></a>
+                          <a href="client-profile.html">Mercury Software Inc</a>
+                        </h2>
+                      </td>
+                      <td>CLT-0007</td>
+                      <td>Amanda Warren</td>
+                      <td>
+                        <a
+                          href="https://smarthr.dreamstechnologies.com/cdn-cgi/l/email-protection"
+                          class="__cf_email__"
+                          data-cfemail="debfb3bfb0babfa9bfacacbbb09ebba6bfb3aeb2bbf0bdb1b3"
+                          >[email&#160;protected]</a
+                        >
+                      </td>
+                      <td>9876543210</td>
+                      <td>
+                        <div class="dropdown action-label">
+                          <a
+                            href="#"
+                            class="btn btn-white btn-sm btn-rounded dropdown-toggle"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            ><i
+                              class="fa-regular fa-circle-dot text-success"
+                            ></i>
+                            Active
+                          </a>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#"
+                              ><i
+                                class="fa-regular fa-circle-dot text-success"
+                              ></i>
+                              Active</a
+                            >
+                            <a class="dropdown-item" href="#"
+                              ><i
+                                class="fa-regular fa-circle-dot text-danger"
+                              ></i>
+                              Inactive</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                      <td class="text-end">
+                        <div class="dropdown dropdown-action">
+                          <a
+                            href="#"
+                            class="action-icon dropdown-toggle"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            ><i class="material-icons">more_vert</i></a
+                          >
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a
+                              class="dropdown-item"
+                              href="#"
+                              data-bs-toggle="modal"
+                              data-bs-target="#edit_client"
+                              ><i class="fa-solid fa-pencil m-r-5"></i> Edit</a
+                            >
+                            <a
+                              class="dropdown-item"
+                              href="#"
+                              data-bs-toggle="modal"
+                              data-bs-target="#delete_client"
+                              ><i class="fa-regular fa-trash-can m-r-5"></i>
+                              Delete</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h2 class="table-avatar">
+                          <a href="client-profile.html" class="avatar"
+                            ><img
+                              src="assets/img/profiles/avatar-22.jpg"
+                              alt="User Image"
+                          /></a>
+                          <a href="client-profile.html">Carlson Tech</a>
+                        </h2>
+                      </td>
+                      <td>CLT-0008</td>
+                      <td>Betty Carlson</td>
+                      <td>
+                        <a
+                          href="https://smarthr.dreamstechnologies.com/cdn-cgi/l/email-protection"
+                          class="__cf_email__"
+                          data-cfemail="197b7c6d6d607a786b756a7677597c61787469757c377a7674"
+                          >[email&#160;protected]</a
+                        >
+                      </td>
+                      <td>9876543210</td>
+                      <td>
+                        <div class="dropdown action-label">
+                          <a
+                            href="#"
+                            class="btn btn-white btn-sm btn-rounded dropdown-toggle"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            ><i
+                              class="fa-regular fa-circle-dot text-danger"
+                            ></i>
+                            Inactive
+                          </a>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#"
+                              ><i
+                                class="fa-regular fa-circle-dot text-success"
+                              ></i>
+                              Active</a
+                            >
+                            <a class="dropdown-item" href="#"
+                              ><i
+                                class="fa-regular fa-circle-dot text-danger"
+                              ></i>
+                              Inactive</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                      <td class="text-end">
+                        <div class="dropdown dropdown-action">
+                          <a
+                            href="#"
+                            class="action-icon dropdown-toggle"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            ><i class="material-icons">more_vert</i></a
+                          >
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a
+                              class="dropdown-item"
+                              href="#"
+                              data-bs-toggle="modal"
+                              data-bs-target="#edit_client"
+                              ><i class="fa-solid fa-pencil m-r-5"></i> Edit</a
+                            >
+                            <a
+                              class="dropdown-item"
+                              href="#"
+                              data-bs-toggle="modal"
+                              data-bs-target="#delete_client"
+                              ><i class="fa-regular fa-trash-can m-r-5"></i>
+                              Delete</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
 
-          <div id="add_employee" class="modal custom-modal fade" role="dialog">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div id="add_client" class="modal custom-modal fade" role="dialog">
+            <div
+              class="modal-dialog modal-dialog-centered modal-lg"
+              role="document"
+            >
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title">Add Employee</h5>
+                  <h5 class="modal-title">Add Client</h5>
                   <button
                     type="button"
                     class="btn-close"
@@ -607,7 +793,7 @@
                 <div class="modal-body">
                   <form>
                     <div class="row">
-                      <div class="col-sm-6">
+                      <div class="col-md-6">
                         <div class="input-block mb-3">
                           <label class="col-form-label"
                             >First Name
@@ -616,13 +802,13 @@
                           <input class="form-control" type="text" />
                         </div>
                       </div>
-                      <div class="col-sm-6">
+                      <div class="col-md-6">
                         <div class="input-block mb-3">
                           <label class="col-form-label">Last Name</label>
                           <input class="form-control" type="text" />
                         </div>
                       </div>
-                      <div class="col-sm-6">
+                      <div class="col-md-6">
                         <div class="input-block mb-3">
                           <label class="col-form-label"
                             >Username <span class="text-danger">*</span></label
@@ -630,90 +816,44 @@
                           <input class="form-control" type="text" />
                         </div>
                       </div>
-                      <div class="col-sm-6">
+                      <div class="col-md-6">
                         <div class="input-block mb-3">
                           <label class="col-form-label"
                             >Email <span class="text-danger">*</span></label
                           >
-                          <input class="form-control" type="email" />
+                          <input class="form-control floating" type="email" />
                         </div>
                       </div>
-                      <div class="col-sm-6">
+                      <div class="col-md-6">
                         <div class="input-block mb-3">
                           <label class="col-form-label">Password</label>
                           <input class="form-control" type="password" />
                         </div>
                       </div>
-                      <div class="col-sm-6">
+                      <div class="col-md-6">
                         <div class="input-block mb-3">
                           <label class="col-form-label">Confirm Password</label>
                           <input class="form-control" type="password" />
                         </div>
                       </div>
-                      <div class="col-sm-6">
+                      <div class="col-md-6">
                         <div class="input-block mb-3">
                           <label class="col-form-label"
-                            >Employee ID
-                            <span class="text-danger">*</span></label
+                            >Client ID <span class="text-danger">*</span></label
                           >
-                          <input type="text" class="form-control" />
+                          <input class="form-control floating" type="text" />
                         </div>
                       </div>
-                      <div class="col-sm-6">
-                        <div class="input-block mb-3">
-                          <label class="col-form-label"
-                            >Joining Date
-                            <span class="text-danger">*</span></label
-                          >
-                          <div class="cal-icon">
-                            <input
-                              class="form-control datetimepicker"
-                              type="text"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-6">
+                      <div class="col-md-6">
                         <div class="input-block mb-3">
                           <label class="col-form-label">Phone </label>
                           <input class="form-control" type="text" />
                         </div>
                       </div>
-                      <div class="col-sm-6">
-                        <div class="input-block mb-3">
-                          <label class="col-form-label">Company</label>
-                          <select class="select">
-                            <option value>Global Technologies</option>
-                            <option value="1">Delta Infotech</option>
-                          </select>
-                        </div>
-                      </div>
                       <div class="col-md-6">
                         <div class="input-block mb-3">
-                          <label class="col-form-label"
-                            >Department
-                            <span class="text-danger">*</span></label
-                          >
-                          <select class="select">
-                            <option>Select Department</option>
-                            <option>Web Development</option>
-                            <option>IT Management</option>
-                            <option>Marketing</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="input-block mb-3">
-                          <label class="col-form-label"
-                            >Designation
-                            <span class="text-danger">*</span></label
-                          >
-                          <select class="select">
-                            <option>Select Designation</option>
-                            <option>Web Designer</option>
-                            <option>Web Developer</option>
-                            <option>Android Developer</option>
-                          </select>
+                          <label class="col-form-label">Company Name</label>
+                          <input class="form-control" type="text" />
                         </div>
                       </div>
                     </div>
@@ -732,167 +872,6 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <td>Holidays</td>
-                            <td class="text-center">
-                              <label class="custom_check">
-                                <input type="checkbox" checked />
-                                <span class="checkmark"></span>
-                              </label>
-                            </td>
-                            <td class="text-center">
-                              <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
-                                <span class="checkmark"></span>
-                              </label>
-                            </td>
-                            <td class="text-center">
-                              <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
-                                <span class="checkmark"></span>
-                              </label>
-                            </td>
-                            <td class="text-center">
-                              <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
-                                <span class="checkmark"></span>
-                              </label>
-                            </td>
-                            <td class="text-center">
-                              <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
-                                <span class="checkmark"></span>
-                              </label>
-                            </td>
-                            <td class="text-center">
-                              <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
-                                <span class="checkmark"></span>
-                              </label>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>Leaves</td>
-                            <td class="text-center">
-                              <label class="custom_check">
-                                <input type="checkbox" checked />
-                                <span class="checkmark"></span>
-                              </label>
-                            </td>
-                            <td class="text-center">
-                              <label class="custom_check">
-                                <input type="checkbox" checked />
-                                <span class="checkmark"></span>
-                              </label>
-                            </td>
-                            <td class="text-center">
-                              <label class="custom_check">
-                                <input type="checkbox" checked />
-                                <span class="checkmark"></span>
-                              </label>
-                            </td>
-                            <td class="text-center">
-                              <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
-                                <span class="checkmark"></span>
-                              </label>
-                            </td>
-                            <td class="text-center">
-                              <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
-                                <span class="checkmark"></span>
-                              </label>
-                            </td>
-                            <td class="text-center">
-                              <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
-                                <span class="checkmark"></span>
-                              </label>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>Clients</td>
-                            <td class="text-center">
-                              <label class="custom_check">
-                                <input type="checkbox" checked />
-                                <span class="checkmark"></span>
-                              </label>
-                            </td>
-                            <td class="text-center">
-                              <label class="custom_check">
-                                <input type="checkbox" checked />
-                                <span class="checkmark"></span>
-                              </label>
-                            </td>
-                            <td class="text-center">
-                              <label class="custom_check">
-                                <input type="checkbox" checked />
-                                <span class="checkmark"></span>
-                              </label>
-                            </td>
-                            <td class="text-center">
-                              <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
-                                <span class="checkmark"></span>
-                              </label>
-                            </td>
-                            <td class="text-center">
-                              <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
-                                <span class="checkmark"></span>
-                              </label>
-                            </td>
-                            <td class="text-center">
-                              <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
-                                <span class="checkmark"></span>
-                              </label>
-                            </td>
-                          </tr>
-                          <tr>
                             <td>Projects</td>
                             <td class="text-center">
                               <label class="custom_check">
@@ -902,51 +881,31 @@
                             </td>
                             <td class="text-center">
                               <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
+                                <input type="checkbox" checked />
                                 <span class="checkmark"></span>
                               </label>
                             </td>
                             <td class="text-center">
                               <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
+                                <input type="checkbox" checked />
                                 <span class="checkmark"></span>
                               </label>
                             </td>
                             <td class="text-center">
                               <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
+                                <input type="checkbox" checked />
                                 <span class="checkmark"></span>
                               </label>
                             </td>
                             <td class="text-center">
                               <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
+                                <input type="checkbox" checked />
                                 <span class="checkmark"></span>
                               </label>
                             </td>
                             <td class="text-center">
                               <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
+                                <input type="checkbox" checked />
                                 <span class="checkmark"></span>
                               </label>
                             </td>
@@ -979,27 +938,19 @@
                             </td>
                             <td class="text-center">
                               <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
+                                <input type="checkbox" checked />
                                 <span class="checkmark"></span>
                               </label>
                             </td>
                             <td class="text-center">
                               <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
+                                <input type="checkbox" checked />
                                 <span class="checkmark"></span>
                               </label>
                             </td>
                           </tr>
                           <tr>
-                            <td>Chats</td>
+                            <td>Chat</td>
                             <td class="text-center">
                               <label class="custom_check">
                                 <input type="checkbox" checked />
@@ -1026,27 +977,19 @@
                             </td>
                             <td class="text-center">
                               <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
+                                <input type="checkbox" checked />
                                 <span class="checkmark"></span>
                               </label>
                             </td>
                             <td class="text-center">
                               <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
+                                <input type="checkbox" checked />
                                 <span class="checkmark"></span>
                               </label>
                             </td>
                           </tr>
                           <tr>
-                            <td>Assets</td>
+                            <td>Estimates</td>
                             <td class="text-center">
                               <label class="custom_check">
                                 <input type="checkbox" checked />
@@ -1073,21 +1016,52 @@
                             </td>
                             <td class="text-center">
                               <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
+                                <input type="checkbox" checked />
                                 <span class="checkmark"></span>
                               </label>
                             </td>
                             <td class="text-center">
                               <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
+                                <input type="checkbox" checked />
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Invoices</td>
+                            <td class="text-center">
+                              <label class="custom_check">
+                                <input type="checkbox" checked />
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td class="text-center">
+                              <label class="custom_check">
+                                <input type="checkbox" checked />
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td class="text-center">
+                              <label class="custom_check">
+                                <input type="checkbox" checked />
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td class="text-center">
+                              <label class="custom_check">
+                                <input type="checkbox" checked />
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td class="text-center">
+                              <label class="custom_check">
+                                <input type="checkbox" checked />
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td class="text-center">
+                              <label class="custom_check">
+                                <input type="checkbox" checked />
                                 <span class="checkmark"></span>
                               </label>
                             </td>
@@ -1120,21 +1094,13 @@
                             </td>
                             <td class="text-center">
                               <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
+                                <input type="checkbox" checked />
                                 <span class="checkmark"></span>
                               </label>
                             </td>
                             <td class="text-center">
                               <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
+                                <input type="checkbox" checked />
                                 <span class="checkmark"></span>
                               </label>
                             </td>
@@ -1151,14 +1117,14 @@
             </div>
           </div>
 
-          <div id="edit_employee" class="modal custom-modal fade" role="dialog">
+          <div id="edit_client" class="modal custom-modal fade" role="dialog">
             <div
               class="modal-dialog modal-dialog-centered modal-lg"
               role="document"
             >
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title">Edit Employee</h5>
+                  <h5 class="modal-title">Edit Client</h5>
                   <button
                     type="button"
                     class="btn-close"
@@ -1171,7 +1137,7 @@
                 <div class="modal-body">
                   <form>
                     <div class="row">
-                      <div class="col-sm-6">
+                      <div class="col-md-6">
                         <div class="input-block mb-3">
                           <label class="col-form-label"
                             >First Name
@@ -1179,90 +1145,78 @@
                           >
                           <input
                             class="form-control"
-                            value="John"
+                            value="Barry"
                             type="text"
                           />
                         </div>
                       </div>
-                      <div class="col-sm-6">
+                      <div class="col-md-6">
                         <div class="input-block mb-3">
                           <label class="col-form-label">Last Name</label>
-                          <input class="form-control" value="Doe" type="text" />
+                          <input
+                            class="form-control"
+                            value="Cuda"
+                            type="text"
+                          />
                         </div>
                       </div>
-                      <div class="col-sm-6">
+                      <div class="col-md-6">
                         <div class="input-block mb-3">
                           <label class="col-form-label"
                             >Username <span class="text-danger">*</span></label
                           >
                           <input
                             class="form-control"
-                            value="johndoe"
+                            value="barrycuda"
                             type="text"
                           />
                         </div>
                       </div>
-                      <div class="col-sm-6">
+                      <div class="col-md-6">
                         <div class="input-block mb-3">
                           <label class="col-form-label"
                             >Email <span class="text-danger">*</span></label
                           >
                           <input
-                            class="form-control"
-                            value="johndoe@example.com"
+                            class="form-control floating"
+                            value="barrycuda@example.com"
                             type="email"
                           />
                         </div>
                       </div>
-                      <div class="col-sm-6">
+                      <div class="col-md-6">
                         <div class="input-block mb-3">
                           <label class="col-form-label">Password</label>
                           <input
                             class="form-control"
-                            value="johndoe"
+                            value="barrycuda"
                             type="password"
                           />
                         </div>
                       </div>
-                      <div class="col-sm-6">
+                      <div class="col-md-6">
                         <div class="input-block mb-3">
                           <label class="col-form-label">Confirm Password</label>
                           <input
                             class="form-control"
-                            value="johndoe"
+                            value="barrycuda"
                             type="password"
                           />
                         </div>
                       </div>
-                      <div class="col-sm-6">
+                      <div class="col-md-6">
                         <div class="input-block mb-3">
                           <label class="col-form-label"
-                            >Employee ID
-                            <span class="text-danger">*</span></label
+                            >Client ID <span class="text-danger">*</span></label
                           >
                           <input
-                            type="text"
-                            value="FT-0001"
-                            readonly
                             class="form-control floating"
+                            value="CLT-0001"
+                            type="text"
                           />
                         </div>
                       </div>
-                      <div class="col-sm-6">
-                        <div class="input-block mb-3">
-                          <label class="col-form-label"
-                            >Joining Date
-                            <span class="text-danger">*</span></label
-                          >
-                          <div class="cal-icon">
-                            <input
-                              class="form-control datetimepicker"
-                              type="text"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-6">
+                      <div class="col-md-6">
                         <div class="input-block mb-3">
                           <label class="col-form-label">Phone </label>
                           <input
@@ -1272,42 +1226,14 @@
                           />
                         </div>
                       </div>
-                      <div class="col-sm-6">
-                        <div class="input-block mb-3">
-                          <label class="col-form-label">Company</label>
-                          <select class="select">
-                            <option>Global Technologies</option>
-                            <option>Delta Infotech</option>
-                            <option selected>International Software Inc</option>
-                          </select>
-                        </div>
-                      </div>
                       <div class="col-md-6">
                         <div class="input-block mb-3">
-                          <label class="col-form-label"
-                            >Department
-                            <span class="text-danger">*</span></label
-                          >
-                          <select class="select">
-                            <option>Select Department</option>
-                            <option>Web Development</option>
-                            <option>IT Management</option>
-                            <option>Marketing</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="input-block mb-3">
-                          <label class="col-form-label"
-                            >Designation
-                            <span class="text-danger">*</span></label
-                          >
-                          <select class="select">
-                            <option>Select Designation</option>
-                            <option>Web Designer</option>
-                            <option>Web Developer</option>
-                            <option>Android Developer</option>
-                          </select>
+                          <label class="col-form-label">Company Name</label>
+                          <input
+                            class="form-control"
+                            type="text"
+                            value="Global Technologies"
+                          />
                         </div>
                       </div>
                     </div>
@@ -1326,167 +1252,6 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <td>Holidays</td>
-                            <td class="text-center">
-                              <label class="custom_check">
-                                <input type="checkbox" checked />
-                                <span class="checkmark"></span>
-                              </label>
-                            </td>
-                            <td class="text-center">
-                              <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
-                                <span class="checkmark"></span>
-                              </label>
-                            </td>
-                            <td class="text-center">
-                              <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
-                                <span class="checkmark"></span>
-                              </label>
-                            </td>
-                            <td class="text-center">
-                              <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
-                                <span class="checkmark"></span>
-                              </label>
-                            </td>
-                            <td class="text-center">
-                              <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
-                                <span class="checkmark"></span>
-                              </label>
-                            </td>
-                            <td class="text-center">
-                              <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
-                                <span class="checkmark"></span>
-                              </label>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>Leaves</td>
-                            <td class="text-center">
-                              <label class="custom_check">
-                                <input type="checkbox" checked />
-                                <span class="checkmark"></span>
-                              </label>
-                            </td>
-                            <td class="text-center">
-                              <label class="custom_check">
-                                <input type="checkbox" checked />
-                                <span class="checkmark"></span>
-                              </label>
-                            </td>
-                            <td class="text-center">
-                              <label class="custom_check">
-                                <input type="checkbox" checked />
-                                <span class="checkmark"></span>
-                              </label>
-                            </td>
-                            <td class="text-center">
-                              <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
-                                <span class="checkmark"></span>
-                              </label>
-                            </td>
-                            <td class="text-center">
-                              <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
-                                <span class="checkmark"></span>
-                              </label>
-                            </td>
-                            <td class="text-center">
-                              <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
-                                <span class="checkmark"></span>
-                              </label>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>Clients</td>
-                            <td class="text-center">
-                              <label class="custom_check">
-                                <input type="checkbox" checked />
-                                <span class="checkmark"></span>
-                              </label>
-                            </td>
-                            <td class="text-center">
-                              <label class="custom_check">
-                                <input type="checkbox" checked />
-                                <span class="checkmark"></span>
-                              </label>
-                            </td>
-                            <td class="text-center">
-                              <label class="custom_check">
-                                <input type="checkbox" checked />
-                                <span class="checkmark"></span>
-                              </label>
-                            </td>
-                            <td class="text-center">
-                              <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
-                                <span class="checkmark"></span>
-                              </label>
-                            </td>
-                            <td class="text-center">
-                              <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
-                                <span class="checkmark"></span>
-                              </label>
-                            </td>
-                            <td class="text-center">
-                              <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
-                                <span class="checkmark"></span>
-                              </label>
-                            </td>
-                          </tr>
-                          <tr>
                             <td>Projects</td>
                             <td class="text-center">
                               <label class="custom_check">
@@ -1496,51 +1261,31 @@
                             </td>
                             <td class="text-center">
                               <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
+                                <input type="checkbox" checked />
                                 <span class="checkmark"></span>
                               </label>
                             </td>
                             <td class="text-center">
                               <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
+                                <input type="checkbox" checked />
                                 <span class="checkmark"></span>
                               </label>
                             </td>
                             <td class="text-center">
                               <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
+                                <input type="checkbox" checked />
                                 <span class="checkmark"></span>
                               </label>
                             </td>
                             <td class="text-center">
                               <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
+                                <input type="checkbox" checked />
                                 <span class="checkmark"></span>
                               </label>
                             </td>
                             <td class="text-center">
                               <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
+                                <input type="checkbox" checked />
                                 <span class="checkmark"></span>
                               </label>
                             </td>
@@ -1573,27 +1318,19 @@
                             </td>
                             <td class="text-center">
                               <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
+                                <input type="checkbox" checked />
                                 <span class="checkmark"></span>
                               </label>
                             </td>
                             <td class="text-center">
                               <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
+                                <input type="checkbox" checked />
                                 <span class="checkmark"></span>
                               </label>
                             </td>
                           </tr>
                           <tr>
-                            <td>Chats</td>
+                            <td>Chat</td>
                             <td class="text-center">
                               <label class="custom_check">
                                 <input type="checkbox" checked />
@@ -1620,27 +1357,19 @@
                             </td>
                             <td class="text-center">
                               <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
+                                <input type="checkbox" checked />
                                 <span class="checkmark"></span>
                               </label>
                             </td>
                             <td class="text-center">
                               <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
+                                <input type="checkbox" checked />
                                 <span class="checkmark"></span>
                               </label>
                             </td>
                           </tr>
                           <tr>
-                            <td>Assets</td>
+                            <td>Estimates</td>
                             <td class="text-center">
                               <label class="custom_check">
                                 <input type="checkbox" checked />
@@ -1667,21 +1396,52 @@
                             </td>
                             <td class="text-center">
                               <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
+                                <input type="checkbox" checked />
                                 <span class="checkmark"></span>
                               </label>
                             </td>
                             <td class="text-center">
                               <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
+                                <input type="checkbox" checked />
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Invoices</td>
+                            <td class="text-center">
+                              <label class="custom_check">
+                                <input type="checkbox" checked />
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td class="text-center">
+                              <label class="custom_check">
+                                <input type="checkbox" checked />
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td class="text-center">
+                              <label class="custom_check">
+                                <input type="checkbox" checked />
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td class="text-center">
+                              <label class="custom_check">
+                                <input type="checkbox" checked />
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td class="text-center">
+                              <label class="custom_check">
+                                <input type="checkbox" checked />
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td class="text-center">
+                              <label class="custom_check">
+                                <input type="checkbox" checked />
                                 <span class="checkmark"></span>
                               </label>
                             </td>
@@ -1714,21 +1474,13 @@
                             </td>
                             <td class="text-center">
                               <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
+                                <input type="checkbox" checked />
                                 <span class="checkmark"></span>
                               </label>
                             </td>
                             <td class="text-center">
                               <label class="custom_check">
-                                <input
-                                  type="checkbox"
-                                  name="rememberme"
-                                  class="rememberme"
-                                />
+                                <input type="checkbox" checked />
                                 <span class="checkmark"></span>
                               </label>
                             </td>
@@ -1745,16 +1497,12 @@
             </div>
           </div>
 
-          <div
-            class="modal custom-modal fade"
-            id="delete_employee"
-            role="dialog"
-          >
+          <div class="modal custom-modal fade" id="delete_client" role="dialog">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-body">
                   <div class="form-header">
-                    <h3>Delete Employee</h3>
+                    <h3>Delete Client</h3>
                     <p>Are you sure want to delete?</p>
                   </div>
                   <div class="modal-btn delete-action">
@@ -2347,25 +2095,23 @@
         </div>
       </div>
     </div>
- <script src="{{ asset('assets/js/jquery-3.7.1.min.js') }}"></script>
+   <script data-cfasync="false" src="{{ asset('cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js') }}"></script>
+
+<script src="{{ asset('assets/js/jquery-3.7.1.min.js') }}"></script>
 <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
 <script src="{{ asset('assets/js/jquery.slimscroll.min.js') }}"></script>
 <script src="{{ asset('assets/js/select2.min.js') }}"></script>
-<script src="{{ asset('assets/js/moment.min.js') }}"></script>
-<script src="{{ asset('assets/js/bootstrap-datetimepicker.min.js') }}"></script>
+<script src="{{ asset('assets/js/jquery.dataTables.min.js') }}"></script>
+<script src="{{ asset('assets/js/dataTables.bootstrap4.min.js') }}"></script>
 <script src="{{ asset('assets/js/feather.min.js') }}"></script>
 <script src="{{ asset('assets/js/layout.js') }}"></script>
 <script src="{{ asset('assets/js/theme-settings.js') }}"></script>
 <script src="{{ asset('assets/js/greedynav.js') }}"></script>
 <script src="{{ asset('assets/js/app.js') }}"></script>
 
-<script 
-  src="https://cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
-  data-cf-settings="ab0e61c7c601ec36511db1d3-|49" 
-  defer
-></script>
+<script defer src="{{ asset('cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js') }}" data-cf-settings="7c2b2e65fe4c310595aa1538-|49"></script>
 
   </body>
 
-  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/employees by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:22:31 GMT -->
+  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/clients-list by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:25:07 GMT -->
 </html>
