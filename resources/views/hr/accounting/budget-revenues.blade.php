@@ -1,121 +1,187 @@
 <!DOCTYPE html>
 <html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-sidebar-image="none">
 
-<!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/events by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:22:24 GMT -->
+<!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/budget-revenues by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:23:07 GMT -->
 <!-- Added by HTTrack -->
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Smarthr - Bootstrap Admin Template">
-    <meta name="keywords" content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern, accounts, invoice, html5, responsive, CRM, Projects">
-    <meta name="author" content="Dreamstechnologies - Bootstrap Admin Template">
-    <title>Events - HRMS admin template</title>
-
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}">
-
-    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
-
-    <link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/fontawesome.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/all.min.css') }}">
-
-    <link rel="stylesheet" href="{{ asset('assets/css/line-awesome.min.css') }}">
-
-    <link rel="stylesheet" href="{{ asset('assets/css/material.css') }}">
-
-    <link rel="stylesheet" href="{{ asset('assets/css/select2.min.css') }}">
-
-    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap-datetimepicker.min.css') }}">
-
-    <link rel="stylesheet" href="{{ asset('assets/css/fullcalendar.min.css') }}">
-
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Smarthr - Bootstrap Admin Template" />
+  <meta name="keywords" content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern, accounts, invoice, html5, responsive, CRM, Projects" />
+  <meta name="author" content="Dreamstechnologies - Bootstrap Admin Template" />
+  <title>Categories - HRMS admin template</title>
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/line-awesome.min.css" />
+  <link rel="stylesheet" href="assets/css/material.css" />
+  <link rel="stylesheet" href="assets/css/select2.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 
 <body>
 
     <div class="main-wrapper">
-
-         @include('layouts.header')
-
+        @include('layouts.header')
         @include('layouts.sidebar')
 
         <div class="page-wrapper">
             <div class="content container-fluid">
+
+
+
                 <div class="page-header">
                     <div class="row align-items-center">
                         <div class="col">
-                            <h3 class="page-title">Events</h3>
+                            <h3 class="page-title">Budgets Revenues</h3>
                             <ul class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="admin-dashboard.html">Dashboard</a></li>
-                                <li class="breadcrumb-item active">Events</li>
+                                <li class="breadcrumb-item active">Accounts</li>
                             </ul>
                         </div>
                         <div class="col-auto float-end ms-auto">
-                            <a href="#" class="btn add-btn" data-bs-toggle="modal" data-bs-target="#add_event"><i class="fa fa-plus"></i> Add Event</a>
+                            <a href="#" class="btn add-btn" data-bs-toggle="modal" data-bs-target="#add_categories"><i class="fa fa-plus"></i> Add Revenues</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="card mb-0">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-md-12">
-
-                                        <div id="calendar"></div>
-
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="table table-striped custom-table mb-0">
+                                <thead>
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Notes</th>
+                                        <th>Category Name</th>
+                                        <th>SubCategory Name</th>
+                                        <th>Amount</th>
+                                        <th>Revenue Date</th>
+                                        <th class="text-end">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>test</td>
+                                        <td>Project</td>
+                                        <td>Project Expenses</td>
+                                        <td>1000.00</td>
+                                        <td>06 Jan 2020</td>
+                                        <td class="text-end">
+                                            <div class="dropdown dropdown-action">
+                                                <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit_categories"><i class="fa-solid fa-pencil m-r-5"></i> Edit</a>
+                                                    <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete"><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>test</td>
+                                        <td>Hardware</td>
+                                        <td>Hardware Expenses</td>
+                                        <td>1000.00</td>
+                                        <td>06 Jan 2020</td>
+                                        <td class="text-end">
+                                            <div class="dropdown dropdown-action">
+                                                <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit_categories"><i class="fa-solid fa-pencil m-r-5"></i> Edit</a>
+                                                    <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete"><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
             </div>
 
 
-            <div id="add_event" class="modal custom-modal fade" role="dialog">
+            <div class="modal custom-modal fade" id="add_categories" role="dialog">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title">Add Event</h5>
+                            <h5 class="modal-title">Add Revenues</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="modal-body">
                             <form>
-                                <div class="input-block mb-3">
-                                    <label class="col-form-label">Event Name <span class="text-danger">*</span></label>
-                                    <input class="form-control" type="text">
-                                </div>
-                                <div class="input-block mb-3">
-                                    <label class="col-form-label">Event Date <span class="text-danger">*</span></label>
-                                    <div class="cal-icon">
-                                        <input class="form-control datetimepicker" type="text">
+                                <div class="input-block mb-3 row">
+                                    <label class="col-lg-12 control-label col-form-label">Amount
+                                        <span class="text-danger">*</span>
+                                    </label>
+                                    <div class="col-lg-12 p-0">
+                                        <input type="text" class="form-control" placeholder="800.00" name="amount">
                                     </div>
                                 </div>
-                                <div class="input-block mb-3">
-                                    <label class="control-label col-form-label">Category</label>
-                                    <select class="select form-control">
-                                        <option>Danger</option>
-                                        <option>Success</option>
-                                        <option>Purple</option>
-                                        <option>Primary</option>
-                                        <option>Pink</option>
-                                        <option>Info</option>
-                                        <option>Inverse</option>
-                                        <option>Orange</option>
-                                        <option>Brown</option>
-                                        <option>Teal</option>
-                                        <option>Warning</option>
-                                    </select>
+                                <div class="input-block mb-3 row">
+                                    <label class="col-lg-12 control-label col-form-label">Notes
+                                        <span class="text-danger">*</span>
+                                    </label>
+                                    <div class="col-lg-12 p-0">
+                                        <textarea class="form-control ta" name="notes"></textarea>
+                                    </div>
                                 </div>
-                                <div class="submit-section">
-                                    <button class="btn btn-primary submit-btn">Submit</button>
+                                <div class="input-block mb-3 row">
+                                    <label class="col-lg-12 control-label col-form-label">Revenue Date
+                                        <span class="text-danger">*</span>
+                                    </label>
+                                    <div class="col-lg-12 p-0">
+                                        <input class="datepicker-input form-control" type="text" value="06-05-2021" name="revenue_date" data-date-format="dd-mm-yyyy">
+                                    </div>
+                                </div>
+                                <div class="input-block mb-3 row">
+                                    <label class="col-lg-12 control-label col-form-label">Category
+                                        <span class="text-danger">*</span>
+                                    </label>
+                                    <div class="col-lg-12 p-0">
+                                        <select name="category" class="form-control m-b form-select" id="main_category">
+                                            <option value disabled selected>Choose Category</option>
+                                            <option value="1">project1</option>
+                                            <option value="3">test category</option>
+                                            <option value="4">Hardware</option>
+                                            <option value="5">Material</option>
+                                            <option value="6">Vehicle</option>
+                                            <option value="8">TestctrE</option>
+                                            <option value="9">Twocatr</option>
+                                            <option value="10">fesferwf</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="input-block mb-3 row">
+                                    <label class="col-lg-12 control-label col-form-label">Sub Category
+                                        <span class="text-danger">*</span>
+                                    </label>
+                                    <div class="col-lg-12 p-0">
+                                        <select name="sub_category" class="form-control m-b form-select" id="sub_category">
+                                            <option value>Choose Sub-Category</option>
+                                            <option value="1">project1</option>
+                                            <option value="3">test category</option>
+                                            <option value="4">Hardware</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="input-block mb-3 row">
+                                    <label class="col-lg-12 control-label col-form-label">Attach File</label>
+                                    <div class="col-lg-12 p-0">
+                                        <input type="file" class="form-control" data-buttontext="Choose File" data-icon="false" data-classbutton="btn btn-default" data-classinput="form-control inline input-s" name="receipt">
+                                    </div>
+                                </div>
+                                <div class="m-t-20 text-center">
+                                    <button class="btn btn-primary btn-lg BudgetAddBtn">Submit</button>
                                 </div>
                             </form>
                         </div>
@@ -124,59 +190,106 @@
             </div>
 
 
-            <div class="modal custom-modal fade" id="event-modal">
+            <div class="modal custom-modal fade" id="edit_categories" role="dialog">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title">Event</h5>
+                            <h5 class="modal-title">Edit Revenues</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body"></div>
-                        <div class="modal-footer text-center">
-                            <button type="button" class="btn btn-success submit-btn save-event">Create event</button>
-                            <button type="button" class="btn btn-danger submit-btn delete-event" data-bs-dismiss="modal">Delete</button>
+                        <div class="modal-body">
+                            <form>
+                                <div class="input-block mb-3 row">
+                                    <label class="col-lg-12 control-label col-form-label">Amount
+                                        <span class="text-danger">*</span>
+                                    </label>
+                                    <div class="col-lg-12 p-0">
+                                        <input type="text" class="form-control" placeholder="800.00" name="amount">
+                                    </div>
+                                </div>
+                                <div class="input-block mb-3 row">
+                                    <label class="col-lg-12 control-label col-form-label">Notes
+                                        <span class="text-danger">*</span>
+                                    </label>
+                                    <div class="col-lg-12 p-0">
+                                        <textarea class="form-control ta" name="notes"></textarea>
+                                    </div>
+                                </div>
+                                <div class="input-block mb-3 row">
+                                    <label class="col-lg-12 control-label col-form-label">Revenue Date
+                                        <span class="text-danger">*</span>
+                                    </label>
+                                    <div class="col-lg-12 p-0">
+                                        <input class="datepicker-input form-control" type="text" value="06-05-2021" name="revenue_date" data-date-format="dd-mm-yyyy">
+                                    </div>
+                                </div>
+                                <div class="input-block mb-3 row">
+                                    <label class="col-lg-12 control-label col-form-label">Category
+                                        <span class="text-danger">*</span>
+                                    </label>
+                                    <div class="col-lg-12 p-0">
+                                        <select name="category" class="form-control m-b form-select" id="main_category_2">
+                                            <option value disabled selected>Choose Category</option>
+                                            <option value="1">project1</option>
+                                            <option value="3">test category</option>
+                                            <option value="4">Hardware</option>
+                                            <option value="5">Material</option>
+                                            <option value="6">Vehicle</option>
+                                            <option value="8">TestctrE</option>
+                                            <option value="9">Twocatr</option>
+                                            <option value="10">fesferwf</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="input-block mb-3 row">
+                                    <label class="col-lg-12 control-label col-form-label">Sub Category
+                                        <span class="text-danger">*</span>
+                                    </label>
+                                    <div class="col-lg-12 p-0">
+                                        <select name="sub_category" class="form-control m-b form-select" id="sub_category_2">
+                                            <option value>Choose Sub-Category</option>
+                                            <option value="1">project1</option>
+                                            <option value="3">test category</option>
+                                            <option value="4">Hardware</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="input-block mb-3 row">
+                                    <label class="col-lg-12 control-label col-form-label">Attach File</label>
+                                    <div class="col-lg-12 p-0">
+                                        <input type="file" class="form-control" data-buttontext="Choose File" data-icon="false" data-classbutton="btn btn-default" data-classinput="form-control inline input-s" name="receipt">
+                                    </div>
+                                </div>
+                                <div class="m-t-20 text-center">
+                                    <button class="btn btn-primary btn-lg BudgetAddBtn">Submit</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
 
 
-            <div class="modal custom-modal fade" id="add-category">
-                <div class="modal-dialog">
+            <div class="modal custom-modal fade" id="delete" role="dialog">
+                <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Add a category</h4>
-                        </div>
-                        <div class="modal-body p-20">
-                            <form>
+                        <div class="modal-body">
+                            <div class="form-header">
+                                <h3>Delete </h3>
+                                <p>Are you sure want to delete?</p>
+                            </div>
+                            <div class="modal-btn delete-action">
                                 <div class="row">
-                                    <div class="col-md-6">
-                                        <label class="col-form-label">Category Name</label>
-                                        <input class="form-control" placeholder="Enter name" type="text" name="category-name">
+                                    <div class="col-6">
+                                        <a href="javascript:void(0);" class="btn btn-primary continue-btn">Delete</a>
                                     </div>
-                                    <div class="col-md-6">
-                                        <label class="col-form-label">Choose Category Color</label>
-                                        <select class="form-control form-select select" data-placeholder="Choose a color..." name="category-color">
-                                            <option value="success">Success</option>
-                                            <option value="danger">Danger</option>
-                                            <option value="info">Info</option>
-                                            <option value="pink">Pink</option>
-                                            <option value="primary">Primary</option>
-                                            <option value="warning">Warning</option>
-                                            <option value="orange">Orange</option>
-                                            <option value="brown">Brown</option>
-                                            <option value="teal">Teal</option>
-                                        </select>
+                                    <div class="col-6">
+                                        <a href="javascript:void(0);" data-bs-dismiss="modal" class="btn btn-primary cancel-btn">Cancel</a>
                                     </div>
                                 </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-white" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-danger save-category" data-bs-dismiss="modal">Save</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -491,27 +604,30 @@
             </div>
         </div>
     </div>
-<script src="{{ asset('assets/js/jquery-3.7.1.min.js') }}"></script>
-<script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
-<script src="{{ asset('assets/js/jquery.slimscroll.min.js') }}"></script>
-<script src="{{ asset('assets/js/select2.min.js') }}"></script>
-<script src="{{ asset('assets/js/moment.min.js') }}"></script>
-<script src="{{ asset('assets/js/bootstrap-datetimepicker.min.js') }}"></script>
-<script src="{{ asset('assets/js/jquery-ui.min.js') }}"></script>
-<script src="{{ asset('assets/js/fullcalendar.min.js') }}"></script>
-<script src="{{ asset('assets/js/jquery.fullcalendar.js') }}"></script>
-<script src="{{ asset('assets/js/feather.min.js') }}"></script>
-<script src="{{ asset('assets/js/layout.js') }}"></script>
-<script src="{{ asset('assets/js/theme-settings.js') }}"></script>
-<script src="{{ asset('assets/js/greedynav.js') }}"></script>
-<script src="{{ asset('assets/js/app.js') }}"></script>
+    <!-- Core JS Libraries -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.min.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
 
-<!-- Optional: Cloudflare Rocket Loader (if used) -->
-<script src="{{ asset('cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js') }}" data-cf-settings="bbf4868181cd296b4f739d21-|49" defer></script>
+    <!-- Utility & Theme Scripts -->
+    <script src="assets/js/feather.min.js"></script>
+    <script src="assets/js/layout.js"></script>
+    <script src="assets/js/theme-settings.js"></script>
+    <script src="assets/js/greedynav.js"></script>
+    <script src="assets/js/app.js"></script>
+
+    <!-- Cloudflare Rocket Loader -->
+    <script
+        src="../../../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
+        data-cf-settings="b169ce8486b43506bbfafc8c-|49"
+        defer></script>
 
 
 </body>
 
-<!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/events by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:22:27 GMT -->
+<!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/budget-revenues by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:23:07 GMT -->
 
 </html>

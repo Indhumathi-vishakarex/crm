@@ -39,6 +39,7 @@
 
         @include('layouts.sidebar')
 
+<<<<<<< HEAD:resources/views/admin/employee-dashboard.blade.php
         <div class="two-col-bar" id="two-col-bar">
             <div class="sidebar sidebar-twocol" id="navbar-nav">
                 <div class="sidebar-left slimscroll">
@@ -1182,6 +1183,9 @@
                 </div>
             </div>
         </div>
+=======
+
+>>>>>>> e86f3016cbbac53be0faf68428cd10e0d6336793:resources/views/main/dashboard/employee-dashboard.blade.php
 
         <div class="page-wrapper">
             <div class="content container-fluid pb-0">
@@ -1226,7 +1230,7 @@
                                             </div>
                                         </div>
                                         <div class="welcome-btn">
-                                            <a href="profile.html" class="btn">View Profile</a>
+                                            <a href="{{ route('profile') }}" class="btn">View Profile</a>
                                         </div>
                                     </div>
                                 </div>

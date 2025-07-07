@@ -7,7 +7,7 @@
   data-sidebar-size="lg"
   data-sidebar-image="none"
 >
-  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/inbox by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:22:29 GMT -->
+  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/daily-reports by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:23:09 GMT -->
   <!-- Added by HTTrack --><meta
     http-equiv="content-type"
     content="text/html;charset=UTF-8"
@@ -18,7 +18,7 @@
     <meta name="description" content="Smarthr - Bootstrap Admin Template" />
     <meta name="keywords" content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern, accounts, invoice, html5, responsive, CRM, Projects" />
     <meta name="author" content="Dreamstechnologies - Bootstrap Admin Template" />
-    <title>Inbox - HRMS admin template</title>
+    <title>Daily Report - HRMS admin template</title>
 
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}" />
 
@@ -27,6 +27,9 @@
     <link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/all.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/line-awesome.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/material.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/dataTables.bootstrap4.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/select2.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap-datetimepicker.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
 </head>
 
@@ -38,340 +41,224 @@
       <div class="page-wrapper">
         <div class="content container-fluid">
           <div class="page-header">
-            <div class="row align-items-center">
+            <div class="row">
               <div class="col">
-                <h3 class="page-title">Inbox</h3>
+                <h3 class="page-title">Daily Report</h3>
                 <ul class="breadcrumb">
                   <li class="breadcrumb-item">
                     <a href="admin-dashboard.html">Dashboard</a>
                   </li>
-                  <li class="breadcrumb-item active">Inbox</li>
+                  <li class="breadcrumb-item active">Daily Report</li>
                 </ul>
               </div>
-              <div class="col-auto float-end ms-auto">
-                <a href="compose.html" class="btn add-btn"
-                  ><i class="fa fa-plus"></i> Compose</a
-                >
+              <div class="col-auto float-end ms-auto"></div>
+              <div class="col-auto">
+                <a href="#" class="btn btn-primary">PDF</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-md-3 col-sm-6">
+              <div class="card">
+                <div class="card-body text-center">
+                  <h3><b>101</b></h3>
+                  <p>Total Employees</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="card">
+                <div class="card-body text-center">
+                  <h3 class="text-success"><b>84</b></h3>
+                  <p>Today Present</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="card">
+                <div class="card-body text-center">
+                  <h3 class="text-danger"><b>12</b></h3>
+                  <p>Today Absent</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="card">
+                <div class="card-body text-center">
+                  <h3><b>5</b></h3>
+                  <p>Today Left</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row filter-row mb-4">
+            <div class="col-sm-6 col-md-3">
+              <div class="input-block mb-3 form-focus">
+                <input class="form-control floating" type="text" />
+                <label class="focus-label">Employee</label>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="input-block mb-3 form-focus select-focus">
+                <select class="select floating">
+                  <option>Select Department</option>
+                  <option>Designing</option>
+                  <option>Development</option>
+                  <option>Finance</option>
+                  <option>Hr & Finance</option>
+                </select>
+                <label class="focus-label">Department</label>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="input-block mb-3 form-focus">
+                <div class="cal-icon">
+                  <input
+                    class="form-control floating datetimepicker"
+                    type="text"
+                  />
+                </div>
+                <label class="focus-label">From</label>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="input-block mb-3 form-focus">
+                <div class="cal-icon">
+                  <input
+                    class="form-control floating datetimepicker"
+                    type="text"
+                  />
+                </div>
+                <label class="focus-label">To</label>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="d-grid">
+                <a href="#" class="btn btn-success"> Search </a>
               </div>
             </div>
           </div>
 
           <div class="row">
             <div class="col-md-12">
-              <div class="card mb-0">
-                <div class="card-body">
-                  <div class="email-header">
-                    <div class="row">
-                      <div class="col top-action-left">
-                        <div class="float-start">
-                          <div class="btn-group dropdown-action">
-                            <button
-                              type="button"
-                              class="btn btn-white dropdown-toggle"
-                              data-bs-toggle="dropdown"
-                            >
-                              Select <i class="fa fa-angle-down"></i>
-                            </button>
-                            <div class="dropdown-menu">
-                              <a class="dropdown-item" href="#">All</a>
-                              <a class="dropdown-item" href="#">None</a>
-                              <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" href="#">Read</a>
-                              <a class="dropdown-item" href="#">Unread</a>
-                            </div>
-                          </div>
-                          <div class="btn-group dropdown-action">
-                            <button
-                              type="button"
-                              class="btn btn-white dropdown-toggle"
-                              data-bs-toggle="dropdown"
-                            >
-                              Actions <i class="fa fa-angle-down"></i>
-                            </button>
-                            <div class="dropdown-menu">
-                              <a class="dropdown-item" href="#">Reply</a>
-                              <a class="dropdown-item" href="#">Forward</a>
-                              <a class="dropdown-item" href="#">Archive</a>
-                              <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" href="#">Mark As Read</a>
-                              <a class="dropdown-item" href="#"
-                                >Mark As Unread</a
-                              >
-                              <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" href="#">Delete</a>
-                            </div>
-                          </div>
-                          <div class="btn-group dropdown-action">
-                            <button
-                              type="button"
-                              class="btn btn-white dropdown-toggle"
-                              data-bs-toggle="dropdown"
-                            >
-                              <i class="fa fa-folder"></i>
-                              <i class="fa fa-angle-down"></i>
-                            </button>
-                            <div role="menu" class="dropdown-menu">
-                              <a class="dropdown-item" href="#">Social</a>
-                              <a class="dropdown-item" href="#">Forums</a>
-                              <a class="dropdown-item" href="#">Updates</a>
-                              <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" href="#">Spam</a>
-                              <a class="dropdown-item" href="#">Trash</a>
-                              <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" href="#">New</a>
-                            </div>
-                          </div>
-                          <div class="btn-group dropdown-action">
-                            <button
-                              type="button"
-                              data-bs-toggle="dropdown"
-                              class="btn btn-white dropdown-toggle"
-                            >
-                              <i class="fa fa-tags"></i>
-                              <i class="fa fa-angle-down"></i>
-                            </button>
-                            <div role="menu" class="dropdown-menu">
-                              <a class="dropdown-item" href="#">Work</a>
-                              <a class="dropdown-item" href="#">Family</a>
-                              <a class="dropdown-item" href="#">Social</a>
-                              <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" href="#">Primary</a>
-                              <a class="dropdown-item" href="#">Promotions</a>
-                              <a class="dropdown-item" href="#">Forums</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="float-start d-none d-sm-block">
-                          <input
-                            type="text"
-                            placeholder="Search Messages"
-                            class="form-control search-message"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-auto top-action-right">
-                        <div class="text-end">
-                          <button
-                            type="button"
-                            title="Refresh"
-                            data-bs-toggle="tooltip"
-                            class="btn btn-white d-none d-md-inline-block"
+              <div class="table-responsive">
+                <table class="table table-striped custom-table mb-0 datatable">
+                  <thead>
+                    <tr>
+                      <th>Employee</th>
+                      <th>Date</th>
+                      <th>Department</th>
+                      <th class="text-center">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <h2 class="table-avatar">
+                          <a href="profile.html" class="avatar"
+                            ><img
+                              src="assets/img/profiles/avatar-02.jpg"
+                              alt="User Image"
+                          /></a>
+                          <a href="profile.html">John Doe <span>#0001</span></a>
+                        </h2>
+                      </td>
+                      <td>20 Dec 2020</td>
+                      <td>Design</td>
+                      <td class="text-center">
+                        <button class="btn btn-outline-info btn-sm">
+                          Week off
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h2 class="table-avatar">
+                          <a href="profile.html" class="avatar"
+                            ><img
+                              src="assets/img/profiles/avatar-09.jpg"
+                              alt="User Image"
+                          /></a>
+                          <a href="profile.html"
+                            >Richard Miles <span>#0002</span></a
                           >
-                            <i class="fa fa-refresh"></i>
-                          </button>
-                          <div class="btn-group">
-                            <a class="btn btn-white"
-                              ><i class="fa fa-angle-left"></i
-                            ></a>
-                            <a class="btn btn-white"
-                              ><i class="fa fa-angle-right"></i
-                            ></a>
-                          </div>
-                        </div>
-                        <div class="text-end">
-                          <span class="text-muted d-none d-md-inline-block"
-                            >Showing 10 of 112
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="email-content">
-                    <div class="table-responsive">
-                      <table class="table table-inbox table-hover">
-                        <thead>
-                          <tr>
-                            <th colspan="6">
-                              <input type="checkbox" class="checkbox-all" />
-                            </th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr
-                            class="unread clickable-row"
-                            data-href="mail-view"
+                        </h2>
+                      </td>
+                      <td>20 Dec 2020</td>
+                      <td>Web Developer</td>
+                      <td class="text-center">
+                        <button class="btn btn-outline-danger btn-sm">
+                          Absent
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h2 class="table-avatar">
+                          <a href="profile.html" class="avatar"
+                            ><img
+                              src="assets/img/profiles/avatar-10.jpg"
+                              alt="User Image"
+                          /></a>
+                          <a href="profile.html"
+                            >John Smith <span>#003</span></a
                           >
-                            <td>
-                              <input type="checkbox" class="checkmail" />
-                            </td>
-                            <td>
-                              <span class="mail-important"
-                                ><i class="fa fa-star starred"></i
-                              ></span>
-                            </td>
-                            <td class="name">John Doe</td>
-                            <td class="subject">
-                              Lorem ipsum dolor sit amet, consectetuer
-                              adipiscing elit
-                            </td>
-                            <td><i class="fa fa-paperclip"></i></td>
-                            <td class="mail-date">13:14</td>
-                          </tr>
-                          <tr
-                            class="unread clickable-row"
-                            data-href="mail-view"
+                        </h2>
+                      </td>
+                      <td>20 Dec 2020</td>
+                      <td>Android Developer</td>
+                      <td class="text-center">
+                        <button class="btn btn-outline-info btn-sm">
+                          Week off
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h2 class="table-avatar">
+                          <a href="profile.html" class="avatar"
+                            ><img
+                              src="assets/img/profiles/avatar-05.jpg"
+                              alt="User Image"
+                          /></a>
+                          <a href="profile.html"
+                            >Mike Litorus <span>#004</span></a
                           >
-                            <td>
-                              <input type="checkbox" class="checkmail" />
-                            </td>
-                            <td>
-                              <span class="mail-important"
-                                ><i class="fa-regular fa-star"></i
-                              ></span>
-                            </td>
-                            <td class="name">Envato Account</td>
-                            <td class="subject">
-                              Important account security update from Envato
-                            </td>
-                            <td></td>
-                            <td class="mail-date">8:42</td>
-                          </tr>
-                          <tr class="clickable-row" data-href="mail-view">
-                            <td>
-                              <input type="checkbox" class="checkmail" />
-                            </td>
-                            <td>
-                              <span class="mail-important"
-                                ><i class="fa-regular fa-star"></i
-                              ></span>
-                            </td>
-                            <td class="name">Twitter</td>
-                            <td class="subject">
-                              HRMS Bootstrap Admin Template
-                            </td>
-                            <td></td>
-                            <td class="mail-date">30 Nov</td>
-                          </tr>
-                          <tr
-                            class="unread clickable-row"
-                            data-href="mail-view"
+                        </h2>
+                      </td>
+                      <td>20 Dec 2020</td>
+                      <td>IOS Developer</td>
+                      <td class="text-center">
+                        <button class="btn btn-outline-info btn-sm">
+                          Week off
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h2 class="table-avatar">
+                          <a href="profile.html" class="avatar"
+                            ><img
+                              src="assets/img/profiles/avatar-11.jpg"
+                              alt="User Image"
+                          /></a>
+                          <a href="profile.html"
+                            >Wilmer Deluna <span>#005</span></a
                           >
-                            <td>
-                              <input type="checkbox" class="checkmail" />
-                            </td>
-                            <td>
-                              <span class="mail-important"
-                                ><i class="fa-regular fa-star"></i
-                              ></span>
-                            </td>
-                            <td class="name">Richard Parker</td>
-                            <td class="subject">
-                              Lorem ipsum dolor sit amet, consectetuer
-                              adipiscing elit
-                            </td>
-                            <td></td>
-                            <td class="mail-date">18 Sep</td>
-                          </tr>
-                          <tr class="clickable-row" data-href="mail-view">
-                            <td>
-                              <input type="checkbox" class="checkmail" />
-                            </td>
-                            <td>
-                              <span class="mail-important"
-                                ><i class="fa-regular fa-star"></i
-                              ></span>
-                            </td>
-                            <td class="name">John Smith</td>
-                            <td class="subject">
-                              Lorem ipsum dolor sit amet, consectetuer
-                              adipiscing elit
-                            </td>
-                            <td></td>
-                            <td class="mail-date">21 Aug</td>
-                          </tr>
-                          <tr class="clickable-row" data-href="mail-view">
-                            <td>
-                              <input type="checkbox" class="checkmail" />
-                            </td>
-                            <td>
-                              <span class="mail-important"
-                                ><i class="fa-regular fa-star"></i
-                              ></span>
-                            </td>
-                            <td class="name">me, Robert Smith (3)</td>
-                            <td class="subject">
-                              Lorem ipsum dolor sit amet, consectetuer
-                              adipiscing elit
-                            </td>
-                            <td></td>
-                            <td class="mail-date">1 Aug</td>
-                          </tr>
-                          <tr
-                            class="unread clickable-row"
-                            data-href="mail-view"
-                          >
-                            <td>
-                              <input type="checkbox" class="checkmail" />
-                            </td>
-                            <td>
-                              <span class="mail-important"
-                                ><i class="fa-regular fa-star"></i
-                              ></span>
-                            </td>
-                            <td class="name">Codecanyon</td>
-                            <td class="subject">Welcome To Codecanyon</td>
-                            <td></td>
-                            <td class="mail-date">Jul 13</td>
-                          </tr>
-                          <tr class="clickable-row" data-href="mail-view">
-                            <td>
-                              <input type="checkbox" class="checkmail" />
-                            </td>
-                            <td>
-                              <span class="mail-important"
-                                ><i class="fa-regular fa-star"></i
-                              ></span>
-                            </td>
-                            <td class="name">Richard Miles</td>
-                            <td class="subject">
-                              Lorem ipsum dolor sit amet, consectetuer
-                              adipiscing elit
-                            </td>
-                            <td><i class="fa fa-paperclip"></i></td>
-                            <td class="mail-date">May 14</td>
-                          </tr>
-                          <tr
-                            class="unread clickable-row"
-                            data-href="mail-view"
-                          >
-                            <td>
-                              <input type="checkbox" class="checkmail" />
-                            </td>
-                            <td>
-                              <span class="mail-important"
-                                ><i class="fa-regular fa-star"></i
-                              ></span>
-                            </td>
-                            <td class="name">John Smith</td>
-                            <td class="subject">
-                              Lorem ipsum dolor sit amet, consectetuer
-                              adipiscing elit
-                            </td>
-                            <td></td>
-                            <td class="mail-date">11/11/16</td>
-                          </tr>
-                          <tr class="clickable-row" data-href="mail-view">
-                            <td>
-                              <input type="checkbox" class="checkmail" />
-                            </td>
-                            <td>
-                              <span class="mail-important"
-                                ><i class="fa fa-star starred"></i
-                              ></span>
-                            </td>
-                            <td class="name">Mike Litorus</td>
-                            <td class="subject">
-                              Lorem ipsum dolor sit amet, consectetuer
-                              adipiscing elit
-                            </td>
-                            <td></td>
-                            <td class="mail-date">10/31/16</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
+                        </h2>
+                      </td>
+                      <td>20 Dec 2020</td>
+                      <td>Team Leader</td>
+                      <td class="text-center">
+                        <button class="btn btn-outline-info btn-sm">
+                          Week off
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
@@ -942,20 +829,25 @@
         </div>
       </div>
     </div>
-<!-- Scripts -->
 <script src="{{ asset('assets/js/jquery-3.7.1.min.js') }}"></script>
 <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
 <script src="{{ asset('assets/js/jquery.slimscroll.min.js') }}"></script>
+<script src="{{ asset('assets/js/select2.min.js') }}"></script>
+<script src="{{ asset('assets/js/moment.min.js') }}"></script>
+<script src="{{ asset('assets/js/bootstrap-datetimepicker.min.js') }}"></script>
+<script src="{{ asset('assets/js/jquery.dataTables.min.js') }}"></script>
+<script src="{{ asset('assets/js/dataTables.bootstrap4.min.js') }}"></script>
 <script src="{{ asset('assets/js/feather.min.js') }}"></script>
 <script src="{{ asset('assets/js/layout.js') }}"></script>
 <script src="{{ asset('assets/js/theme-settings.js') }}"></script>
 <script src="{{ asset('assets/js/greedynav.js') }}"></script>
 <script src="{{ asset('assets/js/app.js') }}"></script>
 
-<!-- Optional: Cloudflare Rocket Loader -->
-<script src="{{ asset('cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js') }}" data-cf-settings="9f1ed2856303af44cac22aee-|49" defer></script>
+<script src="{{ asset('cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js') }}"
+        data-cf-settings="04c2700bd066959244e09c79-|49" defer></script>
+
 
   </body>
 
-  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/inbox by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:22:30 GMT -->
+  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/daily-reports by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:23:09 GMT -->
 </html>

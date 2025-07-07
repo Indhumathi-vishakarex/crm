@@ -14,7 +14,8 @@
         content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern, accounts, invoice, html5, responsive, CRM, Projects">
     <meta name="author" content="Dreamstechnologies - Bootstrap Admin Template">
     <title>Dashboard - HRMS admin template</title>
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}">
+
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/logo2.png') }}">
 
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
 
@@ -37,14 +38,6 @@
 
         @include('layouts.header')
         @include('layouts.sidebar')
-
-
-
-
-
-
-
-
         <div class="page-wrapper">
             <div class="content container-fluid">
 
@@ -405,7 +398,7 @@
                                 </div>
                             </div>
                             <div class="card-footer">
-                                <a href="invoices.html">View all invoices</a>
+                                <a href="{{ route('invoices') }}">View all invoices</a>
                             </div>
                         </div>
                     </div>
@@ -459,7 +452,7 @@
                                 </div>
                             </div>
                             <div class="card-footer">
-                                <a href="payments.html">View all payments</a>
+                                <a href="{{route('payments')}}">View all payments</a>
                             </div>
                         </div>
                     </div>
