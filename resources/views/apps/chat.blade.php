@@ -12,38 +12,27 @@
     http-equiv="content-type"
     content="text/html;charset=UTF-8"
   /><!-- /Added by HTTrack -->
-  <head>
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Smarthr - Bootstrap Admin Template" />
-    <meta
-      name="keywords"
-      content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern, accounts, invoice, html5, responsive, CRM, Projects"
-    />
-    <meta
-      name="author"
-      content="Dreamstechnologies - Bootstrap Admin Template"
-    />
+    <meta name="keywords" content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern, accounts, invoice, html5, responsive, CRM, Projects" />
+    <meta name="author" content="Dreamstechnologies - Bootstrap Admin Template" />
     <title>Chat - HRMS admin template</title>
-<link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}" />
 
-<link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}">
 
-<link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/fontawesome.min.css') }}" />
-<link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/all.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/fontawesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/line-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/material.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+</head>
 
-<link rel="stylesheet" href="{{ asset('assets/css/line-awesome.min.css') }}" />
-
-<link rel="stylesheet" href="{{ asset('assets/css/material.css') }}" />
-
-<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
-
- 
-  </head>
   <body>
     <div class="main-wrapper">
-     
-
+   
 
 @include('layouts.header')
 @include('layouts.sidebar')
@@ -3324,35 +3313,26 @@
         </div>
       </div>
     </div>
-  
-<!-- Cloudflare Email Decode -->
-<script data-cfasync="false" src="{{ asset('../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js') }}"></script>
+    <!-- Cloudflare Email Decode -->
+<script data-cfasync="false" src="{{ asset('cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js') }}"></script>
 
-<!-- jQuery -->
+<!-- Core JS -->
 <script src="{{ asset('assets/js/jquery-3.7.1.min.js') }}"></script>
-
-<!-- Bootstrap -->
 <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
-
-<!-- Slimscroll -->
 <script src="{{ asset('assets/js/jquery.slimscroll.min.js') }}"></script>
-
-<!-- Dropfiles -->
 <script src="{{ asset('assets/js/dropfiles.js') }}"></script>
 
 <!-- Feather Icons -->
 <script src="{{ asset('assets/js/feather.min.js') }}"></script>
 
-<!-- Layout -->
+<!-- Layout and Settings -->
 <script src="{{ asset('assets/js/layout.js') }}"></script>
 <script src="{{ asset('assets/js/theme-settings.js') }}"></script>
 <script src="{{ asset('assets/js/greedynav.js') }}"></script>
 <script src="{{ asset('assets/js/app.js') }}"></script>
 
 <!-- Cloudflare Rocket Loader -->
-<script src="{{ asset('../../../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js') }}"
-        data-cf-settings="eb312830df3e40b70a9ef3db-|49" defer></script>
-
+<script src="{{ asset('cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js') }}" data-cf-settings="eb312830df3e40b70a9ef3db-|49" defer></script>
 
   </body>
 

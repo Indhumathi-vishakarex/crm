@@ -7,7 +7,7 @@
   data-sidebar-size="lg"
   data-sidebar-image="none"
 >
-  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/pipeline by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:23:02 GMT -->
+  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/activities by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:21:26 GMT -->
   <!-- Added by HTTrack --><meta
     http-equiv="content-type"
     content="text/html;charset=UTF-8"
@@ -24,9 +24,8 @@
       name="author"
       content="Dreamstechnologies - Bootstrap Admin Template"
     />
-    <title>Pipeline - HRMS admin template</title>
-
-  <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}">
+    <title>Activities - HRMS admin template</title>
+<link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}">
 
 <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
 
@@ -38,18 +37,18 @@
 
 <link rel="stylesheet" href="{{ asset('assets/css/dataTables.bootstrap4.min.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/select2.min.css') }}">
-<link rel="stylesheet" href="{{ asset('assets/css/bootstrap-datetimepicker.min.css') }}">
 
 <link rel="stylesheet" href="{{ asset('assets/plugins/daterangepicker/daterangepicker.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css') }}">
 
 <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
+   
   </head>
   <body>
     <div class="main-wrapper">
-    
    
+     
 @include('layouts.header')
 @include('layouts.sidebar')
 
@@ -123,7 +122,7 @@
                 <span class="material-icons-outlined"> topic </span>
               </a>
               <a
-                class="nav-link active"
+                class="nav-link"
                 id="v-pills-leads-tab"
                 title="CRM"
                 data-bs-toggle="pill"
@@ -325,7 +324,7 @@
                 <span class="material-icons-outlined"> school </span>
               </a>
               <a
-                class="nav-link"
+                class="nav-link active"
                 id="v-pills-activities-tab"
                 title="Activities"
                 data-bs-toggle="pill"
@@ -662,7 +661,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show active"
+                class="tab-pane fade show"
                 id="v-pills-leads"
                 role="tabpanel"
                 aria-labelledby="v-pills-leads-tab"
@@ -682,7 +681,7 @@
                     <a class href="leads.html"> Leads </a>
                   </li>
                   <li>
-                    <a class="active" href="pipeline.html">Pipeline </a>
+                    <a class href="pipeline.html">Pipeline </a>
                   </li>
                   <li>
                     <a class href="analytics.html">Analytics</a>
@@ -958,14 +957,16 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade show active"
                 id="v-pills-activities"
                 role="tabpanel"
                 aria-labelledby="v-pills-activities-tab"
               >
                 <p>Activities</p>
                 <ul>
-                  <li><a class href="activities.html"> Activities </a></li>
+                  <li>
+                    <a class="active" href="activities.html"> Activities </a>
+                  </li>
                 </ul>
               </div>
               <div
@@ -1295,12 +1296,12 @@
           <div class="page-header">
             <div class="row align-items-center">
               <div class="col-md-4">
-                <h3 class="page-title">Pipeline</h3>
+                <h3 class="page-title">Activities</h3>
                 <ul class="breadcrumb">
                   <li class="breadcrumb-item">
                     <a href="admin-dashboard.html">Dashboard</a>
                   </li>
-                  <li class="breadcrumb-item active">Pipeline</li>
+                  <li class="breadcrumb-item active">Activities</li>
                 </ul>
               </div>
               <div class="col-md-8 float-end ms-auto">
@@ -1335,8 +1336,8 @@
                     href="#"
                     class="btn add-btn"
                     data-bs-toggle="modal"
-                    data-bs-target="#add_pipeline"
-                    ><i class="la la-plus-circle"></i> Add Pipeline</a
+                    data-bs-target="#add_activity"
+                    ><i class="la la-plus-circle"></i>Add Activity</a
                   >
                 </div>
               </div>
@@ -1344,20 +1345,20 @@
           </div>
 
           <div class="filter-filelds" id="filter_inputs">
-            <div class="row filter-row custom-filter-row">
-              <div class="custom-col">
+            <div class="row filter-row">
+              <div class="col-xl-2">
                 <div class="input-block mb-3 form-focus">
                   <input type="text" class="form-control floating" />
-                  <label class="focus-label">Pipeline Name</label>
+                  <label class="focus-label">Activity</label>
                 </div>
               </div>
-              <div class="custom-col">
+              <div class="col-xl-2">
                 <div class="input-block mb-3 form-focus">
                   <input type="email" class="form-control floating" />
-                  <label class="focus-label">Deal Value</label>
+                  <label class="focus-label">Owner</label>
                 </div>
               </div>
-              <div class="custom-col">
+              <div class="col-xl-2">
                 <div class="input-block mb-3 form-focus">
                   <div class="cal-icon">
                     <input
@@ -1365,30 +1366,61 @@
                       type="text"
                     />
                   </div>
-                  <label class="focus-label">Created Date</label>
+                  <label class="focus-label">Due Date</label>
                 </div>
               </div>
-              <div class="custom-col">
+              <div class="col-xl-2">
+                <div class="input-block mb-3 form-focus">
+                  <div class="cal-icon">
+                    <input
+                      class="form-control floating datetimepicker"
+                      type="text"
+                    />
+                  </div>
+                  <label class="focus-label">Created at</label>
+                </div>
+              </div>
+              <div class="col-xl-2">
                 <div class="input-block mb-3 form-focus select-focus">
                   <select class="select floating">
                     <option>--Select--</option>
-                    <option>Win</option>
-                    <option>In Pipeline</option>
-                    <option>Conversation</option>
-                    <option>Folllow Up</option>
-                    <option>Lost</option>
+                    <option>Meeting</option>
+                    <option>Calls</option>
+                    <option>Email</option>
+                    <option>Task</option>
                   </select>
-                  <label class="focus-label">Stages</label>
+                  <label class="focus-label">Activity Type</label>
                 </div>
               </div>
-              <div class="custom-col">
+              <div class="col-xl-2">
                 <a href="#" class="btn btn-success w-100"> Search </a>
               </div>
             </div>
           </div>
           <hr />
 
-          <div class="filter-section">
+          <div class="filter-section activity-filter-head">
+            <div class="all-activity-head">
+              <h5>All Activity</h5>
+              <ul class="activity-list">
+                <li>
+                  <a href="javascript:void(0);"><i class="la la-phone"></i></a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);"
+                    ><i class="la la-envelope"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);"><i class="la la-tasks"></i></a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);"
+                    ><i class="la la-user-tie"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
             <ul>
               <li>
                 <div class="form-sort">
@@ -1429,44 +1461,25 @@
                 >
                   <thead>
                     <tr>
-                      <th>Pipeline Name</th>
-                      <th>Total Deal Value</th>
-                      <th>No of Deals</th>
-                      <th>Stages</th>
-                      <th>Created Date</th>
-                      <th>Status</th>
+                      <th>Title</th>
+                      <th>Activity Type</th>
+                      <th>Due Date</th>
+                      <th>Owner</th>
+                      <th>Created At</th>
                       <th class="no-sort text-end">Action</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Sales</td>
-                      <td>$04,51,000</td>
-                      <td>315</td>
+                      <td>We scheduled a meeting for next week</td>
                       <td>
-                        <div
-                          class="pipeline-progress d-flex align-items-center"
+                        <span class="badge activity-badge badge-bg-violet"
+                          ><i class="la la-user-tie"></i>Meeting</span
                         >
-                          <div class="progress">
-                            <div
-                              class="progress-bar progress-bar-success"
-                              role="progressbar"
-                            ></div>
-                          </div>
-                          <span>Win</span>
-                        </div>
                       </td>
-                      <td>10 Feb 2024</td>
-                      <td>
-                        <div class="dropdown action-label">
-                          <a
-                            href="#"
-                            class="btn btn-white btn-sm badge-outline-success"
-                          >
-                            Active
-                          </a>
-                        </div>
-                      </td>
+                      <td>10 Feb 2024, 09:00 am</td>
+                      <td>Hendry</td>
+                      <td>08 Feb 2024, 10:00 am</td>
                       <td class="text-end">
                         <div class="dropdown dropdown-action">
                           <a
@@ -1481,14 +1494,14 @@
                               class="dropdown-item"
                               href="#"
                               data-bs-toggle="modal"
-                              data-bs-target="#edit_pipeline"
+                              data-bs-target="#edit_activity"
                               ><i class="fa-solid fa-pencil m-r-5"></i> Edit</a
                             >
                             <a
                               class="dropdown-item"
                               href="#"
                               data-bs-toggle="modal"
-                              data-bs-target="#delete_pipeline"
+                              data-bs-target="#delete_activity"
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
@@ -1500,33 +1513,15 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Marketing</td>
-                      <td>$03,12,500</td>
-                      <td>447</td>
+                      <td>Had conversation with Fred regarding task</td>
                       <td>
-                        <div
-                          class="pipeline-progress d-flex align-items-center"
+                        <span class="badge activity-badge badge-bg-success"
+                          ><i class="la la-phone"></i>Calls</span
                         >
-                          <div class="progress">
-                            <div
-                              class="progress-bar progress-bar-success"
-                              role="progressbar"
-                            ></div>
-                          </div>
-                          <span>Win</span>
-                        </div>
                       </td>
-                      <td>24 Feb 2024</td>
-                      <td>
-                        <div class="dropdown action-label">
-                          <a
-                            href="#"
-                            class="btn btn-white btn-sm badge-outline-success"
-                          >
-                            Active
-                          </a>
-                        </div>
-                      </td>
+                      <td>24 Feb 2024, 12:20 pm</td>
+                      <td>Monty Beer</td>
+                      <td>21 Feb 2024, 09:00 am</td>
                       <td class="text-end">
                         <div class="dropdown dropdown-action">
                           <a
@@ -1541,14 +1536,14 @@
                               class="dropdown-item"
                               href="#"
                               data-bs-toggle="modal"
-                              data-bs-target="#edit_pipeline"
+                              data-bs-target="#edit_activity"
                               ><i class="fa-solid fa-pencil m-r-5"></i> Edit</a
                             >
                             <a
                               class="dropdown-item"
                               href="#"
                               data-bs-toggle="modal"
-                              data-bs-target="#delete_pipeline"
+                              data-bs-target="#delete_activity"
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
@@ -1560,33 +1555,15 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Calls</td>
-                      <td>$04,14,400</td>
-                      <td>654</td>
+                      <td>Analysing latest time estimation for new project</td>
                       <td>
-                        <div
-                          class="pipeline-progress d-flex align-items-center"
+                        <span class="badge activity-badge badge-bg-warning"
+                          ><i class="la la-envelope"></i>Email</span
                         >
-                          <div class="progress">
-                            <div
-                              class="progress-bar progress-bar-violet"
-                              role="progressbar"
-                            ></div>
-                          </div>
-                          <span>In Pipeline</span>
-                        </div>
                       </td>
-                      <td>05 Mar 2024</td>
-                      <td>
-                        <div class="dropdown action-label">
-                          <a
-                            href="#"
-                            class="btn btn-white btn-sm badge-outline-success"
-                          >
-                            Active
-                          </a>
-                        </div>
-                      </td>
+                      <td>05 Mar 2024, 10:00 am</td>
+                      <td>Bradtke</td>
+                      <td>03 Mar 2024, 11:00 am</td>
                       <td class="text-end">
                         <div class="dropdown dropdown-action">
                           <a
@@ -1601,14 +1578,14 @@
                               class="dropdown-item"
                               href="#"
                               data-bs-toggle="modal"
-                              data-bs-target="#edit_pipeline"
+                              data-bs-target="#edit_activity"
                               ><i class="fa-solid fa-pencil m-r-5"></i> Edit</a
                             >
                             <a
                               class="dropdown-item"
                               href="#"
                               data-bs-toggle="modal"
-                              data-bs-target="#delete_pipeline"
+                              data-bs-target="#delete_activity"
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
@@ -1620,33 +1597,15 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Email</td>
-                      <td>$09,14,400</td>
-                      <td>545</td>
+                      <td>Store and manage contact data</td>
                       <td>
-                        <div
-                          class="pipeline-progress d-flex align-items-center"
+                        <span class="badge activity-badge badge-bg-info"
+                          ><i class="la la-tasks"></i>Task</span
                         >
-                          <div class="progress">
-                            <div
-                              class="progress-bar progress-bar-success"
-                              role="progressbar"
-                            ></div>
-                          </div>
-                          <span>Win</span>
-                        </div>
                       </td>
-                      <td>17 Mar 2024</td>
-                      <td>
-                        <div class="dropdown action-label">
-                          <a
-                            href="#"
-                            class="btn btn-white btn-sm badge-outline-success"
-                          >
-                            Active
-                          </a>
-                        </div>
-                      </td>
+                      <td>17 Mar 2024, 02:00 pm</td>
+                      <td>Swaniawski</td>
+                      <td>15 Mar 2024, 12:00 pm</td>
                       <td class="text-end">
                         <div class="dropdown dropdown-action">
                           <a
@@ -1661,14 +1620,14 @@
                               class="dropdown-item"
                               href="#"
                               data-bs-toggle="modal"
-                              data-bs-target="#edit_pipeline"
+                              data-bs-target="#edit_activity"
                               ><i class="fa-solid fa-pencil m-r-5"></i> Edit</a
                             >
                             <a
                               class="dropdown-item"
                               href="#"
                               data-bs-toggle="modal"
-                              data-bs-target="#delete_pipeline"
+                              data-bs-target="#delete_activity"
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
@@ -1680,33 +1639,15 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Chats</td>
-                      <td>$11,14,400</td>
-                      <td>787</td>
+                      <td>Call John and discuss about project</td>
                       <td>
-                        <div
-                          class="pipeline-progress d-flex align-items-center"
+                        <span class="badge activity-badge badge-bg-success"
+                          ><i class="la la-phone"></i>Calls</span
                         >
-                          <div class="progress">
-                            <div
-                              class="progress-bar progress-bar-success"
-                              role="progressbar"
-                            ></div>
-                          </div>
-                          <span>Win</span>
-                        </div>
                       </td>
-                      <td>08 Apr 2024</td>
-                      <td>
-                        <div class="dropdown action-label">
-                          <a
-                            href="#"
-                            class="btn btn-white btn-sm badge-outline-success"
-                          >
-                            Active
-                          </a>
-                        </div>
-                      </td>
+                      <td>20 Apr 2024, 03:15 pm</td>
+                      <td>Itzel</td>
+                      <td>18 Apr 2024, 01:15 pm</td>
                       <td class="text-end">
                         <div class="dropdown dropdown-action">
                           <a
@@ -1721,14 +1662,14 @@
                               class="dropdown-item"
                               href="#"
                               data-bs-toggle="modal"
-                              data-bs-target="#edit_pipeline"
+                              data-bs-target="#edit_activity"
                               ><i class="fa-solid fa-pencil m-r-5"></i> Edit</a
                             >
                             <a
                               class="dropdown-item"
                               href="#"
                               data-bs-toggle="modal"
-                              data-bs-target="#delete_pipeline"
+                              data-bs-target="#delete_activity"
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
@@ -1740,33 +1681,15 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Operational</td>
-                      <td>$16,11,400</td>
-                      <td>142</td>
+                      <td>Will have a meeting before project start</td>
                       <td>
-                        <div
-                          class="pipeline-progress d-flex align-items-center"
+                        <span class="badge activity-badge badge-bg-violet"
+                          ><i class="la la-user-tie"></i>Meeting</span
                         >
-                          <div class="progress">
-                            <div
-                              class="progress-bar progress-bar-info"
-                              role="progressbar"
-                            ></div>
-                          </div>
-                          <span>Conversation</span>
-                        </div>
                       </td>
-                      <td>20 Apr 2024</td>
-                      <td>
-                        <div class="dropdown action-label">
-                          <a
-                            href="#"
-                            class="btn btn-white btn-sm badge-outline-success"
-                          >
-                            Active
-                          </a>
-                        </div>
-                      </td>
+                      <td>08 Apr 2024, 11:00 am</td>
+                      <td>Sally</td>
+                      <td>05 Apr 2024, 03:20 pm</td>
                       <td class="text-end">
                         <div class="dropdown dropdown-action">
                           <a
@@ -1781,14 +1704,14 @@
                               class="dropdown-item"
                               href="#"
                               data-bs-toggle="modal"
-                              data-bs-target="#edit_pipeline"
+                              data-bs-target="#edit_activity"
                               ><i class="fa-solid fa-pencil m-r-5"></i> Edit</a
                             >
                             <a
                               class="dropdown-item"
                               href="#"
                               data-bs-toggle="modal"
-                              data-bs-target="#delete_pipeline"
+                              data-bs-target="#delete_activity"
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
@@ -1800,33 +1723,15 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Collabrative</td>
-                      <td>$78,11,800</td>
-                      <td>315</td>
+                      <td>Built landing pages</td>
                       <td>
-                        <div
-                          class="pipeline-progress d-flex align-items-center"
+                        <span class="badge activity-badge badge-bg-warning"
+                          ><i class="la la-envelope"></i>Email</span
                         >
-                          <div class="progress">
-                            <div
-                              class="progress-bar progress-bar-warning"
-                              role="progressbar"
-                            ></div>
-                          </div>
-                          <span>Folllow Up</span>
-                        </div>
                       </td>
-                      <td>12 May 2024</td>
-                      <td>
-                        <div class="dropdown action-label">
-                          <a
-                            href="#"
-                            class="btn btn-white btn-sm badge-outline-success"
-                          >
-                            Active
-                          </a>
-                        </div>
-                      </td>
+                      <td>12 May 2024, 08:30 am</td>
+                      <td>Danny</td>
+                      <td>10 May 2024, 11:30 am</td>
                       <td class="text-end">
                         <div class="dropdown dropdown-action">
                           <a
@@ -1841,14 +1746,14 @@
                               class="dropdown-item"
                               href="#"
                               data-bs-toggle="modal"
-                              data-bs-target="#edit_pipeline"
+                              data-bs-target="#edit_activity"
                               ><i class="fa-solid fa-pencil m-r-5"></i> Edit</a
                             >
                             <a
                               class="dropdown-item"
                               href="#"
                               data-bs-toggle="modal"
-                              data-bs-target="#delete_pipeline"
+                              data-bs-target="#delete_activity"
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
@@ -1860,33 +1765,15 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Differentiate</td>
-                      <td>$09,05,947</td>
-                      <td>478</td>
+                      <td>Regarding latest updates in project</td>
                       <td>
-                        <div
-                          class="pipeline-progress d-flex align-items-center"
+                        <span class="badge activity-badge badge-bg-violet"
+                          ><i class="la la-user-tie"></i>Meeting</span
                         >
-                          <div class="progress">
-                            <div
-                              class="progress-bar progress-bar-pink"
-                              role="progressbar"
-                            ></div>
-                          </div>
-                          <span>Schedule Service</span>
-                        </div>
                       </td>
-                      <td>26 May 2024</td>
-                      <td>
-                        <div class="dropdown action-label">
-                          <a
-                            href="#"
-                            class="btn btn-white btn-sm badge-outline-danger"
-                          >
-                            Inactive
-                          </a>
-                        </div>
-                      </td>
+                      <td>26 May 2024, 04:10 pm</td>
+                      <td>Lynch</td>
+                      <td>23 May 2024, 05:00 pm</td>
                       <td class="text-end">
                         <div class="dropdown dropdown-action">
                           <a
@@ -1901,14 +1788,14 @@
                               class="dropdown-item"
                               href="#"
                               data-bs-toggle="modal"
-                              data-bs-target="#edit_pipeline"
+                              data-bs-target="#edit_activity"
                               ><i class="fa-solid fa-pencil m-r-5"></i> Edit</a
                             >
                             <a
                               class="dropdown-item"
                               href="#"
                               data-bs-toggle="modal"
-                              data-bs-target="#delete_pipeline"
+                              data-bs-target="#delete_activity"
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
@@ -1920,33 +1807,15 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Interact</td>
-                      <td>$04,51,000</td>
-                      <td>664</td>
+                      <td>Attach final proposal for upcoming project</td>
                       <td>
-                        <div
-                          class="pipeline-progress d-flex align-items-center"
+                        <span class="badge activity-badge badge-bg-info"
+                          ><i class="la la-tasks"></i>Task</span
                         >
-                          <div class="progress">
-                            <div
-                              class="progress-bar progress-bar-success"
-                              role="progressbar"
-                            ></div>
-                          </div>
-                          <span>Win</span>
-                        </div>
                       </td>
-                      <td>13 June 2024</td>
-                      <td>
-                        <div class="dropdown action-label">
-                          <a
-                            href="#"
-                            class="btn btn-white btn-sm badge-outline-success"
-                          >
-                            Active
-                          </a>
-                        </div>
-                      </td>
+                      <td>13 June 2024, 10:30 am</td>
+                      <td>Merwin</td>
+                      <td>11 June 2024, 04:00 pm</td>
                       <td class="text-end">
                         <div class="dropdown dropdown-action">
                           <a
@@ -1961,14 +1830,14 @@
                               class="dropdown-item"
                               href="#"
                               data-bs-toggle="modal"
-                              data-bs-target="#edit_pipeline"
+                              data-bs-target="#edit_activity"
                               ><i class="fa-solid fa-pencil m-r-5"></i> Edit</a
                             >
                             <a
                               class="dropdown-item"
                               href="#"
                               data-bs-toggle="modal"
-                              data-bs-target="#delete_pipeline"
+                              data-bs-target="#delete_activity"
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
@@ -1980,33 +1849,15 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Identify</td>
-                      <td>$72,14,078</td>
-                      <td>128</td>
+                      <td>Discussed budget proposal with Edwin</td>
                       <td>
-                        <div
-                          class="pipeline-progress d-flex align-items-center"
+                        <span class="badge activity-badge badge-bg-success"
+                          ><i class="la la-phone"></i>Calls</span
                         >
-                          <div class="progress">
-                            <div
-                              class="progress-bar progress-bar-danger"
-                              role="progressbar"
-                            ></div>
-                          </div>
-                          <span>Lost</span>
-                        </div>
                       </td>
-                      <td>28 June 2024</td>
-                      <td>
-                        <div class="dropdown action-label">
-                          <a
-                            href="#"
-                            class="btn btn-white btn-sm badge-outline-success"
-                          >
-                            Active
-                          </a>
-                        </div>
-                      </td>
+                      <td>28 June 2024, 05:40 pm</td>
+                      <td>Andrew</td>
+                      <td>26 June 2024, 08:50 am</td>
                       <td class="text-end">
                         <div class="dropdown dropdown-action">
                           <a
@@ -2021,14 +1872,14 @@
                               class="dropdown-item"
                               href="#"
                               data-bs-toggle="modal"
-                              data-bs-target="#edit_pipeline"
+                              data-bs-target="#edit_activity"
                               ><i class="fa-solid fa-pencil m-r-5"></i> Edit</a
                             >
                             <a
                               class="dropdown-item"
                               href="#"
                               data-bs-toggle="modal"
-                              data-bs-target="#delete_pipeline"
+                              data-bs-target="#delete_activity"
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
@@ -2047,7 +1898,7 @@
 
           <div
             class="modal custom-modal fade custom-modal-two modal-padding"
-            id="add_pipeline"
+            id="add_activity"
             role="dialog"
           >
             <div class="modal-dialog modal-dialog-centered">
@@ -2055,7 +1906,7 @@
                 <div
                   class="modal-header header-border justify-content-between p-0"
                 >
-                  <h5 class="modal-title">Add New Pipeline</h5>
+                  <h5 class="modal-title">Add New Activity</h5>
                   <button
                     type="button"
                     class="btn-close position-static"
@@ -2067,193 +1918,180 @@
                 </div>
                 <div class="modal-body p-0">
                   <form
-                    action="https://smarthr.dreamstechnologies.com/laravel/template/public/pipeline"
+                    action="https://smarthr.dreamstechnologies.com/laravel/template/public/activities"
                   >
                     <div class="contact-input-set">
                       <div class="row">
                         <div class="col-md-12">
                           <div class="input-block mb-3">
                             <label class="col-form-label"
-                              >Pipeline Name
-                              <span class="text-danger">*</span></label
+                              >Title <span class="text-danger">*</span></label
                             >
                             <input class="form-control" type="text" />
                           </div>
                         </div>
-                        <div class="col-md-12">
-                          <div
-                            class="pipeline-modal-head d-flex justify-content-between mb-3"
-                          >
-                            <h4>Pipeline Stages</h4>
-                            <a
-                              href="#"
-                              class="add-stage"
-                              data-bs-toggle="modal"
-                              data-bs-target="#add_stage"
-                              ><i class="la la-plus-square me-2"></i>Add New</a
+                        <div class="col-md-6">
+                          <div class="input-block mb-3 activity-date-picker">
+                            <label class="col-form-label"
+                              >Due Date
+                              <span class="text-danger">*</span></label
                             >
+                            <div class="cal-icon">
+                              <input
+                                class="form-control floating datetimepicker"
+                                type="text"
+                              />
+                            </div>
                           </div>
-                          <ul class="pipeline-stages">
-                            <li>
-                              <p>
-                                <i class="la la-grip-vertical"></i>
-                                Inpipeline
-                              </p>
-                              <div class="edit-delete-stage">
-                                <a
-                                  href="#"
-                                  class="edit-stage"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#edit_stage"
-                                  ><i class="la la-edit me-2"></i>Edit</a
-                                >
-                                <a
-                                  href="#"
-                                  class="delete-stage"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#delete_stage"
-                                  ><i class="la la-trash-alt me-2"></i>Delete</a
-                                >
-                              </div>
-                            </li>
-                            <li>
-                              <p>
-                                <i class="la la-grip-vertical"></i>
-                                Follow Up
-                              </p>
-                              <div class="edit-delete-stage">
-                                <a
-                                  href="#"
-                                  class="edit-stage"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#edit_stage"
-                                  ><i class="la la-edit me-2"></i>Edit</a
-                                >
-                                <a
-                                  href="#"
-                                  class="delete-stage"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#delete_stage"
-                                  ><i class="la la-trash-alt me-2"></i>Delete</a
-                                >
-                              </div>
-                            </li>
-                            <li>
-                              <p>
-                                <i class="la la-grip-vertical"></i>
-                                Schedule service
-                              </p>
-                              <div class="edit-delete-stage">
-                                <a
-                                  href="#"
-                                  class="edit-stage"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#edit_stage"
-                                  ><i class="la la-edit me-2"></i>Edit</a
-                                >
-                                <a
-                                  href="#"
-                                  class="delete-stage"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#delete_stage"
-                                  ><i class="la la-trash-alt me-2"></i>Delete</a
-                                >
-                              </div>
-                            </li>
-                          </ul>
                         </div>
-                        <div class="col-md-12">
-                          <div
-                            class="pipeline-modal-head input-blocks add-products"
-                          >
-                            <h4 class="mb-3">Access</h4>
-                            <div class="access-info-tab">
-                              <ul
-                                class="nav nav-pills"
-                                id="pills-tab"
-                                role="tablist"
-                              >
-                                <li class="nav-item" role="presentation">
-                                  <span
-                                    class="custom_radio mb-0"
-                                    id="pills-public-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-public"
-                                    role="tab"
-                                    aria-controls="pills-public"
-                                    aria-selected="true"
-                                  >
-                                    <input
-                                      type="radio"
-                                      class="form-control"
-                                      name="public"
-                                      checked
-                                    />
-                                    <span class="checkmark"></span> All</span
-                                  >
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                  <span
-                                    class="custom_radio mb-0 active"
-                                    id="pills-select-people-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-select-people"
-                                    role="tab"
-                                    aria-controls="pills-select-people"
-                                    aria-selected="false"
-                                  >
-                                    <input
-                                      type="radio"
-                                      class="form-control"
-                                      name="select-people"
-                                    />
-                                    <span class="checkmark"></span> Select
-                                    People</span
-                                  >
-                                </li>
-                              </ul>
+                        <div class="col-md-6">
+                          <div class="activity-date-picker input-block mb-3">
+                            <label class="col-form-label"
+                              >Time <span class="text-danger">*</span></label
+                            >
+                            <div class="cal-icon time-icon">
+                              <input
+                                type="text"
+                                class="form-control timepicker"
+                              />
+                              <span class="cus-icon"
+                                ><i class="feather-clock"></i
+                              ></span>
                             </div>
                           </div>
-                          <div class="tab-content" id="pills-tabContent2">
-                            <div
-                              class="tab-pane fade"
-                              id="pills-public"
-                              role="tabpanel"
-                              aria-labelledby="pills-public-tab"
-                            ></div>
-                            <div
-                              class="tab-pane fade show active"
-                              id="pills-select-people"
-                              role="tabpanel"
-                              aria-labelledby="pills-select-people-tab"
+                        </div>
+                        <div class="col-md-6">
+                          <div class="activity-date-picker input-block mb-3">
+                            <label class="col-form-label"
+                              >Reminder
+                              <span class="text-danger">*</span></label
                             >
-                              <ul class="person-selected">
-                                <li>
-                                  <div class="person-profile">
-                                    <a href="#" class="profile-pic">
-                                      <img
-                                        src="assets/img/avatar/avatar-21.jpg"
-                                        alt="Img"
-                                      />
-                                      Vaughan
-                                    </a>
-                                  </div>
-                                  <a href="#" class="remove-person">Remove</a>
-                                </li>
-                                <li>
-                                  <div class="person-profile">
-                                    <a href="#" class="profile-pic">
-                                      <img
-                                        src="assets/img/avatar/avatar-1.jpg"
-                                        alt="Img"
-                                      />
-                                      Jessica
-                                    </a>
-                                  </div>
-                                  <a href="#" class="remove-person">Remove</a>
-                                </li>
-                              </ul>
+                            <div class="cal-icon reminder">
+                              <input type="text" class="form-control" />
+                              <span class="cus-icon"
+                                ><i class="feather-clock"></i
+                              ></span>
                             </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 d-flex align-items-end">
+                          <div
+                            class="input-block mb-3 d-flex align-items-center"
+                          >
+                            <div class="w-100">
+                              <select class="select">
+                                <option>Minutes</option>
+                                <option>Hours</option>
+                              </select>
+                            </div>
+                            <span class="use-before">Before Use</span>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="input-block mb-3">
+                            <label class="col-form-label"
+                              >Owner <span class="text-danger">*</span></label
+                            >
+                            <select class="select">
+                              <option>Select</option>
+                              <option>Monty Beer</option>
+                              <option>Itzel</option>
+                              <option>Andrew</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="input-block tag-with-img mb-3">
+                            <label class="col-form-label"
+                              >Guests <span class="text-danger">*</span></label
+                            >
+                            <input
+                              class="input-tags form-control"
+                              id="inputBox4"
+                              type="text"
+                              data-role="tagsinput"
+                              name="Label"
+                              value="Darlee Robertson"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-lg-12">
+                          <div class="input-block mb-3">
+                            <label class="col-form-label"
+                              >Description
+                              <span class="text-danger">*</span></label
+                            >
+                            <textarea class="form-control" rows="5"></textarea>
+                          </div>
+                        </div>
+                        <div class="col-md-12 deals-add-col">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="input-block mb-3">
+                                <div
+                                  class="d-flex justify-content-between align-items-center"
+                                >
+                                  <label class="col-form-label"
+                                    >Deals
+                                    <span class="text-danger">*</span></label
+                                  >
+                                  <a href="#" class="add-new add-new-deal"
+                                    ><i class="la la-plus-circle me-2"></i>Add
+                                    New</a
+                                  >
+                                </div>
+                                <select class="select">
+                                  <option>Select</option>
+                                  <option>Collins</option>
+                                  <option>Konopelski</option>
+                                  <option>Adams</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 contact-add-col">
+                          <div class="input-block mb-3">
+                            <div
+                              class="d-flex justify-content-between align-items-center"
+                            >
+                              <label class="col-form-label"
+                                >Contacts
+                                <span class="text-danger">*</span></label
+                              >
+                              <a href="#" class="add-new add-new-contact"
+                                ><i class="la la-plus-circle me-2"></i>Add
+                                New</a
+                              >
+                            </div>
+                            <select class="select">
+                              <option>Select</option>
+                              <option>Darlee Robertson</option>
+                              <option>Sharon Roy</option>
+                              <option>Vaughan</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-12 company-add-col">
+                          <div class="input-block mb-3">
+                            <div
+                              class="d-flex justify-content-between align-items-center"
+                            >
+                              <label class="col-form-label"
+                                >Company
+                                <span class="text-danger">*</span></label
+                              >
+                              <a href="#" class="add-new add-new-company"
+                                ><i class="la la-plus-circle me-2"></i>Add
+                                New</a
+                              >
+                            </div>
+                            <select class="select">
+                              <option>Select</option>
+                              <option>NovaWaveLLC</option>
+                              <option>SilverHawk</option>
+                              <option>SummitPeak</option>
+                            </select>
                           </div>
                         </div>
                         <div class="col-lg-12 text-end form-wizard-button">
@@ -2265,7 +2103,7 @@
                             Reset
                           </button>
                           <button class="btn btn-primary" type="submit">
-                            Save Pipeline
+                            Save Activity
                           </button>
                         </div>
                       </div>
@@ -2278,7 +2116,7 @@
 
           <div
             class="modal custom-modal fade custom-modal-two modal-padding"
-            id="edit_pipeline"
+            id="edit_activity"
             role="dialog"
           >
             <div class="modal-dialog modal-dialog-centered">
@@ -2286,7 +2124,7 @@
                 <div
                   class="modal-header header-border justify-content-between p-0"
                 >
-                  <h5 class="modal-title">Edit Pipeline</h5>
+                  <h5 class="modal-title">Edit Activity</h5>
                   <button
                     type="button"
                     class="btn-close position-static"
@@ -2298,197 +2136,180 @@
                 </div>
                 <div class="modal-body p-0">
                   <form
-                    action="https://smarthr.dreamstechnologies.com/laravel/template/public/pipeline"
+                    action="https://smarthr.dreamstechnologies.com/laravel/template/public/activities"
                   >
                     <div class="contact-input-set">
                       <div class="row">
                         <div class="col-md-12">
                           <div class="input-block mb-3">
                             <label class="col-form-label"
-                              >Pipeline Name
-                              <span class="text-danger">*</span></label
+                              >Title <span class="text-danger">*</span></label
                             >
                             <input
                               class="form-control"
                               type="text"
-                              value="Sales"
+                              value="We scheduled a meeting for next week"
                             />
                           </div>
                         </div>
-                        <div class="col-md-12">
-                          <div
-                            class="pipeline-modal-head d-flex justify-content-between mb-3"
-                          >
-                            <h4>Pipeline Stages</h4>
-                            <a
-                              href="#"
-                              class="add-stage"
-                              data-bs-toggle="modal"
-                              data-bs-target="#add_stage"
-                              ><i class="la la-plus-square me-2"></i>Add New</a
+                        <div class="col-md-6">
+                          <div class="input-block mb-3 activity-date-picker">
+                            <label class="col-form-label"
+                              >Due Date
+                              <span class="text-danger">*</span></label
                             >
+                            <div class="cal-icon">
+                              <input
+                                class="form-control floating datetimepicker"
+                                type="text"
+                              />
+                            </div>
                           </div>
-                          <ul class="pipeline-stages">
-                            <li>
-                              <p>
-                                <i class="la la-grip-vertical"></i>
-                                Inpipeline
-                              </p>
-                              <div class="edit-delete-stage">
-                                <a
-                                  href="#"
-                                  class="edit-stage"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#edit_stage"
-                                  ><i class="la la-edit me-2"></i>Edit</a
-                                >
-                                <a
-                                  href="#"
-                                  class="delete-stage"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#delete_stage"
-                                  ><i class="la la-trash-alt me-2"></i>Delete</a
-                                >
-                              </div>
-                            </li>
-                            <li>
-                              <p>
-                                <i class="la la-grip-vertical"></i>
-                                Follow Up
-                              </p>
-                              <div class="edit-delete-stage">
-                                <a
-                                  href="#"
-                                  class="edit-stage"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#edit_stage"
-                                  ><i class="la la-edit me-2"></i>Edit</a
-                                >
-                                <a
-                                  href="#"
-                                  class="delete-stage"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#delete_stage"
-                                  ><i class="la la-trash-alt me-2"></i>Delete</a
-                                >
-                              </div>
-                            </li>
-                            <li>
-                              <p>
-                                <i class="la la-grip-vertical"></i>
-                                Schedule service
-                              </p>
-                              <div class="edit-delete-stage">
-                                <a
-                                  href="#"
-                                  class="edit-stage"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#edit_stage"
-                                  ><i class="la la-edit me-2"></i>Edit</a
-                                >
-                                <a
-                                  href="#"
-                                  class="delete-stage"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#delete_stage"
-                                  ><i class="la la-trash-alt me-2"></i>Delete</a
-                                >
-                              </div>
-                            </li>
-                          </ul>
                         </div>
-                        <div class="col-md-12">
-                          <div
-                            class="pipeline-modal-head input-blocks add-products"
-                          >
-                            <h4 class="mb-3">Access</h4>
-                            <div class="access-info-tab">
-                              <ul
-                                class="nav nav-pills"
-                                id="pills-tab2"
-                                role="tablist"
-                              >
-                                <li class="nav-item" role="presentation">
-                                  <span
-                                    class="custom_radio mb-0"
-                                    id="pills-public-tab2"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-public2"
-                                    role="tab"
-                                    aria-controls="pills-public2"
-                                    aria-selected="true"
-                                  >
-                                    <input
-                                      type="radio"
-                                      class="form-control"
-                                      name="public"
-                                      checked
-                                    />
-                                    <span class="checkmark"></span> All</span
-                                  >
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                  <span
-                                    class="custom_radio mb-0 active"
-                                    id="pills-select-people-tab2"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-select-people2"
-                                    role="tab"
-                                    aria-controls="pills-select-people2"
-                                    aria-selected="false"
-                                  >
-                                    <input
-                                      type="radio"
-                                      class="form-control"
-                                      name="select-people"
-                                    />
-                                    <span class="checkmark"></span> Select
-                                    People</span
-                                  >
-                                </li>
-                              </ul>
+                        <div class="col-md-6">
+                          <div class="activity-date-picker input-block mb-3">
+                            <label class="col-form-label"
+                              >Time <span class="text-danger">*</span></label
+                            >
+                            <div class="cal-icon time-icon">
+                              <input
+                                type="text"
+                                class="form-control timepicker"
+                              />
+                              <span class="cus-icon"
+                                ><i class="feather-clock"></i
+                              ></span>
                             </div>
                           </div>
-                          <div class="tab-content" id="pills-tabContent3">
-                            <div
-                              class="tab-pane fade"
-                              id="pills-public2"
-                              role="tabpanel"
-                              aria-labelledby="pills-public-tab2"
-                            ></div>
-                            <div
-                              class="tab-pane fade show active"
-                              id="pills-select-people2"
-                              role="tabpanel"
-                              aria-labelledby="pills-select-people-tab2"
+                        </div>
+                        <div class="col-md-6">
+                          <div class="activity-date-picker input-block mb-3">
+                            <label class="col-form-label"
+                              >Reminder
+                              <span class="text-danger">*</span></label
                             >
-                              <ul class="person-selected">
-                                <li>
-                                  <div class="person-profile">
-                                    <a href="#" class="profile-pic">
-                                      <img
-                                        src="assets/img/avatar/avatar-21.jpg"
-                                        alt="Img"
-                                      />
-                                      Vaughan
-                                    </a>
-                                  </div>
-                                  <a href="#" class="remove-person">Remove</a>
-                                </li>
-                                <li>
-                                  <div class="person-profile">
-                                    <a href="#" class="profile-pic">
-                                      <img
-                                        src="assets/img/avatar/avatar-1.jpg"
-                                        alt="Img"
-                                      />
-                                      Jessica
-                                    </a>
-                                  </div>
-                                  <a href="#" class="remove-person">Remove</a>
-                                </li>
-                              </ul>
+                            <div class="cal-icon reminder">
+                              <input type="text" class="form-control" />
+                              <span class="cus-icon"
+                                ><i class="feather-clock"></i
+                              ></span>
                             </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 d-flex align-items-end">
+                          <div
+                            class="input-block mb-3 d-flex align-items-center"
+                          >
+                            <div class="w-100">
+                              <select class="select">
+                                <option>Minutes</option>
+                                <option>Hours</option>
+                              </select>
+                            </div>
+                            <span class="use-before">Before Use</span>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="input-block mb-3">
+                            <label class="col-form-label"
+                              >Owner <span class="text-danger">*</span></label
+                            >
+                            <select class="select">
+                              <option>Monty Beer</option>
+                              <option>Itzel</option>
+                              <option>Andrew</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="input-block tag-with-img mb-3">
+                            <label class="col-form-label"
+                              >Guests <span class="text-danger">*</span></label
+                            >
+                            <input
+                              class="input-tags form-control"
+                              id="inputBox3"
+                              type="text"
+                              data-role="tagsinput"
+                              name="Label"
+                              value="Darlee Robertson"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-lg-12">
+                          <div class="input-block mb-3">
+                            <label class="col-form-label"
+                              >Description
+                              <span class="text-danger">*</span></label
+                            >
+                            <textarea class="form-control" rows="5"></textarea>
+                          </div>
+                        </div>
+                        <div class="col-md-12 deals-add-col">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="input-block mb-3">
+                                <div
+                                  class="d-flex justify-content-between align-items-center"
+                                >
+                                  <label class="col-form-label"
+                                    >Deals
+                                    <span class="text-danger">*</span></label
+                                  >
+                                  <a href="#" class="add-new add-new-deal"
+                                    ><i class="la la-plus-circle me-2"></i>Add
+                                    New</a
+                                  >
+                                </div>
+                                <select class="select">
+                                  <option>Collins</option>
+                                  <option>Konopelski</option>
+                                  <option>Adams</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 contact-add-col">
+                          <div class="input-block mb-3">
+                            <div
+                              class="d-flex justify-content-between align-items-center"
+                            >
+                              <label class="col-form-label"
+                                >Contacts
+                                <span class="text-danger">*</span></label
+                              >
+                              <a href="#" class="add-new add-new-contact"
+                                ><i class="la la-plus-circle me-2"></i>Add
+                                New</a
+                              >
+                            </div>
+                            <select class="select">
+                              <option>Darlee Robertson</option>
+                              <option>Sharon Roy</option>
+                              <option>Vaughan</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-12 company-add-col">
+                          <div class="input-block mb-3">
+                            <div
+                              class="d-flex justify-content-between align-items-center"
+                            >
+                              <label class="col-form-label"
+                                >Company
+                                <span class="text-danger">*</span></label
+                              >
+                              <a href="#" class="add-new add-new-company"
+                                ><i class="la la-plus-circle me-2"></i>Add
+                                New</a
+                              >
+                            </div>
+                            <select class="select">
+                              <option>NovaWaveLLC</option>
+                              <option>SilverHawk</option>
+                              <option>SummitPeak</option>
+                            </select>
                           </div>
                         </div>
                         <div class="col-lg-12 text-end form-wizard-button">
@@ -2500,7 +2321,7 @@
                             Reset
                           </button>
                           <button class="btn btn-primary" type="submit">
-                            Save Pipeline
+                            Save Activity
                           </button>
                         </div>
                       </div>
@@ -2512,114 +2333,8 @@
           </div>
 
           <div
-            class="modal custom-modal fade modal-padding"
-            id="add_stage"
-            role="dialog"
-          >
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div
-                  class="modal-header header-border justify-content-between p-0"
-                >
-                  <h5 class="modal-title">Add New Stage</h5>
-                  <button
-                    type="button"
-                    class="btn-close position-static"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    <span aria-hidden="true">×</span>
-                  </button>
-                </div>
-                <div class="modal-body p-0">
-                  <form
-                    action="https://smarthr.dreamstechnologies.com/laravel/template/public/pipeline"
-                  >
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="input-block mb-3">
-                          <label class="col-form-label"
-                            >Stage Name
-                            <span class="text-danger">*</span></label
-                          >
-                          <input class="form-control" type="text" />
-                        </div>
-                      </div>
-                      <div class="col-lg-12 text-end form-wizard-button">
-                        <button
-                          class="button btn-lights reset-btn"
-                          type="reset"
-                          data-bs-dismiss="modal"
-                        >
-                          Reset
-                        </button>
-                        <button class="btn btn-primary" type="submit">
-                          Save Stage
-                        </button>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="modal custom-modal fade modal-padding"
-            id="edit_stage"
-            role="dialog"
-          >
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div
-                  class="modal-header header-border justify-content-between p-0"
-                >
-                  <h5 class="modal-title">Edit Stage</h5>
-                  <button
-                    type="button"
-                    class="btn-close position-static"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    <span aria-hidden="true">×</span>
-                  </button>
-                </div>
-                <div class="modal-body p-0">
-                  <form
-                    action="https://smarthr.dreamstechnologies.com/laravel/template/public/pipeline"
-                  >
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="input-block mb-3">
-                          <label class="col-form-label"
-                            >Stage Name
-                            <span class="text-danger">*</span></label
-                          >
-                          <input class="form-control" type="text" value="Win" />
-                        </div>
-                      </div>
-                      <div class="col-lg-12 text-end form-wizard-button">
-                        <button
-                          class="button btn-lights reset-btn"
-                          type="reset"
-                          data-bs-dismiss="modal"
-                        >
-                          Reset
-                        </button>
-                        <button class="btn btn-primary" type="submit">
-                          Save Stage
-                        </button>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div
             class="modal custom-modal fade"
-            id="delete_pipeline"
+            id="delete_activity"
             role="dialog"
           >
             <div class="modal-dialog modal-dialog-centered">
@@ -2630,7 +2345,7 @@
                       <i class="la la-trash-restore"></i>
                     </div>
                     <h3>Are you sure, You want to delete</h3>
-                    <p>Pipeline ”Sales” from your Account</p>
+                    <p>Selected Activity from your Account</p>
                     <div class="col-lg-12 text-center form-wizard-button">
                       <a
                         href="#"
@@ -2663,7 +2378,7 @@
                         data-bs-dismiss="modal"
                         >Not Now</a
                       >
-                      <a href="pipeline.html" class="btn btn-primary">Okay</a>
+                      <a href="activities.html" class="btn btn-primary">Okay</a>
                     </div>
                   </div>
                 </div>
@@ -2693,7 +2408,7 @@
                 </div>
                 <div class="modal-body p-0">
                   <form
-                    action="https://smarthr.dreamstechnologies.com/laravel/template/public/pipeline"
+                    action="https://smarthr.dreamstechnologies.com/laravel/template/public/activities"
                   >
                     <div class="row">
                       <div class="col-md-12">
@@ -3346,25 +3061,27 @@
         </div>
       </div>
     </div>
-  
 <script src="{{ asset('assets/js/jquery-3.7.1.min.js') }}"></script>
 <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
 <script src="{{ asset('assets/js/jquery.slimscroll.min.js') }}"></script>
 <script src="{{ asset('assets/js/select2.min.js') }}"></script>
+
 <script src="{{ asset('assets/js/moment.min.js') }}"></script>
 <script src="{{ asset('assets/js/bootstrap-datetimepicker.min.js') }}"></script>
 <script src="{{ asset('assets/plugins/daterangepicker/daterangepicker.js') }}"></script>
+
 <script src="{{ asset('assets/js/jquery.dataTables.min.js') }}"></script>
 <script src="{{ asset('assets/js/dataTables.bootstrap4.min.js') }}"></script>
+
 <script src="{{ asset('assets/js/feather.min.js') }}"></script>
 <script src="{{ asset('assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js') }}"></script>
+
 <script src="{{ asset('assets/js/layout.js') }}"></script>
 <script src="{{ asset('assets/js/theme-settings.js') }}"></script>
 <script src="{{ asset('assets/js/greedynav.js') }}"></script>
 <script src="{{ asset('assets/js/app.js') }}"></script>
 
-
   </body>
 
-  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/pipeline by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:23:02 GMT -->
+  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/activities by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:21:42 GMT -->
 </html>

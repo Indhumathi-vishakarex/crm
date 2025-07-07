@@ -2,7 +2,7 @@
 <html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg"
     data-sidebar-image="none">
 
-<!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/holidays by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:22:31 GMT -->
+<!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/termination by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:23:10 GMT -->
 <!-- Added by HTTrack -->
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 
@@ -13,23 +13,23 @@
     <meta name="keywords"
         content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern, accounts, invoice, html5, responsive, CRM, Projects">
     <meta name="author" content="Dreamstechnologies - Bootstrap Admin Template">
-    <title>Holidays - HRMS admin template</title>
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}" />
+    <title>Termination - HRMS admin template</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}">
 
-    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
 
-    <link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/fontawesome.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/all.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/fontawesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/all.min.css') }}">
 
-    <link rel="stylesheet" href="{{ asset('assets/css/line-awesome.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/line-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/material.css') }}">
 
-    <link rel="stylesheet" href="{{ asset('assets/css/material.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/dataTables.bootstrap4.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/select2.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap-datetimepicker.min.css') }}">
 
-    <link rel="stylesheet" href="{{ asset('assets/css/select2.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
-    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap-datetimepicker.min.css') }}" />
-
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
 
 </head>
 
@@ -38,14 +38,11 @@
     <div class="main-wrapper">
 
 
+   
+@include('layouts.header')
+@include('layouts.sidebar')
 
-        @include('layouts.header')
-        @include('layouts.sidebar')
-
-
-
-  
-
+      
 
         <div class="page-wrapper">
             <div class="content container-fluid">
@@ -55,15 +52,16 @@
                 <div class="page-header">
                     <div class="row align-items-center">
                         <div class="col">
-                            <h3 class="page-title">Holidays 2019</h3>
+                            <h3 class="page-title">Termination</h3>
                             <ul class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="admin-dashboard.html">Dashboard</a></li>
-                                <li class="breadcrumb-item active">Holidays</li>
+                                <li class="breadcrumb-item active">Termination</li>
                             </ul>
                         </div>
                         <div class="col-auto float-end ms-auto">
                             <a href="#" class="btn add-btn" data-bs-toggle="modal"
-                                data-bs-target="#add_holiday"><i class="fa fa-plus"></i> Add Holiday</a>
+                                data-bs-target="#add_termination"><i class="fa fa-plus"></i> Add
+                                Termination</a>
                         </div>
                     </div>
                 </div>
@@ -71,59 +69,35 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="table-responsive">
-                            <table class="table table-striped custom-table mb-0">
+                            <table class="table table-striped custom-table mb-0 datatable">
                                 <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th>Title </th>
-                                        <th>Holiday Date</th>
-                                        <th>Day</th>
+                                        <th>Terminated Employee </th>
+                                        <th>Department</th>
+                                        <th>Termination Type </th>
+                                        <th>Termination Date </th>
+                                        <th>Reason</th>
+                                        <th>Notice Date </th>
                                         <th class="text-end">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr class="holiday-completed">
+                                    <tr>
                                         <td>1</td>
-                                        <td>New Year</td>
-                                        <td>1 Jan 2019</td>
-                                        <td>Sunday</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr class="holiday-completed">
-                                        <td>2</td>
-                                        <td>Good Friday</td>
-                                        <td>14 Apr 2019</td>
-                                        <td>Friday</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr class="holiday-completed">
-                                        <td>3</td>
-                                        <td>May Day</td>
-                                        <td>1 May 2019</td>
-                                        <td>Monday</td>
-                                        <td class="text-center">
+                                        <td>
+                                            <h2 class="table-avatar blue-link">
+                                                <a href="profile.html" class="avatar"><img
+                                                        src="assets/img/profiles/avatar-02.jpg"
+                                                        alt="User Image"></a>
+                                                <a href="profile.html">John Doe</a>
+                                            </h2>
                                         </td>
-                                    </tr>
-                                    <tr class="holiday-completed">
-                                        <td>4</td>
-                                        <td>Memorial Day</td>
-                                        <td>28 May 2019</td>
-                                        <td>Monday</td>
-                                        <td class="text-center">
-                                        </td>
-                                    </tr>
-                                    <tr class="holiday-completed">
-                                        <td>5</td>
-                                        <td>Ramzon</td>
-                                        <td>26 Jun 2019</td>
-                                        <td>Monday</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr class="holiday-upcoming">
-                                        <td>6</td>
-                                        <td>Bakrid</td>
-                                        <td>2 Sep 2019</td>
-                                        <td>Saturday</td>
+                                        <td>Web Development</td>
+                                        <td>Misconduct</td>
+                                        <td>28 Feb 2019</td>
+                                        <td>Lorem Ipsum Dollar</td>
+                                        <td>28 Feb 2019</td>
                                         <td class="text-end">
                                             <div class="dropdown dropdown-action">
                                                 <a href="#" class="action-icon dropdown-toggle"
@@ -131,52 +105,11 @@
                                                         class="material-icons">more_vert</i></a>
                                                 <div class="dropdown-menu dropdown-menu-right">
                                                     <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                        data-bs-target="#edit_holiday"><i
-                                                            class="fa-solid fa-pencil m-r-5"></i> Edit</a>
+                                                        data-bs-target="#edit_termination"><i
+                                                            class="fa-solid fa-pencil m-r-5"></i>
+                                                        Edit</a>
                                                     <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                        data-bs-target="#delete_holiday"><i
-                                                            class="fa-regular fa-trash-can m-r-5"></i> Delete</a>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="holiday-upcoming">
-                                        <td>7</td>
-                                        <td>Deepavali</td>
-                                        <td>18 Oct 2019</td>
-                                        <td>Wednesday</td>
-                                        <td class="text-end">
-                                            <div class="dropdown dropdown-action">
-                                                <a href="#" class="action-icon dropdown-toggle"
-                                                    data-bs-toggle="dropdown" aria-expanded="false"><i
-                                                        class="material-icons">more_vert</i></a>
-                                                <div class="dropdown-menu dropdown-menu-right">
-                                                    <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                        data-bs-target="#edit_holiday"><i
-                                                            class="fa-solid fa-pencil m-r-5"></i> Edit</a>
-                                                    <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                        data-bs-target="#delete_holiday"><i
-                                                            class="fa-regular fa-trash-can m-r-5"></i> Delete</a>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="holiday-upcoming">
-                                        <td>8</td>
-                                        <td>Christmas</td>
-                                        <td>25 Dec 2019</td>
-                                        <td>Monday</td>
-                                        <td class="text-end">
-                                            <div class="dropdown dropdown-action">
-                                                <a href="#" class="action-icon dropdown-toggle"
-                                                    data-bs-toggle="dropdown" aria-expanded="false"><i
-                                                        class="material-icons">more_vert</i></a>
-                                                <div class="dropdown-menu dropdown-menu-right">
-                                                    <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                        data-bs-target="#edit_holiday"><i
-                                                            class="fa-solid fa-pencil m-r-5"></i> Edit</a>
-                                                    <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                        data-bs-target="#delete_holiday"><i
+                                                        data-bs-target="#delete_termination"><i
                                                             class="fa-regular fa-trash-can m-r-5"></i> Delete</a>
                                                 </div>
                                             </div>
@@ -190,11 +123,11 @@
             </div>
 
 
-            <div class="modal custom-modal fade" id="add_holiday" role="dialog">
+            <div id="add_termination" class="modal custom-modal fade" role="dialog">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title">Add Holiday</h5>
+                            <h5 class="modal-title">Add Termination</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -202,14 +135,39 @@
                         <div class="modal-body">
                             <form>
                                 <div class="input-block mb-3">
-                                    <label class="col-form-label">Holiday Name <span
+                                    <label class="col-form-label">Terminated Employee <span
                                             class="text-danger">*</span></label>
                                     <input class="form-control" type="text">
                                 </div>
                                 <div class="input-block mb-3">
-                                    <label class="col-form-label">Holiday Date <span
+                                    <label class="col-form-label">Termination Type <span
                                             class="text-danger">*</span></label>
-                                    <div class="cal-icon"><input class="form-control datetimepicker" type="text">
+                                    <div class="add-group-btn">
+                                        <select class="select">
+                                            <option>Misconduct</option>
+                                            <option>Others</option>
+                                        </select>
+                                        <a class="btn btn-primary" href="javascript:void(0);"><i
+                                                class="fa fa-plus"></i>
+                                            Add</a>
+                                    </div>
+                                </div>
+                                <div class="input-block mb-3">
+                                    <label class="col-form-label">Termination Date <span
+                                            class="text-danger">*</span></label>
+                                    <div class="cal-icon">
+                                        <input type="text" class="form-control datetimepicker">
+                                    </div>
+                                </div>
+                                <div class="input-block mb-3">
+                                    <label class="col-form-label">Reason <span class="text-danger">*</span></label>
+                                    <textarea class="form-control" rows="4"></textarea>
+                                </div>
+                                <div class="input-block mb-3">
+                                    <label class="col-form-label">Notice Date <span
+                                            class="text-danger">*</span></label>
+                                    <div class="cal-icon">
+                                        <input type="text" class="form-control datetimepicker">
                                     </div>
                                 </div>
                                 <div class="submit-section">
@@ -222,11 +180,11 @@
             </div>
 
 
-            <div class="modal custom-modal fade" id="edit_holiday" role="dialog">
+            <div id="edit_termination" class="modal custom-modal fade" role="dialog">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title">Edit Holiday</h5>
+                            <h5 class="modal-title">Edit Termination</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -234,18 +192,45 @@
                         <div class="modal-body">
                             <form>
                                 <div class="input-block mb-3">
-                                    <label class="col-form-label">Holiday Name <span
+                                    <label class="col-form-label">Terminated Employee <span
                                             class="text-danger">*</span></label>
-                                    <input class="form-control" value="New Year" type="text">
+                                    <input class="form-control" type="text" value="John Doe">
                                 </div>
                                 <div class="input-block mb-3">
-                                    <label class="col-form-label">Holiday Date <span
+                                    <label class="col-form-label">Termination Type <span
                                             class="text-danger">*</span></label>
-                                    <div class="cal-icon"><input class="form-control datetimepicker"
-                                            value="01-01-2019" type="text"></div>
+                                    <div class="add-group-btn">
+                                        <select class="select">
+                                            <option>Misconduct</option>
+                                            <option>Others</option>
+                                        </select>
+                                        <a class="btn btn-primary" href="javascript:void(0);"><i
+                                                class="fa fa-plus"></i>
+                                            Add</a>
+                                    </div>
+                                </div>
+                                <div class="input-block mb-3">
+                                    <label class="col-form-label">Termination Date <span
+                                            class="text-danger">*</span></label>
+                                    <div class="cal-icon">
+                                        <input type="text" class="form-control datetimepicker"
+                                            value="28/02/2019">
+                                    </div>
+                                </div>
+                                <div class="input-block mb-3">
+                                    <label class="col-form-label">Reason <span class="text-danger">*</span></label>
+                                    <textarea class="form-control" rows="4"></textarea>
+                                </div>
+                                <div class="input-block mb-3">
+                                    <label class="col-form-label">Notice Date <span
+                                            class="text-danger">*</span></label>
+                                    <div class="cal-icon">
+                                        <input type="text" class="form-control datetimepicker"
+                                            value="28/02/2019">
+                                    </div>
                                 </div>
                                 <div class="submit-section">
-                                    <button class="btn btn-primary submit-btn">Save</button>
+                                    <button class="btn btn-primary submit-btn">Submit</button>
                                 </div>
                             </form>
                         </div>
@@ -254,18 +239,19 @@
             </div>
 
 
-            <div class="modal custom-modal fade" id="delete_holiday" role="dialog">
+            <div class="modal custom-modal fade" id="delete_termination" role="dialog">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-body">
                             <div class="form-header">
-                                <h3>Delete Holiday</h3>
+                                <h3>Delete Termination</h3>
                                 <p>Are you sure want to delete?</p>
                             </div>
                             <div class="modal-btn delete-action">
                                 <div class="row">
                                     <div class="col-6">
-                                        <a href="javascript:void(0);" class="btn btn-primary continue-btn">Delete</a>
+                                        <a href="javascript:void(0);"
+                                            class="btn btn-primary continue-btn">Delete</a>
                                     </div>
                                     <div class="col-6">
                                         <a href="javascript:void(0);" data-bs-dismiss="modal"
@@ -308,8 +294,8 @@
                     <div class="row">
                         <div class="col-4">
                             <div class="form-check card-radio p-0">
-                                <input id="customizer-layout01" name="data-layout" type="radio" value="vertical"
-                                    class="form-check-input">
+                                <input id="customizer-layout01" name="data-layout" type="radio"
+                                    value="vertical" class="form-check-input">
                                 <label class="form-check-label avatar-md w-100" for="customizer-layout01">
                                     <img src="assets/img/vertical.png" alt="Layout Image">
                                 </label>
@@ -318,8 +304,8 @@
                         </div>
                         <div class="col-4">
                             <div class="form-check card-radio p-0">
-                                <input id="customizer-layout02" name="data-layout" type="radio" value="horizontal"
-                                    class="form-check-input">
+                                <input id="customizer-layout02" name="data-layout" type="radio"
+                                    value="horizontal" class="form-check-input">
                                 <label class="form-check-label  avatar-md w-100" for="customizer-layout02">
                                     <img src="assets/img/horizontal.png" alt="Layout Image">
                                 </label>
@@ -328,8 +314,8 @@
                         </div>
                         <div class="col-4">
                             <div class="form-check card-radio p-0">
-                                <input id="customizer-layout03" name="data-layout" type="radio" value="twocolumn"
-                                    class="form-check-input">
+                                <input id="customizer-layout03" name="data-layout" type="radio"
+                                    value="twocolumn" class="form-check-input">
                                 <label class="form-check-label  avatar-md w-100" for="customizer-layout03">
                                     <img src="assets/img/two-col.png" alt="Layout Image">
                                 </label>
@@ -622,18 +608,25 @@
     <script src="{{ asset('assets/js/jquery-3.7.1.min.js') }}"></script>
     <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('assets/js/jquery.slimscroll.min.js') }}"></script>
+
     <script src="{{ asset('assets/js/select2.min.js') }}"></script>
     <script src="{{ asset('assets/js/moment.min.js') }}"></script>
     <script src="{{ asset('assets/js/bootstrap-datetimepicker.min.js') }}"></script>
+
+    <script src="{{ asset('assets/js/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('assets/js/dataTables.bootstrap4.min.js') }}"></script>
+
     <script src="{{ asset('assets/js/feather.min.js') }}"></script>
+
     <script src="{{ asset('assets/js/layout.js') }}"></script>
     <script src="{{ asset('assets/js/theme-settings.js') }}"></script>
     <script src="{{ asset('assets/js/greedynav.js') }}"></script>
     <script src="{{ asset('assets/js/app.js') }}"></script>
+    <script src="../../../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
+        data-cf-settings="your-id|your-version" defer></script>
 
-    <script src="https://cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
-        data-cf-settings="ab0e61c7c601ec36511db1d3-|49" defer></script>
+
 </body>
-<!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/holidays by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:22:31 GMT -->
+<!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/termination by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:23:10 GMT -->
 
 </html>

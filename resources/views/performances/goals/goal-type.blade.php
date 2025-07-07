@@ -7,7 +7,7 @@
   data-sidebar-size="lg"
   data-sidebar-image="none"
 >
-  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/departments by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:22:38 GMT -->
+  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/goal-type by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:23:09 GMT -->
   <!-- Added by HTTrack --><meta
     http-equiv="content-type"
     content="text/html;charset=UTF-8"
@@ -24,39 +24,43 @@
       name="author"
       content="Dreamstechnologies - Bootstrap Admin Template"
     />
-    <title>Departments - HRMS admin template</title>
+    <title>Goal - HRMS admin template</title>
 <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}">
 
 <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+
 <link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/fontawesome.min.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/all.min.css') }}">
+
 <link rel="stylesheet" href="{{ asset('assets/css/line-awesome.min.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/material.css') }}">
+
 <link rel="stylesheet" href="{{ asset('assets/css/dataTables.bootstrap4.min.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/select2.min.css') }}">
+
 <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
-    
   </head>
   <body>
     <div class="main-wrapper">
-  
+    
 
+       
 @include('layouts.header')
 @include('layouts.sidebar')
 
-  
 
       <div class="page-wrapper">
         <div class="content container-fluid">
           <div class="page-header">
             <div class="row align-items-center">
               <div class="col">
-                <h3 class="page-title">Department</h3>
+                <h3 class="page-title">Goal Type</h3>
                 <ul class="breadcrumb">
                   <li class="breadcrumb-item">
                     <a href="admin-dashboard.html">Dashboard</a>
                   </li>
-                  <li class="breadcrumb-item active">Department</li>
+                  <li class="breadcrumb-item active">Goal Type</li>
                 </ul>
               </div>
               <div class="col-auto float-end ms-auto">
@@ -64,8 +68,8 @@
                   href="#"
                   class="btn add-btn"
                   data-bs-toggle="modal"
-                  data-bs-target="#add_department"
-                  ><i class="fa fa-plus"></i> Add Department</a
+                  data-bs-target="#add_type"
+                  ><i class="fa fa-plus"></i> Add New</a
                 >
               </div>
             </div>
@@ -73,19 +77,51 @@
 
           <div class="row">
             <div class="col-md-12">
-              <div>
+              <div class="table-responsive">
                 <table class="table table-striped custom-table mb-0 datatable">
                   <thead>
                     <tr>
-                      <th class="width-thirty">#</th>
-                      <th>Department Name</th>
+                      <th style="width: 30px">#</th>
+                      <th>Type</th>
+                      <th>Description</th>
+                      <th>Status</th>
                       <th class="text-end">Action</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td>1</td>
-                      <td>Web Development</td>
+                      <td>Invoice Goal</td>
+                      <td>Lorem ipsum dollar</td>
+                      <td>
+                        <div class="dropdown action-label">
+                          <a
+                            class="btn btn-white btn-sm btn-rounded dropdown-toggle"
+                            href="#"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i
+                              class="fa-regular fa-circle-dot text-success"
+                            ></i>
+                            Active
+                          </a>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#"
+                              ><i
+                                class="fa-regular fa-circle-dot text-success"
+                              ></i>
+                              Active</a
+                            >
+                            <a class="dropdown-item" href="#"
+                              ><i
+                                class="fa-regular fa-circle-dot text-danger"
+                              ></i>
+                              Inactive</a
+                            >
+                          </div>
+                        </div>
+                      </td>
                       <td class="text-end">
                         <div class="dropdown dropdown-action">
                           <a
@@ -100,14 +136,14 @@
                               class="dropdown-item"
                               href="#"
                               data-bs-toggle="modal"
-                              data-bs-target="#edit_department"
+                              data-bs-target="#edit_type"
                               ><i class="fa-solid fa-pencil m-r-5"></i> Edit</a
                             >
                             <a
                               class="dropdown-item"
                               href="#"
                               data-bs-toggle="modal"
-                              data-bs-target="#delete_department"
+                              data-bs-target="#delete_type"
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
@@ -117,39 +153,35 @@
                     </tr>
                     <tr>
                       <td>2</td>
-                      <td>Application Development</td>
-                      <td class="text-end">
-                        <div class="dropdown dropdown-action">
+                      <td>Event Goal</td>
+                      <td>Lorem ipsum dollar</td>
+                      <td>
+                        <div class="dropdown action-label">
                           <a
+                            class="btn btn-white btn-sm btn-rounded dropdown-toggle"
                             href="#"
-                            class="action-icon dropdown-toggle"
                             data-bs-toggle="dropdown"
                             aria-expanded="false"
-                            ><i class="material-icons">more_vert</i></a
                           >
-                          <div class="dropdown-menu dropdown-menu-right">
-                            <a
-                              class="dropdown-item"
-                              href="#"
-                              data-bs-toggle="modal"
-                              data-bs-target="#edit_department"
-                              ><i class="fa-solid fa-pencil m-r-5"></i> Edit</a
+                            <i class="fa-regular fa-circle-dot text-danger"></i>
+                            Inactive
+                          </a>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#"
+                              ><i
+                                class="fa-regular fa-circle-dot text-success"
+                              ></i>
+                              Active</a
                             >
-                            <a
-                              class="dropdown-item"
-                              href="#"
-                              data-bs-toggle="modal"
-                              data-bs-target="#delete_department"
-                              ><i class="fa-regular fa-trash-can m-r-5"></i>
-                              Delete</a
+                            <a class="dropdown-item" href="#"
+                              ><i
+                                class="fa-regular fa-circle-dot text-danger"
+                              ></i>
+                              Inactive</a
                             >
                           </div>
                         </div>
                       </td>
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>IT Management</td>
                       <td class="text-end">
                         <div class="dropdown dropdown-action">
                           <a
@@ -164,110 +196,14 @@
                               class="dropdown-item"
                               href="#"
                               data-bs-toggle="modal"
-                              data-bs-target="#edit_department"
+                              data-bs-target="#edit_type"
                               ><i class="fa-solid fa-pencil m-r-5"></i> Edit</a
                             >
                             <a
                               class="dropdown-item"
                               href="#"
                               data-bs-toggle="modal"
-                              data-bs-target="#delete_department"
-                              ><i class="fa-regular fa-trash-can m-r-5"></i>
-                              Delete</a
-                            >
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>4</td>
-                      <td>Accounts Management</td>
-                      <td class="text-end">
-                        <div class="dropdown dropdown-action">
-                          <a
-                            href="#"
-                            class="action-icon dropdown-toggle"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                            ><i class="material-icons">more_vert</i></a
-                          >
-                          <div class="dropdown-menu dropdown-menu-right">
-                            <a
-                              class="dropdown-item"
-                              href="#"
-                              data-bs-toggle="modal"
-                              data-bs-target="#edit_department"
-                              ><i class="fa-solid fa-pencil m-r-5"></i> Edit</a
-                            >
-                            <a
-                              class="dropdown-item"
-                              href="#"
-                              data-bs-toggle="modal"
-                              data-bs-target="#delete_department"
-                              ><i class="fa-regular fa-trash-can m-r-5"></i>
-                              Delete</a
-                            >
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>5</td>
-                      <td>Support Management</td>
-                      <td class="text-end">
-                        <div class="dropdown dropdown-action">
-                          <a
-                            href="#"
-                            class="action-icon dropdown-toggle"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                            ><i class="material-icons">more_vert</i></a
-                          >
-                          <div class="dropdown-menu dropdown-menu-right">
-                            <a
-                              class="dropdown-item"
-                              href="#"
-                              data-bs-toggle="modal"
-                              data-bs-target="#edit_department"
-                              ><i class="fa-solid fa-pencil m-r-5"></i> Edit</a
-                            >
-                            <a
-                              class="dropdown-item"
-                              href="#"
-                              data-bs-toggle="modal"
-                              data-bs-target="#delete_department"
-                              ><i class="fa-regular fa-trash-can m-r-5"></i>
-                              Delete</a
-                            >
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>6</td>
-                      <td>Marketing</td>
-                      <td class="text-end">
-                        <div class="dropdown dropdown-action">
-                          <a
-                            href="#"
-                            class="action-icon dropdown-toggle"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                            ><i class="material-icons">more_vert</i></a
-                          >
-                          <div class="dropdown-menu dropdown-menu-right">
-                            <a
-                              class="dropdown-item"
-                              href="#"
-                              data-bs-toggle="modal"
-                              data-bs-target="#edit_department"
-                              ><i class="fa-solid fa-pencil m-r-5"></i> Edit</a
-                            >
-                            <a
-                              class="dropdown-item"
-                              href="#"
-                              data-bs-toggle="modal"
-                              data-bs-target="#delete_department"
+                              data-bs-target="#delete_type"
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
@@ -281,15 +217,11 @@
             </div>
           </div>
 
-          <div
-            id="add_department"
-            class="modal custom-modal fade"
-            role="dialog"
-          >
+          <div id="add_type" class="modal custom-modal fade" role="dialog">
             <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title">Add Department</h5>
+                  <h5 class="modal-title">Add New Goal Type</h5>
                   <button
                     type="button"
                     class="btn-close"
@@ -303,10 +235,22 @@
                   <form>
                     <div class="input-block mb-3">
                       <label class="col-form-label"
-                        >Department Name
-                        <span class="text-danger">*</span></label
+                        >Goal Type <span class="text-danger">*</span></label
                       >
                       <input class="form-control" type="text" />
+                    </div>
+                    <div class="input-block mb-3">
+                      <label class="col-form-label"
+                        >Description <span class="text-danger">*</span></label
+                      >
+                      <textarea class="form-control" rows="4"></textarea>
+                    </div>
+                    <div class="input-block mb-3">
+                      <label class="col-form-label">Status</label>
+                      <select class="select">
+                        <option>Active</option>
+                        <option>Inactive</option>
+                      </select>
                     </div>
                     <div class="submit-section">
                       <button class="btn btn-primary submit-btn">Submit</button>
@@ -317,15 +261,11 @@
             </div>
           </div>
 
-          <div
-            id="edit_department"
-            class="modal custom-modal fade"
-            role="dialog"
-          >
+          <div id="edit_type" class="modal custom-modal fade" role="dialog">
             <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title">Edit Department</h5>
+                  <h5 class="modal-title">Edit Goal Type</h5>
                   <button
                     type="button"
                     class="btn-close"
@@ -339,14 +279,28 @@
                   <form>
                     <div class="input-block mb-3">
                       <label class="col-form-label"
-                        >Department Name
-                        <span class="text-danger">*</span></label
+                        >Goal Type <span class="text-danger">*</span></label
                       >
                       <input
                         class="form-control"
-                        value="IT Management"
                         type="text"
+                        value="Invoice Goal"
                       />
+                    </div>
+                    <div class="input-block mb-3">
+                      <label class="col-form-label"
+                        >Description <span class="text-danger">*</span></label
+                      >
+                      <textarea class="form-control" rows="4">
+Lorem ipsum ismap</textarea
+                      >
+                    </div>
+                    <div class="input-block mb-3">
+                      <label class="col-form-label">Status</label>
+                      <select class="select">
+                        <option>Active</option>
+                        <option>Inactive</option>
+                      </select>
                     </div>
                     <div class="submit-section">
                       <button class="btn btn-primary submit-btn">Save</button>
@@ -357,16 +311,12 @@
             </div>
           </div>
 
-          <div
-            class="modal custom-modal fade"
-            id="delete_department"
-            role="dialog"
-          >
+          <div class="modal custom-modal fade" id="delete_type" role="dialog">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-body">
                   <div class="form-header">
-                    <h3>Delete Department</h3>
+                    <h3>Delete Goal Type</h3>
                     <p>Are you sure want to delete?</p>
                   </div>
                   <div class="modal-btn delete-action">
@@ -959,24 +909,19 @@
         </div>
       </div>
     </div>
- 
-
-    <script src="{{ asset('assets/js/jquery-3.7.1.min.js') }}" type="text/javascript"></script>
-<script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}" type="text/javascript"></script>
-<script src="{{ asset('assets/js/jquery.slimscroll.min.js') }}" type="text/javascript"></script>
-<script src="{{ asset('assets/js/jquery.dataTables.min.js') }}" type="text/javascript"></script>
-<script src="{{ asset('assets/js/dataTables.bootstrap4.min.js') }}" type="text/javascript"></script>
-<script src="{{ asset('assets/js/feather.min.js') }}" type="text/javascript"></script>
-<script src="{{ asset('assets/js/layout.js') }}" type="text/javascript"></script>
-<script src="{{ asset('assets/js/theme-settings.js') }}" type="text/javascript"></script>
-<script src="{{ asset('assets/js/greedynav.js') }}" type="text/javascript"></script>
-<script src="{{ asset('assets/js/app.js') }}" type="text/javascript"></script>
-
-<!-- Optional: Cloudflare Rocket Loader -->
-<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
-        data-cf-settings="e57cb3147179e69f37cced13-|49" defer></script>
+<script src="{{ asset('assets/js/jquery-3.7.1.min.js') }}"></script>
+<script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ asset('assets/js/jquery.slimscroll.min.js') }}"></script>
+<script src="{{ asset('assets/js/select2.min.js') }}"></script>
+<script src="{{ asset('assets/js/jquery.dataTables.min.js') }}"></script>
+<script src="{{ asset('assets/js/dataTables.bootstrap4.min.js') }}"></script>
+<script src="{{ asset('assets/js/feather.min.js') }}"></script>
+<script src="{{ asset('assets/js/layout.js') }}"></script>
+<script src="{{ asset('assets/js/theme-settings.js') }}"></script>
+<script src="{{ asset('assets/js/greedynav.js') }}"></script>
+<script src="{{ asset('assets/js/app.js') }}"></script>
 
   </body>
 
-  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/departments by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:22:38 GMT -->
+  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/goal-type by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:23:09 GMT -->
 </html>
