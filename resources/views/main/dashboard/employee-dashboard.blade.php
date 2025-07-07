@@ -143,7 +143,7 @@
                                             </ul>
                                         </div>
                                         <div class="view-attendance">
-                                            <a href="attendance.html">
+                                            <a href="{{route('attendance-admin')}}">
                                                 View Attendance
                                                 <i class="fe fe-arrow-right-circle"></i>
                                             </a>
@@ -166,7 +166,7 @@
                                                 </div>
                                             </div>
                                             <div class="holiday-btn">
-                                                <a href="holidays.html" class="btn">View All</a>
+                                                <a href="{{route('holidays')}}" class="btn">View All</a>
                                             </div>
                                         </div>
                                     </div>
@@ -239,7 +239,7 @@
                                             </div>
                                         </div>
                                         <div class="view-attendance">
-                                            <a href="leaves-employee.html">
+                                            <a href="{{route('leaves-employee')}}">
                                                 Apply Leave <i class="fe fe-arrow-right-circle"></i>
                                             </a>
                                         </div>
@@ -284,7 +284,7 @@
                                 <div class="statistic-header">
                                     <h4>Important</h4>
                                     <div class="important-notification">
-                                        <a href="activities.html">
+                                        <a href="{{route('activities')}}">
                                             View All <i class="fe fe-arrow-right-circle"></i>
                                         </a>
                                     </div>
