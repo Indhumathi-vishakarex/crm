@@ -7,27 +7,30 @@
   data-sidebar-size="lg"
   data-sidebar-image="none"
 >
-  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/inbox by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:22:29 GMT -->
+  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/budget-expenses by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:23:07 GMT -->
   <!-- Added by HTTrack --><meta
     http-equiv="content-type"
     content="text/html;charset=UTF-8"
   /><!-- /Added by HTTrack -->
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Smarthr - Bootstrap Admin Template" />
-    <meta name="keywords" content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern, accounts, invoice, html5, responsive, CRM, Projects" />
-    <meta name="author" content="Dreamstechnologies - Bootstrap Admin Template" />
-    <title>Inbox - HRMS admin template</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Smarthr - Bootstrap Admin Template" />
+  <meta name="keywords" content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern, accounts, invoice, html5, responsive, CRM, Projects" />
+  <meta name="author" content="Dreamstechnologies - Bootstrap Admin Template" />
+  <title>Categories - HRMS admin template</title>
 
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}" />
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png" />
 
-    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/fontawesome.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/all.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/css/line-awesome.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/css/material.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/line-awesome.min.css" />
+  <link rel="stylesheet" href="assets/css/material.css" />
+  <link rel="stylesheet" href="assets/css/select2.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
   <body>
@@ -40,17 +43,21 @@
           <div class="page-header">
             <div class="row align-items-center">
               <div class="col">
-                <h3 class="page-title">Inbox</h3>
+                <h3 class="page-title">Budgets Expenses</h3>
                 <ul class="breadcrumb">
                   <li class="breadcrumb-item">
                     <a href="admin-dashboard.html">Dashboard</a>
                   </li>
-                  <li class="breadcrumb-item active">Inbox</li>
+                  <li class="breadcrumb-item active">Accounts</li>
                 </ul>
               </div>
               <div class="col-auto float-end ms-auto">
-                <a href="compose.html" class="btn add-btn"
-                  ><i class="fa fa-plus"></i> Compose</a
+                <a
+                  href="#"
+                  class="btn add-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#add_categories"
+                  ><i class="fa fa-plus"></i> Add Expenses</a
                 >
               </div>
             </div>
@@ -58,317 +65,385 @@
 
           <div class="row">
             <div class="col-md-12">
-              <div class="card mb-0">
-                <div class="card-body">
-                  <div class="email-header">
-                    <div class="row">
-                      <div class="col top-action-left">
-                        <div class="float-start">
-                          <div class="btn-group dropdown-action">
-                            <button
-                              type="button"
-                              class="btn btn-white dropdown-toggle"
-                              data-bs-toggle="dropdown"
-                            >
-                              Select <i class="fa fa-angle-down"></i>
-                            </button>
-                            <div class="dropdown-menu">
-                              <a class="dropdown-item" href="#">All</a>
-                              <a class="dropdown-item" href="#">None</a>
-                              <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" href="#">Read</a>
-                              <a class="dropdown-item" href="#">Unread</a>
-                            </div>
-                          </div>
-                          <div class="btn-group dropdown-action">
-                            <button
-                              type="button"
-                              class="btn btn-white dropdown-toggle"
-                              data-bs-toggle="dropdown"
-                            >
-                              Actions <i class="fa fa-angle-down"></i>
-                            </button>
-                            <div class="dropdown-menu">
-                              <a class="dropdown-item" href="#">Reply</a>
-                              <a class="dropdown-item" href="#">Forward</a>
-                              <a class="dropdown-item" href="#">Archive</a>
-                              <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" href="#">Mark As Read</a>
-                              <a class="dropdown-item" href="#"
-                                >Mark As Unread</a
-                              >
-                              <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" href="#">Delete</a>
-                            </div>
-                          </div>
-                          <div class="btn-group dropdown-action">
-                            <button
-                              type="button"
-                              class="btn btn-white dropdown-toggle"
-                              data-bs-toggle="dropdown"
-                            >
-                              <i class="fa fa-folder"></i>
-                              <i class="fa fa-angle-down"></i>
-                            </button>
-                            <div role="menu" class="dropdown-menu">
-                              <a class="dropdown-item" href="#">Social</a>
-                              <a class="dropdown-item" href="#">Forums</a>
-                              <a class="dropdown-item" href="#">Updates</a>
-                              <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" href="#">Spam</a>
-                              <a class="dropdown-item" href="#">Trash</a>
-                              <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" href="#">New</a>
-                            </div>
-                          </div>
-                          <div class="btn-group dropdown-action">
-                            <button
-                              type="button"
-                              data-bs-toggle="dropdown"
-                              class="btn btn-white dropdown-toggle"
-                            >
-                              <i class="fa fa-tags"></i>
-                              <i class="fa fa-angle-down"></i>
-                            </button>
-                            <div role="menu" class="dropdown-menu">
-                              <a class="dropdown-item" href="#">Work</a>
-                              <a class="dropdown-item" href="#">Family</a>
-                              <a class="dropdown-item" href="#">Social</a>
-                              <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" href="#">Primary</a>
-                              <a class="dropdown-item" href="#">Promotions</a>
-                              <a class="dropdown-item" href="#">Forums</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="float-start d-none d-sm-block">
-                          <input
-                            type="text"
-                            placeholder="Search Messages"
-                            class="form-control search-message"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-auto top-action-right">
-                        <div class="text-end">
-                          <button
-                            type="button"
-                            title="Refresh"
-                            data-bs-toggle="tooltip"
-                            class="btn btn-white d-none d-md-inline-block"
+              <div class="table-responsive">
+                <table class="table table-striped custom-table mb-0">
+                  <thead>
+                    <tr>
+                      <th>No</th>
+                      <th>Notes</th>
+                      <th>Category Name</th>
+                      <th>SubCategory Name</th>
+                      <th>Amount</th>
+                      <th>Revenue Date</th>
+                      <th class="text-end">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Test</td>
+                      <td>Hardware</td>
+                      <td>Hardware Expenses</td>
+                      <td>1000.00</td>
+                      <td>06 Jan 2020</td>
+                      <td class="text-end">
+                        <div class="dropdown dropdown-action">
+                          <a
+                            href="#"
+                            class="action-icon dropdown-toggle"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            ><i class="material-icons">more_vert</i></a
                           >
-                            <i class="fa fa-refresh"></i>
-                          </button>
-                          <div class="btn-group">
-                            <a class="btn btn-white"
-                              ><i class="fa fa-angle-left"></i
-                            ></a>
-                            <a class="btn btn-white"
-                              ><i class="fa fa-angle-right"></i
-                            ></a>
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a
+                              class="dropdown-item"
+                              href="#"
+                              data-bs-toggle="modal"
+                              data-bs-target="#edit_categories"
+                              ><i class="fa-solid fa-pencil m-r-5"></i> Edit</a
+                            >
+                            <a
+                              class="dropdown-item"
+                              href="#"
+                              data-bs-toggle="modal"
+                              data-bs-target="#delete"
+                              ><i class="fa-regular fa-trash-can m-r-5"></i>
+                              Delete</a
+                            >
                           </div>
                         </div>
-                        <div class="text-end">
-                          <span class="text-muted d-none d-md-inline-block"
-                            >Showing 10 of 112
-                          </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Test</td>
+                      <td>Project</td>
+                      <td>Project Expenses</td>
+                      <td>1000.00</td>
+                      <td>06 Jan 2020</td>
+                      <td class="text-end">
+                        <div class="dropdown dropdown-action">
+                          <a
+                            href="#"
+                            class="action-icon dropdown-toggle"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            ><i class="material-icons">more_vert</i></a
+                          >
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a
+                              class="dropdown-item"
+                              href="#"
+                              data-bs-toggle="modal"
+                              data-bs-target="#edit_categories"
+                              ><i class="fa-solid fa-pencil m-r-5"></i> Edit</a
+                            >
+                            <a
+                              class="dropdown-item"
+                              href="#"
+                              data-bs-toggle="modal"
+                              data-bs-target="#delete"
+                              ><i class="fa-regular fa-trash-can m-r-5"></i>
+                              Delete</a
+                            >
+                          </div>
                         </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="modal custom-modal fade"
+            id="add_categories"
+            role="dialog"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Add Revenues</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="input-block mb-3 row">
+                      <label class="col-lg-12 control-label col-form-label"
+                        >Amount
+                        <span class="text-danger">*</span>
+                      </label>
+                      <div class="col-lg-12 p-0">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="800.00"
+                          name="amount"
+                        />
                       </div>
                     </div>
+                    <div class="input-block mb-3 row">
+                      <label class="col-lg-12 control-label col-form-label"
+                        >Notes
+                        <span class="text-danger">*</span>
+                      </label>
+                      <div class="col-lg-12 p-0">
+                        <textarea
+                          class="form-control ta"
+                          name="notes"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="input-block mb-3 row">
+                      <label class="col-lg-12 control-label col-form-label"
+                        >Revenue Date
+                        <span class="text-danger">*</span>
+                      </label>
+                      <div class="col-lg-12 p-0">
+                        <input
+                          class="datepicker-input form-control"
+                          type="text"
+                          value="06-05-2021"
+                          name="revenue_date"
+                          data-date-format="dd-mm-yyyy"
+                        />
+                      </div>
+                    </div>
+                    <div class="input-block mb-3 row">
+                      <label class="col-lg-12 control-label col-form-label"
+                        >Category
+                        <span class="text-danger">*</span>
+                      </label>
+                      <div class="col-lg-12 p-0">
+                        <select
+                          name="category"
+                          class="form-control m-b form-select"
+                          id="main_category"
+                        >
+                          <option value disabled selected>
+                            Choose Category
+                          </option>
+                          <option value="1">project1</option>
+                          <option value="3">test category</option>
+                          <option value="4">Hardware</option>
+                          <option value="5">Material</option>
+                          <option value="6">Vehicle</option>
+                          <option value="8">TestctrE</option>
+                          <option value="9">Twocatr</option>
+                          <option value="10">fesferwf</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="input-block mb-3 row">
+                      <label class="col-lg-12 control-label col-form-label"
+                        >Sub Category
+                        <span class="text-danger">*</span>
+                      </label>
+                      <div class="col-lg-12 p-0">
+                        <select
+                          name="sub_category"
+                          class="form-control m-b form-select"
+                          id="sub_category"
+                        >
+                          <option value>Choose Sub-Category</option>
+                          <option value="1">project1</option>
+                          <option value="3">test category</option>
+                          <option value="4">Hardware</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="input-block mb-3 row">
+                      <label class="col-lg-12 control-label col-form-label"
+                        >Attach File</label
+                      >
+                      <div class="col-lg-12 p-0">
+                        <input
+                          type="file"
+                          class="form-control"
+                          data-buttontext="Choose File"
+                          data-icon="false"
+                          data-classbutton="btn btn-default"
+                          data-classinput="form-control inline input-s"
+                          name="receipt"
+                        />
+                      </div>
+                    </div>
+                    <div class="m-t-20 text-center">
+                      <button class="btn btn-primary btn-lg BudgetAddBtn">
+                        Submit
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="modal custom-modal fade"
+            id="edit_categories"
+            role="dialog"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Edit Revenues</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="input-block mb-3 row">
+                      <label class="col-lg-12 control-label col-form-label"
+                        >Amount
+                        <span class="text-danger">*</span>
+                      </label>
+                      <div class="col-lg-12 p-0">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="800.00"
+                          name="amount"
+                        />
+                      </div>
+                    </div>
+                    <div class="input-block mb-3 row">
+                      <label class="col-lg-12 control-label col-form-label"
+                        >Notes
+                        <span class="text-danger">*</span>
+                      </label>
+                      <div class="col-lg-12 p-0">
+                        <textarea
+                          class="form-control ta"
+                          name="notes"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="input-block mb-3 row">
+                      <label class="col-lg-12 control-label col-form-label"
+                        >Revenue Date
+                        <span class="text-danger">*</span>
+                      </label>
+                      <div class="col-lg-12 p-0">
+                        <input
+                          class="datepicker-input form-control"
+                          type="text"
+                          value="06-05-2021"
+                          name="revenue_date"
+                          data-date-format="dd-mm-yyyy"
+                        />
+                      </div>
+                    </div>
+                    <div class="input-block mb-3 row">
+                      <label class="col-lg-12 control-label col-form-label"
+                        >Category
+                        <span class="text-danger">*</span>
+                      </label>
+                      <div class="col-lg-12 p-0">
+                        <select
+                          name="category"
+                          class="form-control m-b form-select"
+                          id="main_category_2"
+                        >
+                          <option value disabled selected>
+                            Choose Category
+                          </option>
+                          <option value="1">project1</option>
+                          <option value="3">test category</option>
+                          <option value="4">Hardware</option>
+                          <option value="5">Material</option>
+                          <option value="6">Vehicle</option>
+                          <option value="8">TestctrE</option>
+                          <option value="9">Twocatr</option>
+                          <option value="10">fesferwf</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="input-block mb-3 row">
+                      <label class="col-lg-12 control-label col-form-label"
+                        >Sub Category
+                        <span class="text-danger">*</span>
+                      </label>
+                      <div class="col-lg-12 p-0">
+                        <select
+                          name="sub_category"
+                          class="form-control m-b form-select"
+                          id="sub_category_2"
+                        >
+                          <option value>Choose Sub-Category</option>
+                          <option value="1">project1</option>
+                          <option value="3">test category</option>
+                          <option value="4">Hardware</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="input-block mb-3 row">
+                      <label class="col-lg-12 control-label col-form-label"
+                        >Attach File</label
+                      >
+                      <div class="col-lg-12 p-0">
+                        <input
+                          type="file"
+                          class="form-control"
+                          data-buttontext="Choose File"
+                          data-icon="false"
+                          data-classbutton="btn btn-default"
+                          data-classinput="form-control inline input-s"
+                          name="receipt"
+                        />
+                      </div>
+                    </div>
+                    <div class="m-t-20 text-center">
+                      <button class="btn btn-primary btn-lg BudgetAddBtn">
+                        Submit
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal custom-modal fade" id="delete" role="dialog">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <div class="form-header">
+                    <h3>Delete</h3>
+                    <p>Are you sure want to delete?</p>
                   </div>
-                  <div class="email-content">
-                    <div class="table-responsive">
-                      <table class="table table-inbox table-hover">
-                        <thead>
-                          <tr>
-                            <th colspan="6">
-                              <input type="checkbox" class="checkbox-all" />
-                            </th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr
-                            class="unread clickable-row"
-                            data-href="mail-view"
-                          >
-                            <td>
-                              <input type="checkbox" class="checkmail" />
-                            </td>
-                            <td>
-                              <span class="mail-important"
-                                ><i class="fa fa-star starred"></i
-                              ></span>
-                            </td>
-                            <td class="name">John Doe</td>
-                            <td class="subject">
-                              Lorem ipsum dolor sit amet, consectetuer
-                              adipiscing elit
-                            </td>
-                            <td><i class="fa fa-paperclip"></i></td>
-                            <td class="mail-date">13:14</td>
-                          </tr>
-                          <tr
-                            class="unread clickable-row"
-                            data-href="mail-view"
-                          >
-                            <td>
-                              <input type="checkbox" class="checkmail" />
-                            </td>
-                            <td>
-                              <span class="mail-important"
-                                ><i class="fa-regular fa-star"></i
-                              ></span>
-                            </td>
-                            <td class="name">Envato Account</td>
-                            <td class="subject">
-                              Important account security update from Envato
-                            </td>
-                            <td></td>
-                            <td class="mail-date">8:42</td>
-                          </tr>
-                          <tr class="clickable-row" data-href="mail-view">
-                            <td>
-                              <input type="checkbox" class="checkmail" />
-                            </td>
-                            <td>
-                              <span class="mail-important"
-                                ><i class="fa-regular fa-star"></i
-                              ></span>
-                            </td>
-                            <td class="name">Twitter</td>
-                            <td class="subject">
-                              HRMS Bootstrap Admin Template
-                            </td>
-                            <td></td>
-                            <td class="mail-date">30 Nov</td>
-                          </tr>
-                          <tr
-                            class="unread clickable-row"
-                            data-href="mail-view"
-                          >
-                            <td>
-                              <input type="checkbox" class="checkmail" />
-                            </td>
-                            <td>
-                              <span class="mail-important"
-                                ><i class="fa-regular fa-star"></i
-                              ></span>
-                            </td>
-                            <td class="name">Richard Parker</td>
-                            <td class="subject">
-                              Lorem ipsum dolor sit amet, consectetuer
-                              adipiscing elit
-                            </td>
-                            <td></td>
-                            <td class="mail-date">18 Sep</td>
-                          </tr>
-                          <tr class="clickable-row" data-href="mail-view">
-                            <td>
-                              <input type="checkbox" class="checkmail" />
-                            </td>
-                            <td>
-                              <span class="mail-important"
-                                ><i class="fa-regular fa-star"></i
-                              ></span>
-                            </td>
-                            <td class="name">John Smith</td>
-                            <td class="subject">
-                              Lorem ipsum dolor sit amet, consectetuer
-                              adipiscing elit
-                            </td>
-                            <td></td>
-                            <td class="mail-date">21 Aug</td>
-                          </tr>
-                          <tr class="clickable-row" data-href="mail-view">
-                            <td>
-                              <input type="checkbox" class="checkmail" />
-                            </td>
-                            <td>
-                              <span class="mail-important"
-                                ><i class="fa-regular fa-star"></i
-                              ></span>
-                            </td>
-                            <td class="name">me, Robert Smith (3)</td>
-                            <td class="subject">
-                              Lorem ipsum dolor sit amet, consectetuer
-                              adipiscing elit
-                            </td>
-                            <td></td>
-                            <td class="mail-date">1 Aug</td>
-                          </tr>
-                          <tr
-                            class="unread clickable-row"
-                            data-href="mail-view"
-                          >
-                            <td>
-                              <input type="checkbox" class="checkmail" />
-                            </td>
-                            <td>
-                              <span class="mail-important"
-                                ><i class="fa-regular fa-star"></i
-                              ></span>
-                            </td>
-                            <td class="name">Codecanyon</td>
-                            <td class="subject">Welcome To Codecanyon</td>
-                            <td></td>
-                            <td class="mail-date">Jul 13</td>
-                          </tr>
-                          <tr class="clickable-row" data-href="mail-view">
-                            <td>
-                              <input type="checkbox" class="checkmail" />
-                            </td>
-                            <td>
-                              <span class="mail-important"
-                                ><i class="fa-regular fa-star"></i
-                              ></span>
-                            </td>
-                            <td class="name">Richard Miles</td>
-                            <td class="subject">
-                              Lorem ipsum dolor sit amet, consectetuer
-                              adipiscing elit
-                            </td>
-                            <td><i class="fa fa-paperclip"></i></td>
-                            <td class="mail-date">May 14</td>
-                          </tr>
-                          <tr
-                            class="unread clickable-row"
-                            data-href="mail-view"
-                          >
-                            <td>
-                              <input type="checkbox" class="checkmail" />
-                            </td>
-                            <td>
-                              <span class="mail-important"
-                                ><i class="fa-regular fa-star"></i
-                              ></span>
-                            </td>
-                            <td class="name">John Smith</td>
-                            <td class="subject">
-                              Lorem ipsum dolor sit amet, consectetuer
-                              adipiscing elit
-                            </td>
-                            <td></td>
-                            <td class="mail-date">11/11/16</td>
-                          </tr>
-                          <tr class="clickable-row" data-href="mail-view">
-                            <td>
-                              <input type="checkbox" class="checkmail" />
-                            </td>
-                            <td>
-                              <span class="mail-important"
-                                ><i class="fa fa-star starred"></i
-                              ></span>
-                            </td>
-                            <td class="name">Mike Litorus</td>
-                            <td class="subject">
-                              Lorem ipsum dolor sit amet, consectetuer
-                              adipiscing elit
-                            </td>
-                            <td></td>
-                            <td class="mail-date">10/31/16</td>
-                          </tr>
-                        </tbody>
-                      </table>
+                  <div class="modal-btn delete-action">
+                    <div class="row">
+                      <div class="col-6">
+                        <a
+                          href="javascript:void(0);"
+                          class="btn btn-primary continue-btn"
+                          >Delete</a
+                        >
+                      </div>
+                      <div class="col-6">
+                        <a
+                          href="javascript:void(0);"
+                          data-bs-dismiss="modal"
+                          class="btn btn-primary cancel-btn"
+                          >Cancel</a
+                        >
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -942,20 +1017,25 @@
         </div>
       </div>
     </div>
-<!-- Scripts -->
-<script src="{{ asset('assets/js/jquery-3.7.1.min.js') }}"></script>
-<script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
-<script src="{{ asset('assets/js/jquery.slimscroll.min.js') }}"></script>
-<script src="{{ asset('assets/js/feather.min.js') }}"></script>
-<script src="{{ asset('assets/js/layout.js') }}"></script>
-<script src="{{ asset('assets/js/theme-settings.js') }}"></script>
-<script src="{{ asset('assets/js/greedynav.js') }}"></script>
-<script src="{{ asset('assets/js/app.js') }}"></script>
+    <!-- Core JS -->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery.slimscroll.min.js"></script>
+<script src="assets/js/select2.min.js"></script>
+<script src="assets/js/moment.min.js"></script>
+<script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+<script src="assets/js/feather.min.js"></script>
 
-<!-- Optional: Cloudflare Rocket Loader -->
-<script src="{{ asset('cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js') }}" data-cf-settings="9f1ed2856303af44cac22aee-|49" defer></script>
+<!-- Custom Scripts -->
+<script src="assets/js/layout.js"></script>
+<script src="assets/js/theme-settings.js"></script>
+<script src="assets/js/greedynav.js"></script>
+<script src="assets/js/app.js"></script>
+
+<!-- Cloudflare Rocket Loader -->
+<script src="../../../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="auto" defer></script>
 
   </body>
 
-  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/inbox by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:22:30 GMT -->
+  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/budget-expenses by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:23:07 GMT -->
 </html>
