@@ -606,7 +606,7 @@
                                     <a class href="contact-list.html"> Contacts</a>
                                 </li>
                                 <li>
-                                    <a class href="companies.html">Companies</a>
+                                    <a class href="{{route('companies')}}">Companies</a>
                                 </li>
                                 <li>
                                     <a class href="deals.html"> Deals</a>
@@ -882,7 +882,7 @@
                             aria-labelledby="v-pills-activities-tab">
                             <p>Activities</p>
                             <ul>
-                                <li><a class href="activities.html"> Activities </a></li>
+                                <li><a class href="{{route('activities')}}"> Activities </a></li>
                             </ul>
                         </div>
                         <div
@@ -1457,13 +1457,13 @@
                                                 <ul class="employee-notification-list">
                                                     <li class="employee-notification-grid">
                                                         <div class="employee-notification-icon">
-                                                            <a href="activities.html">
+                                                            <a href="{{route('activities')}}">
                                                                 <span class="badge-soft-danger rounded-circle">HR</span>
                                                             </a>
                                                         </div>
                                                         <div class="employee-notification-content">
                                                             <h6>
-                                                                <a href="activities.html">
+                                                                <a href="{{route('activities')}}">
                                                                     Your leave request has been
                                                                 </a>
                                                             </h6>
@@ -1475,13 +1475,13 @@
                                                     </li>
                                                     <li class="employee-notification-grid">
                                                         <div class="employee-notification-icon">
-                                                            <a href="activities.html">
+                                                            <a href="{{route('activities')}}">
                                                                 <span class="badge-soft-info rounded-circle">ER</span>
                                                             </a>
                                                         </div>
                                                         <div class="employee-notification-content">
                                                             <h6>
-                                                                <a href="activities.html">
+                                                                <a href="{{route('activities')}}">
                                                                     You’re enrolled in upcom....
                                                                 </a>
                                                             </h6>
@@ -1493,14 +1493,14 @@
                                                     </li>
                                                     <li class="employee-notification-grid">
                                                         <div class="employee-notification-icon">
-                                                            <a href="activities.html">
+                                                            <a href="{{route('activities')}}">
                                                                 <span
                                                                     class="badge-soft-warning rounded-circle">SM</span>
                                                             </a>
                                                         </div>
                                                         <div class="employee-notification-content">
                                                             <h6>
-                                                                <a href="activities.html">
+                                                                <a href="{{route('activities')}}">
                                                                     Your annual compliance trai
                                                                 </a>
                                                             </h6>
@@ -1512,7 +1512,7 @@
                                                     </li>
                                                     <li class="employee-notification-grid">
                                                         <div class="employee-notification-icon">
-                                                            <a href="activities.html">
+                                                            <a href="{{route('activities')}}">
                                                                 <span class="rounded-circle">
                                                                     <img
                                                                         src="assets/img/avatar/avatar-1.jpg"
@@ -1523,7 +1523,7 @@
                                                         </div>
                                                         <div class="employee-notification-content">
                                                             <h6>
-                                                                <a href="activities.html">
+                                                                <a href="{{route('activities')}}">
                                                                     Jessica has requested feedba
                                                                 </a>
                                                             </h6>
@@ -1535,14 +1535,14 @@
                                                     </li>
                                                     <li class="employee-notification-grid">
                                                         <div class="employee-notification-icon">
-                                                            <a href="activities.html">
+                                                            <a href="{{route('activities')}}">
                                                                 <span
                                                                     class="badge-soft-warning rounded-circle">DT</span>
                                                             </a>
                                                         </div>
                                                         <div class="employee-notification-content">
                                                             <h6>
-                                                                <a href="activities.html">
+                                                                <a href="{{route('activities')}}">
                                                                     Gentle remainder about train
                                                                 </a>
                                                             </h6>
@@ -1554,13 +1554,13 @@
                                                     </li>
                                                     <li class="employee-notification-grid">
                                                         <div class="employee-notification-icon">
-                                                            <a href="activities.html">
+                                                            <a href="{{route('activities')}}">
                                                                 <span class="badge-soft-danger rounded-circle">AU</span>
                                                             </a>
                                                         </div>
                                                         <div class="employee-notification-content">
                                                             <h6>
-                                                                <a href="activities.html">
+                                                                <a href="{{route('activities')}}">
                                                                     Our HR system will be down
                                                                 </a>
                                                             </h6>
@@ -1578,7 +1578,7 @@
                                                 <ul class="employee-notification-list">
                                                     <li class="employee-notification-grid">
                                                         <div class="employee-notification-icon">
-                                                            <a href="activities.html">
+                                                            <a href="{{route('activities')}}">
                                                                 <span class="rounded-circle">
                                                                     <img
                                                                         src="assets/img/avatar/avatar-2.jpg"
@@ -1589,7 +1589,7 @@
                                                         </div>
                                                         <div class="employee-notification-content">
                                                             <h6>
-                                                                <a href="activities.html">
+                                                                <a href="{{route('activities')}}">
                                                                     John has requested feedba
                                                                 </a>
                                                             </h6>
@@ -1601,13 +1601,13 @@
                                                     </li>
                                                     <li class="employee-notification-grid">
                                                         <div class="employee-notification-icon">
-                                                            <a href="activities.html">
+                                                            <a href="{{route('activities')}}">
                                                                 <span class="badge-soft-danger rounded-circle">HR</span>
                                                             </a>
                                                         </div>
                                                         <div class="employee-notification-content">
                                                             <h6>
-                                                                <a href="activities.html">
+                                                                <a href="{{route('activities')}}">
                                                                     Your leave request has been
                                                                 </a>
                                                             </h6>
@@ -1619,13 +1619,13 @@
                                                     </li>
                                                     <li class="employee-notification-grid">
                                                         <div class="employee-notification-icon">
-                                                            <a href="activities.html">
+                                                            <a href="{{route('activities')}}">
                                                                 <span class="badge-soft-info rounded-circle">ER</span>
                                                             </a>
                                                         </div>
                                                         <div class="employee-notification-content">
                                                             <h6>
-                                                                <a href="activities.html">
+                                                                <a href="{{route('activities')}}">
                                                                     You’re enrolled in upcom....
                                                                 </a>
                                                             </h6>
@@ -1637,14 +1637,14 @@
                                                     </li>
                                                     <li class="employee-notification-grid">
                                                         <div class="employee-notification-icon">
-                                                            <a href="activities.html">
+                                                            <a href="{{route('activities')}}">
                                                                 <span
                                                                     class="badge-soft-warning rounded-circle">SM</span>
                                                             </a>
                                                         </div>
                                                         <div class="employee-notification-content">
                                                             <h6>
-                                                                <a href="activities.html">
+                                                                <a href="{{route('activities')}}">
                                                                     Your annual compliance trai
                                                                 </a>
                                                             </h6>
@@ -1656,14 +1656,14 @@
                                                     </li>
                                                     <li class="employee-notification-grid">
                                                         <div class="employee-notification-icon">
-                                                            <a href="activities.html">
+                                                            <a href="{{route('activities')}}">
                                                                 <span
                                                                     class="badge-soft-warning rounded-circle">DT</span>
                                                             </a>
                                                         </div>
                                                         <div class="employee-notification-content">
                                                             <h6>
-                                                                <a href="activities.html">
+                                                                <a href="{{route('activities')}}">
                                                                     Gentle remainder about train
                                                                 </a>
                                                             </h6>
@@ -1675,13 +1675,13 @@
                                                     </li>
                                                     <li class="employee-notification-grid">
                                                         <div class="employee-notification-icon">
-                                                            <a href="activities.html">
+                                                            <a href="{{route('activities')}}">
                                                                 <span class="badge-soft-danger rounded-circle">AU</span>
                                                             </a>
                                                         </div>
                                                         <div class="employee-notification-content">
                                                             <h6>
-                                                                <a href="activities.html">
+                                                                <a href="{{route('activities')}}">
                                                                     Our HR system will be down
                                                                 </a>
                                                             </h6>
@@ -2341,7 +2341,7 @@
                                                 <span class="company-icon-tertiary rounded-circle">HR</span>
                                             </div>
                                             <div class="company-link">
-                                                <a href="companies.html">HR Policy</a>
+                                                <a href="{{route('companies')}}">HR Policy</a>
                                             </div>
                                         </div>
                                         <div class="company-bottom d-flex">
@@ -2362,7 +2362,7 @@
                                                 <span class="company-icon-success rounded-circle">EP</span>
                                             </div>
                                             <div class="company-link">
-                                                <a href="companies.html">Employer Policy</a>
+                                                <a href="{{route('companies')}}">Employer Policy</a>
                                             </div>
                                         </div>
                                         <div class="company-bottom d-flex">
@@ -2383,7 +2383,7 @@
                                                 <span class="company-icon-info rounded-circle">LP</span>
                                             </div>
                                             <div class="company-link">
-                                                <a href="companies.html">Leave Policy</a>
+                                                <a href="{{route('companies')}}">Leave Policy</a>
                                             </div>
                                         </div>
                                         <div class="company-bottom d-flex">
