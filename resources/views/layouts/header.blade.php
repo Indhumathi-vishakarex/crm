@@ -1,7 +1,10 @@
 <div class="header">
         <div class="header-left">
-          <a href="admin-dashboard.html" class="logo">
+          <!-- <a href="admin-dashboard.html" class="logo">
             <img src="assets/img/logo.svg" alt="Logo" />
+          </a> -->
+           <a href="admin-dashboard.html" class="logo">
+            <img src="assets/img/logo2.png" alt="Logo" width="130" height="120" />
           </a>
           <a href="admin-dashboard.html" class="logo collapse-logo">
             <img src="assets/img/collapse-logo.svg" alt="Logo" />
@@ -376,9 +379,9 @@
               <span>Admin</span>
             </a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="profile.html">My Profile</a>
-              <a class="dropdown-item" href="settings.html">Settings</a>
-              <a class="dropdown-item" href="index.html">Logout</a>
+              <a class="dropdown-item" href="{{route('profile')}}">My Profile</a>
+              <a class="dropdown-item" href="{{route('settings')}}">Settings</a>
+              <a class="dropdown-item" href="{{route('login')}}">Logout</a>
             </div>
           </li>
         </ul>

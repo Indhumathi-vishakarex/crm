@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-sidebar-image="none">
 
-<!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/events by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:22:24 GMT -->
+<!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/salary-view by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:23:07 GMT -->
 <!-- Added by HTTrack -->
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 
@@ -11,172 +11,146 @@
     <meta name="description" content="Smarthr - Bootstrap Admin Template">
     <meta name="keywords" content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern, accounts, invoice, html5, responsive, CRM, Projects">
     <meta name="author" content="Dreamstechnologies - Bootstrap Admin Template">
-    <title>Events - HRMS admin template</title>
+    <title>Salary - HRMS admin template</title>
 
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
 
-    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/fontawesome.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/all.min.css') }}">
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
 
-    <link rel="stylesheet" href="{{ asset('assets/css/line-awesome.min.css') }}">
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
 
-    <link rel="stylesheet" href="{{ asset('assets/css/material.css') }}">
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/material.css">
 
-    <link rel="stylesheet" href="{{ asset('assets/css/select2.min.css') }}">
-
-    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap-datetimepicker.min.css') }}">
-
-    <link rel="stylesheet" href="{{ asset('assets/css/fullcalendar.min.css') }}">
-
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 
 <body>
 
     <div class="main-wrapper">
 
-         @include('layouts.header')
-
+        @include('layouts.header')
         @include('layouts.sidebar')
 
         <div class="page-wrapper">
             <div class="content container-fluid">
+
+
+
                 <div class="page-header">
                     <div class="row align-items-center">
                         <div class="col">
-                            <h3 class="page-title">Events</h3>
+                            <h3 class="page-title">Payslip</h3>
                             <ul class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="admin-dashboard.html">Dashboard</a></li>
-                                <li class="breadcrumb-item active">Events</li>
+                                <li class="breadcrumb-item active">Payslip</li>
                             </ul>
                         </div>
                         <div class="col-auto float-end ms-auto">
-                            <a href="#" class="btn add-btn" data-bs-toggle="modal" data-bs-target="#add_event"><i class="fa fa-plus"></i> Add Event</a>
+                        </div>
+                        <div class="col-auto float-end ms-auto">
+                            <div class="btn-group btn-group-sm">
+                                <button class="btn btn-white">CSV</button>
+                                <button class="btn btn-white">PDF</button>
+                                <button class="btn btn-white"><i class="fa fa-print fa-lg"></i> Print</button>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="card mb-0">
+                    <div class="col-md-12">
+                        <div class="card">
                             <div class="card-body">
+                                <h4 class="payslip-title">Payslip for the month of Feb 2019</h4>
                                 <div class="row">
-                                    <div class="col-md-12">
-
-                                        <div id="calendar"></div>
-
+                                    <div class="col-sm-6 m-b-20">
+                                        <img src="assets/img/logo2.png" class="inv-logo" alt>
+                                        <ul class="list-unstyled mb-0">
+                                            <li>Dreamguy's Technologies</li>
+                                            <li>3864 Quiet Valley Lane,</li>
+                                            <li>Sherman Oaks, CA, 91403</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 m-b-20">
+                                        <div class="invoice-details">
+                                            <h3 class="text-uppercase">Payslip #49029</h3>
+                                            <ul class="list-unstyled">
+                                                <li>Salary Month: <span>March, 2019</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 m-b-20">
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <h5 class="mb-0"><strong>John Doe</strong></h5>
+                                            </li>
+                                            <li><span>Web Designer</span></li>
+                                            <li>Employee ID: FT-0009</li>
+                                            <li>Joining Date: 1 Jan 2013</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div>
+                                            <h4 class="m-b-10"><strong>Earnings</strong></h4>
+                                            <table class="table table-bordered">
+                                                <tbody>
+                                                    <tr>
+                                                        <td><strong>Basic Salary</strong> <span class="float-end">$6500</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>House Rent Allowance (H.R.A.)</strong> <span class="float-end">$55</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>Conveyance</strong> <span class="float-end">$55</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>Other Allowance</strong> <span class="float-end">$55</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>Total Earnings</strong> <span class="float-end"><strong>$55</strong></span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div>
+                                            <h4 class="m-b-10"><strong>Deductions</strong></h4>
+                                            <table class="table table-bordered">
+                                                <tbody>
+                                                    <tr>
+                                                        <td><strong>Tax Deducted at Source (T.D.S.)</strong> <span class="float-end">$0</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>Provident Fund</strong> <span class="float-end">$0</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>ESI</strong> <span class="float-end">$0</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>Loan</strong> <span class="float-end">$300</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>Total Deductions</strong> <span class="float-end"><strong>$59698</strong></span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <p><strong>Net Salary: $59698</strong> (Fifty nine thousand six hundred and ninety eight only.)
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div id="add_event" class="modal custom-modal fade" role="dialog">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Add Event</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="input-block mb-3">
-                                    <label class="col-form-label">Event Name <span class="text-danger">*</span></label>
-                                    <input class="form-control" type="text">
-                                </div>
-                                <div class="input-block mb-3">
-                                    <label class="col-form-label">Event Date <span class="text-danger">*</span></label>
-                                    <div class="cal-icon">
-                                        <input class="form-control datetimepicker" type="text">
-                                    </div>
-                                </div>
-                                <div class="input-block mb-3">
-                                    <label class="control-label col-form-label">Category</label>
-                                    <select class="select form-control">
-                                        <option>Danger</option>
-                                        <option>Success</option>
-                                        <option>Purple</option>
-                                        <option>Primary</option>
-                                        <option>Pink</option>
-                                        <option>Info</option>
-                                        <option>Inverse</option>
-                                        <option>Orange</option>
-                                        <option>Brown</option>
-                                        <option>Teal</option>
-                                        <option>Warning</option>
-                                    </select>
-                                </div>
-                                <div class="submit-section">
-                                    <button class="btn btn-primary submit-btn">Submit</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="modal custom-modal fade" id="event-modal">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Event</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body"></div>
-                        <div class="modal-footer text-center">
-                            <button type="button" class="btn btn-success submit-btn save-event">Create event</button>
-                            <button type="button" class="btn btn-danger submit-btn delete-event" data-bs-dismiss="modal">Delete</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="modal custom-modal fade" id="add-category">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Add a category</h4>
-                        </div>
-                        <div class="modal-body p-20">
-                            <form>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <label class="col-form-label">Category Name</label>
-                                        <input class="form-control" placeholder="Enter name" type="text" name="category-name">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label class="col-form-label">Choose Category Color</label>
-                                        <select class="form-control form-select select" data-placeholder="Choose a color..." name="category-color">
-                                            <option value="success">Success</option>
-                                            <option value="danger">Danger</option>
-                                            <option value="info">Info</option>
-                                            <option value="pink">Pink</option>
-                                            <option value="primary">Primary</option>
-                                            <option value="warning">Warning</option>
-                                            <option value="orange">Orange</option>
-                                            <option value="brown">Brown</option>
-                                            <option value="teal">Teal</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-white" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-danger save-category" data-bs-dismiss="modal">Save</button>
                         </div>
                     </div>
                 </div>
@@ -491,27 +465,21 @@
             </div>
         </div>
     </div>
-<script src="{{ asset('assets/js/jquery-3.7.1.min.js') }}"></script>
-<script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
-<script src="{{ asset('assets/js/jquery.slimscroll.min.js') }}"></script>
-<script src="{{ asset('assets/js/select2.min.js') }}"></script>
-<script src="{{ asset('assets/js/moment.min.js') }}"></script>
-<script src="{{ asset('assets/js/bootstrap-datetimepicker.min.js') }}"></script>
-<script src="{{ asset('assets/js/jquery-ui.min.js') }}"></script>
-<script src="{{ asset('assets/js/fullcalendar.min.js') }}"></script>
-<script src="{{ asset('assets/js/jquery.fullcalendar.js') }}"></script>
-<script src="{{ asset('assets/js/feather.min.js') }}"></script>
-<script src="{{ asset('assets/js/layout.js') }}"></script>
-<script src="{{ asset('assets/js/theme-settings.js') }}"></script>
-<script src="{{ asset('assets/js/greedynav.js') }}"></script>
-<script src="{{ asset('assets/js/app.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery-3.7.1.min.js') }}"></script>
+    <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery.slimscroll.min.js') }}"></script>
+    <script src="{{ asset('assets/js/feather.min.js') }}"></script>
+    <script src="{{ asset('assets/js/layout.js') }}"></script>
+    <script src="{{ asset('assets/js/theme-settings.js') }}"></script>
+    <script src="{{ asset('assets/js/greedynav.js') }}"></script>
+    <script src="{{ asset('assets/js/app.js') }}"></script>
 
-<!-- Optional: Cloudflare Rocket Loader (if used) -->
-<script src="{{ asset('cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js') }}" data-cf-settings="bbf4868181cd296b4f739d21-|49" defer></script>
+    <!-- Optional Cloudflare Script (remove if not required) -->
+    <script src="{{ asset('cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js') }}" data-cf-settings="9bdee76fab1ed3459a406436-|49" defer></script>
 
 
 </body>
 
-<!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/events by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:22:27 GMT -->
+<!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/salary-view by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:23:07 GMT -->
 
 </html>
