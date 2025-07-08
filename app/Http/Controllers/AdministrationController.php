@@ -17,4 +17,27 @@ class AdministrationController extends Controller
     public function settings(){
         return view('administration.settings');
     }
+
+   
+    public function voiceCall(){
+        return view('apps.voice-call');
+
+    }
+
+    public function videoCall(){
+        return view('apps.video-call');
+
+    }
+    
+    public function incomingCall(){
+        return view('apps.incoming-call');
+
+    }
+     public function OutgoingCall(){
+        return view('apps.outgoing-call');
+
+    }
+
+
+
 }

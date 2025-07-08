@@ -1,12 +1,9 @@
 <?php
-
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdministrationController;
 use App\Http\Controllers\HrController;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\PagesController;
-
-
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CrmModuleController;
 use App\Http\Controllers\PerformanceController;
 use App\Http\Controllers\EmployeeController;
@@ -88,7 +85,6 @@ Route::get('/payslip-reports', [HrController::class, 'payslipReports'])->name('p
 Route::get('/expense-reports', [HrController::class, 'expenseReports'])->name('expense-reports');
 Route::get('/invoices', [HrController::class, 'invoices'])->name('invoices');
 Route::get('/invoice-reports', [HrController::class, 'invoiceReports'])->name('invoice-reports');
-
 Route::get('/payments', [HrController::class, 'paymentReports'])->name('payments');
 Route::get('/payment-reports', [HrController::class, 'paymentReports'])->name('payment-reports');
 Route::get('/project-reports', [HrController::class, 'projectReports'])->name('project-reports');
@@ -99,25 +95,28 @@ Route::get('/employee-reports', [HrController::class, 'employeeReports'])->name(
 Route::get('/attendance-reports', [HrController::class, 'attendanceReports'])->name('attendance-reports');
 Route::get('/leave-reports', [HrController::class, 'leaveReports'])->name('leave-reports');
 Route::get('/daily-reports', [HrController::class, 'dailyReports'])->name('daily-reports');
-
  
 Route::get('/assets1',[AdministrationController::class, 'assets1'])->name('assets1');
 Route::get('/users',[AdministrationController::class, 'users'])->name('users');
 Route::get('/settings',[AdministrationController::class, 'settings'])->name('settings');
+Route::get('/voice-call',[AdministrationController::class, 'voiceCall'])->name('voice-call');
+Route::get('/video-call',[AdministrationController::class, 'videoCall'])->name('video-call');
+Route::get('/incoming-call',[AdministrationController::class, 'incomingCall'])->name('incoming-call');
+Route::get('/outgoing-call',[AdministrationController::class, 'incomingCall'])->name('outgoing-call');
 
 
-Route::get('/contact-details', function () {
-    return view('contacts.contact-details');
-});
-Route::get('/company-details', function () {
-    return view('companies.company-details');
-});
-Route::get('/companies-grid', function () {
-    return view('companies.companies-grid');
-});
-Route::get('/employees-list', function () {
-    return view('employees.employees-list');
-});
+// Route::get('/contact-details', function () {
+//     return view('contacts.contact-details');
+// });
+// Route::get('/company-details', function () {
+//     return view('companies.company-details');
+// });
+// Route::get('/companies-grid', function () {
+//     return view('companies.companies-grid');
+// });
+// Route::get('/employees-list', function () {
+//     return view('employees.employees-list');
+// });
 
 // Route::get('/employee-reports', function () {
 //     return view('employees.employee-reports');
@@ -188,41 +187,21 @@ Route::get('/termination',[PerformanceController::class,'termination'])->name('t
 
 
 
-Route::get('/analytics', function () {
-    return view('analytics');
-});
+// Route::get('/analytics', function () {
+//     return view('analytics');
+// });
 
-Route::get('/attendance', function () {
-    return view('attendance.attendance');
-});
-
-Route::get('/voice-call', function () {
-    return view('apps.voice-call');
-});
-
-Route::get('/video-call', function () {
-    return view('apps.video-call');
-});
-
-Route::get('/incoming-call', function () {
-    return view('apps.incoming-call');
-});
-Route::get('/outgoing-call', function () {
-    return view('apps.outgoing-call');
-    
-});
+// Route::get('/attendance', function () {
+//     return view('attendance.attendance');
+// });
 
 
 
 
 
-Route::get('/pipeline', function () {
-    return view('pipeline');
-});
 
-Route::get('/analytics', function () {
-    return view('analytics');
-});
+
+
 
 
 
