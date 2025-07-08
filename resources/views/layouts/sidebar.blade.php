@@ -853,7 +853,7 @@
               >
                 <span class="material-icons-outlined"> layers </span>
               </a>
-              <a
+              <!-- <a
                 class="nav-link"
                 id="v-pills-baseui-tab"
                 title="Base UI"
@@ -912,8 +912,8 @@
                 aria-selected="false"
               >
                 <span class="material-icons-outlined"> view_day </span>
-              </a>
-              <a
+              </a> -->
+              <!-- <a
                 class="nav-link"
                 id="v-pills-tables-tab"
                 title="Tables"
@@ -948,8 +948,8 @@
                 aria-selected="false"
               >
                 <span class="material-icons-outlined"> sync_alt </span>
-              </a>
-              <a
+              </a> -->
+              <!-- <a
                 class="nav-link"
                 id="v-pills-multilevel-tab"
                 title="Multilevel"
@@ -960,7 +960,7 @@
                 aria-selected="false"
               >
                 <span class="material-icons-outlined"> library_add_check </span>
-              </a>
+              </a> -->
             </div>
           </div>
           <div class="sidebar-right">
