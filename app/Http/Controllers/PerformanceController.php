@@ -27,7 +27,7 @@ public function goalList(){
 
 
 public function goalType(){
-      return view('performance.goals.goal-type');
+      return view('performances.goals.goal-type');
 }
 public function trainingList(){
       return view('performances.training.training');
@@ -42,15 +42,15 @@ public function trainingType(){
 }
 
 public function promotion(){
-        return view('performance.promotion');
+        return view('performances.promotion');
 }
 
 public function resignation(){
-    return view('performance.resignation');
+    return view('performances.resignation');
 }
 
 public function termination(){
-    return view('performance.termination');
+    return view('performances.termination');
 }
 
 

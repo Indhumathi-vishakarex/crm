@@ -3,15 +3,19 @@
           <!-- <a href="admin-dashboard.html" class="logo">
             <img src="assets/img/logo.svg" alt="Logo" />
           </a> -->
-           <a href="admin-dashboard.html" class="logo">
+
+           <a href="{{route('admin-dashboard')}}" class="logo">
             <img src="assets/img/logo2.png" alt="Logo" width="130" height="120" />
           </a>
-          <a href="admin-dashboard.html" class="logo collapse-logo">
+
+          <a href="{{route('admin-dashboard')}}" class="logo collapse-logo">
             <img src="assets/img/collapse-logo.svg" alt="Logo" />
           </a>
-          <a href="admin-dashboard.html" class="logo2">
+
+          <a href="{{route('admin-dashboard')}}" class="logo2">
             <img src="assets/img/logo2.png" width="40" height="40" alt="Logo" />
           </a>
+          
         </div>
 
         <a id="toggle_btn" href="javascript:void(0);">

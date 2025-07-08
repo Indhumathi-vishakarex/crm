@@ -70,7 +70,7 @@
                                                     <small class="text-muted">Web Designer</small>
                                                     <div class="staff-id">Employee ID : FT-0001</div>
                                                     <div class="small doj text-muted">Date of Join : 1st Jan 2013</div>
-                                                    <div class="staff-msg"><a class="btn btn-custom" href="chat.html">Send
+                                                    <div class="staff-msg"><a class="btn btn-custom" href="{{route('chat')}}">Send
                                                             Message</a></div>
                                                 </div>
                                             </div>
@@ -104,7 +104,7 @@
                                                                     <img src="assets/img/profiles/avatar-16.jpg" alt>
                                                                 </div>
                                                             </div>
-                                                            <a href="profile.html">
+                                                            <a href="{{route('profile')}}" class="text-muted>
                                                                 Jeffery Lalor
                                                             </a>
                                                         </div>

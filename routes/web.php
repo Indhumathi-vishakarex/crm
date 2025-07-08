@@ -35,10 +35,7 @@ Route::get('/tickets',[EmployeeController::class, 'tickets'])->name('tickets');
 Route::get('/ticket-details',[EmployeeController::class, 'ticketDetails'])->name('ticket-details');
 
 
-// Route::get('/', function () {
-//     return view('welcome');project-root/app/Http/Controllers/EmployeeController.php
 
-// });
 
 Route::get('/',[PagesController::class, 'login'])->name('login');
 Route::get('/register',[PagesController::class, 'register'])->name('register');
@@ -105,50 +102,7 @@ Route::get('/incoming-call',[AdministrationController::class, 'incomingCall'])->
 Route::get('/outgoing-call',[AdministrationController::class, 'incomingCall'])->name('outgoing-call');
 
 
-// Route::get('/contact-details', function () {
-//     return view('contacts.contact-details');
-// });
-// Route::get('/company-details', function () {
-//     return view('companies.company-details');
-// });
-// Route::get('/companies-grid', function () {
-//     return view('companies.companies-grid');
-// });
-// Route::get('/employees-list', function () {
-//     return view('employees.employees-list');
-// });
 
-// Route::get('/employee-reports', function () {
-//     return view('employees.employee-reports');
-// });
-
-
-// Route::get('/client-profile', function () {
-//     return view('client.client-profile');
-// });
-
-
-
-
-// Route::get('/project-view', function () {
-
-// });
-
-
-
-
-
-// ended.........
-
-
-// Route::get('/deals-details', function () {
-//     return view('deals.deals-details');
-// });
-
-
-// Route::get('/leads-details', function () {
-//     return view('leads.leads-details');
-// });
 
 // CrmModuleController
 
@@ -186,14 +140,6 @@ Route::get('/termination',[PerformanceController::class,'termination'])->name('t
 
 
 
-
-// Route::get('/analytics', function () {
-//     return view('analytics');
-// });
-
-// Route::get('/attendance', function () {
-//     return view('attendance.attendance');
-// });
 
 
 
