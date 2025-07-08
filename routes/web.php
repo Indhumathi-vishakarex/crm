@@ -182,12 +182,6 @@ Route::get('/termination',[PerformanceController::class,'termination'])->name('t
 
 
 
-
-
-
-
-
-
 Route::get('/analytics', function () {
     return view('analytics');
 });
@@ -196,9 +190,8 @@ Route::get('/attendance', function () {
     return view('attendance.attendance');
 });
 
-Route::get('/voice-call', function () {
-    return view('apps.voice-call');
-});
+Route::get('/voice-call',[MainController::class, 'voiceCall'])->name('voice-call');
+
 
 Route::get('/video-call', function () {
     return view('apps.video-call');
