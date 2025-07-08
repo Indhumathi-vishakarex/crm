@@ -99,7 +99,7 @@ Route::get('/settings',[AdministrationController::class, 'settings'])->name('set
 Route::get('/voice-call',[AdministrationController::class, 'voiceCall'])->name('voice-call');
 Route::get('/video-call',[AdministrationController::class, 'videoCall'])->name('video-call');
 Route::get('/incoming-call',[AdministrationController::class, 'incomingCall'])->name('incoming-call');
-Route::get('/outgoing-call',[AdministrationController::class, 'incomingCall'])->name('outgoing-call');
+Route::get('/outgoing-call',[AdministrationController::class, 'outgoingCall'])->name('outgoing-call');
 
 
 

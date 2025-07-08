@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html
   lang="en"
@@ -26,38 +25,39 @@
       content="Dreamstechnologies - Bootstrap Admin Template"
     />
     <title>Outgoing Call - HRMS admin template</title>
-
-  <!-- Favicon -->
-<link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}" />
+<!-- Favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png" />
 
 <!-- Bootstrap CSS -->
-<link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}" />
+<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
-<!-- FontAwesome -->
-<link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/fontawesome.min.css') }}" />
-<link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/all.min.css') }}" />
+<!-- Font Awesome -->
+<link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css" />
+<link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css" />
 
-<!-- Line Awesome -->
-<link rel="stylesheet" href="{{ asset('assets/css/line-awesome.min.css') }}" />
+<!-- Line Awesome (only include once) -->
+<link rel="stylesheet" href="assets/css/line-awesome.min.css" />
 
-<!-- Material Design -->
-<link rel="stylesheet" href="{{ asset('assets/css/material.css') }}" />
+<!-- Material CSS -->
+<link rel="stylesheet" href="assets/css/material.css" />
 
-<!-- Main Style -->
-<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
+<!-- Custom Style -->
+<link rel="stylesheet" href="assets/css/style.css" />
 
+   
   </head>
   <body>
     <div class="main-wrapper">
+      
       <div class="header">
         <div class="header-left">
-          <a href="admin-dashboard.html" class="logo">
+          <a href="{{route('admin-dashboard')}}" class="logo">
             <img src="assets/img/logo.svg" alt="Logo" />
           </a>
-          <a href="admin-dashboard.html" class="logo collapse-logo">
+          <a href="{{route('admin-dashboard')}}" class="logo collapse-logo">
             <img src="assets/img/collapse-logo.svg" alt="Logo" />
           </a>
-          <a href="admin-dashboard.html" class="logo2">
+          <a href="{{route('admin-dashboard')}}" class="logo2">
             <img src="assets/img/logo2.png" width="40" height="40" alt="Logo" />
           </a>
         </div>
@@ -290,7 +290,7 @@
               <div class="noti-content">
                 <ul class="notification-list">
                   <li class="notification-message">
-                    <a href="chat.html">
+                    <a href="{{route('chat')}}">
                       <div class="list-item">
                         <div class="list-left">
                           <span class="avatar">
@@ -313,7 +313,7 @@
                     </a>
                   </li>
                   <li class="notification-message">
-                    <a href="chat.html">
+                    <a href="{{route('chat')}}">
                       <div class="list-item">
                         <div class="list-left">
                           <span class="avatar">
@@ -336,7 +336,7 @@
                     </a>
                   </li>
                   <li class="notification-message">
-                    <a href="chat.html">
+                    <a href="{{route('chat')}}">
                       <div class="list-item">
                         <div class="list-left">
                           <span class="avatar">
@@ -359,7 +359,7 @@
                     </a>
                   </li>
                   <li class="notification-message">
-                    <a href="chat.html">
+                    <a href="{{route('chat')}}">
                       <div class="list-item">
                         <div class="list-left">
                           <span class="avatar">
@@ -382,7 +382,7 @@
                     </a>
                   </li>
                   <li class="notification-message">
-                    <a href="chat.html">
+                    <a href="{{route('chat')}}">
                       <div class="list-item">
                         <div class="list-left">
                           <span class="avatar">
@@ -409,7 +409,7 @@
                 </ul>
               </div>
               <div class="topnav-dropdown-footer">
-                <a href="chat.html">View all Messages</a>
+                <a href="{{route('chat')}}">View all Messages</a>
               </div>
             </div>
           </li>
@@ -456,7 +456,7 @@
             <nav class="greedy">
               <ul class="link-item">
                 <li>
-                  <a class href="admin-dashboard.html"
+                  <a class href="{{route('admin-dashboard')}}"
                     ><i class="la la-home"></i> <span>Back to Home</span></a
                   >
                 </li>
@@ -467,7 +467,7 @@
                   ></a>
                 </li>
                 <li>
-                  <a class href="chat.html">
+                  <a class href="{{route('chat')}}">
                     <span class="chat-avatar-sm user-img">
                       <img
                         class="rounded-circle"
@@ -479,7 +479,7 @@
                   </a>
                 </li>
                 <li>
-                  <a class href="chat.html">
+                  <a class href="{{route('chat')}}">
                     <span class="chat-avatar-sm user-img">
                       <img
                         class="rounded-circle"
@@ -491,7 +491,7 @@
                   </a>
                 </li>
                 <li>
-                  <a class href="chat.html">
+                  <a class href="{{route('chat')}}">
                     <span class="chat-avatar-sm user-img">
                       <img
                         class="rounded-circle"
@@ -503,7 +503,7 @@
                   </a>
                 </li>
                 <li>
-                  <a class href="chat.html">
+                  <a class href="{{route('chat')}}">
                     <span class="chat-avatar-sm user-img">
                       <img
                         class="rounded-circle"
@@ -524,7 +524,7 @@
                   ></a>
                 </li>
                 <li>
-                  <a class href="chat.html">
+                  <a class href="{{route('chat')}}">
                     <span class="chat-avatar-sm user-img">
                       <img
                         class="rounded-circle"
@@ -537,7 +537,7 @@
                   </a>
                 </li>
                 <li>
-                  <a class href="chat.html">
+                  <a class href="{{route('chat')}}">
                     <span class="chat-avatar-sm user-img">
                       <img
                         class="rounded-circle"
@@ -550,7 +550,7 @@
                   </a>
                 </li>
                 <li>
-                  <a class href="chat.html">
+                  <a class href="{{route('chat')}}">
                     <span class="chat-avatar-sm user-img">
                       <img
                         class="rounded-circle"
@@ -562,7 +562,7 @@
                   </a>
                 </li>
                 <li class="active">
-                  <a class href="chat.html">
+                  <a class href="{{route('chat')}}">
                     <span class="chat-avatar-sm user-img">
                       <img
                         class="rounded-circle"
@@ -1070,7 +1070,7 @@
                 <p>Dashboard</p>
                 <ul>
                   <li>
-                    <a class href="admin-dashboard.html">Admin Dashboard</a>
+                    <a class href="{{route('admin-dashboard')}}">Admin Dashboard</a>
                   </li>
                   <li>
                     <a class href="employee-dashboard.html"
@@ -1094,15 +1094,15 @@
                 <p>App</p>
                 <ul>
                   <li>
-                    <a class href="chat.html" class="active">Chat</a>
+                    <a class href="{{route('chat')}}" class="active">Chat</a>
                   </li>
                   <li class="sub-menu">
                     <a href="#">Calls <span class="menu-arrow"></span></a>
                     <ul>
-                      <li><a class href="voice-call.html">Voice Call</a></li>
-                      <li><a class href="video-call.html">Video Call</a></li>
+                      <li><a class href="{{route('voice-call')}}">Voice Call</a></li>
+                      <li><a class href="{{route('video-call')}}">Video Call</a></li>
                       <li>
-                        <a class="active" href="outgoing-call.html"
+                        <a class="active" href="{{route('outgoing-call')}}"
                           >Outgoing Call</a
                         >
                       </li>
@@ -1839,7 +1839,7 @@
                 <a href="javascript:void(0);" class="btn call-item"
                   ><i class="material-icons">videocam</i></a
                 >
-                <a href="chat.html" class="btn call-item call-end"
+                <a href="{{route('chat')}}" class="btn call-item call-end"
                   ><i class="material-icons vcend">call_end</i></a
                 >
                 <a href="javascript:void(0);" class="btn call-item"
@@ -2696,27 +2696,29 @@
         </div>
       </div>
     </div>
-<!-- jQuery -->
-<script src="{{ asset('assets/js/jquery-3.7.1.min.js') }}"></script>
+   <!-- jQuery -->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
 
 <!-- Bootstrap Bundle -->
-<script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
 
 <!-- Slimscroll -->
-<script src="{{ asset('assets/js/jquery.slimscroll.min.js') }}"></script>
+<script src="assets/js/jquery.slimscroll.min.js"></script>
 
 <!-- Feather Icons -->
-<script src="{{ asset('assets/js/feather.min.js') }}"></script>
+<script src="assets/js/feather.min.js"></script>
 
 <!-- Layout Scripts -->
-<script src="{{ asset('assets/js/layout.js') }}"></script>
-<script src="{{ asset('assets/js/theme-settings.js') }}"></script>
-<script src="{{ asset('assets/js/greedynav.js') }}"></script>
-<script src="{{ asset('assets/js/app.js') }}"></script>
+<script src="assets/js/layout.js"></script>
+<script src="assets/js/theme-settings.js"></script>
+<script src="assets/js/greedynav.js"></script>
 
-<!-- Optional: Cloudflare Rocket Loader (only if you're using Cloudflare) -->
+<!-- Main App Script -->
+<script src="assets/js/app.js"></script>
+
+<!-- Cloudflare Rocket Loader (leave as-is, if used) -->
 <script
-  src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
+  src="../../../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
   data-cf-settings="8f6efbbab786c1238e17a6b6-|49"
   defer
 ></script>
