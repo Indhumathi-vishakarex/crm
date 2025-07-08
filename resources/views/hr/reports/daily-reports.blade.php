@@ -46,7 +46,7 @@
                 <h3 class="page-title">Daily Report</h3>
                 <ul class="breadcrumb">
                   <li class="breadcrumb-item">
-                    <a href="admin-dashboard.html">Dashboard</a>
+                    <a href="{{ route('admin-dashboard') }}">Dashboard</a>
                   </li>
                   <li class="breadcrumb-item active">Daily Report</li>
                 </ul>
@@ -157,12 +157,12 @@
                     <tr>
                       <td>
                         <h2 class="table-avatar">
-                          <a href="profile.html" class="avatar"
+                          <a href="{{route('profile')}}" class="avatar"
                             ><img
                               src="assets/img/profiles/avatar-02.jpg"
                               alt="User Image"
                           /></a>
-                          <a href="profile.html">John Doe <span>#0001</span></a>
+                          <a href="{{route('profile')}}">John Doe <span>#0001</span></a>
                         </h2>
                       </td>
                       <td>20 Dec 2020</td>
@@ -176,12 +176,12 @@
                     <tr>
                       <td>
                         <h2 class="table-avatar">
-                          <a href="profile.html" class="avatar"
+                          <a href="{{route('profile')}}" class="avatar"
                             ><img
                               src="assets/img/profiles/avatar-09.jpg"
                               alt="User Image"
                           /></a>
-                          <a href="profile.html"
+                          <a href="{{route('profile')}}"
                             >Richard Miles <span>#0002</span></a
                           >
                         </h2>
@@ -197,12 +197,12 @@
                     <tr>
                       <td>
                         <h2 class="table-avatar">
-                          <a href="profile.html" class="avatar"
+                          <a href="{{route('profile')}}" class="avatar"
                             ><img
                               src="assets/img/profiles/avatar-10.jpg"
                               alt="User Image"
                           /></a>
-                          <a href="profile.html"
+                          <a href="{{route('profile')}}"
                             >John Smith <span>#003</span></a
                           >
                         </h2>
@@ -218,12 +218,12 @@
                     <tr>
                       <td>
                         <h2 class="table-avatar">
-                          <a href="profile.html" class="avatar"
+                          <a href="{{route('profile')}}" class="avatar"
                             ><img
                               src="assets/img/profiles/avatar-05.jpg"
                               alt="User Image"
                           /></a>
-                          <a href="profile.html"
+                          <a href="{{route('profile')}}"
                             >Mike Litorus <span>#004</span></a
                           >
                         </h2>
@@ -239,12 +239,12 @@
                     <tr>
                       <td>
                         <h2 class="table-avatar">
-                          <a href="profile.html" class="avatar"
+                          <a href="{{route('profile')}}" class="avatar"
                             ><img
                               src="assets/img/profiles/avatar-11.jpg"
                               alt="User Image"
                           /></a>
-                          <a href="profile.html"
+                          <a href="{{route('profile')}}"
                             >Wilmer Deluna <span>#005</span></a
                           >
                         </h2>

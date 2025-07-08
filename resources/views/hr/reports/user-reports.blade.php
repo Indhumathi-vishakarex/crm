@@ -44,7 +44,7 @@
                 <h3 class="page-title">User Report</h3>
                 <ul class="breadcrumb">
                   <li class="breadcrumb-item">
-                    <a href="admin-dashboard.html">Dashboard</a>
+                    <a href="{{route('admin-dashboard')}}">Dashboard</a>
                   </li>
                   <li class="breadcrumb-item active">User Reports</li>
                 </ul>
@@ -87,12 +87,12 @@
                       <td>1</td>
                       <td>
                         <h2 class="table-avatar">
-                          <a href="profile.html" class="avatar"
+                          <a href="{{route('profile')}}" class="avatar"
                             ><img
                               src="assets/img/profiles/avatar-19.jpg"
                               alt="User Image"
                           /></a>
-                          <a href="profile.html"
+                          <a href="{{route('profile')}}"
                             >Barry Cuda <span>Global Technologies</span></a
                           >
                         </h2>
@@ -125,12 +125,12 @@
                       <td>2</td>
                       <td>
                         <h2 class="table-avatar">
-                          <a href="profile.html" class="avatar"
+                          <a href="{{route('profile')}}" class="avatar"
                             ><img
                               src="assets/img/profiles/avatar-21.jpg"
                               alt="User Image"
                           /></a>
-                          <a href="profile.html"
+                          <a href="{{route('profile')}}"
                             >Daniel Porter <span>Admin</span></a
                           >
                         </h2>

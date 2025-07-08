@@ -40,7 +40,7 @@
                         <div class="col">
                             <h3 class="page-title">Employee Salary</h3>
                             <ul class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="admin-dashboard.html">Dashboard</a></li>
+                                <li class="breadcrumb-item"><a href="{{ route('admin-dashboard') }}">Dashboard</a></li>
                                 <li class="breadcrumb-item active">Salary</li>
                             </ul>
                         </div>
@@ -139,7 +139,7 @@
                                             </div>
                                         </td>
                                         <td>$59698</td>
-                                        <td><a class="btn btn-sm btn-primary" href="salary-view.html">Generate Slip</a></td>
+                                        <td><a class="btn btn-sm btn-primary" href="{{route('salary-view')}}">Generate Slip</a></td>
                                         <td class="text-end">
                                             <div class="dropdown dropdown-action">
                                                 <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
@@ -173,7 +173,7 @@
                                             </div>
                                         </td>
                                         <td>$72000</td>
-                                        <td><a class="btn btn-sm btn-primary" href="salary-view.html">Generate Slip</a></td>
+                                        <td><a class="btn btn-sm btn-primary" href="{{route('salary-view')}}">Generate Slip</a></td>
                                         <td class="text-end">
                                             <div class="dropdown dropdown-action">
                                                 <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
@@ -207,7 +207,7 @@
                                             </div>
                                         </td>
                                         <td>$48200</td>
-                                        <td><a class="btn btn-sm btn-primary" href="salary-view.html">Generate Slip</a></td>
+                                        <td><a class="btn btn-sm btn-primary" href="{{route('salary-view')}}">Generate Slip</a></td>
                                         <td class="text-end">
                                             <div class="dropdown dropdown-action">
                                                 <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
@@ -242,7 +242,7 @@
                                             </div>
                                         </td>
                                         <td>$59698</td>
-                                        <td><a class="btn btn-sm btn-primary" href="salary-view.html">Generate Slip</a></td>
+                                        <td><a class="btn btn-sm btn-primary" href="{{route('salary-view')}}">Generate Slip</a></td>
                                         <td class="text-end">
                                             <div class="dropdown dropdown-action">
                                                 <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
@@ -277,7 +277,7 @@
                                             </div>
                                         </td>
                                         <td>$43000</td>
-                                        <td><a class="btn btn-sm btn-primary" href="salary-view.html">Generate Slip</a></td>
+                                        <td><a class="btn btn-sm btn-primary" href="{{route('salary-view')}}">Generate Slip</a></td>
                                         <td class="text-end">
                                             <div class="dropdown dropdown-action">
                                                 <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
@@ -312,7 +312,7 @@
                                             </div>
                                         </td>
                                         <td>$45000</td>
-                                        <td><a class="btn btn-sm btn-primary" href="salary-view.html">Generate Slip</a></td>
+                                        <td><a class="btn btn-sm btn-primary" href="{{route('salary-view')}}">Generate Slip</a></td>
                                         <td class="text-end">
                                             <div class="dropdown dropdown-action">
                                                 <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
@@ -347,7 +347,7 @@
                                             </div>
                                         </td>
                                         <td>$38400</td>
-                                        <td><a class="btn btn-sm btn-primary" href="salary-view.html">Generate Slip</a></td>
+                                        <td><a class="btn btn-sm btn-primary" href="{{route('salary-view')}}">Generate Slip</a></td>
                                         <td class="text-end">
                                             <div class="dropdown dropdown-action">
                                                 <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
@@ -382,7 +382,7 @@
                                             </div>
                                         </td>
                                         <td>$75500</td>
-                                        <td><a class="btn btn-sm btn-primary" href="salary-view.html">Generate Slip</a></td>
+                                        <td><a class="btn btn-sm btn-primary" href="{{route('salary-view')}}">Generate Slip</a></td>
                                         <td class="text-end">
                                             <div class="dropdown dropdown-action">
                                                 <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
@@ -417,7 +417,7 @@
                                             </div>
                                         </td>
                                         <td>$73550</td>
-                                        <td><a class="btn btn-sm btn-primary" href="salary-view.html">Generate Slip</a></td>
+                                        <td><a class="btn btn-sm btn-primary" href="{{route('salary-view')}}">Generate Slip</a></td>
                                         <td class="text-end">
                                             <div class="dropdown dropdown-action">
                                                 <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
@@ -452,7 +452,7 @@
                                             </div>
                                         </td>
                                         <td>$55000</td>
-                                        <td><a class="btn btn-sm btn-primary" href="salary-view.html">Generate Slip</a></td>
+                                        <td><a class="btn btn-sm btn-primary" href="{{route('salary-view')}}">Generate Slip</a></td>
                                         <td class="text-end">
                                             <div class="dropdown dropdown-action">
                                                 <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
@@ -487,7 +487,7 @@
                                             </div>
                                         </td>
                                         <td>$92400</td>
-                                        <td><a class="btn btn-sm btn-primary" href="salary-view.html">Generate Slip</a></td>
+                                        <td><a class="btn btn-sm btn-primary" href="{{route('salary-view')}}">Generate Slip</a></td>
                                         <td class="text-end">
                                             <div class="dropdown dropdown-action">
                                                 <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>

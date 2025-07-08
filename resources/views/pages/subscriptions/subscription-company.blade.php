@@ -52,7 +52,7 @@
                 <h3 class="page-title">Subscriptions</h3>
                 <ul class="breadcrumb">
                   <li class="breadcrumb-item">
-                    <a href="admin-dashboard.html">Dashboard</a>
+                    <a href="{{route('admin-dashboard')}}">Dashboard</a>
                   </li>
                   <li class="breadcrumb-item active">Subscriptions</li>
                 </ul>
