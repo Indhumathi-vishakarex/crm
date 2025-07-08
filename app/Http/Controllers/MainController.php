@@ -32,4 +32,8 @@ public function inbox() {
 public function fileManager() {
     return view('main.apps.file-manager');
 }
+
+public function voiceCall() {
+    return view('main.apps.voice-call');
+}
 }
