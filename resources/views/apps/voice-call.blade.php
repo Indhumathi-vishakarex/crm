@@ -48,7 +48,7 @@
                             <li class="menu-title"><span>Chat Groups</span> <a href="#" data-bs-toggle="modal"
                                     data-bs-target="#add_group"><i class="fa-solid fa-plus"></i></a></li>
                             <li>
-                                <a class href="chat.html">
+                                <a class href="{{route('chat')}}">
                                     <span class="chat-avatar-sm user-img">
                                         <img class="rounded-circle" src="assets/img/user.jpg" alt="User Image">
                                     </span>
@@ -56,7 +56,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class href="chat.html">
+                                <a class href="{{route('chat')}}">
                                     <span class="chat-avatar-sm user-img">
                                         <img class="rounded-circle" src="assets/img/user.jpg" alt="User Image">
                                     </span>
@@ -64,7 +64,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class href="chat.html">
+                                <a class href="{{route('chat')}}">
                                     <span class="chat-avatar-sm user-img">
                                         <img class="rounded-circle" src="assets/img/user.jpg" alt="User Image')}}">
                                     </span>
@@ -72,7 +72,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class href="chat.html">
+                                <a class href="{{route('chat')}}">
                                     <span class="chat-avatar-sm user-img">
                                         <img class="rounded-circle" src="assets/img/user.jpg" alt="User Image">
                                     </span>
@@ -82,7 +82,7 @@
                             <li class="menu-title">Direct Chats <a href="#" data-bs-toggle="modal"
                                     data-bs-target="#add_chat_user"><i class="fa-solid fa-plus"></i></a></li>
                             <li>
-                                <a class href="chat.html">
+                                <a class href="{{route('chat')}}">
                                     <span class="chat-avatar-sm user-img">
                                         <img class="rounded-circle" src="assets/img/profiles/avatar-02.jpg"
                                             alt="User Image"><span class="status online"></span>
@@ -92,7 +92,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class href="chat.html">
+                                <a class href="{{route('chat')}}">
                                     <span class="chat-avatar-sm user-img">
                                         <img class="rounded-circle" src="assets/img/profiles/avatar-09.jpg"
                                             alt="User Image"><span class="status offline"></span>
@@ -102,7 +102,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class href="chat.html">
+                                <a class href="{{route('chat')}}">
                                     <span class="chat-avatar-sm user-img">
                                         <img class="rounded-circle" src="assets/img/profiles/avatar-10.jpg"
                                             alt="User Image"><span class="status away"></span>
@@ -111,7 +111,7 @@
                                 </a>
                             </li>
                             <li class="active">
-                                <a class href="chat.html">
+                                <a class href="{{route('chat')}}">
                                     <span class="chat-avatar-sm user-img">
                                         <img class="rounded-circle" src="assets/img/profiles/avatar-05.jpg"
                                             alt="User Image"><span class="status online"></span>
