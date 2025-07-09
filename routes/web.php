@@ -48,6 +48,9 @@ Route::get('/subscription-company',[PagesController::class, 'subscriptionCompany
 Route::get('/subscribed-companies',[PagesController::class, 'subscribedCompanies'])->name('subscribed-companies');
 Route::get('/profile',[PagesController::class, 'profile'])->name('profile');
 Route::get('/client-profile',[PagesController::class, 'clientProfile'])->name('client-profile');
+Route::get('/assets-details',[PagesController::class, 'assetsDetails'])->name('assets-details');
+Route::get('/user-asset-details',[PagesController::class, 'UserassetDetails'])->name('user-asset-details');
+
 
 
 Route::get('/admin-dashboard',[MainController::class, 'adminDashboard'])->name('admin-dashboard');
