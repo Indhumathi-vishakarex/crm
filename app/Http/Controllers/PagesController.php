@@ -63,4 +63,13 @@ class PagesController extends Controller
     {
         return view('pages.profile.client-profile');
     }
+
+    public function assetsDetails(){
+           return view('pages.profile.assets-details');
+    }
+    
+    public function UserassetDetails(){
+        return view('pages.profile.user-asset-details');
+    }
+
 }

@@ -847,7 +847,7 @@
                                     <tr>
                                         <td>1</td>
                                         <td>
-                                            <a href="assets-details.html" class="table-imgname">
+                                            <a href="{{route('assets-details')}}" class="table-imgname">
                                                 <img src="assets/img/laptop.png" class="me-2" alt="Laptop Image">
                                                 <span>Laptop</span>
                                             </a>
@@ -865,7 +865,7 @@
                                         </td>
                                         <td>
                                             <div class="table-actions d-flex">
-                                                <a class="delete-table me-2" href="user-asset-details.html">
+                                                <a class="delete-table me-2" href="{{route('user-asset-details')}}">
                                                     <img src="assets/img/icons/eye.svg" alt="Eye Icon">
                                                 </a>
                                             </div>
@@ -874,7 +874,7 @@
                                     <tr>
                                         <td>2</td>
                                         <td>
-                                            <a href="assets-details.html" class="table-imgname">
+                                            <a href="{{route('assets-details')}}" class="table-imgname">
                                                 <img src="assets/img/laptop.png" class="me-2" alt="Laptop Image">
                                                 <span>Laptop</span>
                                             </a>
@@ -892,7 +892,7 @@
                                         </td>
                                         <td>
                                             <div class="table-actions d-flex">
-                                                <a class="delete-table me-2" href="user-asset-details.html">
+                                                <a class="delete-table me-2" href="{{route('user-asset-details')}}">
                                                     <img src="assets/img/icons/eye.svg" alt="Eye Icon">
                                                 </a>
                                             </div>
@@ -901,7 +901,7 @@
                                     <tr>
                                         <td>3</td>
                                         <td>
-                                            <a href="assets-details.html" class="table-imgname">
+                                            <a href="{{route('assets-details')}}" class="table-imgname">
                                                 <img src="assets/img/keyboard.png" class="me-2" alt="Keyboard Image">
                                                 <span>Dell Keyboard</span>
                                             </a>
@@ -919,7 +919,7 @@
                                         </td>
                                         <td>
                                             <div class="table-actions d-flex">
-                                                <a class="delete-table me-2" href="user-asset-details.html">
+                                                <a class="delete-table me-2" href="{{route('user-asset-details')}}">
                                                     <img src="assets/img/icons/eye.svg" alt="Eye Icon">
                                                 </a>
                                             </div>
@@ -936,17 +936,17 @@
                                         <td>AST - 0024</td>
                                         <td>22 Nov, 2022 10:32AM</td>
                                         <td class="table-namesplit">
-                                            <a href="assets-details.html" class="table-profileimage">
+                                            <a href="{{route('assets-details')}}" class="table-profileimage">
                                                 <img src="assets/img/profiles/avatar-02.jpg" class="me-2" alt="User Image">
                                             </a>
-                                            <a href="assets-details.html" class="table-name">
+                                            <a href="{{route('assets-details')}}" class="table-name">
                                                 <span>Mythili</span>
                                                 <p><span class="__cf_email__" data-cfemail="5e33272a363732371e3a2c3b3f33392b272d2a3b3d36703d3133">[email&#160;protected]</span></p>
                                             </a>
                                         </td>
                                         <td>
                                             <div class="table-actions d-flex">
-                                                <a class="delete-table me-2" href="user-asset-details.html">
+                                                <a class="delete-table me-2" href="{{route('user-asset-details')}}">
                                                     <img src="assets/img/icons/eye.svg" alt="Eye Icon">
                                                 </a>
                                             </div>
@@ -963,17 +963,17 @@
                                         <td>AST - 005</td>
                                         <td>22 Nov, 2022 10:32AM</td>
                                         <td class="table-namesplit">
-                                            <a href="assets-details.html" class="table-profileimage">
+                                            <a href="{{route('assets-details')}}" class="table-profileimage">
                                                 <img src="assets/img/profiles/avatar-02.jpg" class="me-2" alt="User Image">
                                             </a>
-                                            <a href="assets-details.html" class="table-name">
+                                            <a href="{{route('assets-details')}}" class="table-name">
                                                 <span>John Paul Raj</span>
                                                 <p><span class="__cf_email__" data-cfemail="abc1c4c3c5ebcfd9cecac6ccded2d8dfcec8c385c8c4c6">[email&#160;protected]</span></p>
                                             </a>
                                         </td>
                                         <td>
                                             <div class="table-actions d-flex">
-                                                <a class="delete-table me-2" href="user-asset-details.html">
+                                                <a class="delete-table me-2" href="{{route('user-asset-details')}}">
                                                     <img src="assets/img/icons/eye.svg" alt="Eye Icon">
                                                 </a>
                                             </div>
@@ -1000,7 +1000,7 @@
                                         </td>
                                         <td>
                                             <div class="table-actions d-flex">
-                                                <a class="delete-table me-2" href="user-asset-details.html">
+                                                <a class="delete-table me-2" href="{{route('user-asset-details')}}">
                                                     <img src="assets/img/icons/eye.svg" alt="Eye Icon">
                                                 </a>
                                             </div>
