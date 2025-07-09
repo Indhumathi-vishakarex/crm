@@ -110,12 +110,12 @@
                       <p>1 of 40</p>
                       <ul>
                         <li>
-                          <a href="company-details.html"
+                          <a href="{{route('company-details')}}"
                             ><i class="las la-arrow-left"></i
                           ></a>
                         </li>
                         <li>
-                          <a href="company-details.html"
+                          <a href="{{route('company-details')}}"
                             ><i class="las la-arrow-right"></i
                           ></a>
                         </li>
@@ -161,7 +161,7 @@
                     data-bs-target="#add_compose"
                     ><i class="feather-mail"></i>Send Email</a
                   >
-                  <a href="chat.html" class="btn-icon"
+                  <a href="{{route('chat')}}" class="btn-icon"
                     ><i class="feather-message-circle"></i
                   ></a>
                   <a
@@ -2003,7 +2003,7 @@
                       >”. Now you can access email.
                     </p>
                     <div class="col-lg-12 text-center form-wizard-button">
-                      <a href="contact-details.html" class="btn btn-primary"
+                      <a href="{{route('contact-details')}}" class="btn btn-primary"
                         >Go to email</a
                       >
                     </div>
@@ -4246,7 +4246,7 @@
                         data-bs-dismiss="modal"
                         >Not Now</a
                       >
-                      <a href="contact-details.html" class="btn btn-primary"
+                      <a href="{{route('contact-details')}}" class="btn btn-primary"
                         >Okay</a
                       >
                     </div>

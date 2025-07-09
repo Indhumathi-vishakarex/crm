@@ -126,7 +126,7 @@
                                                 class="fa-regular fa-trash-can m-r-5"></i> Delete</a>
                                     </div>
                                 </div>
-                                <h4 class="project-title"><a href="project-view.html">Office Management</a></h4>
+                                <h4 class="project-title"><a href="{{route('project-view')}}">Office Management</a></h4>
                                 <small class="block text-ellipsis m-b-15">
                                     <span class="text-xs">1</span> <span class="text-muted">open tasks, </span>
                                     <span class="text-xs">9</span> <span class="text-muted">tasks completed</span>
@@ -262,7 +262,7 @@
                                                 class="fa-regular fa-trash-can m-r-5"></i> Delete</a>
                                     </div>
                                 </div>
-                                <h4 class="project-title"><a href="project-view.html">Project Management</a></h4>
+                                <h4 class="project-title"><a href="{{route('project-view')}}">Project Management</a></h4>
                                 <small class="block text-ellipsis m-b-15">
                                     <span class="text-xs">2</span> <span clasRs="text-muted">open tasks, </span>
                                     <span class="text-xs">5</span> <span class="text-muted">tasks completed</span>
@@ -398,7 +398,7 @@
                                                 class="fa-regular fa-trash-can m-r-5"></i> Delete</a>
                                     </div>
                                 </div>
-                                <h4 class="project-title"><a href="project-view.html">Video Calling App</a></h4>
+                                <h4 class="project-title"><a href="{{route('project-view')}}">Video Calling App</a></h4>
                                 <small class="block text-ellipsis m-b-15">
                                     <span class="text-xs">3</span> <span class="text-muted">open tasks, </span>
                                     <span class="text-xs">3</span> <span class="text-muted">tasks completed</span>
@@ -534,7 +534,7 @@
                                                 class="fa-regular fa-trash-can m-r-5"></i> Delete</a>
                                     </div>
                                 </div>
-                                <h4 class="project-title"><a href="project-view.html">Hospital Administration</a>
+                                <h4 class="project-title"><a href="{{route('project-view')}}">Hospital Administration</a>
                                 </h4>
                                 <small class="block text-ellipsis m-b-15">
                                     <span class="text-xs">12</span> <span class="text-muted">open tasks, </span>

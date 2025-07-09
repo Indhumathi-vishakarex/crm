@@ -55,7 +55,7 @@
                         <div class="col">
                             <h3 class="page-title">Shift List</h3>
                             <ul class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="admin-dashboard.html">Dashboard</a></li>
+                                <li class="breadcrumb-item"><a href="{{route('admin-dashboard')}}">Dashboard</a></li>
                                 <li class="breadcrumb-item">Employees</li>
                                 <li class="breadcrumb-item active">Shift List</li>
                             </ul>

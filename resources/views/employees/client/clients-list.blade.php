@@ -59,7 +59,7 @@
                 <h3 class="page-title">Clients</h3>
                 <ul class="breadcrumb">
                   <li class="breadcrumb-item">
-                    <a href="admin-dashboard.html">Dashboard</a>
+                    <a href="{{route('admin-dashboard')}}">Dashboard</a>
                   </li>
                   <li class="breadcrumb-item active">Clients</li>
                 </ul>
@@ -136,12 +136,12 @@
                     <tr>
                       <td>
                         <h2 class="table-avatar">
-                          <a href="client-profile.html" class="avatar"
+                          <a href="{{route('client-profile')}}" class="avatar"
                             ><img
                               src="assets/img/profiles/avatar-19.jpg"
                               alt="User Image"
                           /></a>
-                          <a href="client-profile.html">Global Technologies</a>
+                          <a href="{{route('client-profile')}}">Global Technologies</a>
                         </h2>
                       </td>
                       <td>CLT-0001</td>
@@ -215,12 +215,12 @@
                     <tr>
                       <td>
                         <h2 class="table-avatar">
-                          <a href="client-profile.html" class="avatar"
+                          <a href="{{route('client-profile')}}" class="avatar"
                             ><img
                               src="assets/img/profiles/avatar-29.jpg"
                               alt="User Image"
                           /></a>
-                          <a href="client-profile.html">Delta Infotech</a>
+                          <a href="{{route('client-profile')}}">Delta Infotech</a>
                         </h2>
                       </td>
                       <td>CLT-0002</td>
@@ -294,12 +294,12 @@
                     <tr>
                       <td>
                         <h2 class="table-avatar">
-                          <a href="client-profile.html" class="avatar"
+                          <a href="{{route('client-profile')}}" class="avatar"
                             ><img
                               src="assets/img/profiles/avatar-07.jpg"
                               alt="User Image"
                           /></a>
-                          <a href="client-profile.html">Cream Inc</a>
+                          <a href="{{route('client-profile')}}">Cream Inc</a>
                         </h2>
                       </td>
                       <td>CLT-0003</td>
@@ -373,12 +373,12 @@
                     <tr>
                       <td>
                         <h2 class="table-avatar">
-                          <a href="client-profile.html" class="avatar"
+                          <a href="{{route('client-profile')}}" class="avatar"
                             ><img
                               src="assets/img/profiles/avatar-06.jpg"
                               alt="User Image"
                           /></a>
-                          <a href="client-profile.html">Wellware Company</a>
+                          <a href="{{route('client-profile')}}">Wellware Company</a>
                         </h2>
                       </td>
                       <td>CLT-0004</td>
@@ -452,12 +452,12 @@
                     <tr>
                       <td>
                         <h2 class="table-avatar">
-                          <a href="client-profile.html" class="avatar"
+                          <a href="{{route('client-profile')}}" class="avatar"
                             ><img
                               src="assets/img/profiles/avatar-14.jpg"
                               alt="User Image"
                           /></a>
-                          <a href="client-profile.html">Mustang Technologies</a>
+                          <a href="{{route('client-profile')}}">Mustang Technologies</a>
                         </h2>
                       </td>
                       <td>CLT-0005</td>
@@ -531,12 +531,12 @@
                     <tr>
                       <td>
                         <h2 class="table-avatar">
-                          <a href="client-profile.html" class="avatar"
+                          <a href="{{route('client-profile')}}" class="avatar"
                             ><img
                               src="assets/img/profiles/avatar-18.jpg"
                               alt="User Image"
                           /></a>
-                          <a href="client-profile.html"
+                          <a href="{{route('client-profile')}}"
                             >International Software Inc</a
                           >
                         </h2>
@@ -612,12 +612,12 @@
                     <tr>
                       <td>
                         <h2 class="table-avatar">
-                          <a href="client-profile.html" class="avatar"
+                          <a href="{{route('client-profile')}}" class="avatar"
                             ><img
                               src="assets/img/profiles/avatar-28.jpg"
                               alt="User Image"
                           /></a>
-                          <a href="client-profile.html">Mercury Software Inc</a>
+                          <a href="{{route('client-profile')}}">Mercury Software Inc</a>
                         </h2>
                       </td>
                       <td>CLT-0007</td>
@@ -691,12 +691,12 @@
                     <tr>
                       <td>
                         <h2 class="table-avatar">
-                          <a href="client-profile.html" class="avatar"
+                          <a href="{{route('client-profile')}}" class="avatar"
                             ><img
                               src="assets/img/profiles/avatar-22.jpg"
                               alt="User Image"
                           /></a>
-                          <a href="client-profile.html">Carlson Tech</a>
+                          <a href="{{route('client-profile')}}">Carlson Tech</a>
                         </h2>
                       </td>
                       <td>CLT-0008</td>

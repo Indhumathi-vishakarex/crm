@@ -575,19 +575,19 @@
                 <p>Dashboard</p>
                 <ul>
                   <li>
-                    <a class href="admin-dashboard.html">Admin Dashboard</a>
+                    <a class href="{{route('admin-dashboard')}}">Admin Dashboard</a>
                   </li>
                   <li>
-                    <a class href="employee-dashboard.html"
+                    <a class href="{{route('employee-dashboard')}}"
                       >Employee Dashboard</a
                     >
                   </li>
-                  <li>
+                  {{-- <li>
                     <a class href="deals-dashboard.html">Deals Dashboard</a>
-                  </li>
-                  <li>
+                  </li> --}}
+                  {{-- <li>
                     <a class href="leads-dashboard.html">Leads Dashboard</a>
-                  </li>
+                  </li> --}}
                 </ul>
               </div>
               <div

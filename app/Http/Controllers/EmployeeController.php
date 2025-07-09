@@ -100,6 +100,11 @@ public function taskBoard(){
 }
 
 
+public function taskView(){
+       return view('employees.projects.task-view');
+}
+
+
 public function tickets(){
      return view('employees.tickets.tickets');
 }

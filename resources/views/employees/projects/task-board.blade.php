@@ -148,7 +148,7 @@
                                     <div class="card panel">
                                         <div class="kanban-box">
                                             <div class="task-board-header">
-                                                <span class="status-title"><a href="task-view.html">Website
+                                                <span class="status-title"><a href="{{route('task-view')}}">Website
                                                         redesign</a></span>
                                                 <div class="dropdown kanban-task-action">
                                                     <a href data-bs-toggle="dropdown">
@@ -189,7 +189,7 @@
                                     <div class="card panel">
                                         <div class="kanban-box">
                                             <div class="task-board-header">
-                                                <span class="status-title"><a href="task-view.html">Make a
+                                                <span class="status-title"><a href="{{route('task-view')}}">Make a
                                                         wireframe</a></span>
                                                 <div class="dropdown kanban-task-action">
                                                     <a href data-bs-toggle="dropdown">
@@ -231,7 +231,7 @@
                                     <div class="card panel">
                                         <div class="kanban-box">
                                             <div class="task-board-header">
-                                                <span class="status-title"><a href="task-view.html">Website
+                                                <span class="status-title"><a href="{{route('task-view')}}">Website
                                                         redesign</a></span>
                                                 <div class="dropdown kanban-task-action">
                                                     <a href data-bs-toggle="dropdown">
@@ -295,7 +295,7 @@
                                     <div class="card panel">
                                         <div class="kanban-box">
                                             <div class="task-board-header">
-                                                <span class="status-title"><a href="task-view.html">Website
+                                                <span class="status-title"><a href="{{route('task-view')}}">Website
                                                         redesign</a></span>
                                                 <div class="dropdown kanban-task-action">
                                                     <a href data-bs-toggle="dropdown">
@@ -336,7 +336,7 @@
                                     <div class="card panel">
                                         <div class="kanban-box">
                                             <div class="task-board-header">
-                                                <span class="status-title"><a href="task-view.html">Website
+                                                <span class="status-title"><a href="{{route('task-view')}}">Website
                                                         redesign</a></span>
                                                 <div class="dropdown kanban-task-action">
                                                     <a href data-bs-toggle="dropdown">
@@ -421,7 +421,7 @@
                                     <div class="card panel">
                                         <div class="kanban-box">
                                             <div class="task-board-header">
-                                                <span class="status-title"><a href="task-view.html">Website
+                                                <span class="status-title"><a href="{{route('task-view')}}">Website
                                                         redesign</a></span>
                                                 <div class="dropdown kanban-task-action">
                                                     <a href data-bs-toggle="dropdown">
@@ -485,7 +485,7 @@
                                     <div class="card panel">
                                         <div class="kanban-box">
                                             <div class="task-board-header">
-                                                <span class="status-title"><a href="task-view.html">Website
+                                                <span class="status-title"><a href="{{route('task-view')}}">Website
                                                         redesign</a></span>
                                                 <div class="dropdown kanban-task-action">
                                                     <a href data-bs-toggle="dropdown">
@@ -549,7 +549,7 @@
                                     <div class="card panel">
                                         <div class="kanban-box">
                                             <div class="task-board-header">
-                                                <span class="status-title"><a href="task-view.html">Website
+                                                <span class="status-title"><a href="{{route('task-view')}}">Website
                                                         redesign</a></span>
                                                 <div class="dropdown kanban-task-action">
                                                     <a href data-bs-toggle="dropdown">
