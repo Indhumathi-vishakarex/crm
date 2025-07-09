@@ -111,7 +111,7 @@
                   <tbody>
                     <tr>
                       <td>1</td>
-                      <td><a href="invoice-view.html">#INV-0001</a></td>
+                      <td><a href="{{ route('invoice-view') }}">#INV-0001</a></td>
                       <td>Global Technologies</td>
                       <td>11 Mar 2019</td>
                       <td>17 Mar 2019</td>
@@ -129,10 +129,10 @@
                             ><i class="material-icons">more_vert</i></a
                           >
                           <div class="dropdown-menu dropdown-menu-right">
-                            <a class="dropdown-item" href="edit-invoice.html"
+                            <a class="dropdown-item" href="{{ route('edit-invoice') }}"
                               ><i class="fa-solid fa-pencil m-r-5"></i> Edit</a
                             >
-                            <a class="dropdown-item" href="invoice-view.html"
+                            <a class="dropdown-item" href="{{ route('invoice-view') }}"
                               ><i class="fa-solid fa-eye m-r-5"></i> View</a
                             >
                             <a class="dropdown-item" href="#"
@@ -149,7 +149,7 @@
                     </tr>
                     <tr>
                       <td>2</td>
-                      <td><a href="invoice-view.html">#INV-0002</a></td>
+                      <td><a href="{{ route('invoice-view') }}">#INV-0002</a></td>
                       <td>Delta Infotech</td>
                       <td>11 Mar 2019</td>
                       <td>17 Mar 2019</td>
@@ -165,10 +165,10 @@
                             ><i class="material-icons">more_vert</i></a
                           >
                           <div class="dropdown-menu dropdown-menu-right">
-                            <a class="dropdown-item" href="edit-invoice.html"
+                            <a class="dropdown-item" href="{{ route('edit-invoice') }}"
                               ><i class="fa-solid fa-pencil m-r-5"></i> Edit</a
                             >
-                            <a class="dropdown-item" href="invoice-view.html"
+                            <a class="dropdown-item" href="{{ route('invoice-view') }}"
                               ><i class="fa-solid fa-eye m-r-5"></i> View</a
                             >
                             <a class="dropdown-item" href="#"

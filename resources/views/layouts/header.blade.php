@@ -1,6 +1,6 @@
 <div class="header">
         <div class="header-left">
-          <!-- <a href="admin-dashboard.html" class="logo">
+          <!-- <a href="{{route('admin-dashboard')}}" class="logo">
             <img src="assets/img/logo.svg" alt="Logo" />
           </a> -->
 
@@ -102,7 +102,7 @@
               <div class="noti-content">
                 <ul class="notification-list">
                   <li class="notification-message">
-                    <a href="activities.html">
+                    <a href="{{route('activities')}}">
                       <div class="chat-block d-flex">
                         <span class="avatar flex-shrink-0">
                           <img
@@ -126,7 +126,7 @@
                     </a>
                   </li>
                   <li class="notification-message">
-                    <a href="activities.html">
+                    <a href="{{route('activities')}}">
                       <div class="chat-block d-flex">
                         <span class="avatar flex-shrink-0">
                           <img
@@ -150,7 +150,7 @@
                     </a>
                   </li>
                   <li class="notification-message">
-                    <a href="activities.html">
+                    <a href="{{route('activities')}}">
                       <div class="chat-block d-flex">
                         <span class="avatar flex-shrink-0">
                           <img
@@ -176,7 +176,7 @@
                     </a>
                   </li>
                   <li class="notification-message">
-                    <a href="activities.html">
+                    <a href="{{route('activities')}}">
                       <div class="chat-block d-flex">
                         <span class="avatar flex-shrink-0">
                           <img
@@ -200,7 +200,7 @@
                     </a>
                   </li>
                   <li class="notification-message">
-                    <a href="activities.html">
+                    <a href="{{route('activities')}}">
                       <div class="chat-block d-flex">
                         <span class="avatar flex-shrink-0">
                           <img
@@ -224,7 +224,7 @@
                 </ul>
               </div>
               <div class="topnav-dropdown-footer">
-                <a href="activities.html">View all Notifications</a>
+                <a href="{{route('activities')}}">View all Notifications</a>
               </div>
             </div>
           </li>
@@ -246,7 +246,7 @@
               <div class="noti-content">
                 <ul class="notification-list">
                   <li class="notification-message">
-                    <a href="chat.html">
+                    <a href="{{route('chat')}}">
                       <div class="list-item">
                         <div class="list-left">
                           <span class="avatar">
@@ -269,7 +269,7 @@
                     </a>
                   </li>
                   <li class="notification-message">
-                    <a href="chat.html">
+                    <a href="{{route('chat')}}">
                       <div class="list-item">
                         <div class="list-left">
                           <span class="avatar">
@@ -292,7 +292,7 @@
                     </a>
                   </li>
                   <li class="notification-message">
-                    <a href="chat.html">
+                    <a href="{{route('chat')}}">
                       <div class="list-item">
                         <div class="list-left">
                           <span class="avatar">
@@ -315,7 +315,7 @@
                     </a>
                   </li>
                   <li class="notification-message">
-                    <a href="chat.html">
+                    <a href="{{route('chat')}}">
                       <div class="list-item">
                         <div class="list-left">
                           <span class="avatar">
@@ -338,7 +338,7 @@
                     </a>
                   </li>
                   <li class="notification-message">
-                    <a href="chat.html">
+                    <a href="{{route('chat')}}">
                       <div class="list-item">
                         <div class="list-left">
                           <span class="avatar">
@@ -365,7 +365,7 @@
                 </ul>
               </div>
               <div class="topnav-dropdown-footer">
-                <a href="chat.html">View all Messages</a>
+                <a href="{{route('chat')}}">View all Messages</a>
               </div>
             </div>
           </li>
@@ -399,9 +399,9 @@
             ><i class="fa-solid fa-ellipsis-vertical"></i
           ></a>
           <div class="dropdown-menu dropdown-menu-right">
-            <a class="dropdown-item" href="profile.html">My Profile</a>
-            <a class="dropdown-item" href="settings.html">Settings</a>
-            <a class="dropdown-item" href="index.html">Logout</a>
+            <a class="dropdown-item" href="{{route('profile')}}">My Profile</a>
+            <a class="dropdown-item" href="{{route('settings')}}">Settings</a>
+            <a class="dropdown-item" href="{{route('login')}}">Logout</a>
           </div>
         </div>
       </div>

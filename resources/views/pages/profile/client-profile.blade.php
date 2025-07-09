@@ -57,7 +57,7 @@
                             <h3 class="page-title">Profile</h3>
                             <ul class="breadcrumb">
                                 <li class="breadcrumb-item">
-                                    <a href="admin-dashboard.html">Dashboard</a>
+                                    <a href="{{route('admin-dashboard')}}">Dashboard</a>
                                 </li>
                                 <li class="breadcrumb-item active">Profile</li>
                             </ul>
@@ -86,7 +86,7 @@
                                                     <small class="text-muted">CEO</small>
                                                     <div class="staff-id">Employee ID : CLT-0001</div>
                                                     <div class="staff-msg">
-                                                        <a href="chat.html" class="btn btn-custom">Send Message</a>
+                                                        <a href="{{route('chat')}}" class="btn btn-custom">Send Message</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -169,7 +169,7 @@
                                                     </div>
                                                 </div>
                                                 <h4 class="project-title">
-                                                    <a href="project-view.html">Office Management</a>
+                                                    <a href="{{route('project-view')}}">Office Management</a>
                                                 </h4>
                                                 <small class="block text-ellipsis m-b-15">
                                                     <span class="text-xs">1</span>
@@ -359,7 +359,7 @@
                                                     </div>
                                                 </div>
                                                 <h4 class="project-title">
-                                                    <a href="project-view.html">Project Management</a>
+                                                    <a href="{{route('project-view')}}">Project Management</a>
                                                 </h4>
                                                 <small class="block text-ellipsis m-b-15">
                                                     <span class="text-xs">2</span>
@@ -549,7 +549,7 @@
                                                     </div>
                                                 </div>
                                                 <h4 class="project-title">
-                                                    <a href="project-view.html">Video Calling App</a>
+                                                    <a href="{{route('project-view')}}">Video Calling App</a>
                                                 </h4>
                                                 <small class="block text-ellipsis m-b-15">
                                                     <span class="text-xs">3</span>
@@ -739,7 +739,7 @@
                                                     </div>
                                                 </div>
                                                 <h4 class="project-title">
-                                                    <a href="project-view.html">Hospital Administration</a>
+                                                    <a href="{{route('project-view')}}">Hospital Administration</a>
                                                 </h4>
                                                 <small class="block text-ellipsis m-b-15">
                                                     <span class="text-xs">12</span>

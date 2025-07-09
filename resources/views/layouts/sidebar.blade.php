@@ -189,7 +189,7 @@
                             </li>
                             
                             <li>
-                                <a class href="activities.html"><i class="la la-bell"></i> <span>Activities</span></a>
+                                <a class href="{{ route('activities') }}"><i class="la la-bell"></i> <span>Activities</span></a>
                             </li>
                             <li>
                                 <a class href="{{ route('users') }}"><i class="la la-user-plus"></i> <span>Users</span></a>
@@ -579,7 +579,7 @@
                   confirmation_number
                 </span>
               </a>
-              <a
+              <!-- <a
                 class="nav-link active"
                 id="v-pills-sales-tab"
                 title="Sales"
@@ -590,7 +590,7 @@
                 aria-selected="false"
               >
                 <span class="material-icons-outlined"> shopping_bag </span>
-              </a>
+              </a> -->
               <a
                 class="nav-link"
                 id="v-pills-accounting-tab"
@@ -731,7 +731,7 @@
               >
                 <span class="material-icons-outlined"> web_asset </span>
               </a>
-              <a
+              <!-- <a
                 class="nav-link"
                 id="v-pills-jobs-tab"
                 title="Jobs"
@@ -742,8 +742,8 @@
                 aria-selected="false"
               >
                 <span class="material-icons-outlined"> work_outline </span>
-              </a>
-              <a
+              </a> -->
+              <!-- <a
                 class="nav-link"
                 id="v-pills-knowledgebase-tab"
                 title="Knowledgebase"
@@ -754,7 +754,7 @@
                 aria-selected="false"
               >
                 <span class="material-icons-outlined"> school </span>
-              </a>
+              </a> -->
               <a
                 class="nav-link"
                 id="v-pills-activities-tab"

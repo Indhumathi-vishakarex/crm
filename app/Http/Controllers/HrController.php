@@ -10,6 +10,10 @@ class HrController extends Controller
     {
         return view('hr.accounting.categories');
     }
+    public function subCategory()
+    {
+        return view('hr.sub-category');
+    }
 
     public function budgets()
     {

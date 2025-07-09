@@ -66,6 +66,7 @@ Route::get('/outgoing-call',[MainController::class, 'outgoingCall'])->name('outg
 
 
 Route::get('/categories',[HrController::class, 'categories'])->name('categories');
+Route::get('/sub-category', [HrController::class, 'subCategory'])->name('sub-category');
 Route::get('/budgets', [HrController::class, 'budgets'])->name('budgets');
 Route::get('/budget-expenses', [HrController::class, 'budgetExpenses'])->name('budget-expenses');
 Route::get('/budget-revenues', [HrController::class, 'budgetRevenues'])->name('budget-revenues');

@@ -95,7 +95,7 @@
                               data-bs-target="#edit_categories"
                               ><i class="fa-solid fa-pencil m-r-5"></i> Edit</a
                             >
-                            <a class="dropdown-item" href="sub-category.html"
+                            <a class="dropdown-item" href="{{route('sub-category')}}"
                               ><i class="fa-solid fa-object-ungroup m-r-5"></i>
                               Sub-Category
                             </a>
@@ -124,7 +124,7 @@
                               data-bs-target="#edit_categories"
                               ><i class="fa-solid fa-pencil m-r-5"></i> Edit</a
                             >
-                            <a class="dropdown-item" href="sub-category.html"
+                            <a class="dropdown-item" href="{{route('sub-category')}}"
                               ><i class="fa-solid fa-object-ungroup m-r-5"></i>
                               Sub-Category
                             </a>
@@ -153,7 +153,7 @@
                               data-bs-target="#edit_categories"
                               ><i class="fa-solid fa-pencil m-r-5"></i> Edit</a
                             >
-                            <a class="dropdown-item" href="sub-category.html"
+                            <a class="dropdown-item" href="{{route('sub-category')}}"
                               ><i class="fa-solid fa-object-ungroup m-r-5"></i>
                               Sub-Category
                             </a>

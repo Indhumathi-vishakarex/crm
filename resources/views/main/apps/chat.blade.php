@@ -90,12 +90,12 @@
                         ></a>
                       </li>
                       <li class="nav-item">
-                        <a href="voice-call.html" class="nav-link"
+                        <a href="{{route('voice-call')}}" class="nav-link"
                           ><i class="fa-solid fa-phone"></i
                         ></a>
                       </li>
                       <li class="nav-item">
-                        <a href="video-call.html" class="nav-link"
+                        <a href="{{route('video-call')}}" class="nav-link"
                           ><i class="fa-solid fa-video"></i
                         ></a>
                       </li>
