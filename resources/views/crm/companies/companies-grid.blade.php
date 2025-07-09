@@ -60,7 +60,7 @@
                 <h3 class="page-title">Companies</h3>
                 <ul class="breadcrumb">
                   <li class="breadcrumb-item">
-                    <a href="admin-dashboard.html">Dashboard</a>
+                    <a href="{{route('admin-dashboard')}}">Dashboard</a>
                   </li>
                   <li class="breadcrumb-item active">Companies</li>
                 </ul>
@@ -158,11 +158,11 @@
             <ul>
               <li>
                 <div class="view-icons">
-                  <a href="companies.html" class="list-view btn btn-link"
+                  <a href="{{route('companies')}}" class="list-view btn btn-link"
                     ><i class="las la-list"></i
                   ></a>
                   <a
-                    href="companies-grid.html"
+                    href="{{route('companies-grid')}}"
                     class="grid-view btn btn-link active"
                     ><i class="las la-th"></i
                   ></a>
@@ -477,14 +477,14 @@
               <div class="contact-grid">
                 <div class="grid-head">
                   <div class="users-profile">
-                    <a href="company-details.html" class="company-icon">
+                    <a href="{{route('company-details')}}" class="company-icon">
                       <img
                         src="assets/img/icons/company-icon-01.svg"
                         alt="Img"
                       />
                     </a>
                     <h5 class="name-user">
-                      <a href="company-details.html">NovaWaveLLC</a>
+                      <a href="{{route('company-details')}}">NovaWaveLLC</a>
                       <span class="set-star mt-1">
                         <i class="fa fa-star filled me-2"></i>5.0
                       </span>
@@ -513,7 +513,7 @@
                         data-bs-target="#delete_company"
                         ><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a
                       >
-                      <a class="dropdown-item" href="company-details.html"
+                      <a class="dropdown-item" href="{{route('company-details')}}"
                         ><i class="fa-regular fa-eye"></i> Preview</a
                       >
                       <a
@@ -601,14 +601,14 @@
               <div class="contact-grid">
                 <div class="grid-head">
                   <div class="users-profile">
-                    <a href="company-details.html" class="company-icon">
+                    <a href="{{route('company-details')}}" class="company-icon">
                       <img
                         src="assets/img/icons/company-icon-02.svg"
                         alt="Img"
                       />
                     </a>
                     <h5 class="name-user">
-                      <a href="company-details.html">BlueSky Industries</a>
+                      <a href="{{route('company-details')}}">BlueSky Industries</a>
                       <span class="set-star mt-1">
                         <i class="fa fa-star filled me-2"></i>4.0
                       </span>
@@ -637,7 +637,7 @@
                         data-bs-target="#delete_company"
                         ><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a
                       >
-                      <a class="dropdown-item" href="company-details.html"
+                      <a class="dropdown-item" href="{{route('company-details')}}"
                         ><i class="fa-regular fa-eye"></i> Preview</a
                       >
                       <a
@@ -725,14 +725,14 @@
               <div class="contact-grid">
                 <div class="grid-head">
                   <div class="users-profile">
-                    <a href="company-details.html" class="company-icon">
+                    <a href="{{route('company-details')}}" class="company-icon">
                       <img
                         src="assets/img/icons/company-icon-03.svg"
                         alt="Img"
                       />
                     </a>
                     <h5 class="name-user">
-                      <a href="company-details.html">SilverHawk</a>
+                      <a href="{{route('company-details')}}">SilverHawk</a>
                       <span class="set-star mt-1">
                         <i class="fa fa-star filled me-2"></i>4.2
                       </span>
@@ -761,7 +761,7 @@
                         data-bs-target="#delete_company"
                         ><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a
                       >
-                      <a class="dropdown-item" href="company-details.html"
+                      <a class="dropdown-item" href="{{route('company-details')}}"
                         ><i class="fa-regular fa-eye"></i> Preview</a
                       >
                       <a
@@ -849,14 +849,14 @@
               <div class="contact-grid">
                 <div class="grid-head">
                   <div class="users-profile">
-                    <a href="company-details.html" class="company-icon">
+                    <a href="{{route('company-details')}}" class="company-icon">
                       <img
                         src="assets/img/icons/company-icon-04.svg"
                         alt="Img"
                       />
                     </a>
                     <h5 class="name-user">
-                      <a href="company-details.html">SummitPeak</a>
+                      <a href="{{route('company-details')}}">SummitPeak</a>
                       <span class="set-star mt-1">
                         <i class="fa fa-star filled me-2"></i>4.5
                       </span>
@@ -885,7 +885,7 @@
                         data-bs-target="#delete_company"
                         ><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a
                       >
-                      <a class="dropdown-item" href="company-details.html"
+                      <a class="dropdown-item" href="{{route('company-details')}}"
                         ><i class="fa-regular fa-eye"></i> Preview</a
                       >
                       <a
@@ -973,14 +973,14 @@
               <div class="contact-grid">
                 <div class="grid-head">
                   <div class="users-profile">
-                    <a href="company-details.html" class="company-icon">
+                    <a href="{{route('company-details')}}" class="company-icon">
                       <img
                         src="assets/img/icons/company-icon-05.svg"
                         alt="Img"
                       />
                     </a>
                     <h5 class="name-user">
-                      <a href="company-details.html">RiverStone V entur</a>
+                      <a href="{{route('company-details')}}">RiverStone V entur</a>
                       <span class="set-star mt-1">
                         <i class="fa fa-star filled me-2"></i>3.9
                       </span>
@@ -1009,7 +1009,7 @@
                         data-bs-target="#delete_company"
                         ><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a
                       >
-                      <a class="dropdown-item" href="company-details.html"
+                      <a class="dropdown-item" href="{{route('company-details')}}"
                         ><i class="fa-regular fa-eye"></i> Preview</a
                       >
                       <a
@@ -1097,14 +1097,14 @@
               <div class="contact-grid">
                 <div class="grid-head">
                   <div class="users-profile">
-                    <a href="company-details.html" class="company-icon">
+                    <a href="{{route('company-details')}}" class="company-icon">
                       <img
                         src="assets/img/icons/company-icon-06.svg"
                         alt="Img"
                       />
                     </a>
                     <h5 class="name-user">
-                      <a href="company-details.html">Bright Bridge Grp</a>
+                      <a href="{{route('company-details')}}">Bright Bridge Grp</a>
                       <span class="set-star mt-1">
                         <i class="fa fa-star filled me-2"></i>4.7
                       </span>
@@ -1133,7 +1133,7 @@
                         data-bs-target="#delete_company"
                         ><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a
                       >
-                      <a class="dropdown-item" href="company-details.html"
+                      <a class="dropdown-item" href="{{route('company-details')}}"
                         ><i class="fa-regular fa-eye"></i> Preview</a
                       >
                       <a
@@ -1221,14 +1221,14 @@
               <div class="contact-grid">
                 <div class="grid-head">
                   <div class="users-profile">
-                    <a href="company-details.html" class="company-icon">
+                    <a href="{{route('company-details')}}" class="company-icon">
                       <img
                         src="assets/img/icons/company-icon-07.svg"
                         alt="Img"
                       />
                     </a>
                     <h5 class="name-user">
-                      <a href="company-details.html">CoastalStar Co.</a>
+                      <a href="{{route('company-details')}}">CoastalStar Co.</a>
                       <span class="set-star mt-1">
                         <i class="fa fa-star filled me-2"></i>4.8
                       </span>
@@ -1257,7 +1257,7 @@
                         data-bs-target="#delete_company"
                         ><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a
                       >
-                      <a class="dropdown-item" href="company-details.html"
+                      <a class="dropdown-item" href="{{route('company-details')}}"
                         ><i class="fa-regular fa-eye"></i> Preview</a
                       >
                       <a
@@ -1345,14 +1345,14 @@
               <div class="contact-grid">
                 <div class="grid-head">
                   <div class="users-profile">
-                    <a href="company-details.html" class="company-icon">
+                    <a href="{{route('company-details')}}" class="company-icon">
                       <img
                         src="assets/img/icons/company-icon-08.svg"
                         alt="Img"
                       />
                     </a>
                     <h5 class="name-user">
-                      <a href="company-details.html">HarborView</a>
+                      <a href="{{route('company-details')}}">HarborView</a>
                       <span class="set-star mt-1">
                         <i class="fa fa-star filled me-2"></i>4.2
                       </span>
@@ -1381,7 +1381,7 @@
                         data-bs-target="#delete_company"
                         ><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a
                       >
-                      <a class="dropdown-item" href="company-details.html"
+                      <a class="dropdown-item" href="{{route('company-details')}}"
                         ><i class="fa-regular fa-eye"></i> Preview</a
                       >
                       <a
@@ -1469,14 +1469,14 @@
               <div class="contact-grid">
                 <div class="grid-head">
                   <div class="users-profile">
-                    <a href="company-details.html" class="company-icon">
+                    <a href="{{route('company-details')}}" class="company-icon">
                       <img
                         src="assets/img/icons/company-icon-09.svg"
                         alt="Img"
                       />
                     </a>
                     <h5 class="name-user">
-                      <a href="company-details.html">Golden Gate Ltd</a>
+                      <a href="{{route('company-details')}}">Golden Gate Ltd</a>
                       <span class="set-star mt-1">
                         <i class="fa fa-star filled me-2"></i>3.5
                       </span>
@@ -1505,7 +1505,7 @@
                         data-bs-target="#delete_company"
                         ><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a
                       >
-                      <a class="dropdown-item" href="company-details.html"
+                      <a class="dropdown-item" href="{{route('company-details')}}"
                         ><i class="fa-regular fa-eye"></i> Preview</a
                       >
                       <a
@@ -1593,14 +1593,14 @@
               <div class="contact-grid">
                 <div class="grid-head">
                   <div class="users-profile">
-                    <a href="company-details.html" class="company-icon">
+                    <a href="{{route('company-details')}}" class="company-icon">
                       <img
                         src="assets/img/icons/company-icon-10.svg"
                         alt="Img"
                       />
                     </a>
                     <h5 class="name-user">
-                      <a href="company-details.html">Redwood Inc</a>
+                      <a href="{{route('company-details')}}">Redwood Inc</a>
                       <span class="set-star mt-1">
                         <i class="fa fa-star filled me-2"></i>4.4
                       </span>
@@ -1629,7 +1629,7 @@
                         data-bs-target="#delete_company"
                         ><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a
                       >
-                      <a class="dropdown-item" href="company-details.html"
+                      <a class="dropdown-item" href="{{route('company-details')}}"
                         ><i class="fa-regular fa-eye"></i> Preview</a
                       >
                       <a
@@ -3214,7 +3214,7 @@
                         data-bs-dismiss="modal"
                         >Close</a
                       >
-                      <a href="company-details.html" class="btn btn-primary"
+                      <a href="{{route('company-details')}}" class="btn btn-primary"
                         >View Details</a
                       >
                     </div>
@@ -3245,7 +3245,7 @@
                         data-bs-dismiss="modal"
                         >Not Now</a
                       >
-                      <a href="companies-grid.html" class="btn btn-primary"
+                      <a href="{{route('companies-grid')}}" class="btn btn-primary"
                         >Okay</a
                       >
                     </div>

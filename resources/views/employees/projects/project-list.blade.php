@@ -588,7 +588,7 @@
                             aria-labelledby="v-pills-profile-tab">
                             <p>Profile</p>
                             <ul>
-                                <li><a class href="profile.html"> Employee Profile </a></li>
+                                <li><a class href="{{route('profile')}}"> Employee Profile </a></li>
                                 <li><a class href="client-profile.html"> Client Profile </a></li>
                             </ul>
                         </div>

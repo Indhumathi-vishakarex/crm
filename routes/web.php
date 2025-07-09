@@ -64,6 +64,7 @@ Route::get('/incoming-call',[MainController::class, 'incomingCall'])->name('inco
 Route::get('/outgoing-call',[MainController::class, 'outgoingCall'])->name('outgoing-call');
 
 
+
 Route::get('/categories',[HrController::class, 'categories'])->name('categories');
 Route::get('/budgets', [HrController::class, 'budgets'])->name('budgets');
 Route::get('/budget-expenses', [HrController::class, 'budgetExpenses'])->name('budget-expenses');
@@ -90,23 +91,22 @@ Route::get('/employee-reports', [HrController::class, 'employeeReports'])->name(
 Route::get('/attendance-reports', [HrController::class, 'attendanceReports'])->name('attendance-reports');
 Route::get('/leave-reports', [HrController::class, 'leaveReports'])->name('leave-reports');
 Route::get('/daily-reports', [HrController::class, 'dailyReports'])->name('daily-reports');
- 
 Route::get('/assets1',[AdministrationController::class, 'assets1'])->name('assets1');
 Route::get('/users',[AdministrationController::class, 'users'])->name('users');
 Route::get('/settings',[AdministrationController::class, 'settings'])->name('settings');
-
-
-
-
 
 // CrmModuleController
 
   Route::get('/contact-list', [CrmModuleController::class, 'contactList'])->name('contact-list');
   Route::get('/contact-grid', [CrmModuleController::class, 'contactGrid'])->name('contact-grid');
+  Route::get('/contact-details', [CrmModuleController::class, 'contactDetails'])->name('contact-details');
   Route::get('/companies', [CrmModuleController::class, 'companies'])->name('companies');
  Route::get('/companies-grid', [CrmModuleController::class, 'companiesGrid'])->name('companies-grid');
+  Route::get('/company-details', [CrmModuleController::class, 'companysDetails'])->name('company-details');
   Route::get('/deals', [CrmModuleController::class, 'deals'])->name('deals');
+    Route::get('/deals-details', [CrmModuleController::class, 'dealsDetails'])->name('deals-details');
   Route::get('/deals-kanban', [CrmModuleController::class, 'dealsKanban'])->name('deals-kanban');
+    Route::get('/leads-details', [CrmModuleController::class, 'leadsDetails'])->name('leads-details');
   Route::get('/leads', [CrmModuleController::class, 'leads'])->name('leads');
  Route::get('/leads-kanban', [CrmModuleController::class, 'leadsKanban'])->name('leads-kanban');
   Route::get('/activities', [CrmModuleController::class, 'activities'])->name('activities');

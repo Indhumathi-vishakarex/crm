@@ -487,7 +487,7 @@
                           </div>
                           <div class="chat chat-left">
                             <div class="chat-avatar">
-                              <a href="profile.html" class="avatar">
+                              <a href="{{route('profile')}}" class="avatar">
                                 <img
                                   src="assets/img/profiles/avatar-02.jpg"
                                   alt="User Image"
@@ -516,7 +516,7 @@
                           </div>
                           <div class="chat chat-left">
                             <div class="chat-avatar">
-                              <a href="profile.html" class="avatar">
+                              <a href="{{route('profile')}}" class="avatar">
                                 <img
                                   src="assets/img/profiles/avatar-02.jpg"
                                   alt="User Image"
@@ -554,7 +554,7 @@
                           </div>
                           <div class="chat chat-left">
                             <div class="chat-avatar">
-                              <a href="profile.html" class="avatar">
+                              <a href="{{route('profile')}}" class="avatar">
                                 <img
                                   src="assets/img/profiles/avatar-16.jpg"
                                   alt="User Image"
@@ -586,7 +586,7 @@
                           </div>
                           <div class="chat chat-left">
                             <div class="chat-avatar">
-                              <a href="profile.html" class="avatar">
+                              <a href="{{route('profile')}}" class="avatar">
                                 <img
                                   src="assets/img/profiles/avatar-16.jpg"
                                   alt="User Image"

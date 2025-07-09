@@ -542,7 +542,7 @@
                 <p>Dashboard</p>
                 <ul>
                   <li>
-                    <a class href="admin-dashboard.html">Admin Dashboard</a>
+                    <a class href="{{route('admin-dashboard')}}">Admin Dashboard</a>
                   </li>
                   <li>
                     <a class href="employee-dashboard.html"
@@ -1299,7 +1299,7 @@
                 <h3 class="page-title">Activities</h3>
                 <ul class="breadcrumb">
                   <li class="breadcrumb-item">
-                    <a href="admin-dashboard.html">Dashboard</a>
+                    <a href="{{route('admin-dashboard')}}">Dashboard</a>
                   </li>
                   <li class="breadcrumb-item active">Activities</li>
                 </ul>

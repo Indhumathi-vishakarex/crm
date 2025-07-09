@@ -87,10 +87,10 @@
                                         <td>1</td>
                                         <td>
                                             <h2 class="table-avatar blue-link">
-                                                <a href="profile.html" class="avatar"><img
+                                                <a href="{{route('profile')}}" class="avatar"><img
                                                         src="assets/img/profiles/avatar-02.jpg"
                                                         alt="User Image"></a>
-                                                <a href="profile.html">John Doe</a>
+                                                <a href="{{route('profile')}}">John Doe</a>
                                             </h2>
                                         </td>
                                         <td>Web Development</td>

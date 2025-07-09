@@ -505,12 +505,12 @@
                       </td>
                       <td>
                         <h2 class="table-avatar d-flex align-items-center">
-                          <a href="company-details.html" class="company-img"
+                          <a href="{{route('company-details')}}" class="company-img"
                             ><img
                               src="assets/img/icons/company-icon-01.svg"
                               alt="User Image"
                           /></a>
-                          <a href="company-details.html" class="profile-split"
+                          <a href="{{route('company-details')}}" class="profile-split"
                             >NovaWaveLLC</a
                           >
                         </h2>
@@ -590,7 +590,7 @@
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
-                            <a class="dropdown-item" href="company-details.html"
+                            <a class="dropdown-item" href="{{route('company-details')}}"
                               ><i class="fa-regular fa-eye"></i> Preview</a
                             >
                             <a
@@ -612,12 +612,12 @@
                       </td>
                       <td>
                         <h2 class="table-avatar d-flex align-items-center">
-                          <a href="company-details.html" class="company-img"
+                          <a href="{{route('company-details')}}" class="company-img"
                             ><img
                               src="assets/img/icons/company-icon-02.svg"
                               alt="User Image"
                           /></a>
-                          <a href="company-details.html" class="profile-split"
+                          <a href="{{route('company-details')}}" class="profile-split"
                             >BlueSky Industries</a
                           >
                         </h2>
@@ -697,7 +697,7 @@
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
-                            <a class="dropdown-item" href="company-details.html"
+                            <a class="dropdown-item" href="{{route('company-details')}}"
                               ><i class="fa-regular fa-eye"></i> Preview</a
                             >
                             <a
@@ -719,12 +719,12 @@
                       </td>
                       <td>
                         <h2 class="table-avatar d-flex align-items-center">
-                          <a href="company-details.html" class="company-img"
+                          <a href="{{route('company-details')}}" class="company-img"
                             ><img
                               src="assets/img/icons/company-icon-03.svg"
                               alt="User Image"
                           /></a>
-                          <a href="company-details.html" class="profile-split"
+                          <a href="{{route('company-details')}}" class="profile-split"
                             >SilverHawk</a
                           >
                         </h2>
@@ -804,7 +804,7 @@
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
-                            <a class="dropdown-item" href="company-details.html"
+                            <a class="dropdown-item" href="{{route('company-details')}}"
                               ><i class="fa-regular fa-eye"></i> Preview</a
                             >
                             <a
@@ -826,12 +826,12 @@
                       </td>
                       <td>
                         <h2 class="table-avatar d-flex align-items-center">
-                          <a href="company-details.html" class="company-img"
+                          <a href="{{route('company-details')}}" class="company-img"
                             ><img
                               src="assets/img/icons/company-icon-04.svg"
                               alt="User Image"
                           /></a>
-                          <a href="company-details.html" class="profile-split"
+                          <a href="{{route('company-details')}}" class="profile-split"
                             >SummitPeak</a
                           >
                         </h2>
@@ -910,7 +910,7 @@
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
-                            <a class="dropdown-item" href="company-details.html"
+                            <a class="dropdown-item" href="{{route('company-details')}}"
                               ><i class="fa-regular fa-eye"></i> Preview</a
                             >
                             <a
@@ -932,12 +932,12 @@
                       </td>
                       <td>
                         <h2 class="table-avatar d-flex align-items-center">
-                          <a href="company-details.html" class="company-img"
+                          <a href="{{route('company-details')}}" class="company-img"
                             ><img
                               src="assets/img/icons/company-icon-05.svg"
                               alt="User Image"
                           /></a>
-                          <a href="company-details.html" class="profile-split"
+                          <a href="{{route('company-details')}}" class="profile-split"
                             >RiverStone Ventur</a
                           >
                         </h2>
@@ -1017,7 +1017,7 @@
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
-                            <a class="dropdown-item" href="company-details.html"
+                            <a class="dropdown-item" href="{{route('company-details')}}"
                               ><i class="fa-regular fa-eye"></i> Preview</a
                             >
                             <a
@@ -1039,12 +1039,12 @@
                       </td>
                       <td>
                         <h2 class="table-avatar d-flex align-items-center">
-                          <a href="company-details.html" class="company-img"
+                          <a href="{{route('company-details')}}" class="company-img"
                             ><img
                               src="assets/img/icons/company-icon-06.svg"
                               alt="User Image"
                           /></a>
-                          <a href="company-details.html" class="profile-split"
+                          <a href="{{route('company-details')}}" class="profile-split"
                             >Bright Bridge Grp</a
                           >
                         </h2>
@@ -1124,7 +1124,7 @@
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
-                            <a class="dropdown-item" href="company-details.html"
+                            <a class="dropdown-item" href="{{route('company-details')}}"
                               ><i class="fa-regular fa-eye"></i> Preview</a
                             >
                             <a
@@ -1146,12 +1146,12 @@
                       </td>
                       <td>
                         <h2 class="table-avatar d-flex align-items-center">
-                          <a href="company-details.html" class="company-img"
+                          <a href="{{route('company-details')}}" class="company-img"
                             ><img
                               src="assets/img/icons/company-icon-07.svg"
                               alt="User Image"
                           /></a>
-                          <a href="company-details.html" class="profile-split"
+                          <a href="{{route('company-details')}}" class="profile-split"
                             >CoastalStar Co.</a
                           >
                         </h2>
@@ -1231,7 +1231,7 @@
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
-                            <a class="dropdown-item" href="company-details.html"
+                            <a class="dropdown-item" href="{{route('company-details')}}"
                               ><i class="fa-regular fa-eye"></i> Preview</a
                             >
                             <a
@@ -1253,12 +1253,12 @@
                       </td>
                       <td>
                         <h2 class="table-avatar d-flex align-items-center">
-                          <a href="company-details.html" class="company-img"
+                          <a href="{{route('company-details')}}" class="company-img"
                             ><img
                               src="assets/img/icons/company-icon-08.svg"
                               alt="User Image"
                           /></a>
-                          <a href="company-details.html" class="profile-split"
+                          <a href="{{route('company-details')}}" class="profile-split"
                             >HarborView</a
                           >
                         </h2>
@@ -1338,7 +1338,7 @@
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
-                            <a class="dropdown-item" href="company-details.html"
+                            <a class="dropdown-item" href="{{route('company-details')}}"
                               ><i class="fa-regular fa-eye"></i> Preview</a
                             >
                             <a
@@ -1360,12 +1360,12 @@
                       </td>
                       <td>
                         <h2 class="table-avatar d-flex align-items-center">
-                          <a href="company-details.html" class="company-img"
+                          <a href="{{route('company-details')}}" class="company-img"
                             ><img
                               src="assets/img/icons/company-icon-09.svg"
                               alt="User Image"
                           /></a>
-                          <a href="company-details.html" class="profile-split"
+                          <a href="{{route('company-details')}}" class="profile-split"
                             >Golden Gate Ltd</a
                           >
                         </h2>
@@ -1446,7 +1446,7 @@
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
-                            <a class="dropdown-item" href="company-details.html"
+                            <a class="dropdown-item" href="{{route('company-details')}}"
                               ><i class="fa-regular fa-eye"></i> Preview</a
                             >
                             <a
@@ -1468,12 +1468,12 @@
                       </td>
                       <td>
                         <h2 class="table-avatar d-flex align-items-center">
-                          <a href="company-details.html" class="company-img"
+                          <a href="{{route('company-details')}}" class="company-img"
                             ><img
                               src="assets/img/icons/company-icon-10.svg"
                               alt="User Image"
                           /></a>
-                          <a href="company-details.html" class="profile-split"
+                          <a href="{{route('company-details')}}" class="profile-split"
                             >Redwood Inc</a
                           >
                         </h2>
@@ -1553,7 +1553,7 @@
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
-                            <a class="dropdown-item" href="company-details.html"
+                            <a class="dropdown-item" href="{{route('company-details')}}"
                               ><i class="fa-regular fa-eye"></i> Preview</a
                             >
                             <a
@@ -2972,7 +2972,7 @@
                         data-bs-dismiss="modal"
                         >Close</a
                       >
-                      <a href="company-details.html" class="btn btn-primary"
+                      <a href="{{route('company-details')}}" class="btn btn-primary"
                         >View Details</a
                       >
                     </div>
