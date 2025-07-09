@@ -30,6 +30,7 @@ Route::get('/projects', [EmployeeController::class, 'projects'])->name('projects
 Route::get('/project-list', [EmployeeController::class, 'projectList'])->name('project-list');
 Route::get('/project-view', [EmployeeController::class, 'projectView'])->name('project-view');
 Route::get('/tasks', [EmployeeController::class, 'tasks'])->name('tasks');
+Route::get('/task-view', [EmployeeController::class, 'taskView'])->name('task-view');
 Route::get('/task-board',[EmployeeController::class, 'taskBoard'])->name('task-board');
 Route::get('/tickets',[EmployeeController::class, 'tickets'])->name('tickets');
 Route::get('/ticket-details',[EmployeeController::class, 'ticketDetails'])->name('ticket-details');

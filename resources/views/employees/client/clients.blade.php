@@ -129,7 +129,7 @@
                             <h5 class="user-name m-t-10 mb-0 text-ellipsis"><a href="{{route('client-profile')}}">Barry
                                     Cuda</a></h5>
                             <div class="small text-muted">CEO</div>
-                            <a href="chat.html" class="btn btn-white btn-sm m-t-10">Message</a>
+                            <a href="{{route('chat')}}" class="btn btn-white btn-sm m-t-10">Message</a>
                             <a href="{{route('client-profile')}}" class="btn btn-white btn-sm m-t-10">View Profile</a>
                         </div>
                     </div>
@@ -157,7 +157,7 @@
                                     Wexler</a>
                             </h5>
                             <div class="small text-muted">Manager</div>
-                            <a href="chat.html" class="btn btn-white btn-sm m-t-10">Message</a>
+                            <a href="{{route('chat')}}" class="btn btn-white btn-sm m-t-10">Message</a>
                             <a href="{{route('client-profile')}}" class="btn btn-white btn-sm m-t-10">View Profile</a>
                         </div>
                     </div>
@@ -184,7 +184,7 @@
                                     Bartlett</a>
                             </h5>
                             <div class="small text-muted">CEO</div>
-                            <a href="chat.html" class="btn btn-white btn-sm m-t-10">Message</a>
+                            <a href="{{route('chat')}}" class="btn btn-white btn-sm m-t-10">Message</a>
                             <a href="{{route('client-profile')}}" class="btn btn-white btn-sm m-t-10">View Profile</a>
                         </div>
                     </div>
@@ -211,7 +211,7 @@
                                     Tison</a>
                             </h5>
                             <div class="small text-muted">CEO</div>
-                            <a href="chat.html" class="btn btn-white btn-sm m-t-10">Message</a>
+                            <a href="{{route('chat')}}" class="btn btn-white btn-sm m-t-10">Message</a>
                             <a href="{{route('client-profile')}}" class="btn btn-white btn-sm m-t-10">View Profile</a>
                         </div>
                     </div>
@@ -238,7 +238,7 @@
                                     Deacon</a>
                             </h5>
                             <div class="small text-muted">CEO</div>
-                            <a href="chat.html" class="btn btn-white btn-sm m-t-10">Message</a>
+                            <a href="{{route('chat')}}" class="btn btn-white btn-sm m-t-10">Message</a>
                             <a href="{{route('client-profile')}}" class="btn btn-white btn-sm m-t-10">View Profile</a>
                         </div>
                     </div>
@@ -266,7 +266,7 @@
                                     Weaver</a>
                             </h5>
                             <div class="small text-muted">CEO</div>
-                            <a href="chat.html" class="btn btn-white btn-sm m-t-10">Message</a>
+                            <a href="{{route('chat')}}" class="btn btn-white btn-sm m-t-10">Message</a>
                             <a href="{{route('client-profile')}}" class="btn btn-white btn-sm m-t-10">View Profile</a>
                         </div>
                     </div>
@@ -294,7 +294,7 @@
                                     Warren</a>
                             </h5>
                             <div class="small text-muted">CEO</div>
-                            <a href="chat.html" class="btn btn-white btn-sm m-t-10">Message</a>
+                            <a href="{{route('chat')}}" class="btn btn-white btn-sm m-t-10">Message</a>
                             <a href="{{route('client-profile')}}" class="btn btn-white btn-sm m-t-10">View Profile</a>
                         </div>
                     </div>
@@ -322,7 +322,7 @@
                                     Carlson</a>
                             </h5>
                             <div class="small text-muted">CEO</div>
-                            <a href="chat.html" class="btn btn-white btn-sm m-t-10">Message</a>
+                            <a href="{{route('chat')}}" class="btn btn-white btn-sm m-t-10">Message</a>
                             <a href="{{route('client-profile')}}" class="btn btn-white btn-sm m-t-10">View Profile</a>
                         </div>
                     </div>
