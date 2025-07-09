@@ -48,7 +48,7 @@
   <body>
     <div class="main-wrapper">
 @include('layouts.header')
-@include('layouts.sidebar')
+
 
       <div class="sidebar" id="sidebar">
         <div class="sidebar-inner slimscroll">
@@ -673,7 +673,7 @@
                     <a class href="{{route('admin-dashboard')}}">Admin Dashboard</a>
                   </li>
                   <li>
-                    <a class href="employee-dashboard.html"
+                    <a class href="employee-dashboard"
                       >Employee Dashboard</a
                     >
                   </li>
