@@ -7,29 +7,32 @@
   data-sidebar-size="lg"
   data-sidebar-image="none"
 >
-  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/subscribed-companies by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:23:16 GMT -->
+  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/create-invoice by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:25:09 GMT -->
   <!-- Added by HTTrack --><meta
     http-equiv="content-type"
     content="text/html;charset=UTF-8"
   /><!-- /Added by HTTrack -->
-<head>
+ <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Smarthr - Bootstrap Admin Template" />
     <meta name="keywords" content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern, accounts, invoice, html5, responsive, CRM, Projects" />
     <meta name="author" content="Dreamstechnologies - Bootstrap Admin Template" />
-    <title>Subscriptions - HRMS admin template</title>
+    <title>Create Invoice - HRMS admin template</title>
 
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}" />
 
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}" />
+
     <link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/fontawesome.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/all.min.css') }}" />
+
     <link rel="stylesheet" href="{{ asset('assets/css/line-awesome.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/material.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/css/dataTables.bootstrap4.min.css') }}" />
+
     <link rel="stylesheet" href="{{ asset('assets/css/select2.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap-datetimepicker.min.css') }}" />
+
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
 </head>
 
@@ -37,485 +40,252 @@
     <div class="main-wrapper">
         @include('layouts.header')
         @include('layouts.sidebar')
+ 
 
       <div class="page-wrapper">
         <div class="content container-fluid">
           <div class="page-header">
             <div class="row">
-              <div class="col">
-                <h3 class="page-title">Subscribed Companies</h3>
+              <div class="col-sm-12">
+                <h3 class="page-title">Create Invoice</h3>
                 <ul class="breadcrumb">
                   <li class="breadcrumb-item">
-                    <a href="{{route('admin-dashboard')}}">Dashboard</a>
+                    <a href="admin-dashboard.html">Dashboard</a>
                   </li>
-                  <li class="breadcrumb-item active">Subscriptions</li>
+                  <li class="breadcrumb-item active">Create Invoice</li>
                 </ul>
               </div>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-md-3">
-              <div class="stats-info">
-                <h6>Joining</h6>
-                <h4>12 <span>This Month</span></h4>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="stats-info">
-                <h6>Renewal</h6>
-                <h4>3 <span>This Month</span></h4>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="stats-info">
-                <h6>Renewal</h6>
-                <h4>0 <span>Next Month</span></h4>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="stats-info">
-                <h6>Total Companies</h6>
-                <h4>312</h4>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-12">
-              <div class="table-responsive">
-                <table class="table table-hover custom-table datatable mb-0">
-                  <thead>
-                    <tr>
-                      <th>#</th>
-                      <th>Client</th>
-                      <th>Plan</th>
-                      <th>Users</th>
-                      <th>Plan Duration</th>
-                      <th>Start Date</th>
-                      <th>End Date</th>
-                      <th>Amount</th>
-                      <th>Plan Status</th>
-                      <th>Update Plan</th>
-                      <th>Status</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td>
-                        <h2 class="table-avatar">
-                          <a href="{{route('client-profile')}}" class="avatar"
-                            ><img
-                              src="assets/img/profiles/avatar-19.jpg"
-                              alt="User Image"
-                          /></a>
-                          <a href="{{route('client-profile')}}">Global Technologies</a>
-                        </h2>
-                      </td>
-                      <td>Free Trial</td>
-                      <td>30</td>
-                      <td>6 Months</td>
-                      <td>15 Feb 2019</td>
-                      <td>14 Jul 2019</td>
-                      <td>$200</td>
-                      <td>
-                        <span class="badge bg-inverse-success">Active</span>
-                      </td>
-                      <td>
-                        <a
-                          class="btn btn-primary btn-sm"
-                          href="javascript:void(0);"
-                          data-bs-toggle="modal"
-                          data-bs-target="#upgrade_plan"
-                          >Change Plan</a
-                        >
-                      </td>
-                      <td>
-                        <div class="status-toggle">
-                          <input
-                            type="checkbox"
-                            id="company_status_1"
-                            class="check"
-                          />
-                          <label for="company_status_1" class="checktoggle"
-                            >checkbox</label
-                          >
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>
-                        <h2 class="table-avatar">
-                          <a href="{{route('client-profile')}}" class="avatar"
-                            ><img
-                              src="assets/img/profiles/avatar-29.jpg"
-                              alt="User Image"
-                          /></a>
-                          <a href="{{route('client-profile')}}">Delta Infotech</a>
-                        </h2>
-                      </td>
-                      <td>Premium</td>
-                      <td>50</td>
-                      <td>1 Year</td>
-                      <td>15 Feb 2019</td>
-                      <td>14 Feb 2020</td>
-                      <td>$200</td>
-                      <td>
-                        <span class="badge bg-inverse-danger">Expired</span>
-                      </td>
-                      <td>
-                        <a
-                          class="btn btn-primary btn-sm"
-                          href="javascript:void(0);"
-                          data-bs-toggle="modal"
-                          data-bs-target="#upgrade_plan"
-                          >Change Plan</a
-                        >
-                      </td>
-                      <td>
-                        <div class="status-toggle">
-                          <input
-                            type="checkbox"
-                            id="company_status_2"
-                            class="check"
-                            checked
-                          />
-                          <label for="company_status_2" class="checktoggle"
-                            >checkbox</label
-                          >
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>
-                        <h2 class="table-avatar">
-                          <a href="{{route('client-profile')}}" class="avatar"
-                            ><img
-                              src="assets/img/profiles/avatar-07.jpg"
-                              alt="User Image"
-                          /></a>
-                          <a href="{{route('client-profile')}}">Cream Inc</a>
-                        </h2>
-                      </td>
-                      <td>Professional</td>
-                      <td>10</td>
-                      <td>1 Month</td>
-                      <td>15 Feb 2019</td>
-                      <td>14 Feb 2020</td>
-                      <td>Free</td>
-                      <td>
-                        <span class="badge bg-inverse-success">Active</span>
-                      </td>
-                      <td>
-                        <a
-                          class="btn btn-primary btn-sm"
-                          href="javascript:void(0);"
-                          data-bs-toggle="modal"
-                          data-bs-target="#upgrade_plan"
-                          >Change Plan</a
-                        >
-                      </td>
-                      <td>
-                        <div class="status-toggle">
-                          <input
-                            type="checkbox"
-                            id="company_status_3"
-                            class="check"
-                            checked
-                          />
-                          <label for="company_status_3" class="checktoggle"
-                            >checkbox</label
-                          >
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>4</td>
-                      <td>
-                        <h2 class="table-avatar">
-                          <a href="{{route('client-profile')}}" class="avatar"
-                            ><img
-                              src="assets/img/profiles/avatar-06.jpg"
-                              alt="User Image"
-                          /></a>
-                          <a href="{{route('client-profile')}}">Wellware Company</a>
-                        </h2>
-                      </td>
-                      <td>Enterprise</td>
-                      <td>10</td>
-                      <td>1 Month</td>
-                      <td>15 Feb 2019</td>
-                      <td>14 Feb 2020</td>
-                      <td>Free</td>
-                      <td>
-                        <span class="badge bg-inverse-success">Active</span>
-                      </td>
-                      <td>
-                        <a
-                          class="btn btn-primary btn-sm"
-                          href="javascript:void(0);"
-                          data-bs-toggle="modal"
-                          data-bs-target="#upgrade_plan"
-                          >Change Plan</a
-                        >
-                      </td>
-                      <td>
-                        <div class="status-toggle">
-                          <input
-                            type="checkbox"
-                            id="company_status_4"
-                            class="check"
-                            checked
-                          />
-                          <label for="company_status_4" class="checktoggle"
-                            >checkbox</label
-                          >
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>5</td>
-                      <td>
-                        <h2 class="table-avatar">
-                          <a href="{{route('client-profile')}}" class="avatar"
-                            ><img
-                              src="assets/img/profiles/avatar-14.jpg"
-                              alt="User Image"
-                          /></a>
-                          <a href="{{route('client-profile')}}">Mustang Technologies</a>
-                        </h2>
-                      </td>
-                      <td>Free Trial</td>
-                      <td>10</td>
-                      <td>1 Year</td>
-                      <td>15 Feb 2019</td>
-                      <td>14 Feb 2020</td>
-                      <td>Free</td>
-                      <td>
-                        <span class="badge bg-inverse-success">Active</span>
-                      </td>
-                      <td>
-                        <a
-                          class="btn btn-primary btn-sm"
-                          href="javascript:void(0);"
-                          data-bs-toggle="modal"
-                          data-bs-target="#upgrade_plan"
-                          >Change Plan</a
-                        >
-                      </td>
-                      <td>
-                        <div class="status-toggle">
-                          <input
-                            type="checkbox"
-                            id="company_status_5"
-                            class="check"
-                            checked
-                          />
-                          <label for="company_status_5" class="checktoggle"
-                            >checkbox</label
-                          >
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>6</td>
-                      <td>
-                        <h2 class="table-avatar">
-                          <a href="{{route('client-profile')}}" class="avatar"
-                            ><img
-                              src="assets/img/profiles/avatar-18.jpg"
-                              alt="User Image"
-                          /></a>
-                          <a href="{{route('client-profile')}}"
-                            >International Software Inc</a
-                          >
-                        </h2>
-                      </td>
-                      <td>Enterprise</td>
-                      <td>10</td>
-                      <td>1 Month</td>
-                      <td>15 Feb 2019</td>
-                      <td>14 Feb 2020</td>
-                      <td>Free</td>
-                      <td>
-                        <span class="badge bg-inverse-success">Active</span>
-                      </td>
-                      <td>
-                        <a
-                          class="btn btn-primary btn-sm"
-                          href="javascript:void(0);"
-                          data-bs-toggle="modal"
-                          data-bs-target="#upgrade_plan"
-                          >Change Plan</a
-                        >
-                      </td>
-                      <td>
-                        <div class="status-toggle">
-                          <input
-                            type="checkbox"
-                            id="company_status_6"
-                            class="check"
-                            checked
-                          />
-                          <label for="company_status_6" class="checktoggle"
-                            >checkbox</label
-                          >
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>7</td>
-                      <td>
-                        <h2 class="table-avatar">
-                          <a href="{{route('client-profile')}}" class="avatar"
-                            ><img
-                              src="assets/img/profiles/avatar-28.jpg"
-                              alt="User Image"
-                          /></a>
-                          <a href="{{route('client-profile')}}">Mercury Software Inc</a>
-                        </h2>
-                      </td>
-                      <td>Professional</td>
-                      <td>10</td>
-                      <td>1 Year</td>
-                      <td>15 Feb 2019</td>
-                      <td>14 Feb 2020</td>
-                      <td>Free</td>
-                      <td>
-                        <span class="badge bg-inverse-success">Active</span>
-                      </td>
-                      <td>
-                        <a
-                          class="btn btn-primary btn-sm"
-                          href="javascript:void(0);"
-                          data-bs-toggle="modal"
-                          data-bs-target="#upgrade_plan"
-                          >Change Plan</a
-                        >
-                      </td>
-                      <td>
-                        <div class="status-toggle">
-                          <input
-                            type="checkbox"
-                            id="company_status_7"
-                            class="check"
-                            checked
-                          />
-                          <label for="company_status_7" class="checktoggle"
-                            >checkbox</label
-                          >
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-
-          <div class="modal custom-modal fade" id="upgrade_plan" role="dialog">
-            <div class="modal-dialog modal-md modal-dialog-centered">
-              <div class="modal-content">
-                <button type="button" class="btn-close" data-bs-dismiss="modal">
-                  <i class="fa fa-close"></i>
-                </button>
-                <div class="modal-body">
-                  <h5 class="modal-title text-center mb-3">Upgrade Plan</h5>
-                  <form>
+            <div class="col-sm-12">
+              <form>
+                <div class="row">
+                  <div class="col-sm-6 col-md-3">
+                    <div class="input-block mb-3">
+                      <label class="col-form-label"
+                        >Client <span class="text-danger">*</span></label
+                      >
+                      <select class="select">
+                        <option>Please Select</option>
+                        <option selected>Barry Cuda</option>
+                        <option>Tressa Wexler</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3">
+                    <div class="input-block mb-3">
+                      <label class="col-form-label"
+                        >Project <span class="text-danger">*</span></label
+                      >
+                      <select class="select">
+                        <option>Select Project</option>
+                        <option selected>Office Management</option>
+                        <option>Project Management</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3">
+                    <div class="input-block mb-3">
+                      <label class="col-form-label">Email</label>
+                      <input class="form-control" type="email" />
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3">
+                    <div class="input-block mb-3">
+                      <label class="col-form-label">Tax</label>
+                      <select class="select">
+                        <option>Select Tax</option>
+                        <option>VAT</option>
+                        <option>GST</option>
+                        <option>No Tax</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3">
+                    <div class="input-block mb-3">
+                      <label class="col-form-label">Client Address</label>
+                      <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3">
+                    <div class="input-block mb-3">
+                      <label class="col-form-label">Billing Address</label>
+                      <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3">
+                    <div class="input-block mb-3">
+                      <label class="col-form-label"
+                        >Invoice date <span class="text-danger">*</span></label
+                      >
+                      <div class="cal-icon">
+                        <input
+                          class="form-control datetimepicker"
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3">
+                    <div class="input-block mb-3">
+                      <label class="col-form-label"
+                        >Due Date <span class="text-danger">*</span></label
+                      >
+                      <div class="cal-icon">
+                        <input
+                          class="form-control datetimepicker"
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 col-sm-12">
+                    <div class="table-responsive">
+                      <table
+                        class="table table-hover table-white"
+                        id="addTable"
+                      >
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th class="col-sm-2">Item</th>
+                            <th class="col-md-6">Description</th>
+                            <th>Unit Cost</th>
+                            <th>Qty</th>
+                            <th>Amount</th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody class="tbodyone">
+                          <tr>
+                            <td>1</td>
+                            <td>
+                              <input class="form-control" type="text" />
+                            </td>
+                            <td>
+                              <input class="form-control" type="text" />
+                            </td>
+                            <td>
+                              <input class="form-control" type="text" />
+                            </td>
+                            <td>
+                              <input class="form-control" type="text" />
+                            </td>
+                            <td>
+                              <input
+                                class="form-control"
+                                readonly
+                                type="text"
+                              />
+                            </td>
+                            <td>
+                              <a
+                                href="javascript:void(0)"
+                                class="text-success font-18"
+                                id="addProduct"
+                                title="Add"
+                                ><i class="fa-solid fa-plus"></i
+                              ></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>
+                              <input class="form-control" type="text" />
+                            </td>
+                            <td>
+                              <input class="form-control" type="text" />
+                            </td>
+                            <td>
+                              <input class="form-control" type="text" />
+                            </td>
+                            <td>
+                              <input class="form-control" type="text" />
+                            </td>
+                            <td>
+                              <input
+                                class="form-control"
+                                readonly
+                                type="text"
+                              />
+                            </td>
+                            <td>
+                              <a
+                                href="javascript:void(0)"
+                                class="text-danger font-18 remove"
+                                title="Remove"
+                                ><i class="fa-regular fa-trash-can"></i
+                              ></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="table-responsive">
+                      <table class="table table-hover table-white">
+                        <tbody>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="text-end">Total</td>
+                            <td class="text-end pe-4">0</td>
+                          </tr>
+                          <tr>
+                            <td colspan="5" class="text-end">Tax</td>
+                            <td class="text-end pr-4">
+                              <input
+                                class="form-control text-end"
+                                value="0"
+                                readonly
+                                type="text"
+                              />
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="5" class="text-end">Discount %</td>
+                            <td class="text-end pe-4">
+                              <input
+                                class="form-control text-end"
+                                type="text"
+                              />
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="5" class="text-end pe-4">
+                              <b>Grand Total</b>
+                            </td>
+                            <td class="text-end tdata-width pe-4">
+                              <b>$ 0.00</b>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                     <div class="row">
-                      <div class="col-md-6">
-                        <div class="input-block mb-3">
-                          <label class="col-form-label">Plan Name</label>
-                          <input
-                            type="text"
-                            placeholder="Free Trial"
-                            class="form-control"
-                            value="Free Trial"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="input-block mb-3">
-                          <label class="col-form-label">Amount</label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            value="$500"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="input-block mb-3">
-                          <label class="col-form-label">Plan Type</label>
-                          <select class="select">
-                            <option>Monthly</option>
-                            <option>Yearly</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="input-block mb-3">
-                          <label class="col-form-label">No of Users</label>
-                          <select class="select">
-                            <option>5 Users</option>
-                            <option>50 Users</option>
-                            <option>Unlimited</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="input-block mb-3">
-                          <label class="col-form-label">No of Projects</label>
-                          <select class="select">
-                            <option>5 Projects</option>
-                            <option>50 Projects</option>
-                            <option>Unlimited</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
+                      <div class="col-md-12">
                         <div class="input-block mb-3">
                           <label class="col-form-label"
-                            >No of Storage Space</label
+                            >Other Information</label
                           >
-                          <select class="select">
-                            <option>5 GB</option>
-                            <option>100 GB</option>
-                            <option>500 GB</option>
-                          </select>
+                          <textarea class="form-control"></textarea>
                         </div>
                       </div>
                     </div>
-                    <div class="input-block mb-3">
-                      <label class="col-form-label">Plan Description</label>
-                      <textarea
-                        class="form-control"
-                        rows="4"
-                        cols="30"
-                      ></textarea>
-                    </div>
-                    <div class="input-block mb-3">
-                      <label class="d-block col-form-label">Status</label>
-                      <div class="status-toggle">
-                        <input
-                          type="checkbox"
-                          id="upgrade_plan_status"
-                          class="check"
-                        />
-                        <label for="upgrade_plan_status" class="checktoggle"
-                          >checkbox</label
-                        >
-                      </div>
-                    </div>
-                    <div class="m-t-20 text-center">
-                      <button class="btn btn-primary submit-btn">Save</button>
-                    </div>
-                  </form>
+                  </div>
                 </div>
-              </div>
+                <div class="submit-section">
+                  <button class="btn btn-primary submit-btn m-r-10">
+                    Save & Send
+                  </button>
+                  <button class="btn btn-primary submit-btn">Save</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -1094,21 +864,19 @@
 <script src="{{ asset('assets/js/select2.min.js') }}"></script>
 <script src="{{ asset('assets/js/moment.min.js') }}"></script>
 <script src="{{ asset('assets/js/bootstrap-datetimepicker.min.js') }}"></script>
-<script src="{{ asset('assets/js/jquery.dataTables.min.js') }}"></script>
-<script src="{{ asset('assets/js/dataTables.bootstrap4.min.js') }}"></script>
 <script src="{{ asset('assets/js/feather.min.js') }}"></script>
 
-<!-- Custom Layout and Theme Scripts -->
+<!-- Template Scripts -->
 <script src="{{ asset('assets/js/layout.js') }}"></script>
 <script src="{{ asset('assets/js/theme-settings.js') }}"></script>
 <script src="{{ asset('assets/js/greedynav.js') }}"></script>
 <script src="{{ asset('assets/js/app.js') }}"></script>
 
-<!-- Optional: Cloudflare Rocket Loader -->
-<script src="{{ asset('cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js') }}"
-        data-cf-settings="752d5f30fdb089185c703da2-|49" defer></script>
+<!-- Cloudflare Rocket Loader (optional) -->
+<script src="{{ asset('../../../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js') }}"
+        data-cf-settings="4f79d0636dfd41b71bdd09e2-|49" defer></script>
 
   </body>
 
-  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/subscribed-companies by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:23:16 GMT -->
+  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/create-invoice by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:25:09 GMT -->
 </html>

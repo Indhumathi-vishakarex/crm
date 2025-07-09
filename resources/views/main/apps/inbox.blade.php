@@ -43,13 +43,13 @@
                 <h3 class="page-title">Inbox</h3>
                 <ul class="breadcrumb">
                   <li class="breadcrumb-item">
-                    <a href="admin-dashboard.html">Dashboard</a>
+                    <a href="{{route('admin-dashboard')}}">Dashboard</a>
                   </li>
                   <li class="breadcrumb-item active">Inbox</li>
                 </ul>
               </div>
               <div class="col-auto float-end ms-auto">
-                <a href="compose.html" class="btn add-btn"
+                <a href="{{route('compose')}}" class="btn add-btn"
                   ><i class="fa fa-plus"></i> Compose</a
                 >
               </div>
