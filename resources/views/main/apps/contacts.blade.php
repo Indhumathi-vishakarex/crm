@@ -109,7 +109,7 @@
                                                             <div class="contact-cont">
                                                                 <div class="float-start user-img">
                                                                     <a
-                                                                        href="contact-details.html"
+                                                                        href="{{route('contact-details')}}"
                                                                         class="avatar">
                                                                         <img
                                                                             class="rounded-circle"
@@ -150,7 +150,7 @@
                                                             <div class="contact-cont">
                                                                 <div class="float-start user-img">
                                                                     <a
-                                                                        href="contact-details.html"
+                                                                        href="{{route('contact-details')}}"
                                                                         class="avatar">
                                                                         <img
                                                                             class="rounded-circle"
@@ -191,7 +191,7 @@
                                                             <div class="contact-cont">
                                                                 <div class="float-start user-img">
                                                                     <a
-                                                                        href="contact-details.html"
+                                                                        href="{{route('contact-details')}}"
                                                                         class="avatar">
                                                                         <img
                                                                             class="rounded-circle"
@@ -232,7 +232,7 @@
                                                             <div class="contact-cont">
                                                                 <div class="float-start user-img">
                                                                     <a
-                                                                        href="contact-details.html"
+                                                                        href="{{route('contact-details')}}"
                                                                         class="avatar">
                                                                         <img
                                                                             class="rounded-circle"
@@ -273,7 +273,7 @@
                                                             <div class="contact-cont">
                                                                 <div class="float-start user-img">
                                                                     <a
-                                                                        href="contact-details.html"
+                                                                        href="{{route('contact-details')}}"
                                                                         class="avatar">
                                                                         <img
                                                                             class="rounded-circle"
@@ -314,7 +314,7 @@
                                                             <div class="contact-cont">
                                                                 <div class="float-start user-img">
                                                                     <a
-                                                                        href="contact-details.html"
+                                                                        href="{{route('contact-details')}}"
                                                                         class="avatar">
                                                                         <img
                                                                             class="rounded-circle"
@@ -355,7 +355,7 @@
                                                             <div class="contact-cont">
                                                                 <div class="float-start user-img">
                                                                     <a
-                                                                        href="contact-details.html"
+                                                                        href="{{route('contact-details')}}"
                                                                         class="avatar">
                                                                         <img
                                                                             class="rounded-circle"
@@ -396,7 +396,7 @@
                                                             <div class="contact-cont">
                                                                 <div class="float-start user-img">
                                                                     <a
-                                                                        href="contact-details.html"
+                                                                        href="{{route('contact-details')}}"
                                                                         class="avatar">
                                                                         <img
                                                                             class="rounded-circle"
@@ -437,7 +437,7 @@
                                                             <div class="contact-cont">
                                                                 <div class="float-start user-img">
                                                                     <a
-                                                                        href="contact-details.html"
+                                                                        href="{{route('contact-details')}}"
                                                                         class="avatar">
                                                                         <img
                                                                             class="rounded-circle"
@@ -478,7 +478,7 @@
                                                             <div class="contact-cont">
                                                                 <div class="float-start user-img">
                                                                     <a
-                                                                        href="contact-details.html"
+                                                                        href="{{route('contact-details')}}"
                                                                         class="avatar">
                                                                         <img
                                                                             class="rounded-circle"

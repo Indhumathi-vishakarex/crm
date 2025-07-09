@@ -45,7 +45,7 @@
               <h3 class="page-title">Project Reports</h3>
               <ul class="breadcrumb">
                 <li class="breadcrumb-item">
-                  <a href="admin-dashboard.html">Dashboard</a>
+                  <a href="{{ route('admin-dashboard') }}">Dashboard</a>
                 </li>
                 <li class="breadcrumb-item active">Project Reports</li>
               </ul>
@@ -96,14 +96,14 @@
                   <tr>
                     <td>1</td>
                     <td>
-                      <a href="project-view.html">Hospital Administration</a>
+                      <a href="{{ route('project-view') }}">Hospital Administration</a>
                     </td>
                     <td>
                       <h2 class="table-avatar">
-                        <a href="client-profile.html" class="avatar"><img
+                        <a href="{{route('client-profile')}}" class="avatar"><img
                             src="assets/img/profiles/avatar-19.jpg"
                             alt="User Image" /></a>
-                        <a href="client-profile.html">Global Technologies</a>
+                        <a href="{{route('client-profile')}}">Global Technologies</a>
                       </h2>
                     </td>
                     <td>9 Jan 2021</td>
@@ -163,14 +163,14 @@
                   <tr>
                     <td>2</td>
                     <td>
-                      <a href="project-view.html">Office Management</a>
+                      <a href="{{ route('project-view') }}">Office Management</a>
                     </td>
                     <td>
                       <h2 class="table-avatar">
-                        <a href="client-profile.html" class="avatar"><img
+                        <a href="{{route('client-profile')}}" class="avatar"><img
                             src="assets/img/profiles/avatar-29.jpg"
                             alt="User Image" /></a>
-                        <a href="client-profile.html">Delta Infotech</a>
+                        <a href="{{route('client-profile')}}">Delta Infotech</a>
                       </h2>
                     </td>
                     <td>10 Dec 2021</td>

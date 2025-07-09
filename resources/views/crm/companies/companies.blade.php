@@ -3003,7 +3003,7 @@
                         data-bs-dismiss="modal"
                         >Not Now</a
                       >
-                      <a href="companies.html" class="btn btn-primary">Okay</a>
+                      <a href="{{route('companies')}}" class="btn btn-primary">Okay</a>
                     </div>
                   </div>
                 </div>

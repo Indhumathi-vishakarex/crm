@@ -116,13 +116,13 @@
                       <td>Amazon</td>
                       <td>5 Jan 2019</td>
                       <td>
-                        <a href="profile.html" class="avatar avatar-xs">
+                        <a href="{{route('profile')}}" class="avatar avatar-xs">
                           <img
                             src="assets/img/profiles/avatar-04.jpg"
                             alt="User Image"
                           />
                         </a>
-                        <h2><a href="profile.html">Loren Gatlin</a></h2>
+                        <h2><a href="{{route('profile')}}">Loren Gatlin</a></h2>
                       </td>
                       <td>$ 1215</td>
                       <td>Cash</td>
@@ -181,13 +181,13 @@
                       <td>Amazon</td>
                       <td>5 Jan 2019</td>
                       <td>
-                        <a href="profile.html" class="avatar avatar-xs">
+                        <a href="{{route('profile')}}" class="avatar avatar-xs">
                           <img
                             src="assets/img/profiles/avatar-03.jpg"
                             alt="User Image"
                           />
                         </a>
-                        <h2><a href="profile.html">Tarah Shropshire</a></h2>
+                        <h2><a href="{{route('profile')}}">Tarah Shropshire</a></h2>
                       </td>
                       <td>$ 1215</td>
                       <td>Cheque</td>

@@ -301,7 +301,7 @@
                                         class="badge bg-inverse-danger ms-2">5</span></h4>
                                 <div class="leave-info-box">
                                     <div class="media d-flex align-items-center">
-                                        <a href="profile.html" class="avatar"><img alt src="assets/img/user.jpg"></a>
+                                        <a href="{{route('profile')}}" class="avatar"><img alt src="assets/img/user.jpg"></a>
                                         <div class="media-body flex-grow-1">
                                             <div class="text-sm my-0">Martin Lewis</div>
                                         </div>
@@ -318,7 +318,7 @@
                                 </div>
                                 <div class="leave-info-box">
                                     <div class="media d-flex align-items-center">
-                                        <a href="profile.html" class="avatar"><img alt src="assets/img/user.jpg"></a>
+                                        <a href="{{route('profile')}}" class="avatar"><img alt src="assets/img/user.jpg"></a>
                                         <div class="media-body flex-grow-1">
                                             <div class="text-sm my-0">Martin Lewis</div>
                                         </div>
@@ -361,7 +361,7 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td><a href="invoice-view.html">#INV-0001</a></td>
+                                                <td><a href="{{route('invoice-view')}}">#INV-0001</a></td>
                                                 <td>
                                                     <h2><a href="#">Global Technologies</a></h2>
                                                 </td>
@@ -372,7 +372,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a href="invoice-view.html">#INV-0002</a></td>
+                                                <td><a href="{{route('invoice-view')}}">#INV-0002</a></td>
                                                 <td>
                                                     <h2><a href="#">Delta Infotech</a></h2>
                                                 </td>
@@ -383,7 +383,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a href="invoice-view.html">#INV-0003</a></td>
+                                                <td><a href="{{route('invoice-view')}}">#INV-0003</a></td>
                                                 <td>
                                                     <h2><a href="#">Cream Inc</a></h2>
                                                 </td>
@@ -421,7 +421,7 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td><a href="invoice-view.html">#INV-0001</a></td>
+                                                <td><a href="{{route('invoice-view')}}">#INV-0001</a></td>
                                                 <td>
                                                     <h2><a href="#">Global Technologies</a></h2>
                                                 </td>
@@ -430,7 +430,7 @@
                                                 <td>$380</td>
                                             </tr>
                                             <tr>
-                                                <td><a href="invoice-view.html">#INV-0002</a></td>
+                                                <td><a href="{{route('invoice-view')}}">#INV-0002</a></td>
                                                 <td>
                                                     <h2><a href="#">Delta Infotech</a></h2>
                                                 </td>
@@ -439,7 +439,7 @@
                                                 <td>$500</td>
                                             </tr>
                                             <tr>
-                                                <td><a href="invoice-view.html">#INV-0003</a></td>
+                                                <td><a href="{{route('invoice-view')}}">#INV-0003</a></td>
                                                 <td>
                                                     <h2><a href="#">Cream Inc</a></h2>
                                                 </td>
@@ -481,7 +481,7 @@
                                                         <a href="#" class="avatar"><img
                                                                 src="assets/img/profiles/avatar-19.jpg"
                                                                 alt="User Image"></a>
-                                                        <a href="client-profile.html">Barry Cuda <span>CEO</span></a>
+                                                        <a href="{{route('client-profile')}}">Barry Cuda <span>CEO</span></a>
                                                     </h2>
                                                 </td>
                                                 <td><a href="https://smarthr.dreamstechnologies.com/cdn-cgi/l/email-protection"
@@ -527,7 +527,7 @@
                                                         <a href="#" class="avatar"><img
                                                                 src="assets/img/profiles/avatar-19.jpg"
                                                                 alt="User Image"></a>
-                                                        <a href="client-profile.html">Tressa Wexler
+                                                        <a href="{{route('client-profile')}}">Tressa Wexler
                                                             <span>Manager</span></a>
                                                     </h2>
                                                 </td>
@@ -571,10 +571,10 @@
                                             <tr>
                                                 <td>
                                                     <h2 class="table-avatar">
-                                                        <a href="client-profile.html" class="avatar"><img
+                                                        <a href="{{route('client-profile')}}" class="avatar"><img
                                                                 src="assets/img/profiles/avatar-07.jpg"
                                                                 alt="User Image"></a>
-                                                        <a href="client-profile.html">Ruby Bartlett
+                                                        <a href="{{route('client-profile')}}">Ruby Bartlett
                                                             <span>CEO</span></a>
                                                     </h2>
                                                 </td>
@@ -618,10 +618,10 @@
                                             <tr>
                                                 <td>
                                                     <h2 class="table-avatar">
-                                                        <a href="client-profile.html" class="avatar"><img
+                                                        <a href="{{route('client-profile')}}" class="avatar"><img
                                                                 src="assets/img/profiles/avatar-06.jpg"
                                                                 alt="User Image"></a>
-                                                        <a href="client-profile.html"> Misty Tison
+                                                        <a href="{{route('client-profile')}}"> Misty Tison
                                                             <span>CEO</span></a>
                                                     </h2>
                                                 </td>
@@ -665,10 +665,10 @@
                                             <tr>
                                                 <td>
                                                     <h2 class="table-avatar">
-                                                        <a href="client-profile.html" class="avatar"><img
+                                                        <a href="{{route('client-profile')}}" class="avatar"><img
                                                                 src="assets/img/profiles/avatar-14.jpg"
                                                                 alt="User Image"></a>
-                                                        <a href="client-profile.html"> Daniel Deacon
+                                                        <a href="{{route('client-profile')}}"> Daniel Deacon
                                                             <span>CEO</span></a>
                                                     </h2>
                                                 </td>
@@ -736,7 +736,7 @@
                                         <tbody>
                                             <tr>
                                                 <td>
-                                                    <h2><a href="project-view.html">Office Management</a></h2>
+                                                    <h2><a href="{{route('project-view')}}">Office Management</a></h2>
                                                     <small class="block text-ellipsis">
                                                         <span>1</span> <span class="text-muted">open tasks, </span>
                                                         <span>9</span> <span class="text-muted">tasks completed</span>
@@ -766,7 +766,7 @@
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <h2><a href="project-view.html">Project Management</a></h2>
+                                                    <h2><a href="{{route('project-view')}}">Project Management</a></h2>
                                                     <small class="block text-ellipsis">
                                                         <span>2</span> <span class="text-muted">open tasks, </span>
                                                         <span>5</span> <span class="text-muted">tasks completed</span>
@@ -796,7 +796,7 @@
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <h2><a href="project-view.html">Video Calling App</a></h2>
+                                                    <h2><a href="{{route('project-view')}}">Video Calling App</a></h2>
                                                     <small class="block text-ellipsis">
                                                         <span>3</span> <span class="text-muted">open tasks, </span>
                                                         <span>3</span> <span class="text-muted">tasks completed</span>
@@ -826,7 +826,7 @@
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <h2><a href="project-view.html">Hospital Administration</a></h2>
+                                                    <h2><a href="{{route('project-view')}}">Hospital Administration</a></h2>
                                                     <small class="block text-ellipsis">
                                                         <span>12</span> <span class="text-muted">open tasks, </span>
                                                         <span>4</span> <span class="text-muted">tasks completed</span>
@@ -856,7 +856,7 @@
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <h2><a href="project-view.html">Digital Marketplace</a></h2>
+                                                    <h2><a href="{{route('project-view')}}">Digital Marketplace</a></h2>
                                                     <small class="block text-ellipsis">
                                                         <span>7</span> <span class="text-muted">open tasks, </span>
                                                         <span>14</span> <span class="text-muted">tasks
