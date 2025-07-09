@@ -135,7 +135,7 @@
             <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
               <div class="profile-widget">
                 <div class="profile-img">
-                  <a href="profile.html" class="avatar"
+                  <a href="{{route('profile')}}" class="avatar"
                     ><img src="assets/img/profiles/avatar-02.jpg" alt
                   /></a>
                 </div>
@@ -165,7 +165,7 @@
                   </div>
                 </div>
                 <h4 class="user-name m-t-10 mb-0 text-ellipsis">
-                  <a href="profile.html">John Doe</a>
+                  <a href="{{route('profile')}}">John Doe</a>
                 </h4>
                 <div class="small text-muted">Web Designer</div>
               </div>
@@ -173,7 +173,7 @@
             <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
               <div class="profile-widget">
                 <div class="profile-img">
-                  <a href="profile.html" class="avatar"
+                  <a href="{{route('profile')}}" class="avatar"
                     ><img src="assets/img/profiles/avatar-09.jpg" alt
                   /></a>
                 </div>
@@ -203,7 +203,7 @@
                   </div>
                 </div>
                 <h4 class="user-name m-t-10 mb-0 text-ellipsis">
-                  <a href="profile.html">Richard Miles</a>
+                  <a href="{{route('profile')}}">Richard Miles</a>
                 </h4>
                 <div class="small text-muted">Web Developer</div>
               </div>
@@ -211,7 +211,7 @@
             <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
               <div class="profile-widget">
                 <div class="profile-img">
-                  <a href="profile.html" class="avatar"
+                  <a href="{{route('profile')}}" class="avatar"
                     ><img src="assets/img/profiles/avatar-10.jpg" alt
                   /></a>
                 </div>
@@ -241,7 +241,7 @@
                   </div>
                 </div>
                 <h4 class="user-name m-t-10 mb-0 text-ellipsis">
-                  <a href="profile.html">John Smith</a>
+                  <a href="{{route('profile')}}">John Smith</a>
                 </h4>
                 <div class="small text-muted">Android Developer</div>
               </div>
@@ -249,7 +249,7 @@
             <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
               <div class="profile-widget">
                 <div class="profile-img">
-                  <a href="profile.html" class="avatar"
+                  <a href="{{route('profile')}}" class="avatar"
                     ><img src="assets/img/profiles/avatar-05.jpg" alt
                   /></a>
                 </div>
@@ -279,7 +279,7 @@
                   </div>
                 </div>
                 <h4 class="user-name m-t-10 mb-0 text-ellipsis">
-                  <a href="profile.html">Mike Litorus</a>
+                  <a href="{{route('profile')}}">Mike Litorus</a>
                 </h4>
                 <div class="small text-muted">IOS Developer</div>
               </div>
@@ -287,7 +287,7 @@
             <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
               <div class="profile-widget">
                 <div class="profile-img">
-                  <a href="profile.html" class="avatar"
+                  <a href="{{route('profile')}}" class="avatar"
                     ><img src="assets/img/profiles/avatar-11.jpg" alt
                   /></a>
                 </div>
@@ -317,7 +317,7 @@
                   </div>
                 </div>
                 <h4 class="user-name m-t-10 mb-0 text-ellipsis">
-                  <a href="profile.html">Wilmer Deluna</a>
+                  <a href="{{route('profile')}}">Wilmer Deluna</a>
                 </h4>
                 <div class="small text-muted">Team Leader</div>
               </div>
@@ -325,7 +325,7 @@
             <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
               <div class="profile-widget">
                 <div class="profile-img">
-                  <a href="profile.html" class="avatar"
+                  <a href="{{route('profile')}}" class="avatar"
                     ><img src="assets/img/profiles/avatar-12.jpg" alt
                   /></a>
                 </div>
@@ -355,7 +355,7 @@
                   </div>
                 </div>
                 <h4 class="user-name m-t-10 mb-0 text-ellipsis">
-                  <a href="profile.html">Jeffrey Warden</a>
+                  <a href="{{route('profile')}}">Jeffrey Warden</a>
                 </h4>
                 <div class="small text-muted">Web Developer</div>
               </div>
@@ -363,7 +363,7 @@
             <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
               <div class="profile-widget">
                 <div class="profile-img">
-                  <a href="profile.html" class="avatar"
+                  <a href="{{route('profile')}}" class="avatar"
                     ><img src="assets/img/profiles/avatar-13.jpg" alt
                   /></a>
                 </div>
@@ -393,7 +393,7 @@
                   </div>
                 </div>
                 <h4 class="user-name m-t-10 mb-0 text-ellipsis">
-                  <a href="profile.html">Bernardo Galaviz</a>
+                  <a href="{{route('profile')}}">Bernardo Galaviz</a>
                 </h4>
                 <div class="small text-muted">Web Developer</div>
               </div>
@@ -401,7 +401,7 @@
             <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
               <div class="profile-widget">
                 <div class="profile-img">
-                  <a href="profile.html" class="avatar"
+                  <a href="{{route('profile')}}" class="avatar"
                     ><img src="assets/img/profiles/avatar-01.jpg" alt
                   /></a>
                 </div>
@@ -431,7 +431,7 @@
                   </div>
                 </div>
                 <h4 class="user-name m-t-10 mb-0 text-ellipsis">
-                  <a href="profile.html">Lesley Grauer</a>
+                  <a href="{{route('profile')}}">Lesley Grauer</a>
                 </h4>
                 <div class="small text-muted">Team Leader</div>
               </div>
@@ -439,7 +439,7 @@
             <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
               <div class="profile-widget">
                 <div class="profile-img">
-                  <a href="profile.html" class="avatar"
+                  <a href="{{route('profile')}}" class="avatar"
                     ><img src="assets/img/profiles/avatar-16.jpg" alt
                   /></a>
                 </div>
@@ -469,7 +469,7 @@
                   </div>
                 </div>
                 <h4 class="user-name m-t-10 mb-0 text-ellipsis">
-                  <a href="profile.html">Jeffery Lalor</a>
+                  <a href="{{route('profile')}}">Jeffery Lalor</a>
                 </h4>
                 <div class="small text-muted">Team Leader</div>
               </div>
@@ -477,7 +477,7 @@
             <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
               <div class="profile-widget">
                 <div class="profile-img">
-                  <a href="profile.html" class="avatar"
+                  <a href="{{route('profile')}}" class="avatar"
                     ><img src="assets/img/profiles/avatar-04.jpg" alt
                   /></a>
                 </div>
@@ -507,7 +507,7 @@
                   </div>
                 </div>
                 <h4 class="user-name m-t-10 mb-0 text-ellipsis">
-                  <a href="profile.html">Loren Gatlin</a>
+                  <a href="{{route('profile')}}">Loren Gatlin</a>
                 </h4>
                 <div class="small text-muted">Android Developer</div>
               </div>
@@ -515,7 +515,7 @@
             <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
               <div class="profile-widget">
                 <div class="profile-img">
-                  <a href="profile.html" class="avatar"
+                  <a href="{{route('profile')}}" class="avatar"
                     ><img src="assets/img/profiles/avatar-03.jpg" alt
                   /></a>
                 </div>
@@ -545,7 +545,7 @@
                   </div>
                 </div>
                 <h4 class="user-name m-t-10 mb-0 text-ellipsis">
-                  <a href="profile.html">Tarah Shropshire</a>
+                  <a href="{{route('profile')}}">Tarah Shropshire</a>
                 </h4>
                 <div class="small text-muted">Android Developer</div>
               </div>
@@ -553,7 +553,7 @@
             <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
               <div class="profile-widget">
                 <div class="profile-img">
-                  <a href="profile.html" class="avatar"
+                  <a href="{{route('profile')}}" class="avatar"
                     ><img src="assets/img/profiles/avatar-08.jpg" alt
                   /></a>
                 </div>
@@ -583,7 +583,7 @@
                   </div>
                 </div>
                 <h4 class="user-name m-t-10 mb-0 text-ellipsis">
-                  <a href="profile.html">Catherine Manseau</a>
+                  <a href="{{route('profile')}}">Catherine Manseau</a>
                 </h4>
                 <div class="small text-muted">Android Developer</div>
               </div>

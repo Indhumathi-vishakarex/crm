@@ -159,10 +159,10 @@
                     <tr>
                       <td>
                         <h2 class="table-avatar">
-                          <a class="avatar avatar-xs" href="profile.html"
+                          <a class="avatar avatar-xs" href="{{route('profile')}}"
                             ><img alt src="assets/img/profiles/avatar-09.jpg"
                           /></a>
-                          <a href="profile.html">John Doe</a>
+                          <a href="{{route('profile')}}">John Doe</a>
                         </h2>
                       </td>
                       <td>
@@ -379,10 +379,10 @@
                     <tr>
                       <td>
                         <h2 class="table-avatar">
-                          <a class="avatar avatar-xs" href="profile.html"
+                          <a class="avatar avatar-xs" href="{{route('profile')}}"
                             ><img alt src="assets/img/profiles/avatar-09.jpg"
                           /></a>
-                          <a href="profile.html">Richard Miles</a>
+                          <a href="{{route('profile')}}">Richard Miles</a>
                         </h2>
                       </td>
                       <td>
@@ -587,10 +587,10 @@
                     <tr>
                       <td>
                         <h2 class="table-avatar">
-                          <a class="avatar avatar-xs" href="profile.html"
+                          <a class="avatar avatar-xs" href="{{route('profile')}}"
                             ><img alt src="assets/img/profiles/avatar-10.jpg"
                           /></a>
-                          <a href="profile.html">John Smith</a>
+                          <a href="{{route('profile')}}">John Smith</a>
                         </h2>
                       </td>
                       <td>
@@ -795,10 +795,10 @@
                     <tr>
                       <td>
                         <h2 class="table-avatar">
-                          <a class="avatar avatar-xs" href="profile.html"
+                          <a class="avatar avatar-xs" href="{{route('profile')}}"
                             ><img alt src="assets/img/profiles/avatar-05.jpg"
                           /></a>
-                          <a href="profile.html">Mike Litorus</a>
+                          <a href="{{route('profile')}}">Mike Litorus</a>
                         </h2>
                       </td>
                       <td>
@@ -1003,10 +1003,10 @@
                     <tr>
                       <td>
                         <h2 class="table-avatar">
-                          <a class="avatar avatar-xs" href="profile.html"
+                          <a class="avatar avatar-xs" href="{{route('profile')}}"
                             ><img alt src="assets/img/profiles/avatar-11.jpg"
                           /></a>
-                          <a href="profile.html">Wilmer Deluna</a>
+                          <a href="{{route('profile')}}">Wilmer Deluna</a>
                         </h2>
                       </td>
                       <td>
@@ -1211,10 +1211,10 @@
                     <tr>
                       <td>
                         <h2 class="table-avatar">
-                          <a class="avatar avatar-xs" href="profile.html"
+                          <a class="avatar avatar-xs" href="{{route('profile')}}"
                             ><img alt src="assets/img/profiles/avatar-12.jpg"
                           /></a>
-                          <a href="profile.html">Jeffrey Warden</a>
+                          <a href="{{route('profile')}}">Jeffrey Warden</a>
                         </h2>
                       </td>
                       <td>
@@ -1419,10 +1419,10 @@
                     <tr>
                       <td>
                         <h2 class="table-avatar">
-                          <a class="avatar avatar-xs" href="profile.html"
+                          <a class="avatar avatar-xs" href="{{route('profile')}}"
                             ><img alt src="assets/img/profiles/avatar-13.jpg"
                           /></a>
-                          <a href="profile.html">Bernardo Galaviz</a>
+                          <a href="{{route('profile')}}">Bernardo Galaviz</a>
                         </h2>
                       </td>
                       <td>
@@ -1627,10 +1627,10 @@
                     <tr>
                       <td>
                         <h2 class="table-avatar">
-                          <a class="avatar avatar-xs" href="profile.html"
+                          <a class="avatar avatar-xs" href="{{route('profile')}}"
                             ><img alt src="assets/img/profiles/avatar-01.jpg"
                           /></a>
-                          <a href="profile.html">Lesley Grauer</a>
+                          <a href="{{route('profile')}}">Lesley Grauer</a>
                         </h2>
                       </td>
                       <td>
@@ -1835,10 +1835,10 @@
                     <tr>
                       <td>
                         <h2 class="table-avatar">
-                          <a class="avatar avatar-xs" href="profile.html"
+                          <a class="avatar avatar-xs" href="{{route('profile')}}"
                             ><img alt src="assets/img/profiles/avatar-16.jpg"
                           /></a>
-                          <a href="profile.html">Jeffery Lalor</a>
+                          <a href="{{route('profile')}}">Jeffery Lalor</a>
                         </h2>
                       </td>
                       <td>
@@ -2043,10 +2043,10 @@
                     <tr>
                       <td>
                         <h2 class="table-avatar">
-                          <a class="avatar avatar-xs" href="profile.html"
+                          <a class="avatar avatar-xs" href="{{route('profile')}}"
                             ><img alt src="assets/img/profiles/avatar-04.jpg"
                           /></a>
-                          <a href="profile.html">Loren Gatlin</a>
+                          <a href="{{route('profile')}}">Loren Gatlin</a>
                         </h2>
                       </td>
                       <td>

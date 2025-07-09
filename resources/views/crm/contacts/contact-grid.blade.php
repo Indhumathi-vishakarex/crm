@@ -61,7 +61,7 @@
                 <h3 class="page-title">Contact</h3>
                 <ul class="breadcrumb">
                   <li class="breadcrumb-item">
-                    <a href="admin-dashboard.html">Dashboard</a>
+                    <a href="{{route('admin-dashboard')}}">Dashboard</a>
                   </li>
                   <li class="breadcrumb-item active">Contact</li>
                 </ul>
@@ -159,11 +159,11 @@
             <ul>
               <li>
                 <div class="view-icons">
-                  <a href="contact-list.html" class="list-view btn btn-link"
+                  <a href="{{route('contact-list')}}" class="list-view btn btn-link"
                     ><i class="las la-list"></i
                   ></a>
                   <a
-                    href="contact-grid.html"
+                    href="{{route('contact-grid')}}"
                     class="grid-view btn btn-link active"
                     ><i class="las la-th"></i
                   ></a>
@@ -482,7 +482,7 @@
                       <img src="assets/img/avatar/avatar-19.jpg" alt="Img" />
                     </a>
                     <h5 class="name-user">
-                      <a href="contact-details.html">Darlee Robertson</a>
+                      <a href="{{route('contact-details')}}">Darlee Robertson</a>
                       <span>Facility Manager</span>
                     </h5>
                   </div>
@@ -509,7 +509,7 @@
                         data-bs-target="#delete_contact"
                         ><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a
                       >
-                      <a class="dropdown-item" href="contact-details.html"
+                      <a class="dropdown-item" href="{{route('contact-details')}}"
                         ><i class="fa-regular fa-eye"></i> Preview</a
                       >
                       <a
@@ -575,7 +575,7 @@
                       <img src="assets/img/avatar/avatar-20.jpg" alt="Img" />
                     </a>
                     <h5 class="name-user">
-                      <a href="contact-details.html">Sharon Roy</a>
+                      <a href="{{route('contact-details')}}">Sharon Roy</a>
                       <span>Installer</span>
                     </h5>
                   </div>
@@ -602,7 +602,7 @@
                         data-bs-target="#delete_contact"
                         ><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a
                       >
-                      <a class="dropdown-item" href="contact-details.html"
+                      <a class="dropdown-item" href="{{route('contact-details')}}"
                         ><i class="fa-regular fa-eye"></i> Preview</a
                       >
                       <a
@@ -667,7 +667,7 @@
                       <img src="assets/img/avatar/avatar-21.jpg" alt="Img" />
                     </a>
                     <h5 class="name-user">
-                      <a href="contact-details.html">Vaughan</a>
+                      <a href="{{route('contact-details')}}">Vaughan</a>
                       <span>Senior Manager</span>
                     </h5>
                   </div>
@@ -694,7 +694,7 @@
                         data-bs-target="#delete_contact"
                         ><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a
                       >
-                      <a class="dropdown-item" href="contact-details.html"
+                      <a class="dropdown-item" href="{{route('contact-details')}}"
                         ><i class="fa-regular fa-eye"></i> Preview</a
                       >
                       <a
@@ -759,7 +759,7 @@
                       <img src="assets/img/avatar/avatar-1.jpg" alt="Img" />
                     </a>
                     <h5 class="name-user">
-                      <a href="contact-details.html">Jessica</a>
+                      <a href="{{route('contact-details')}}">Jessica</a>
                       <span>Test Engineer</span>
                     </h5>
                   </div>
@@ -786,7 +786,7 @@
                         data-bs-target="#delete_contact"
                         ><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a
                       >
-                      <a class="dropdown-item" href="contact-details.html"
+                      <a class="dropdown-item" href="{{route('contact-details')}}"
                         ><i class="fa-regular fa-eye"></i> Preview</a
                       >
                       <a
@@ -851,7 +851,7 @@
                       <img src="assets/img/avatar/avatar-16.jpg" alt="Img" />
                     </a>
                     <h5 class="name-user">
-                      <a href="contact-details.html">Carol Thomas</a>
+                      <a href="{{route('contact-details')}}">Carol Thomas</a>
                       <span>UI /UX Designer</span>
                     </h5>
                   </div>
@@ -878,7 +878,7 @@
                         data-bs-target="#delete_contact"
                         ><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a
                       >
-                      <a class="dropdown-item" href="contact-details.html"
+                      <a class="dropdown-item" href="{{route('contact-details')}}"
                         ><i class="fa-regular fa-eye"></i> Preview</a
                       >
                       <a
@@ -943,7 +943,7 @@
                       <img src="assets/img/avatar/avatar-22.jpg" alt="Img" />
                     </a>
                     <h5 class="name-user">
-                      <a href="contact-details.html">Dawn Mercha</a>
+                      <a href="{{route('contact-details')}}">Dawn Mercha</a>
                       <span>Technician</span>
                     </h5>
                   </div>
@@ -970,7 +970,7 @@
                         data-bs-target="#delete_contact"
                         ><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a
                       >
-                      <a class="dropdown-item" href="contact-details.html"
+                      <a class="dropdown-item" href="{{route('contact-details')}}"
                         ><i class="fa-regular fa-eye"></i> Preview</a
                       >
                       <a
@@ -1035,7 +1035,7 @@
                       <img src="assets/img/avatar/avatar-23.jpg" alt="Img" />
                     </a>
                     <h5 class="name-user">
-                      <a href="contact-details.html">Rachel Hampton</a>
+                      <a href="{{route('contact-details')}}">Rachel Hampton</a>
                       <span>Software Developer</span>
                     </h5>
                   </div>
@@ -1062,7 +1062,7 @@
                         data-bs-target="#delete_contact"
                         ><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a
                       >
-                      <a class="dropdown-item" href="contact-details.html"
+                      <a class="dropdown-item" href="{{route('contact-details')}}"
                         ><i class="fa-regular fa-eye"></i> Preview</a
                       >
                       <a
@@ -1128,7 +1128,7 @@
                       <img src="assets/img/avatar/avatar-24.jpg" alt="Img" />
                     </a>
                     <h5 class="name-user">
-                      <a href="contact-details.html">Jonelle Curtiss</a>
+                      <a href="{{route('contact-details')}}">Jonelle Curtiss</a>
                       <span>Supervisor</span>
                     </h5>
                   </div>
@@ -1155,7 +1155,7 @@
                         data-bs-target="#delete_contact"
                         ><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a
                       >
-                      <a class="dropdown-item" href="contact-details.html"
+                      <a class="dropdown-item" href="{{route('contact-details')}}"
                         ><i class="fa-regular fa-eye"></i> Preview</a
                       >
                       <a
@@ -2760,7 +2760,7 @@
                         data-bs-dismiss="modal"
                         >Close</a
                       >
-                      <a href="contact-details.html" class="btn btn-primary"
+                      <a href="{{route('contact-details')}}" class="btn btn-primary"
                         >View Details</a
                       >
                     </div>
@@ -2791,7 +2791,7 @@
                         data-bs-dismiss="modal"
                         >Not Now</a
                       >
-                      <a href="contact-grid.html" class="btn btn-primary"
+                      <a href="{{route('contact-grid')}}" class="btn btn-primary"
                         >Okay</a
                       >
                     </div>

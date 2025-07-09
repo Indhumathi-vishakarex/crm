@@ -85,9 +85,9 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img
+                                                <a href="{{route('profile')}}" class="avatar"><img
                                                         src="assets/img/profiles/avatar-02.jpg" alt="User Image"></a>
-                                                <a href="profile.html">John Doe <span>Web Designer</span></a>
+                                                <a href="{{route('profile')}}">John Doe <span>Web Designer</span></a>
                                             </h2>
                                         </td>
                                         <td>8 Mar 2019</td>
@@ -119,9 +119,9 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img
+                                                <a href="{{route('profile')}}" class="avatar"><img
                                                         src="assets/img/profiles/avatar-09.jpg" alt="User Image"></a>
-                                                <a href="profile.html">Richard Miles <span>Web Developer</span></a>
+                                                <a href="{{route('profile')}}">Richard Miles <span>Web Developer</span></a>
                                             </h2>
                                         </td>
                                         <td>8 Mar 2019</td>
@@ -153,9 +153,9 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img
+                                                <a href="{{route('profile')}}" class="avatar"><img
                                                         src="assets/img/profiles/avatar-10.jpg" alt="User Image"></a>
-                                                <a href="profile.html">John Smith <span>Android Developer</span></a>
+                                                <a href="{{route('profile')}}">John Smith <span>Android Developer</span></a>
                                             </h2>
                                         </td>
                                         <td>8 Mar 2019</td>
@@ -187,9 +187,9 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img
+                                                <a href="{{route('profile')}}" class="avatar"><img
                                                         src="assets/img/profiles/avatar-05.jpg" alt="User Image"></a>
-                                                <a href="profile.html">Mike Litorus <span>IOS Developer</span></a>
+                                                <a href="{{route('profile')}}">Mike Litorus <span>IOS Developer</span></a>
                                             </h2>
                                         </td>
                                         <td>8 Mar 2019</td>
@@ -221,9 +221,9 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img
+                                                <a href="{{route('profile')}}" class="avatar"><img
                                                         src="assets/img/profiles/avatar-11.jpg" alt="User Image"></a>
-                                                <a href="profile.html">Wilmer Deluna <span>Team Leader</span></a>
+                                                <a href="{{route('profile')}}">Wilmer Deluna <span>Team Leader</span></a>
                                             </h2>
                                         </td>
                                         <td>8 Mar 2019</td>
@@ -255,9 +255,9 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img
+                                                <a href="{{route('profile')}}" class="avatar"><img
                                                         src="assets/img/profiles/avatar-12.jpg" alt="User Image"></a>
-                                                <a href="profile.html">Jeffrey Warden <span>Web Developer</span></a>
+                                                <a href="{{route('profile')}}">Jeffrey Warden <span>Web Developer</span></a>
                                             </h2>
                                         </td>
                                         <td>8 Mar 2019</td>
@@ -289,9 +289,9 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img
+                                                <a href="{{route('profile')}}" class="avatar"><img
                                                         src="assets/img/profiles/avatar-13.jpg" alt="User Image"></a>
-                                                <a href="profile.html">Bernardo Galaviz <span>Web Developer</span></a>
+                                                <a href="{{route('profile')}}">Bernardo Galaviz <span>Web Developer</span></a>
                                             </h2>
                                         </td>
                                         <td>8 Mar 2019</td>
@@ -323,9 +323,9 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img
+                                                <a href="{{route('profile')}}" class="avatar"><img
                                                         src="assets/img/profiles/avatar-01.jpg" alt="User Image"></a>
-                                                <a href="profile.html">Lesley Grauer <span>Team Leader</span></a>
+                                                <a href="{{route('profile')}}">Lesley Grauer <span>Team Leader</span></a>
                                             </h2>
                                         </td>
                                         <td>8 Mar 2019</td>
@@ -357,9 +357,9 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img
+                                                <a href="{{route('profile')}}" class="avatar"><img
                                                         src="assets/img/profiles/avatar-16.jpg" alt="User Image"></a>
-                                                <a href="profile.html">Jeffery Lalor <span>Team Leader</span></a>
+                                                <a href="{{route('profile')}}">Jeffery Lalor <span>Team Leader</span></a>
                                             </h2>
                                         </td>
                                         <td>8 Mar 2019</td>
@@ -391,10 +391,10 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img
+                                                <a href="{{route('profile')}}" class="avatar"><img
                                                         src="assets/img/profiles/avatar-04.jpg"
                                                         alt="User Image"></a>
-                                                <a href="profile.html">Loren Gatlin <span>Android Developer</span></a>
+                                                <a href="{{route('profile')}}">Loren Gatlin <span>Android Developer</span></a>
                                             </h2>
                                         </td>
                                         <td>8 Mar 2019</td>
@@ -426,10 +426,10 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img
+                                                <a href="{{route('profile')}}" class="avatar"><img
                                                         src="assets/img/profiles/avatar-03.jpg"
                                                         alt="User Image"></a>
-                                                <a href="profile.html">Tarah Shropshire <span>Android
+                                                <a href="{{route('profile')}}">Tarah Shropshire <span>Android
                                                         Developer</span></a>
                                             </h2>
                                         </td>
@@ -462,10 +462,10 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img
+                                                <a href="{{route('profile')}}" class="avatar"><img
                                                         src="assets/img/profiles/avatar-08.jpg"
                                                         alt="User Image"></a>
-                                                <a href="profile.html">Catherine Manseau <span>Android
+                                                <a href="{{route('profile')}}">Catherine Manseau <span>Android
                                                         Developer</span></a>
                                             </h2>
                                         </td>

@@ -88,9 +88,9 @@
                                         <td>Git Training</td>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img alt
+                                                <a href="{{route('profile')}}" class="avatar"><img alt
                                                         src="assets/img/profiles/avatar-02.jpg"></a>
-                                                <a href="profile.html">John Doe </a>
+                                                <a href="{{route('profile')}}">John Doe </a>
                                             </h2>
                                         </td>
                                         <td>
@@ -206,9 +206,9 @@
                                         <td>Swift Training</td>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img alt
+                                                <a href="{{route('profile')}}" class="avatar"><img alt
                                                         src="assets/img/profiles/avatar-09.jpg"></a>
-                                                <a href="profile.html">Richard Miles</a>
+                                                <a href="{{route('profile')}}">Richard Miles</a>
                                             </h2>
                                         </td>
                                         <td>
@@ -324,9 +324,9 @@
                                         <td>Node Training</td>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img alt
+                                                <a href="{{route('profile')}}" class="avatar"><img alt
                                                         src="assets/img/profiles/avatar-02.jpg"></a>
-                                                <a href="profile.html">John Doe </a>
+                                                <a href="{{route('profile')}}">John Doe </a>
                                             </h2>
                                         </td>
                                         <td>
@@ -442,9 +442,9 @@
                                         <td>Angular Training</td>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img alt
+                                                <a href="{{route('profile')}}" class="avatar"><img alt
                                                         src="assets/img/profiles/avatar-05.jpg"></a>
-                                                <a href="profile.html">Mike Litorus </a>
+                                                <a href="{{route('profile')}}">Mike Litorus </a>
                                             </h2>
                                         </td>
                                         <td>
@@ -560,9 +560,9 @@
                                         <td>Git Training</td>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img alt
+                                                <a href="{{route('profile')}}" class="avatar"><img alt
                                                         src="assets/img/profiles/avatar-11.jpg"></a>
-                                                <a href="profile.html">Wilmer Deluna </a>
+                                                <a href="{{route('profile')}}">Wilmer Deluna </a>
                                             </h2>
                                         </td>
                                         <td>

@@ -33,7 +33,26 @@ public function fileManager() {
     return view('main.apps.file-manager');
 }
 
-public function voiceCall() {
-    return view('main.apps.voice-call');
+
+  public function voiceCall(){
+        return view('main.apps.voice-call');
+
+    }
+
+    public function videoCall(){
+        return view('main.apps.video-call');
+
+    }
+    
+    public function incomingCall(){
+        return view('main.apps.incoming-call');
+
+    }
+     public function OutgoingCall(){
+        return view('main.apps.outgoing-call');
+
+    }
+
 }
-}
+
+

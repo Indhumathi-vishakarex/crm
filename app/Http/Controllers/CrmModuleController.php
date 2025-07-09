@@ -11,15 +11,25 @@ class CrmModuleController extends Controller
     }
 
       public function companiesGrid(){
-           return view('cem.companies.companies-grid');
+           return view('crm.companies.companies-grid');
     }
 
+    public function companysDetails(){
+          return view('crm.companies.company-details');
+
+}
      public function contactList(){
             return view('crm.contacts.contact-list');
     }
+
+public function contactDetails(){
+        return view('crm.contacts.contact-details');
+}
+
 public function contactGrid(){
         return view('crm.contacts.contact-grid');
 }
+
 
     
      public function deals(){
@@ -30,6 +40,11 @@ public function contactGrid(){
           return view('crm.deals.deals-kanban');
     }
 
+    public function dealsDetails(){
+          return view('crm.deals.deals-details');
+
+    }
+
 
          public function leads(){
             return view('crm.leads.leads');
@@ -37,6 +52,10 @@ public function contactGrid(){
     
           public function leadsKanban(){
                 return view('crm.leads.leads-kanban');
+    }
+    
+           public function leadsDetails(){
+                return view('crm.leads.leads-details');
     }
     
 

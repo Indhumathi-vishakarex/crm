@@ -586,7 +586,7 @@
                             aria-labelledby="v-pills-profile-tab">
                             <p>Profile</p>
                             <ul>
-                                <li><a class href="profile.html"> Employee Profile </a></li>
+                                <li><a class href="{{route('profile')}}"> Employee Profile </a></li>
                                 <li><a class href="client-profile.html"> Client Profile </a></li>
                             </ul>
                         </div>
@@ -1189,7 +1189,7 @@
                                         </tr>
                                         <tr>
                                             <td>Created by:</td>
-                                            <td class="text-end"><a href="profile.html">Barry Cuda</a></td>
+                                            <td class="text-end"><a href="{{route('profile')}}">Barry Cuda</a></td>
                                         </tr>
                                         <tr>
                                             <td>Status:</td>
@@ -1211,7 +1211,7 @@
                                         data-bs-target="#assign_leader"><i class="fa fa-plus"></i> Add</button></h6>
                                 <ul class="list-box">
                                     <li>
-                                        <a href="profile.html">
+                                        <a href="{{route('profile')}}">
                                             <div class="list-item">
                                                 <div class="list-left">
                                                     <span class="avatar"><img alt
@@ -1226,7 +1226,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="profile.html">
+                                        <a href="{{route('profile')}}">
                                             <div class="list-item">
                                                 <div class="list-left">
                                                     <span class="avatar"><img alt
@@ -1253,7 +1253,7 @@
                                 </h6>
                                 <ul class="list-box">
                                     <li>
-                                        <a href="profile.html">
+                                        <a href="{{route('profile')}}">
                                             <div class="list-item">
                                                 <div class="list-left">
                                                     <span class="avatar"><img alt
@@ -1268,7 +1268,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="profile.html">
+                                        <a href="{{route('profile')}}">
                                             <div class="list-item">
                                                 <div class="list-left">
                                                     <span class="avatar"><img alt

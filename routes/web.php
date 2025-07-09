@@ -64,8 +64,12 @@ Route::get('/events', [MainController::class, 'events'])->name('events');
 Route::get('/contacts', [MainController::class, 'contacts'])->name('contacts');
 
 Route::get('/inbox', [MainController::class, 'inbox'])->name('inbox');
-
 Route::get('/file-manager', [MainController::class, 'fileManager'])->name('file-manager');
+Route::get('/voice-call',[MainController::class, 'voiceCall'])->name('voice-call');
+Route::get('/video-call',[MainController::class, 'videoCall'])->name('video-call');
+Route::get('/incoming-call',[MainController::class, 'incomingCall'])->name('incoming-call');
+Route::get('/outgoing-call',[MainController::class, 'outgoingCall'])->name('outgoing-call');
+
 
 
 
@@ -96,10 +100,6 @@ Route::get('/daily-reports', [HrController::class, 'dailyReports'])->name('daily
 Route::get('/assets1',[AdministrationController::class, 'assets1'])->name('assets1');
 Route::get('/users',[AdministrationController::class, 'users'])->name('users');
 Route::get('/settings',[AdministrationController::class, 'settings'])->name('settings');
-Route::get('/voice-call',[AdministrationController::class, 'voiceCall'])->name('voice-call');
-Route::get('/video-call',[AdministrationController::class, 'videoCall'])->name('video-call');
-Route::get('/incoming-call',[AdministrationController::class, 'incomingCall'])->name('incoming-call');
-Route::get('/outgoing-call',[AdministrationController::class, 'outgoingCall'])->name('outgoing-call');
 
 
 
@@ -108,10 +108,14 @@ Route::get('/outgoing-call',[AdministrationController::class, 'outgoingCall'])->
 
   Route::get('/contact-list', [CrmModuleController::class, 'contactList'])->name('contact-list');
   Route::get('/contact-grid', [CrmModuleController::class, 'contactGrid'])->name('contact-grid');
+  Route::get('/contact-details', [CrmModuleController::class, 'contactDetails'])->name('contact-details');
   Route::get('/companies', [CrmModuleController::class, 'companies'])->name('companies');
  Route::get('/companies-grid', [CrmModuleController::class, 'companiesGrid'])->name('companies-grid');
+  Route::get('/company-details', [CrmModuleController::class, 'companysDetails'])->name('company-details');
   Route::get('/deals', [CrmModuleController::class, 'deals'])->name('deals');
+    Route::get('/deals-details', [CrmModuleController::class, 'dealsDetails'])->name('deals-details');
   Route::get('/deals-kanban', [CrmModuleController::class, 'dealsKanban'])->name('deals-kanban');
+    Route::get('/leads-details', [CrmModuleController::class, 'leadsDetails'])->name('leads-details');
   Route::get('/leads', [CrmModuleController::class, 'leads'])->name('leads');
  Route::get('/leads-kanban', [CrmModuleController::class, 'leadsKanban'])->name('leads-kanban');
   Route::get('/activities', [CrmModuleController::class, 'activities'])->name('activities');
