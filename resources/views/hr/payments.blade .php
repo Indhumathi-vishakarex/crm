@@ -46,7 +46,7 @@
                 <h3 class="page-title">Payments</h3>
                 <ul class="breadcrumb">
                   <li class="breadcrumb-item">
-                    <a href="admin-dashboard.html">Dashboard</a>
+                    <a href="{{route('admin-dashboard')}}">Dashboard</a>
                   </li>
                   <li class="breadcrumb-item active">Payments</li>
                 </ul>
@@ -69,7 +69,7 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td><a href="invoice-view.html">#INV-0001</a></td>
+                      <td><a href="{{route('invoice-view')}}">#INV-0001</a></td>
                       <td>
                         <h2><a href="#">Global Technologies</a></h2>
                       </td>
@@ -78,7 +78,7 @@
                       <td>$500</td>
                     </tr>
                     <tr>
-                      <td><a href="invoice-view.html">#INV-0002</a></td>
+                      <td><a href="{{route('invoice-view')}}">#INV-0002</a></td>
                       <td>
                         <h2><a href="#">Delta Infotech</a></h2>
                       </td>
@@ -87,7 +87,7 @@
                       <td>$500</td>
                     </tr>
                     <tr>
-                      <td><a href="invoice-view.html">#INV-0003</a></td>
+                      <td><a href="{{route('invoice-view')}}">#INV-0003</a></td>
                       <td>
                         <h2><a href="#">Cream Inc</a></h2>
                       </td>

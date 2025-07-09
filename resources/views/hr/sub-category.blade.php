@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-sidebar-image="none">
 
-<!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/events by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:22:24 GMT -->
+<!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/sub-category by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:25:09 GMT -->
 <!-- Added by HTTrack -->
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 
@@ -11,35 +11,31 @@
     <meta name="description" content="Smarthr - Bootstrap Admin Template">
     <meta name="keywords" content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern, accounts, invoice, html5, responsive, CRM, Projects">
     <meta name="author" content="Dreamstechnologies - Bootstrap Admin Template">
-    <title>Events - HRMS admin template</title>
+    <title>Categories - HRMS admin template</title>
 
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
 
-    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/fontawesome.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/all.min.css') }}">
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
 
-    <link rel="stylesheet" href="{{ asset('assets/css/line-awesome.min.css') }}">
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
 
-    <link rel="stylesheet" href="{{ asset('assets/css/material.css') }}">
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/material.css">
 
-    <link rel="stylesheet" href="{{ asset('assets/css/select2.min.css') }}">
+    <link rel="stylesheet" href="assets/css/select2.min.css">
 
-    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap-datetimepicker.min.css') }}">
+    <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css">
 
-    <link rel="stylesheet" href="{{ asset('assets/css/fullcalendar.min.css') }}">
-
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 
 <body>
 
     <div class="main-wrapper">
-
-         @include('layouts.header')
-
+        @include('layouts.header')
         @include('layouts.sidebar')
 
         <div class="page-wrapper">
@@ -47,41 +43,87 @@
                 <div class="page-header">
                     <div class="row align-items-center">
                         <div class="col">
-                            <h3 class="page-title">Events</h3>
+                            <h3 class="page-title">Sub Categories</h3>
                             <ul class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="{{route('admin-dashboard')}}">Dashboard</a></li>
-                                <li class="breadcrumb-item active">Events</li>
+                                <li class="breadcrumb-item"><a href="{{ route('admin-dashboard') }}">Dashboard</a></li>
+                                <li class="breadcrumb-item active">Accounts</li>
                             </ul>
                         </div>
                         <div class="col-auto float-end ms-auto">
-                            <a href="#" class="btn add-btn" data-bs-toggle="modal" data-bs-target="#add_event"><i class="fa fa-plus"></i> Add Event</a>
+                            <a href="#" class="btn add-btn" data-bs-toggle="modal" data-bs-target="#add_categories"><i class="fa fa-plus"></i> Add Sub
+                                Categories</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="card mb-0">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-md-12">
-
-                                        <div id="calendar"></div>
-
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="table table-striped custom-table mb-0">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Category Name </th>
+                                        <th>Sub-Category Name</th>
+                                        <th class="text-end">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Hardware</td>
+                                        <td>Hardware Expenses</td>
+                                        <td class="text-end">
+                                            <div class="dropdown dropdown-action">
+                                                <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit_categories"><i class="fa-solid fa-pencil m-r-5"></i> Edit</a>
+                                                    <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete"><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Material</td>
+                                        <td>Material Expenses</td>
+                                        <td class="text-end">
+                                            <div class="dropdown dropdown-action">
+                                                <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit_categories"><i class="fa-solid fa-pencil m-r-5"></i> Edit</a>
+                                                    <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete"><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Vehicle</td>
+                                        <td>Company Vehicle Information</td>
+                                        <td class="text-end">
+                                            <div class="dropdown dropdown-action">
+                                                <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit_categories"><i class="fa-solid fa-pencil m-r-5"></i> Edit</a>
+                                                    <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete"><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
             </div>
 
 
-            <div id="add_event" class="modal custom-modal fade" role="dialog">
+            <div class="modal custom-modal fade" id="add_categories" role="dialog">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title">Add Event</h5>
+                            <h5 class="modal-title">Add Sub Categories</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -89,30 +131,16 @@
                         <div class="modal-body">
                             <form>
                                 <div class="input-block mb-3">
-                                    <label class="col-form-label">Event Name <span class="text-danger">*</span></label>
-                                    <input class="form-control" type="text">
-                                </div>
-                                <div class="input-block mb-3">
-                                    <label class="col-form-label">Event Date <span class="text-danger">*</span></label>
-                                    <div class="cal-icon">
-                                        <input class="form-control datetimepicker" type="text">
-                                    </div>
-                                </div>
-                                <div class="input-block mb-3">
-                                    <label class="control-label col-form-label">Category</label>
-                                    <select class="select form-control">
-                                        <option>Danger</option>
-                                        <option>Success</option>
-                                        <option>Purple</option>
-                                        <option>Primary</option>
-                                        <option>Pink</option>
-                                        <option>Info</option>
-                                        <option>Inverse</option>
-                                        <option>Orange</option>
-                                        <option>Brown</option>
-                                        <option>Teal</option>
-                                        <option>Warning</option>
+                                    <label class="col-form-label">Categories Name <span class="text-danger">*</span></label>
+                                    <select class="form-control select">
+                                        <option>Select</option>
+                                        <option>Hardware</option>
+                                        <option>Material</option>
                                     </select>
+                                </div>
+                                <div class="input-block mb-3">
+                                    <label class="col-form-label">Sub Categories Name <span class="text-danger">*</span></label>
+                                    <input class="form-control" type="text">
                                 </div>
                                 <div class="submit-section">
                                     <button class="btn btn-primary submit-btn">Submit</button>
@@ -124,65 +152,65 @@
             </div>
 
 
-            <div class="modal custom-modal fade" id="event-modal">
+            <div class="modal custom-modal fade" id="edit_categories" role="dialog">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title">Event</h5>
+                            <h5 class="modal-title">Add Categories</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body"></div>
-                        <div class="modal-footer text-center">
-                            <button type="button" class="btn btn-success submit-btn save-event">Create event</button>
-                            <button type="button" class="btn btn-danger submit-btn delete-event" data-bs-dismiss="modal">Delete</button>
+                        <div class="modal-body">
+                            <form>
+                                <div class="input-block mb-3">
+                                    <label class="col-form-label">Categories Name <span class="text-danger">*</span></label>
+                                    <select class="form-control select">
+                                        <option>Select</option>
+                                        <option>Hardware</option>
+                                        <option>Material</option>
+                                    </select>
+                                </div>
+                                <div class="input-block mb-3">
+                                    <label class="col-form-label">Sub Categories Name <span class="text-danger">*</span></label>
+                                    <input class="form-control" type="text">
+                                </div>
+                                <div class="submit-section">
+                                    <button class="btn btn-primary submit-btn">Submit</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
 
 
-            <div class="modal custom-modal fade" id="add-category">
-                <div class="modal-dialog">
+            <div class="modal custom-modal fade" id="delete" role="dialog">
+                <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Add a category</h4>
-                        </div>
-                        <div class="modal-body p-20">
-                            <form>
+                        <div class="modal-body">
+                            <div class="form-header">
+                                <h3>Delete </h3>
+                                <p>Are you sure want to delete?</p>
+                            </div>
+                            <div class="modal-btn delete-action">
                                 <div class="row">
-                                    <div class="col-md-6">
-                                        <label class="col-form-label">Category Name</label>
-                                        <input class="form-control" placeholder="Enter name" type="text" name="category-name">
+                                    <div class="col-6">
+                                        <a href="javascript:void(0);" class="btn btn-primary continue-btn">Delete</a>
                                     </div>
-                                    <div class="col-md-6">
-                                        <label class="col-form-label">Choose Category Color</label>
-                                        <select class="form-control form-select select" data-placeholder="Choose a color..." name="category-color">
-                                            <option value="success">Success</option>
-                                            <option value="danger">Danger</option>
-                                            <option value="info">Info</option>
-                                            <option value="pink">Pink</option>
-                                            <option value="primary">Primary</option>
-                                            <option value="warning">Warning</option>
-                                            <option value="orange">Orange</option>
-                                            <option value="brown">Brown</option>
-                                            <option value="teal">Teal</option>
-                                        </select>
+                                    <div class="col-6">
+                                        <a href="javascript:void(0);" data-bs-dismiss="modal" class="btn btn-primary cancel-btn">Cancel</a>
                                     </div>
                                 </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-white" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-danger save-category" data-bs-dismiss="modal">Save</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
         </div>
+
+    </div>
     </div>
 
     </div>
@@ -491,27 +519,37 @@
             </div>
         </div>
     </div>
+    <!-- jQuery -->
 <script src="{{ asset('assets/js/jquery-3.7.1.min.js') }}"></script>
+
+<!-- Bootstrap -->
 <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
+
+<!-- SlimScroll -->
 <script src="{{ asset('assets/js/jquery.slimscroll.min.js') }}"></script>
+
+<!-- Select2 -->
 <script src="{{ asset('assets/js/select2.min.js') }}"></script>
+
+<!-- Moment.js & Datetimepicker -->
 <script src="{{ asset('assets/js/moment.min.js') }}"></script>
 <script src="{{ asset('assets/js/bootstrap-datetimepicker.min.js') }}"></script>
-<script src="{{ asset('assets/js/jquery-ui.min.js') }}"></script>
-<script src="{{ asset('assets/js/fullcalendar.min.js') }}"></script>
-<script src="{{ asset('assets/js/jquery.fullcalendar.js') }}"></script>
+
+<!-- Feather Icons -->
 <script src="{{ asset('assets/js/feather.min.js') }}"></script>
+
+<!-- Template Scripts -->
 <script src="{{ asset('assets/js/layout.js') }}"></script>
 <script src="{{ asset('assets/js/theme-settings.js') }}"></script>
 <script src="{{ asset('assets/js/greedynav.js') }}"></script>
 <script src="{{ asset('assets/js/app.js') }}"></script>
 
-<!-- Optional: Cloudflare Rocket Loader (if used) -->
-<script src="{{ asset('cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js') }}" data-cf-settings="bbf4868181cd296b4f739d21-|49" defer></script>
+<!-- (Optional) Cloudflare Rocket Loader - Usually not required -->
+{{-- <script src="{{ asset('cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js') }}" data-cf-settings="95c866bd8d10e276ff8eeb5e-|49" defer></script> --}}
 
 
 </body>
 
-<!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/events by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:22:27 GMT -->
+<!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/sub-category by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:25:09 GMT -->
 
 </html>

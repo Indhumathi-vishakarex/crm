@@ -198,7 +198,7 @@
                                                                 <td>
                                                                     <a
                                                                         class="btn btn-info btn-sm"
-                                                                        href="subscribed-companies.html">30 Users</a>
+                                                                        href="{{route('subscribed-companies')}}">30 Users</a>
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -210,7 +210,7 @@
                                                                 <td>
                                                                     <a
                                                                         class="btn btn-info btn-sm"
-                                                                        href="subscribed-companies.html">97 Users</a>
+                                                                        href="{{route('subscribed-companies')}}">97 Users</a>
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -222,7 +222,7 @@
                                                                 <td>
                                                                     <a
                                                                         class="btn btn-info btn-sm"
-                                                                        href="subscribed-companies.html">125 Users</a>
+                                                                        href="{{route('subscribed-companies')}}">125 Users</a>
                                                                 </td>
                                                             </tr>
                                                         </tbody>
@@ -349,7 +349,7 @@
                                                                 <td>
                                                                     <a
                                                                         class="btn btn-info btn-sm"
-                                                                        href="subscribed-companies.html">62 Users</a>
+                                                                        href="{{route('subscribed-companies')}}">62 Users</a>
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -361,7 +361,7 @@
                                                                 <td>
                                                                     <a
                                                                         class="btn btn-info btn-sm"
-                                                                        href="subscribed-companies.html">157 Users</a>
+                                                                        href="{{route('subscribed-companies')}}">157 Users</a>
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -373,7 +373,7 @@
                                                                 <td>
                                                                     <a
                                                                         class="btn btn-info btn-sm"
-                                                                        href="subscribed-companies.html">241 Users</a>
+                                                                        href="{{route('subscribed-companies')}}">241 Users</a>
                                                                 </td>
                                                             </tr>
                                                         </tbody>
