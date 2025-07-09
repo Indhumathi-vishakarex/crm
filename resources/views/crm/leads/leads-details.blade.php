@@ -24,9 +24,9 @@
       name="author"
       content="Dreamstechnologies - Bootstrap Admin Template"
     />
-    <title>Leads - HRMS admin template</title>
-<!-- Favicon -->
-<link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}" />
+<title>CRM - Winngoopages</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/logo2.png') }}">
 
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}" />

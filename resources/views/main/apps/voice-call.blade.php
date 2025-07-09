@@ -13,13 +13,9 @@
     <meta name="keywords"
         content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern, accounts, invoice, html5, responsive, CRM, Projects">
     <meta name="author" content="Dreamstechnologies - Bootstrap Admin Template">
-    <title>Voice Call - HRMS admin template</title>
+   <title>CRM - Winngoopages</title>
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}" />
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/logo2.png') }}">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/fontawesome.min.css') }}" />
@@ -48,9 +44,6 @@
 
     <div class="main-wrapper">
 @include('layouts.header')
-
-
-
         <div class="sidebar" id="sidebar">
             <div class="sidebar-inner slimscroll">
                 <div id="sidebar-menu" class="sidebar-menu">

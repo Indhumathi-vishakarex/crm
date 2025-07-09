@@ -24,9 +24,9 @@
       name="author"
       content="Dreamstechnologies - Bootstrap Admin Template"
     />
-    <title>Outgoing Call - HRMS admin template</title>
-<!-- Favicon -->
-<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png" />
+ <title>CRM - Winngoopages</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/logo2.png') }}">
 
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
@@ -48,11 +48,9 @@
   </head>
   <body>
     <div class="main-wrapper">
-      
+     
       
 @include('layouts.header')
-
-
       <div class="sidebar" id="sidebar">
         <div class="sidebar-inner slimscroll">
           <div id="sidebar-menu" class="sidebar-menu">
