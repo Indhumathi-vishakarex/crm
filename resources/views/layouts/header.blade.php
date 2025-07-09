@@ -9,7 +9,7 @@
           </a>
 
           <a href="{{route('admin-dashboard')}}" class="logo collapse-logo">
-            <img src="assets/img/collapse-logo.svg" alt="Logo" />
+            <img src="assets/img/logo2.png" alt="Logo" width="130" height="120" />
           </a>
 
           <a href="{{route('admin-dashboard')}}" class="logo2">

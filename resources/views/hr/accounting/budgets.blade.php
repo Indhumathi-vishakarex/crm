@@ -19,10 +19,8 @@
   <meta name="keywords" content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern, accounts, invoice, html5, responsive, CRM, Projects" />
   <meta name="author" content="Dreamstechnologies - Bootstrap Admin Template" />
   
-  <title>Budgets - HRMS Admin Template</title>
-
-  <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png" />
+  <title>CRM - Winngoopages</title>
+  <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/logo2.png') }}">
 
   <!-- Core CSS -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
