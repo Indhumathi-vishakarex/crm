@@ -685,8 +685,8 @@
                             aria-labelledby="v-pills-profile-tab">
                             <p>Profile</p>
                             <ul>
-                                <li><a class href="profile.html"> Employee Profile </a></li>
-                                <li><a class href="client-profile.html"> Client Profile </a></li>
+                                <li><a class href="{{route('profile')}}"> Employee Profile </a></li>
+                                <li><a class href="client-{{route('profile')}}"> Client Profile </a></li>
                             </ul>
                         </div>
                         <div class="tab-pane fade" id="v-pills-authentication" role="tabpanel"
@@ -890,14 +890,14 @@
                                 <div class="navbar">
                                     <div class="user-details me-auto">
                                         <div class="float-start user-img">
-                                            <a class="avatar" href="profile.html" title="Mike Litorus">
+                                            <a class="avatar" href="{{route('profile')}}" title="Mike Litorus">
                                                 <img src="assets/img/profiles/avatar-05.jpg" alt
                                                     class="rounded-circle">
                                                 <span class="status online"></span>
                                             </a>
                                         </div>
                                         <div class="user-info float-start">
-                                            <a href="profile.html"><span>Mike Litorus</span></a>
+                                            <a href="{{route('profile')}}"><span>Mike Litorus</span></a>
                                             <span class="last-seen">Online</span>
                                         </div>
                                     </div>
@@ -1005,7 +1005,7 @@
                                             <div class="chats">
                                                 <div class="chat chat-left">
                                                     <div class="chat-avatar">
-                                                        <a href="profile.html" class="avatar">
+                                                        <a href="{{route('profile')}}" class="avatar">
                                                             <img alt="John Doe"
                                                                 src="assets/img/profiles/avatar-02.jpg">
                                                         </a>
@@ -1032,7 +1032,7 @@
                                                 </div>
                                                 <div class="chat chat-left">
                                                     <div class="chat-avatar">
-                                                        <a href="profile.html" class="avatar">
+                                                        <a href="{{route('profile')}}" class="avatar">
                                                             <img alt src="assets/img/profiles/avatar-02.jpg">
                                                         </a>
                                                     </div>
@@ -1062,7 +1062,7 @@
                                                 </div>
                                                 <div class="chat chat-left">
                                                     <div class="chat-avatar">
-                                                        <a href="profile.html" class="avatar">
+                                                        <a href="{{route('profile')}}" class="avatar">
                                                             <img alt src="assets/img/profiles/avatar-09.jpg">
                                                         </a>
                                                     </div>
@@ -1090,7 +1090,7 @@
                                                 </div>
                                                 <div class="chat chat-left">
                                                     <div class="chat-avatar">
-                                                        <a href="profile.html" class="avatar">
+                                                        <a href="{{route('profile')}}" class="avatar">
                                                             <img alt src="assets/img/profiles/avatar-02.jpg">
                                                         </a>
                                                     </div>
@@ -1128,7 +1128,7 @@
                                                         <div class="chats">
                                                             <div class="chat chat-left">
                                                                 <div class="chat-avatar">
-                                                                    <a href="profile.html" class="avatar">
+                                                                    <a href="{{route('profile')}}" class="avatar">
                                                                         <img alt
                                                                             src="assets/img/profiles/avatar-02.jpg">
                                                                     </a>
@@ -1152,7 +1152,7 @@
                                                             </div>
                                                             <div class="chat chat-left">
                                                                 <div class="chat-avatar">
-                                                                    <a href="profile.html" class="avatar">
+                                                                    <a href="{{route('profile')}}" class="avatar">
                                                                         <img alt
                                                                             src="assets/img/profiles/avatar-02.jpg">
                                                                     </a>
@@ -1186,7 +1186,7 @@
                                                             </div>
                                                             <div class="chat chat-left">
                                                                 <div class="chat-avatar">
-                                                                    <a href="profile.html" class="avatar">
+                                                                    <a href="{{route('profile')}}" class="avatar">
                                                                         <img alt
                                                                             src="assets/img/profiles/avatar-16.jpg">
                                                                     </a>
@@ -1213,7 +1213,7 @@
                                                             </div>
                                                             <div class="chat chat-left">
                                                                 <div class="chat-avatar">
-                                                                    <a href="profile.html" class="avatar">
+                                                                    <a href="{{route('profile')}}" class="avatar">
                                                                         <img alt
                                                                             src="assets/img/profiles/avatar-16.jpg">
                                                                     </a>
