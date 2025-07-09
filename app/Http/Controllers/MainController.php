@@ -28,6 +28,9 @@ public function contacts() {
 public function inbox() {
     return view('main.apps.inbox');
 }
+public function compose() {
+    return view('main.compose');
+}
 
 public function fileManager() {
     return view('main.apps.file-manager');

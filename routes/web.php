@@ -36,7 +36,6 @@ Route::get('/ticket-details',[EmployeeController::class, 'ticketDetails'])->name
 
 
 
-
 Route::get('/',[PagesController::class, 'login'])->name('login');
 Route::get('/register',[PagesController::class, 'register'])->name('register');
 Route::get('/forgot-password',[PagesController::class, 'forgotPassword'])->name('forgot-password');
@@ -52,25 +51,17 @@ Route::get('/client-profile',[PagesController::class, 'clientProfile'])->name('c
 
 
 Route::get('/admin-dashboard',[MainController::class, 'adminDashboard'])->name('admin-dashboard');
-
-
-
 Route::get('/employee-dashboard', [MainController::class, 'employeeDashboard'])->name('employee-dashboard');
-
 Route::get('/chat', [MainController::class, 'chat'])->name('chat');
-
 Route::get('/events', [MainController::class, 'events'])->name('events');
-
 Route::get('/contacts', [MainController::class, 'contacts'])->name('contacts');
-
 Route::get('/inbox', [MainController::class, 'inbox'])->name('inbox');
+Route::get('/compose', [MainController::class, 'compose'])->name('compose');
 Route::get('/file-manager', [MainController::class, 'fileManager'])->name('file-manager');
 Route::get('/voice-call',[MainController::class, 'voiceCall'])->name('voice-call');
 Route::get('/video-call',[MainController::class, 'videoCall'])->name('video-call');
 Route::get('/incoming-call',[MainController::class, 'incomingCall'])->name('incoming-call');
 Route::get('/outgoing-call',[MainController::class, 'outgoingCall'])->name('outgoing-call');
-
-
 
 
 
@@ -85,6 +76,10 @@ Route::get('/policies', [HrController::class, 'policies'])->name('policies');
 Route::get('/payslip-reports', [HrController::class, 'payslipReports'])->name('payslip-reports');
 Route::get('/expense-reports', [HrController::class, 'expenseReports'])->name('expense-reports');
 Route::get('/invoices', [HrController::class, 'invoices'])->name('invoices');
+Route::get('/create-invoice', [HrController::class, 'createInvoice'])->name('create-invoice');
+Route::get('/edit-invoice', [HrController::class, 'editInvoice'])->name('edit-invoice');
+Route::get('/invoice-view', [HrController::class, 'invoiceView'])->name('invoice-view');
+
 Route::get('/invoice-reports', [HrController::class, 'invoiceReports'])->name('invoice-reports');
 Route::get('/payments', [HrController::class, 'paymentReports'])->name('payments');
 Route::get('/payment-reports', [HrController::class, 'paymentReports'])->name('payment-reports');
@@ -96,13 +91,9 @@ Route::get('/employee-reports', [HrController::class, 'employeeReports'])->name(
 Route::get('/attendance-reports', [HrController::class, 'attendanceReports'])->name('attendance-reports');
 Route::get('/leave-reports', [HrController::class, 'leaveReports'])->name('leave-reports');
 Route::get('/daily-reports', [HrController::class, 'dailyReports'])->name('daily-reports');
- 
 Route::get('/assets1',[AdministrationController::class, 'assets1'])->name('assets1');
 Route::get('/users',[AdministrationController::class, 'users'])->name('users');
 Route::get('/settings',[AdministrationController::class, 'settings'])->name('settings');
-
-
-
 
 // CrmModuleController
 

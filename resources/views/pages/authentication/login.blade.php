@@ -36,7 +36,7 @@
             <div class="container">
 
                 <div class="account-logo">
-                    <a href="admin-dashboard.html"><img src="assets/img/logo2.png" alt="Dreamguy's Technologies" style="width: 100%;"></a>
+                    <a href=""><img src="assets/img/logo2.png" alt="Dreamguy's Technologies" style="width: 100%;"></a>
                 </div>
 
                 <div class="account-box">
@@ -58,7 +58,7 @@
                                         <label class="col-form-label">Password</label>
                                     </div>
                                     <div class="col-auto">
-                                        <a class="text-muted" href="forgot-password.html">
+                                        <a class="text-muted" href="{{ route('forgot-password') }}">
                                             Forgot password?
                                         </a>
                                     </div>
@@ -70,11 +70,15 @@
                                 <div class="text-danger pt-2">
                                 </div>
                             </div>
-                            <div class="input-block mb-4 text-center">
+                            <!-- <div class="input-block mb-4 text-center">
                                 <button class="btn btn-primary account-btn" type="submit">Login</button>
+                            </div> -->
+
+                            <div class="input-block mb-4 text-center">
+                                <a href="{{ route('admin-dashboard') }}" class="btn btn-primary account-btn">Login</a>
                             </div>
                             <div class="account-footer">
-                                <!-- <p>Don't have an account yet? <a href="register.html">Register</a></p> -->
+                                <p>Don't have an account yet? <a href="{{ route('register') }}">Register</a></p>
                             </div>
                         </form>
 

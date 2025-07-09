@@ -59,6 +59,18 @@ class HrController extends Controller
     {
         return view('hr.invoices');
     }
+    public function createInvoice()
+    {
+        return view('hr.create-invoice');
+    }
+       public function editInvoice()
+    {
+        return view('hr.edit-invoice');
+    }
+    public function invoiceView()
+    {
+        return view('hr.invoice-view');
+    }
     public function invoiceReports()
     {
         return view('hr.reports.invoice-reports');

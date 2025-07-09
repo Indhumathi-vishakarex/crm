@@ -14,6 +14,7 @@
         content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern, accounts, invoice, html5, responsive, CRM, Projects">
     <meta name="author" content="Dreamstechnologies - Bootstrap Admin Template">
     <title>Voice Call - HRMS admin template</title>
+
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}" />
 
@@ -38,6 +39,8 @@
     <!-- Custom Style -->
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
 
+    
+
 
 </head>
 
@@ -47,13 +50,18 @@
 @include('layouts.header')
 
 
+
         <div class="sidebar" id="sidebar">
             <div class="sidebar-inner slimscroll">
                 <div id="sidebar-menu" class="sidebar-menu">
                     <nav class="greedy">
                         <ul class="link-item">
                             <li>
+
                                 <a class href="{{route('admin-dashboard')}}"><i class="la la-home"></i> <span>Back to
+
+                             
+
                                         Home</span></a>
                             </li>
                             <li class="menu-title"><span>Chat Groups</span> <a href="#" data-bs-toggle="modal"
@@ -870,6 +878,7 @@
 
 
 
+
         <div class="page-wrapper">
 
             <div class="chat-main-row">
@@ -1060,8 +1069,12 @@
                                                     <div class="chat-body">
                                                         <div class="chat-bubble">
                                                             <div class="chat-content">
+
                                                                 <span class="task-chat-user">Richard Miles</span>
                                                                 <span class="chat-time">8:35 am</span>
+
+                                                               
+
                                                                 <div class="call-details">
                                                                     <i class="material-icons">phone_missed</i>
                                                                     <div class="call-info">
@@ -1124,8 +1137,12 @@
                                                                     <div class="chat-bubble">
                                                                         <div class="chat-content">
                                                                             <span class="task-chat-user">John
-                                                                                Doe</span> <span
-                                                                                class="chat-time">8:35 am</span>
+
+                                                                      
+
+                                                                                Doe</span> <span class="chat-time">8:35
+                                                                                am</span>
+
                                                                             <p>I'm just looking around.</p>
                                                                             <p>Will you tell me something about
                                                                                 yourself? </p>
@@ -1960,6 +1977,7 @@
 <script src="{{ asset('assets/js/jquery-3.7.1.min.js') }}"></script>
 <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
 
+
 <!-- Plugins -->
 <script src="{{ asset('assets/js/jquery.slimscroll.min.js') }}"></script>
 <script src="{{ asset('assets/js/select2.min.js') }}"></script>
@@ -1977,6 +1995,11 @@
 
 <!-- Cloudflare Rocket Loader -->
 <script src="{{ asset('../../../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js') }}" data-cf-settings="798090201b2a93ab9fd2641c-|49" defer></script>
+
+</body>
+
+
+   
 
 </body>
 
