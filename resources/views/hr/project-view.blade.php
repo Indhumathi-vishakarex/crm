@@ -370,7 +370,7 @@
                                         </tr>
                                         <tr>
                                             <td>Created by:</td>
-                                            <td class="text-end"><a href="profile.html">Barry Cuda</a></td>
+                                            <td class="text-end"><a href="{{route('profile')}}">Barry Cuda</a></td>
                                         </tr>
                                         <tr>
                                             <td>Status:</td>
@@ -389,7 +389,7 @@
                                 <h6 class="card-title m-b-20">Assigned Leader <button type="button" class="float-end btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#assign_leader"><i class="fa fa-plus"></i> Add</button></h6>
                                 <ul class="list-box">
                                     <li>
-                                        <a href="profile.html">
+                                        <a href="{{route('profile')}}">
                                             <div class="list-item">
                                                 <div class="list-left">
                                                     <span class="avatar"><img alt src="assets/img/profiles/avatar-11.jpg"></span>
@@ -403,7 +403,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="profile.html">
+                                        <a href="{{route('profile')}}">
                                             <div class="list-item">
                                                 <div class="list-left">
                                                     <span class="avatar"><img alt src="assets/img/profiles/avatar-01.jpg"></span>
@@ -427,7 +427,7 @@
                                 </h6>
                                 <ul class="list-box">
                                     <li>
-                                        <a href="profile.html">
+                                        <a href="{{route('profile')}}">
                                             <div class="list-item">
                                                 <div class="list-left">
                                                     <span class="avatar"><img alt src="assets/img/profiles/avatar-02.jpg"></span>
@@ -441,7 +441,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="profile.html">
+                                        <a href="{{route('profile')}}">
                                             <div class="list-item">
                                                 <div class="list-left">
                                                     <span class="avatar"><img alt src="assets/img/profiles/avatar-09.jpg"></span>
