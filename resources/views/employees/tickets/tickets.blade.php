@@ -53,7 +53,7 @@
                         <div class="col">
                             <h3 class="page-title">Tickets</h3>
                             <ul class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="admin-dashboard.html">Dashboard</a></li>
+                                <li class="breadcrumb-item"><a href="{{route('admin-dashboard')}}">Dashboard</a></li>
                                 <li class="breadcrumb-item active">Tickets</li>
                             </ul>
                         </div>
@@ -213,11 +213,11 @@
                                 <tbody>
                                     <tr>
                                         <td>1</td>
-                                        <td><a href="ticket-details.html">#TKT-0001</a></td>
+                                        <td><a href="{{route('ticket-details')}}">#TKT-0001</a></td>
                                         <td>Laptop Issue</td>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a class="avatar avatar-xs" href="ticket-details.html"><img
+                                                <a class="avatar avatar-xs" href="{{route('ticket-details')}}"><img
                                                         src="assets/img/profiles/avatar-10.jpg"
                                                         alt="User Image"></a>
                                                 <a href="#">John Smith</a>
@@ -282,7 +282,7 @@
                                                     <a class="dropdown-item" href="#" data-bs-toggle="modal"
                                                         data-bs-target="#delete_ticket"><i
                                                             class="fa-regular fa-trash-can m-r-5"></i> Delete</a>
-                                                    <a class="dropdown-item" href="ticket-details.html"><i
+                                                    <a class="dropdown-item" href="{{route('ticket-details')}}"><i
                                                             class="fa-regular fa-eye"></i> Preview</a>
                                                 </div>
                                             </div>
@@ -290,11 +290,11 @@
                                     </tr>
                                     <tr>
                                         <td>2</td>
-                                        <td><a href="ticket-details.html">#TKT-0001</a></td>
+                                        <td><a href="{{route('ticket-details')}}">#TKT-0001</a></td>
                                         <td>Internet Issue</td>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a class="avatar avatar-xs" href="ticket-details.html"><img
+                                                <a class="avatar avatar-xs" href="{{route('ticket-details')}}"><img
                                                         src="assets/img/profiles/avatar-08.jpg"
                                                         alt="User Image"></a>
                                                 <a href="#">Catherine Manseau</a>
@@ -359,7 +359,7 @@
                                                     <a class="dropdown-item" href="#" data-bs-toggle="modal"
                                                         data-bs-target="#delete_ticket"><i
                                                             class="fa-regular fa-trash-can m-r-5"></i> Delete</a>
-                                                    <a class="dropdown-item" href="ticket-details.html"><i
+                                                    <a class="dropdown-item" href="{{route('ticket-details')}}"><i
                                                             class="fa-regular fa-eye"></i> Preview</a>
                                                 </div>
                                             </div>

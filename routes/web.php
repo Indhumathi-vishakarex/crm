@@ -1,12 +1,9 @@
 <?php
-
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdministrationController;
 use App\Http\Controllers\HrController;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\PagesController;
-
-
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CrmModuleController;
 use App\Http\Controllers\PerformanceController;
 use App\Http\Controllers\EmployeeController;
@@ -38,10 +35,6 @@ Route::get('/tickets',[EmployeeController::class, 'tickets'])->name('tickets');
 Route::get('/ticket-details',[EmployeeController::class, 'ticketDetails'])->name('ticket-details');
 
 
-// Route::get('/', function () {
-//     return view('welcome');project-root/app/Http/Controllers/EmployeeController.php
-
-// });
 
 Route::get('/',[PagesController::class, 'login'])->name('login');
 Route::get('/register',[PagesController::class, 'register'])->name('register');
@@ -55,24 +48,23 @@ Route::get('/subscription-company',[PagesController::class, 'subscriptionCompany
 Route::get('/subscribed-companies',[PagesController::class, 'subscribedCompanies'])->name('subscribed-companies');
 Route::get('/profile',[PagesController::class, 'profile'])->name('profile');
 Route::get('/client-profile',[PagesController::class, 'clientProfile'])->name('client-profile');
+Route::get('/assets-details',[PagesController::class, 'assetsDetails'])->name('assets-details');
+Route::get('/user-asset-details',[PagesController::class, 'UserassetDetails'])->name('user-asset-details');
+
 
 
 Route::get('/admin-dashboard',[MainController::class, 'adminDashboard'])->name('admin-dashboard');
-
-
-
 Route::get('/employee-dashboard', [MainController::class, 'employeeDashboard'])->name('employee-dashboard');
-
 Route::get('/chat', [MainController::class, 'chat'])->name('chat');
-
 Route::get('/events', [MainController::class, 'events'])->name('events');
-
 Route::get('/contacts', [MainController::class, 'contacts'])->name('contacts');
-
 Route::get('/inbox', [MainController::class, 'inbox'])->name('inbox');
-
+Route::get('/compose', [MainController::class, 'compose'])->name('compose');
 Route::get('/file-manager', [MainController::class, 'fileManager'])->name('file-manager');
-
+Route::get('/voice-call',[MainController::class, 'voiceCall'])->name('voice-call');
+Route::get('/video-call',[MainController::class, 'videoCall'])->name('video-call');
+Route::get('/incoming-call',[MainController::class, 'incomingCall'])->name('incoming-call');
+Route::get('/outgoing-call',[MainController::class, 'outgoingCall'])->name('outgoing-call');
 
 
 
@@ -87,8 +79,11 @@ Route::get('/policies', [HrController::class, 'policies'])->name('policies');
 Route::get('/payslip-reports', [HrController::class, 'payslipReports'])->name('payslip-reports');
 Route::get('/expense-reports', [HrController::class, 'expenseReports'])->name('expense-reports');
 Route::get('/invoices', [HrController::class, 'invoices'])->name('invoices');
-Route::get('/invoice-reports', [HrController::class, 'invoiceReports'])->name('invoice-reports');
+Route::get('/create-invoice', [HrController::class, 'createInvoice'])->name('create-invoice');
+Route::get('/edit-invoice', [HrController::class, 'editInvoice'])->name('edit-invoice');
+Route::get('/invoice-view', [HrController::class, 'invoiceView'])->name('invoice-view');
 
+Route::get('/invoice-reports', [HrController::class, 'invoiceReports'])->name('invoice-reports');
 Route::get('/payments', [HrController::class, 'paymentReports'])->name('payments');
 Route::get('/payment-reports', [HrController::class, 'paymentReports'])->name('payment-reports');
 Route::get('/project-reports', [HrController::class, 'projectReports'])->name('project-reports');
@@ -99,66 +94,22 @@ Route::get('/employee-reports', [HrController::class, 'employeeReports'])->name(
 Route::get('/attendance-reports', [HrController::class, 'attendanceReports'])->name('attendance-reports');
 Route::get('/leave-reports', [HrController::class, 'leaveReports'])->name('leave-reports');
 Route::get('/daily-reports', [HrController::class, 'dailyReports'])->name('daily-reports');
-
- 
 Route::get('/assets1',[AdministrationController::class, 'assets1'])->name('assets1');
 Route::get('/users',[AdministrationController::class, 'users'])->name('users');
 Route::get('/settings',[AdministrationController::class, 'settings'])->name('settings');
-
-
-Route::get('/contact-details', function () {
-    return view('contacts.contact-details');
-});
-Route::get('/company-details', function () {
-    return view('companies.company-details');
-});
-Route::get('/companies-grid', function () {
-    return view('companies.companies-grid');
-});
-Route::get('/employees-list', function () {
-    return view('employees.employees-list');
-});
-
-// Route::get('/employee-reports', function () {
-//     return view('employees.employee-reports');
-// });
-
-
-// Route::get('/client-profile', function () {
-//     return view('client.client-profile');
-// });
-
-
-
-
-// Route::get('/project-view', function () {
-
-// });
-
-
-
-
-
-// ended.........
-
-
-// Route::get('/deals-details', function () {
-//     return view('deals.deals-details');
-// });
-
-
-// Route::get('/leads-details', function () {
-//     return view('leads.leads-details');
-// });
 
 // CrmModuleController
 
   Route::get('/contact-list', [CrmModuleController::class, 'contactList'])->name('contact-list');
   Route::get('/contact-grid', [CrmModuleController::class, 'contactGrid'])->name('contact-grid');
+  Route::get('/contact-details', [CrmModuleController::class, 'contactDetails'])->name('contact-details');
   Route::get('/companies', [CrmModuleController::class, 'companies'])->name('companies');
  Route::get('/companies-grid', [CrmModuleController::class, 'companiesGrid'])->name('companies-grid');
+  Route::get('/company-details', [CrmModuleController::class, 'companysDetails'])->name('company-details');
   Route::get('/deals', [CrmModuleController::class, 'deals'])->name('deals');
+    Route::get('/deals-details', [CrmModuleController::class, 'dealsDetails'])->name('deals-details');
   Route::get('/deals-kanban', [CrmModuleController::class, 'dealsKanban'])->name('deals-kanban');
+    Route::get('/leads-details', [CrmModuleController::class, 'leadsDetails'])->name('leads-details');
   Route::get('/leads', [CrmModuleController::class, 'leads'])->name('leads');
  Route::get('/leads-kanban', [CrmModuleController::class, 'leadsKanban'])->name('leads-kanban');
   Route::get('/activities', [CrmModuleController::class, 'activities'])->name('activities');
@@ -188,41 +139,13 @@ Route::get('/termination',[PerformanceController::class,'termination'])->name('t
 
 
 
-Route::get('/analytics', function () {
-    return view('analytics');
-});
-
-Route::get('/attendance', function () {
-    return view('attendance.attendance');
-});
-
-Route::get('/voice-call', function () {
-    return view('apps.voice-call');
-});
-
-Route::get('/video-call', function () {
-    return view('apps.video-call');
-});
-
-Route::get('/incoming-call', function () {
-    return view('apps.incoming-call');
-});
-Route::get('/outgoing-call', function () {
-    return view('apps.outgoing-call');
-    
-});
 
 
 
 
 
-Route::get('/pipeline', function () {
-    return view('pipeline');
-});
 
-Route::get('/analytics', function () {
-    return view('analytics');
-});
+
 
 
 

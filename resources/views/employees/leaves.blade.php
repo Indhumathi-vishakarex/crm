@@ -54,7 +54,7 @@
                         <div class="col">
                             <h3 class="page-title">Leaves</h3>
                             <ul class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="admin-dashboard.html">Dashboard</a></li>
+                                <li class="breadcrumb-item"><a href="{{route('admin-dashboard')}}">Dashboard</a></li>
                                 <li class="breadcrumb-item active">Leaves</li>
                             </ul>
                         </div>
@@ -164,7 +164,7 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img
+                                                <a href="{{route('profile')}}" class="avatar"><img
                                                         src="assets/img/profiles/avatar-09.jpg" alt="User Image"></a>
                                                 <a href="#">Richard Miles <span>Web Developer</span></a>
                                             </h2>
@@ -215,7 +215,7 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img
+                                                <a href="{{route('profile')}}" class="avatar"><img
                                                         src="assets/img/profiles/avatar-02.jpg" alt="User Image"></a>
                                                 <a> John Doe <span>Web Designer</span></a>
                                             </h2>
@@ -266,7 +266,7 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img
+                                                <a href="{{route('profile')}}" class="avatar"><img
                                                         src="assets/img/profiles/avatar-10.jpg" alt="User Image"></a>
                                                 <a>John Smith <span>Android Developer</span></a>
                                             </h2>
@@ -317,7 +317,7 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img
+                                                <a href="{{route('profile')}}" class="avatar"><img
                                                         src="assets/img/profiles/avatar-05.jpg" alt="User Image"></a>
                                                 <a>Mike Litorus <span>IOS Developer</span></a>
                                             </h2>
@@ -368,7 +368,7 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img
+                                                <a href="{{route('profile')}}" class="avatar"><img
                                                         src="assets/img/profiles/avatar-24.jpg" alt="User Image"></a>
                                                 <a>Richard Parker <span>Web Developer</span></a>
                                             </h2>
@@ -420,7 +420,7 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img
+                                                <a href="{{route('profile')}}" class="avatar"><img
                                                         src="assets/img/profiles/avatar-08.jpg"
                                                         alt="User Image"></a>
                                                 <a>Catherine Manseau <span>Web Developer</span></a>
@@ -474,7 +474,7 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img
+                                                <a href="{{route('profile')}}" class="avatar"><img
                                                         src="assets/img/profiles/avatar-15.jpg"
                                                         alt="User Image"></a>
                                                 <a>Buster Wigton <span>Web Developer</span></a>
@@ -528,7 +528,7 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img
+                                                <a href="{{route('profile')}}" class="avatar"><img
                                                         src="assets/img/profiles/avatar-20.jpg"
                                                         alt="User Image"></a>
                                                 <a>Melita Faucher <span>Web Developer</span></a>
@@ -582,7 +582,7 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img
+                                                <a href="{{route('profile')}}" class="avatar"><img
                                                         src="assets/img/profiles/avatar-03.jpg"
                                                         alt="User Image"></a>
                                                 <a>Tarah Shropshire <span>Web Developer</span></a>
@@ -636,7 +636,7 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img
+                                                <a href="{{route('profile')}}" class="avatar"><img
                                                         src="assets/img/profiles/avatar-20.jpg"
                                                         alt="User Image"></a>
                                                 <a>Domenic Houston <span>Web Developer</span></a>
@@ -690,7 +690,7 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img
+                                                <a href="{{route('profile')}}" class="avatar"><img
                                                         src="assets/img/profiles/avatar-02.jpg"
                                                         alt="User Image"></a>
                                                 <a>John Doe <span>Web Designer</span></a>
@@ -744,7 +744,7 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img
+                                                <a href="{{route('profile')}}" class="avatar"><img
                                                         src="assets/img/profiles/avatar-25.jpg"
                                                         alt="User Image"></a>
                                                 <a>Rolland Webber <span>Web Developer</span></a>

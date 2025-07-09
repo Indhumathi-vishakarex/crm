@@ -59,7 +59,7 @@
                 <h3 class="page-title">Contact</h3>
                 <ul class="breadcrumb">
                   <li class="breadcrumb-item">
-                    <a href="admin-dashboard.html">Dashboard
+                    <a href="{{route('admin-dashboard')}}">Dashboard
                     </a>
                   </li>
                   <li class="breadcrumb-item active">Contact</li>
@@ -502,13 +502,13 @@
                       </td>
                       <td>
                         <h2 class="table-avatar d-flex">
-                          <a href="contact-details.html" class="avatar"
+                          <a href="{{route('contact-details')}}" class="avatar"
                             ><img
                               src="assets/img/avatar/avatar-19.jpg"
                               alt="User Image"
                           /></a>
                           <a
-                            href="contact-details.html"
+                            href="{{route('contact-details')}}"
                             class="profile-split d-flex flex-column"
                             >Darlee Robertson <span>Facility Manager</span></a
                           >
@@ -589,7 +589,7 @@
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
-                            <a class="dropdown-item" href="contact-details.html"
+                            <a class="dropdown-item" href="{{route('contact-details')}}"
                               ><i class="fa-regular fa-eye"></i> Preview</a
                             >
                             <a
@@ -611,13 +611,13 @@
                       </td>
                       <td>
                         <h2 class="table-avatar d-flex">
-                          <a href="contact-details.html" class="avatar"
+                          <a href="{{route('contact-details')}}" class="avatar"
                             ><img
                               src="assets/img/avatar/avatar-20.jpg"
                               alt="User Image"
                           /></a>
                           <a
-                            href="contact-details.html"
+                            href="{{route('contact-details')}}"
                             class="profile-split d-flex flex-column"
                             >Sharon Roy <span>Installer</span></a
                           >
@@ -698,7 +698,7 @@
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
-                            <a class="dropdown-item" href="contact-details.html"
+                            <a class="dropdown-item" href="{{route('contact-details')}}"
                               ><i class="fa-regular fa-eye"></i> Preview</a
                             >
                             <a
@@ -720,13 +720,13 @@
                       </td>
                       <td>
                         <h2 class="table-avatar d-flex">
-                          <a href="contact-details.html" class="avatar"
+                          <a href="{{route('contact-details')}}" class="avatar"
                             ><img
                               src="assets/img/avatar/avatar-21.jpg"
                               alt="User Image"
                           /></a>
                           <a
-                            href="contact-details.html"
+                            href="{{route('contact-details')}}"
                             class="profile-split d-flex flex-column"
                             >Vaughan <span>Senior Manager</span></a
                           >
@@ -807,7 +807,7 @@
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
-                            <a class="dropdown-item" href="contact-details.html"
+                            <a class="dropdown-item" href="{{route('contact-details')}}"
                               ><i class="fa-regular fa-eye"></i> Preview</a
                             >
                             <a
@@ -829,13 +829,13 @@
                       </td>
                       <td>
                         <h2 class="table-avatar d-flex">
-                          <a href="contact-details.html" class="avatar"
+                          <a href="{{route('contact-details')}}" class="avatar"
                             ><img
                               src="assets/img/avatar/avatar-1.jpg"
                               alt="User Image"
                           /></a>
                           <a
-                            href="contact-details.html"
+                            href="{{route('contact-details')}}"
                             class="profile-split d-flex flex-column"
                             >Jessica <span>Test Engineer</span></a
                           >
@@ -915,7 +915,7 @@
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
-                            <a class="dropdown-item" href="contact-details.html"
+                            <a class="dropdown-item" href="{{route('contact-details')}}"
                               ><i class="fa-regular fa-eye"></i> Preview</a
                             >
                             <a
@@ -937,13 +937,13 @@
                       </td>
                       <td>
                         <h2 class="table-avatar d-flex">
-                          <a href="contact-details.html" class="avatar"
+                          <a href="{{route('contact-details')}}" class="avatar"
                             ><img
                               src="assets/img/avatar/avatar-16.jpg"
                               alt="User Image"
                           /></a>
                           <a
-                            href="contact-details.html"
+                            href="{{route('contact-details')}}"
                             class="profile-split d-flex flex-column"
                             >Carol Thomas<span>UI /UX Designer</span></a
                           >
@@ -1024,7 +1024,7 @@
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
-                            <a class="dropdown-item" href="contact-details.html"
+                            <a class="dropdown-item" href="{{route('contact-details')}}"
                               ><i class="fa-regular fa-eye"></i> Preview</a
                             >
                             <a
@@ -1046,13 +1046,13 @@
                       </td>
                       <td>
                         <h2 class="table-avatar d-flex">
-                          <a href="contact-details.html" class="avatar"
+                          <a href="{{route('contact-details')}}" class="avatar"
                             ><img
                               src="assets/img/avatar/avatar-22.jpg"
                               alt="User Image"
                           /></a>
                           <a
-                            href="contact-details.html"
+                            href="{{route('contact-details')}}"
                             class="profile-split d-flex flex-column"
                             >Dawn Mercha <span>Technician</span></a
                           >
@@ -1133,7 +1133,7 @@
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
-                            <a class="dropdown-item" href="contact-details.html"
+                            <a class="dropdown-item" href="{{route('contact-details')}}"
                               ><i class="fa-regular fa-eye"></i> Preview</a
                             >
                             <a
@@ -1155,13 +1155,13 @@
                       </td>
                       <td>
                         <h2 class="table-avatar d-flex">
-                          <a href="contact-details.html" class="avatar"
+                          <a href="{{route('contact-details')}}" class="avatar"
                             ><img
                               src="assets/img/avatar/avatar-23.jpg"
                               alt="User Image"
                           /></a>
                           <a
-                            href="contact-details.html"
+                            href="{{route('contact-details')}}"
                             class="profile-split d-flex flex-column"
                             >Rachel Hampton <span>Software Developer</span></a
                           >
@@ -1242,7 +1242,7 @@
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
-                            <a class="dropdown-item" href="contact-details.html"
+                            <a class="dropdown-item" href="{{route('contact-details')}}"
                               ><i class="fa-regular fa-eye"></i> Preview</a
                             >
                             <a
@@ -1264,13 +1264,13 @@
                       </td>
                       <td>
                         <h2 class="table-avatar d-flex">
-                          <a href="contact-details.html" class="avatar"
+                          <a href="{{route('contact-details')}}" class="avatar"
                             ><img
                               src="assets/img/avatar/avatar-24.jpg"
                               alt="User Image"
                           /></a>
                           <a
-                            href="contact-details.html"
+                            href="{{route('contact-details')}}"
                             class="profile-split d-flex flex-column"
                             >Jonelle Curtiss<span>Supervisor</span></a
                           >
@@ -1351,7 +1351,7 @@
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
-                            <a class="dropdown-item" href="contact-details.html"
+                            <a class="dropdown-item" href="{{route('contact-details')}}"
                               ><i class="fa-regular fa-eye"></i> Preview</a
                             >
                             <a
@@ -1373,13 +1373,13 @@
                       </td>
                       <td>
                         <h2 class="table-avatar d-flex">
-                          <a href="contact-details.html" class="avatar"
+                          <a href="{{route('contact-details')}}" class="avatar"
                             ><img
                               src="assets/img/avatar/avatar-25.jpg"
                               alt="User Image"
                           /></a>
                           <a
-                            href="contact-details.html"
+                            href="{{route('contact-details')}}"
                             class="profile-split d-flex flex-column"
                             >Jonathan<span>Team Lead Dev</span></a
                           >
@@ -1461,7 +1461,7 @@
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
-                            <a class="dropdown-item" href="contact-details.html"
+                            <a class="dropdown-item" href="{{route('contact-details')}}"
                               ><i class="fa-regular fa-eye"></i> Preview</a
                             >
                             <a
@@ -1483,13 +1483,13 @@
                       </td>
                       <td>
                         <h2 class="table-avatar d-flex">
-                          <a href="contact-details.html" class="avatar"
+                          <a href="{{route('contact-details')}}" class="avatar"
                             ><img
                               src="assets/img/avatar/avatar-26.jpg"
                               alt="User Image"
                           /></a>
                           <a
-                            href="contact-details.html"
+                            href="{{route('contact-details')}}"
                             class="profile-split d-flex flex-column"
                             >Brook <span>Team Lead Dev</span></a
                           >
@@ -1570,7 +1570,7 @@
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
-                            <a class="dropdown-item" href="contact-details.html"
+                            <a class="dropdown-item" href="{{route('contact-details')}}"
                               ><i class="fa-regular fa-eye"></i> Preview</a
                             >
                             <a
@@ -3129,7 +3129,7 @@
                         data-bs-dismiss="modal"
                         >Close</a
                       >
-                      <a href="contact-details.html" class="btn btn-primary"
+                      <a href="{{route('contact-details')}}" class="btn btn-primary"
                         >View Details</a
                       >
                     </div>

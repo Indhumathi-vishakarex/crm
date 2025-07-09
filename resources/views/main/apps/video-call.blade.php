@@ -2,7 +2,7 @@
 <html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg"
     data-sidebar-image="none">
 
-<!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/voice-call by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:22:21 GMT -->
+<!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/video-call by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:22:21 GMT -->
 <!-- Added by HTTrack -->
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 
@@ -13,33 +13,25 @@
     <meta name="keywords"
         content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern, accounts, invoice, html5, responsive, CRM, Projects">
     <meta name="author" content="Dreamstechnologies - Bootstrap Admin Template">
-    <title>Voice Call - HRMS admin template</title>
-
+    <title>Video Call - HRMS admin template</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/fontawesome.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/all.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/fontawesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/all.min.css') }}">
 
-    <!-- Icons -->
-    <link rel="stylesheet" href="{{ asset('assets/css/feather.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/css/line-awesome.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/css/material.css') }}" />
+    <!-- Line Awesome -->
+    <link rel="stylesheet" href="{{ asset('assets/css/line-awesome.min.css') }}">
 
-    <!-- UI Plugins -->
-    <link rel="stylesheet" href="{{ asset('assets/css/select2.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap-datetimepicker.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/plugins/summernote/summernote-bs4.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css') }}" />
+    <!-- Material Icons -->
+    <link rel="stylesheet" href="{{ asset('assets/css/material.css') }}">
 
-    <!-- Custom Style -->
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
-
-    
+    <!-- Main Style -->
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
 
 </head>
@@ -47,8 +39,8 @@
 <body>
 
     <div class="main-wrapper">
-@include('layouts.header')
 
+   @include('layouts.header')
 
 
         <div class="sidebar" id="sidebar">
@@ -57,11 +49,7 @@
                     <nav class="greedy">
                         <ul class="link-item">
                             <li>
-
-                                <a class href="{{route('admin-dashboard')}}"><i class="la la-home"></i> <span>Back to
-
-                             
-
+                                <a class href={{route('admin-dashboard')}}><i class="la la-home"></i> <span>Back to
                                         Home</span></a>
                             </li>
                             <li class="menu-title"><span>Chat Groups</span> <a href="#" data-bs-toggle="modal"
@@ -423,7 +411,7 @@
                             aria-labelledby="v-pills-dashboard-tab">
                             <p>Dashboard</p>
                             <ul>
-                                <li><a class href="{{route('admin-dashboard')}}">Admin Dashboard</a></li>
+                                <li><a class href={{route('admin-dashboard')}}>Admin Dashboard</a></li>
                                 <li><a class href="employee-dashboard.html">Employee Dashboard</a></li>
                                 <li><a class href="deals-dashboard.html">Deals Dashboard</a></li>
                                 <li><a class href="leads-dashboard.html">Leads Dashboard</a></li>
@@ -439,10 +427,14 @@
                                 <li class="sub-menu">
                                     <a href="#">Calls <span class="menu-arrow"></span></a>
                                     <ul>
-                                        <li><a class="active" href="voice-call.html">Voice Call</a></li>
-                                        <li><a class href="video-call.html">Video Call</a></li>
-                                        <li><a class href="outgoing-call.html">Outgoing Call</a></li>
-                                        <li><a class href="incoming-call.html">Incoming Call</a></li>
+
+                                        <li><a class href="{{route('voice-call')}}">Voice Call</a></li>
+                                        <li><a class="active" href="{{route('video-call')}}">Video Call</a></li>
+                                        <li><a class href="{{route('outgoing-call')}}">Outgoing Call</a></li>
+                                        <li><a class href="{{route('incoming-call')}}">Incoming Call</a></li>
+
+                                       
+
                                     </ul>
                                 </li>
                                 <li>
@@ -685,8 +677,8 @@
                             aria-labelledby="v-pills-profile-tab">
                             <p>Profile</p>
                             <ul>
-                                <li><a class href="{{route('profile')}}"> Employee Profile </a></li>
-                                <li><a class href="client-{{route('profile')}}"> Client Profile </a></li>
+                                <li><a class href="profile.html"> Employee Profile </a></li>
+                                <li><a class href="client-profile.html"> Client Profile </a></li>
                             </ul>
                         </div>
                         <div class="tab-pane fade" id="v-pills-authentication" role="tabpanel"
@@ -878,7 +870,6 @@
 
 
 
-
         <div class="page-wrapper">
 
             <div class="chat-main-row">
@@ -888,16 +879,16 @@
                         <div class="chat-window">
                             <div class="fixed-header">
                                 <div class="navbar">
-                                    <div class="user-details me-auto">
+                                    <div class="user-details">
                                         <div class="float-start user-img">
-                                            <a class="avatar" href="{{route('profile')}}" title="Mike Litorus">
+                                            <a class="avatar" href="profile.html" title="Mike Litorus">
                                                 <img src="assets/img/profiles/avatar-05.jpg" alt
                                                     class="rounded-circle">
                                                 <span class="status online"></span>
                                             </a>
                                         </div>
                                         <div class="user-info float-start">
-                                            <a href="{{route('profile')}}"><span>Mike Litorus</span></a>
+                                            <a href="profile.html"><span>Mike Litorus</span></a>
                                             <span class="last-seen">Online</span>
                                         </div>
                                     </div>
@@ -920,36 +911,13 @@
                             </div>
                             <div class="chat-contents">
                                 <div class="chat-content-wrap">
-                                    <div class="voice-call-avatar">
-                                        <img src="assets/img/profiles/avatar-02.jpg" alt class="call-avatar">
-                                        <span class="username">John Doe</span>
-                                        <span class="call-timing-count">00:59</span>
+                                    <div class="user-video">
+                                        <img src="assets/img/video-call.jpg" alt>
                                     </div>
-                                    <div class="call-users">
+                                    <div class="my-video">
                                         <ul>
                                             <li>
-                                                <a href="#">
-                                                    <img src="assets/img/profiles/avatar-03.jpg" class="img-fluid"
-                                                        alt>
-                                                    <span class="call-mute"><i
-                                                            class="fa fa-microphone-slash"></i></span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <img src="assets/img/profiles/avatar-08.jpg" class="img-fluid"
-                                                        alt>
-                                                    <span class="call-mute"><i
-                                                            class="fa fa-microphone-slash"></i></span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <img src="assets/img/profiles/avatar-05.jpg" class="img-fluid"
-                                                        alt>
-                                                    <span class="call-mute"><i
-                                                            class="fa fa-microphone-slash"></i></span>
-                                                </a>
+                                                <img src="assets/img/profiles/avatar-01.jpg" class="img-fluid" alt>
                                             </li>
                                         </ul>
                                     </div>
@@ -957,23 +925,30 @@
                             </div>
                             <div class="chat-footer">
                                 <div class="call-icons">
+                                    <span class="call-duration">00:59</span>
                                     <ul class="call-items">
                                         <li class="call-item">
-                                            <a href="#" title="Enable Video" data-placement="top"
+                                            <a href title="Enable Video" data-placement="top"
                                                 data-bs-toggle="tooltip">
                                                 <i class="fa fa-video-camera camera"></i>
                                             </a>
                                         </li>
                                         <li class="call-item">
-                                            <a href="#" title="Mute" data-placement="top"
+                                            <a href title="Mute Audio" data-placement="top"
                                                 data-bs-toggle="tooltip">
                                                 <i class="fa fa-microphone microphone"></i>
                                             </a>
                                         </li>
                                         <li class="call-item">
-                                            <a href="#" title="Add User" data-placement="top"
+                                            <a href title="Add User" data-placement="top"
                                                 data-bs-toggle="tooltip">
                                                 <i class="fa fa-user-plus"></i>
+                                            </a>
+                                        </li>
+                                        <li class="call-item">
+                                            <a href title="Full Screen" data-placement="top"
+                                                data-bs-toggle="tooltip">
+                                                <i class="fa fa-arrows-v full-screen"></i>
                                             </a>
                                         </li>
                                     </ul>
@@ -1005,9 +980,8 @@
                                             <div class="chats">
                                                 <div class="chat chat-left">
                                                     <div class="chat-avatar">
-                                                        <a href="{{route('profile')}}" class="avatar">
-                                                            <img alt="John Doe"
-                                                                src="assets/img/profiles/avatar-02.jpg">
+                                                        <a href="profile.html" class="avatar">
+                                                            <img alt src="assets/img/profiles/avatar-02.jpg">
                                                         </a>
                                                     </div>
                                                     <div class="chat-body">
@@ -1032,7 +1006,7 @@
                                                 </div>
                                                 <div class="chat chat-left">
                                                     <div class="chat-avatar">
-                                                        <a href="{{route('profile')}}" class="avatar">
+                                                        <a href="profile.html" class="avatar">
                                                             <img alt src="assets/img/profiles/avatar-02.jpg">
                                                         </a>
                                                     </div>
@@ -1062,19 +1036,16 @@
                                                 </div>
                                                 <div class="chat chat-left">
                                                     <div class="chat-avatar">
-                                                        <a href="{{route('profile')}}" class="avatar">
-                                                            <img alt src="assets/img/profiles/avatar-09.jpg">
+                                                        <a href="profile.html" class="avatar">
+                                                            <img alt src="assets/img/profiles/avatar-09.jpg"
+                                                                class="img-fluid rounded-circle">
                                                         </a>
                                                     </div>
                                                     <div class="chat-body">
                                                         <div class="chat-bubble">
                                                             <div class="chat-content">
-
                                                                 <span class="task-chat-user">Richard Miles</span>
                                                                 <span class="chat-time">8:35 am</span>
-
-                                                               
-
                                                                 <div class="call-details">
                                                                     <i class="material-icons">phone_missed</i>
                                                                     <div class="call-info">
@@ -1090,8 +1061,8 @@
                                                 </div>
                                                 <div class="chat chat-left">
                                                     <div class="chat-avatar">
-                                                        <a href="{{route('profile')}}" class="avatar">
-                                                            <img alt src="assets/img/profiles/avatar-02.jpg">
+                                                        <a href="profile.html" class="avatar">
+                                                            <img alt src="assets/img/profiles/avatar-09.jpg">
                                                         </a>
                                                     </div>
                                                     <div class="chat-body">
@@ -1128,21 +1099,17 @@
                                                         <div class="chats">
                                                             <div class="chat chat-left">
                                                                 <div class="chat-avatar">
-                                                                    <a href="{{route('profile')}}" class="avatar">
+                                                                    <a href="profile.html" class="avatar">
                                                                         <img alt
-                                                                            src="assets/img/profiles/avatar-02.jpg">
+                                                                            src="assets/img/profiles/avatar-09.jpg">
                                                                     </a>
                                                                 </div>
                                                                 <div class="chat-body">
                                                                     <div class="chat-bubble">
                                                                         <div class="chat-content">
                                                                             <span class="task-chat-user">John
-
-                                                                      
-
-                                                                                Doe</span> <span class="chat-time">8:35
-                                                                                am</span>
-
+                                                                                Doe</span> <span
+                                                                                class="chat-time">8:35 am</span>
                                                                             <p>I'm just looking around.</p>
                                                                             <p>Will you tell me something about
                                                                                 yourself? </p>
@@ -1152,9 +1119,9 @@
                                                             </div>
                                                             <div class="chat chat-left">
                                                                 <div class="chat-avatar">
-                                                                    <a href="{{route('profile')}}" class="avatar">
+                                                                    <a href="profile.html" class="avatar">
                                                                         <img alt
-                                                                            src="assets/img/profiles/avatar-02.jpg">
+                                                                            src="assets/img/profiles/avatar-09.jpg">
                                                                     </a>
                                                                 </div>
                                                                 <div class="chat-body">
@@ -1186,7 +1153,7 @@
                                                             </div>
                                                             <div class="chat chat-left">
                                                                 <div class="chat-avatar">
-                                                                    <a href="{{route('profile')}}" class="avatar">
+                                                                    <a href="profile.html" class="avatar">
                                                                         <img alt
                                                                             src="assets/img/profiles/avatar-16.jpg">
                                                                     </a>
@@ -1213,7 +1180,7 @@
                                                             </div>
                                                             <div class="chat chat-left">
                                                                 <div class="chat-avatar">
-                                                                    <a href="{{route('profile')}}" class="avatar">
+                                                                    <a href="profile.html" class="avatar">
                                                                         <img alt
                                                                             src="assets/img/profiles/avatar-16.jpg">
                                                                     </a>
@@ -1272,7 +1239,7 @@
                                                 <div class="table-content">
                                                     <div class="chat-profile-img">
                                                         <div class="edit-profile-img">
-                                                            <img src="assets/img/profiles/avatar-02.jpg" alt>
+                                                            <img src="assets/img/profiles/avatar-09.jpg" alt>
                                                             <span class="change-img">Change Image</span>
                                                         </div>
                                                         <h3 class="user-name m-t-10 mb-0">John Doe</h3>
@@ -1296,7 +1263,7 @@
                                                                 <span class="float-end text-muted"><a
                                                                         href="https://smarthr.dreamstechnologies.com/cdn-cgi/l/email-protection"
                                                                         class="__cf_email__"
-                                                                        data-cfemail="d6bcb9beb8b2b9b396b3aeb7bba6bab3f8b5b9bb">[email&#160;protected]</a></span>
+                                                                        data-cfemail="214b4e494f454e44614459404c514d440f424e4c">[email&#160;protected]</a></span>
                                                             </li>
                                                             <li>
                                                                 <span>Phone:</span>
@@ -1970,39 +1937,39 @@
             </div>
         </div>
     </div>
-<!-- Cloudflare Email Decode -->
-<script data-cfasync="false" src="{{ asset('../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js') }}"></script>
+    <!-- Cloudflare Email Decode -->
+    <script data-cfasync="false"
+        src="{{ asset('../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js') }}"></script>
 
-<!-- jQuery & Bootstrap -->
-<script src="{{ asset('assets/js/jquery-3.7.1.min.js') }}"></script>
-<script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
+    <!-- jQuery -->
+    <script src="{{ asset('assets/js/jquery-3.7.1.min.js') }}"></script>
 
+    <!-- Bootstrap Bundle -->
+    <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
 
-<!-- Plugins -->
-<script src="{{ asset('assets/js/jquery.slimscroll.min.js') }}"></script>
-<script src="{{ asset('assets/js/select2.min.js') }}"></script>
-<script src="{{ asset('assets/js/moment.min.js') }}"></script>
-<script src="{{ asset('assets/js/bootstrap-datetimepicker.min.js') }}"></script>
-<script src="{{ asset('assets/plugins/summernote/summernote-bs4.min.js') }}"></script>
-<script src="{{ asset('assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js') }}"></script>
+    <!-- Slimscroll -->
+    <script src="{{ asset('assets/js/jquery.slimscroll.min.js') }}"></script>
 
-<!-- UI & Theme -->
-<script src="{{ asset('assets/js/feather.min.js') }}"></script>
-<script src="{{ asset('assets/js/layout.js') }}"></script>
-<script src="{{ asset('assets/js/theme-settings.js') }}"></script>
-<script src="{{ asset('assets/js/greedynav.js') }}"></script>
-<script src="{{ asset('assets/js/app.js') }}"></script>
+    <!-- Feather Icons -->
+    <script src="{{ asset('assets/js/feather.min.js') }}"></script>
 
-<!-- Cloudflare Rocket Loader -->
-<script src="{{ asset('../../../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js') }}" data-cf-settings="798090201b2a93ab9fd2641c-|49" defer></script>
+    <!-- Layout Script -->
+    <script src="{{ asset('assets/js/layout.js') }}"></script>
+
+    <!-- Theme Settings -->
+    <script src="{{ asset('assets/js/theme-settings.js') }}"></script>
+
+    <!-- Greedy Nav -->
+    <script src="{{ asset('assets/js/greedynav.js') }}"></script>
+
+    <!-- Main App Script -->
+    <script src="{{ asset('assets/js/app.js') }}"></script>
+
+    <!-- Cloudflare Rocket Loader (optional, only if you use Cloudflare Rocket Loader) -->
+    <script src="{{ asset('../../../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js') }}"
+        data-cf-settings="63ec3e11dc7b7e364e8b3956-|49" defer></script>
 
 </body>
-
-
-   
-
-</body>
-
-<!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/voice-call by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:22:21 GMT -->
+<!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/video-call by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:22:23 GMT -->
 
 </html>

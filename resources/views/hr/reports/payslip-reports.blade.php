@@ -48,7 +48,7 @@
                 <h3 class="page-title">Payslip Reports</h3>
                 <ul class="breadcrumb">
                   <li class="breadcrumb-item">
-                    <a href="admin-dashboard.html">Dashboard</a>
+                    <a href="{{ route('admin-dashboard') }}">Dashboard</a>
                   </li>
                   <li class="breadcrumb-item active">Payslip Reports</li>
                 </ul>
@@ -109,12 +109,12 @@
                       <td>1</td>
                       <td>
                         <h2 class="table-avatar">
-                          <a href="profile.html" class="avatar"
+                          <a href="{{route('profile')}}" class="avatar"
                             ><img
                               src="assets/img/profiles/avatar-13.jpg"
                               alt="User Image"
                           /></a>
-                          <a href="profile.html"
+                          <a href="{{route('profile')}}"
                             >Bernardo Galaviz <span>Web Developer</span></a
                           >
                         </h2>
@@ -130,12 +130,12 @@
                       <td>2</td>
                       <td>
                         <h2 class="table-avatar">
-                          <a href="profile.html" class="avatar"
+                          <a href="{{route('profile')}}" class="avatar"
                             ><img
                               src="assets/img/profiles/avatar-12.jpg"
                               alt="User Image"
                           /></a>
-                          <a href="profile.html"
+                          <a href="{{route('profile')}}"
                             >Jeffrey Warden <span>Web Developer</span></a
                           >
                         </h2>
@@ -151,12 +151,12 @@
                       <td>3</td>
                       <td>
                         <h2 class="table-avatar">
-                          <a href="profile.html" class="avatar"
+                          <a href="{{route('profile')}}" class="avatar"
                             ><img
                               src="assets/img/profiles/avatar-02.jpg"
                               alt="User Image"
                           /></a>
-                          <a href="profile.html"
+                          <a href="{{route('profile')}}"
                             >John Doe <span>Web Designer</span></a
                           >
                         </h2>
@@ -172,12 +172,12 @@
                       <td>4</td>
                       <td>
                         <h2 class="table-avatar">
-                          <a href="profile.html" class="avatar"
+                          <a href="{{route('profile')}}" class="avatar"
                             ><img
                               src="assets/img/profiles/avatar-10.jpg"
                               alt="User Image"
                           /></a>
-                          <a href="profile.html"
+                          <a href="{{route('profile')}}"
                             >John Smith <span>Android Developer</span></a
                           >
                         </h2>
@@ -193,12 +193,12 @@
                       <td>5</td>
                       <td>
                         <h2 class="table-avatar">
-                          <a href="profile.html" class="avatar"
+                          <a href="{{route('profile')}}" class="avatar"
                             ><img
                               src="assets/img/profiles/avatar-05.jpg"
                               alt="User Image"
                           /></a>
-                          <a href="profile.html"
+                          <a href="{{route('profile')}}"
                             >Mike Litorus <span>IOS Developer</span></a
                           >
                         </h2>

@@ -46,7 +46,7 @@
                 <h3 class="page-title">Subscribed Companies</h3>
                 <ul class="breadcrumb">
                   <li class="breadcrumb-item">
-                    <a href="admin-dashboard.html">Dashboard</a>
+                    <a href="{{route('admin-dashboard')}}">Dashboard</a>
                   </li>
                   <li class="breadcrumb-item active">Subscriptions</li>
                 </ul>
@@ -105,12 +105,12 @@
                       <td>1</td>
                       <td>
                         <h2 class="table-avatar">
-                          <a href="client-profile.html" class="avatar"
+                          <a href="{{route('client-profile')}}" class="avatar"
                             ><img
                               src="assets/img/profiles/avatar-19.jpg"
                               alt="User Image"
                           /></a>
-                          <a href="client-profile.html">Global Technologies</a>
+                          <a href="{{route('client-profile')}}">Global Technologies</a>
                         </h2>
                       </td>
                       <td>Free Trial</td>
@@ -148,12 +148,12 @@
                       <td>2</td>
                       <td>
                         <h2 class="table-avatar">
-                          <a href="client-profile.html" class="avatar"
+                          <a href="{{route('client-profile')}}" class="avatar"
                             ><img
                               src="assets/img/profiles/avatar-29.jpg"
                               alt="User Image"
                           /></a>
-                          <a href="client-profile.html">Delta Infotech</a>
+                          <a href="{{route('client-profile')}}">Delta Infotech</a>
                         </h2>
                       </td>
                       <td>Premium</td>
@@ -192,12 +192,12 @@
                       <td>3</td>
                       <td>
                         <h2 class="table-avatar">
-                          <a href="client-profile.html" class="avatar"
+                          <a href="{{route('client-profile')}}" class="avatar"
                             ><img
                               src="assets/img/profiles/avatar-07.jpg"
                               alt="User Image"
                           /></a>
-                          <a href="client-profile.html">Cream Inc</a>
+                          <a href="{{route('client-profile')}}">Cream Inc</a>
                         </h2>
                       </td>
                       <td>Professional</td>
@@ -236,12 +236,12 @@
                       <td>4</td>
                       <td>
                         <h2 class="table-avatar">
-                          <a href="client-profile.html" class="avatar"
+                          <a href="{{route('client-profile')}}" class="avatar"
                             ><img
                               src="assets/img/profiles/avatar-06.jpg"
                               alt="User Image"
                           /></a>
-                          <a href="client-profile.html">Wellware Company</a>
+                          <a href="{{route('client-profile')}}">Wellware Company</a>
                         </h2>
                       </td>
                       <td>Enterprise</td>
@@ -280,12 +280,12 @@
                       <td>5</td>
                       <td>
                         <h2 class="table-avatar">
-                          <a href="client-profile.html" class="avatar"
+                          <a href="{{route('client-profile')}}" class="avatar"
                             ><img
                               src="assets/img/profiles/avatar-14.jpg"
                               alt="User Image"
                           /></a>
-                          <a href="client-profile.html">Mustang Technologies</a>
+                          <a href="{{route('client-profile')}}">Mustang Technologies</a>
                         </h2>
                       </td>
                       <td>Free Trial</td>
@@ -324,12 +324,12 @@
                       <td>6</td>
                       <td>
                         <h2 class="table-avatar">
-                          <a href="client-profile.html" class="avatar"
+                          <a href="{{route('client-profile')}}" class="avatar"
                             ><img
                               src="assets/img/profiles/avatar-18.jpg"
                               alt="User Image"
                           /></a>
-                          <a href="client-profile.html"
+                          <a href="{{route('client-profile')}}"
                             >International Software Inc</a
                           >
                         </h2>
@@ -370,12 +370,12 @@
                       <td>7</td>
                       <td>
                         <h2 class="table-avatar">
-                          <a href="client-profile.html" class="avatar"
+                          <a href="{{route('client-profile')}}" class="avatar"
                             ><img
                               src="assets/img/profiles/avatar-28.jpg"
                               alt="User Image"
                           /></a>
-                          <a href="client-profile.html">Mercury Software Inc</a>
+                          <a href="{{route('client-profile')}}">Mercury Software Inc</a>
                         </h2>
                       </td>
                       <td>Professional</td>

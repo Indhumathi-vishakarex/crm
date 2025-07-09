@@ -17,4 +17,9 @@ class AdministrationController extends Controller
     public function settings(){
         return view('administration.settings');
     }
+
+   
+  
+
+
 }

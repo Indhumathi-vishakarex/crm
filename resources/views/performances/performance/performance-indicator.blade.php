@@ -57,7 +57,7 @@
                 <h3 class="page-title">Performance Indicator</h3>
                 <ul class="breadcrumb">
                   <li class="breadcrumb-item">
-                    <a href="admin-dashboard.html">Dashboard</a>
+                    <a href="{{route('admin-dashboard')}}">Dashboard</a>
                   </li>
                   <li class="breadcrumb-item active">Performance</li>
                 </ul>
@@ -96,12 +96,12 @@
                       <td>Designing</td>
                       <td>
                         <h2 class="table-avatar">
-                          <a href="profile.html" class="avatar"
+                          <a href="{{route('profile')}}" class="avatar"
                             ><img
                               src="assets/img/profiles/avatar-02.jpg"
                               alt="User Image"
                           /></a>
-                          <a href="profile.html">John Doe </a>
+                          <a href="{{route('profile')}}">John Doe </a>
                         </h2>
                       </td>
                       <td>7 May 2019</td>
@@ -169,12 +169,12 @@
                       <td>IOS</td>
                       <td>
                         <h2 class="table-avatar">
-                          <a href="profile.html" class="avatar"
+                          <a href="{{route('profile')}}" class="avatar"
                             ><img
                               src="assets/img/profiles/avatar-05.jpg"
                               alt="User Image"
                           /></a>
-                          <a href="profile.html">Mike Litorus </a>
+                          <a href="{{route('profile')}}">Mike Litorus </a>
                         </h2>
                       </td>
                       <td>7 May 2019</td>
@@ -242,12 +242,12 @@
                       <td>Designing</td>
                       <td>
                         <h2 class="table-avatar">
-                          <a href="profile.html" class="avatar"
+                          <a href="{{route('profile')}}" class="avatar"
                             ><img
                               src="assets/img/profiles/avatar-10.jpg"
                               alt="User Image"
                           /></a>
-                          <a href="profile.html">John Smith </a>
+                          <a href="{{route('profile')}}">John Smith </a>
                         </h2>
                       </td>
                       <td>7 May 2019</td>
@@ -315,12 +315,12 @@
                       <td>Designing</td>
                       <td>
                         <h2 class="table-avatar">
-                          <a href="profile.html" class="avatar"
+                          <a href="{{route('profile')}}" class="avatar"
                             ><img
                               src="assets/img/profiles/avatar-12.jpg"
                               alt="User Image"
                           /></a>
-                          <a href="profile.html">Jeffrey Warden </a>
+                          <a href="{{route('profile')}}">Jeffrey Warden </a>
                         </h2>
                       </td>
                       <td>7 May 2019</td>
@@ -388,12 +388,12 @@
                       <td>Designing</td>
                       <td>
                         <h2 class="table-avatar">
-                          <a href="profile.html" class="avatar"
+                          <a href="{{route('profile')}}" class="avatar"
                             ><img
                               src="assets/img/profiles/avatar-11.jpg"
                               alt="User Image"
                           /></a>
-                          <a href="profile.html">Wilmer Deluna </a>
+                          <a href="{{route('profile')}}">Wilmer Deluna </a>
                         </h2>
                       </td>
                       <td>7 May 2019</td>

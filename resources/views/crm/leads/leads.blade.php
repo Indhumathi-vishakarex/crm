@@ -62,7 +62,7 @@
                 <h3 class="page-title">Leads</h3>
                 <ul class="breadcrumb">
                   <li class="breadcrumb-item">
-                    <a href="admin-dashboard.html">Dashboard</a>
+                    <a href="{{route('admin-dashboard')}}">Dashboard</a>
                   </li>
                   <li class="breadcrumb-item active">Leads</li>
                 </ul>
@@ -506,19 +506,19 @@
                       </td>
                       <td>
                         <h2>
-                          <a href="leads-details.html" class="profile-split"
+                          <a href="{{route('leads-details')}}" class="profile-split"
                             >Collins</a
                           >
                         </h2>
                       </td>
                       <td>
                         <h2 class="table-avatar d-flex align-items-center">
-                          <a href="company-details.html" class="company-img"
+                          <a href="{{route('company-details')}}" class="company-img"
                             ><img
                               src="assets/img/icons/company-icon-01.svg"
                               alt="User Image"
                           /></a>
-                          <a href="company-details.html" class="profile-split"
+                          <a href="{{route('company-details')}}" class="profile-split"
                             >NovaWaveLLC</a
                           >
                         </h2>
@@ -562,7 +562,7 @@
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
-                            <a class="dropdown-item" href="leads-details.html"
+                            <a class="dropdown-item" href="{{route('leads-details')}}"
                               ><i class="fa-regular fa-eye"></i> Preview</a
                             >
                           </div>
@@ -577,19 +577,19 @@
                       </td>
                       <td>
                         <h2>
-                          <a href="leads-details.html" class="profile-split"
+                          <a href="{{route('leads-details')}}" class="profile-split"
                             >Konopelski</a
                           >
                         </h2>
                       </td>
                       <td>
                         <h2 class="table-avatar d-flex align-items-center">
-                          <a href="company-details.html" class="company-img"
+                          <a href="{{route('company-details')}}" class="company-img"
                             ><img
                               src="assets/img/icons/company-icon-02.svg"
                               alt="User Image"
                           /></a>
-                          <a href="company-details.html" class="profile-split"
+                          <a href="{{route('company-details')}}" class="profile-split"
                             >BlueSky Industries</a
                           >
                         </h2>
@@ -633,7 +633,7 @@
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
-                            <a class="dropdown-item" href="leads-details.html"
+                            <a class="dropdown-item" href="{{route('leads-details')}}"
                               ><i class="fa-regular fa-eye"></i> Preview</a
                             >
                           </div>
@@ -648,19 +648,19 @@
                       </td>
                       <td>
                         <h2>
-                          <a href="leads-details.html" class="profile-split"
+                          <a href="{{route('leads-details')}}" class="profile-split"
                             >Adams</a
                           >
                         </h2>
                       </td>
                       <td>
                         <h2 class="table-avatar d-flex align-items-center">
-                          <a href="company-details.html" class="company-img"
+                          <a href="{{route('company-details')}}" class="company-img"
                             ><img
                               src="assets/img/icons/company-icon-03.svg"
                               alt="User Image"
                           /></a>
-                          <a href="company-details.html" class="profile-split"
+                          <a href="{{route('company-details')}}" class="profile-split"
                             >SilverHawk</a
                           >
                         </h2>
@@ -704,7 +704,7 @@
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
-                            <a class="dropdown-item" href="leads-details.html"
+                            <a class="dropdown-item" href="{{route('leads-details')}}"
                               ><i class="fa-regular fa-eye"></i> Preview</a
                             >
                           </div>
@@ -719,19 +719,19 @@
                       </td>
                       <td>
                         <h2>
-                          <a href="leads-details.html" class="profile-split"
+                          <a href="{{route('leads-details')}}" class="profile-split"
                             >Schumm</a
                           >
                         </h2>
                       </td>
                       <td>
                         <h2 class="table-avatar d-flex align-items-center">
-                          <a href="company-details.html" class="company-img"
+                          <a href="{{route('company-details')}}" class="company-img"
                             ><img
                               src="assets/img/icons/company-icon-04.svg"
                               alt="User Image"
                           /></a>
-                          <a href="company-details.html" class="profile-split"
+                          <a href="{{route('company-details')}}" class="profile-split"
                             >SummitPeak</a
                           >
                         </h2>
@@ -775,7 +775,7 @@
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
-                            <a class="dropdown-item" href="leads-details.html"
+                            <a class="dropdown-item" href="{{route('leads-details')}}"
                               ><i class="fa-regular fa-eye"></i> Preview</a
                             >
                           </div>
@@ -790,19 +790,19 @@
                       </td>
                       <td>
                         <h2>
-                          <a href="leads-details.html" class="profile-split"
+                          <a href="{{route('leads-details')}}" class="profile-split"
                             >Wisozk</a
                           >
                         </h2>
                       </td>
                       <td>
                         <h2 class="table-avatar d-flex align-items-center">
-                          <a href="company-details.html" class="company-img"
+                          <a href="{{route('company-details')}}" class="company-img"
                             ><img
                               src="assets/img/icons/company-icon-05.svg"
                               alt="User Image"
                           /></a>
-                          <a href="company-details.html" class="profile-split"
+                          <a href="{{route('company-details')}}" class="profile-split"
                             >RiverStone Ventur</a
                           >
                         </h2>
@@ -846,7 +846,7 @@
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
-                            <a class="dropdown-item" href="leads-details.html"
+                            <a class="dropdown-item" href="{{route('leads-details')}}"
                               ><i class="fa-regular fa-eye"></i> Preview</a
                             >
                           </div>
@@ -861,19 +861,19 @@
                       </td>
                       <td>
                         <h2>
-                          <a href="leads-details.html" class="profile-split"
+                          <a href="{{route('leads-details')}}" class="profile-split"
                             >Heller</a
                           >
                         </h2>
                       </td>
                       <td>
                         <h2 class="table-avatar d-flex align-items-center">
-                          <a href="company-details.html" class="company-img"
+                          <a href="{{route('company-details')}}" class="company-img"
                             ><img
                               src="assets/img/icons/company-icon-06.svg"
                               alt="User Image"
                           /></a>
-                          <a href="company-details.html" class="profile-split"
+                          <a href="{{route('company-details')}}" class="profile-split"
                             >Bright Bridge Grp</a
                           >
                         </h2>
@@ -917,7 +917,7 @@
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
-                            <a class="dropdown-item" href="leads-details.html"
+                            <a class="dropdown-item" href="{{route('leads-details')}}"
                               ><i class="fa-regular fa-eye"></i> Preview</a
                             >
                           </div>
@@ -932,19 +932,19 @@
                       </td>
                       <td>
                         <h2>
-                          <a href="leads-details.html" class="profile-split"
+                          <a href="{{route('leads-details')}}" class="profile-split"
                             >Gutkowski</a
                           >
                         </h2>
                       </td>
                       <td>
                         <h2 class="table-avatar d-flex align-items-center">
-                          <a href="company-details.html" class="company-img"
+                          <a href="{{route('company-details')}}" class="company-img"
                             ><img
                               src="assets/img/icons/company-icon-07.svg"
                               alt="User Image"
                           /></a>
-                          <a href="company-details.html" class="profile-split"
+                          <a href="{{route('company-details')}}" class="profile-split"
                             >CoastalStar Co.</a
                           >
                         </h2>
@@ -988,7 +988,7 @@
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
-                            <a class="dropdown-item" href="leads-details.html"
+                            <a class="dropdown-item" href="{{route('leads-details')}}"
                               ><i class="fa-regular fa-eye"></i> Preview</a
                             >
                           </div>
@@ -1003,19 +1003,19 @@
                       </td>
                       <td>
                         <h2>
-                          <a href="leads-details.html" class="profile-split"
+                          <a href="{{route('leads-details')}}" class="profile-split"
                             >Walter</a
                           >
                         </h2>
                       </td>
                       <td>
                         <h2 class="table-avatar d-flex align-items-center">
-                          <a href="company-details.html" class="company-img"
+                          <a href="{{route('company-details')}}" class="company-img"
                             ><img
                               src="assets/img/icons/company-icon-08.svg"
                               alt="User Image"
                           /></a>
-                          <a href="company-details.html" class="profile-split"
+                          <a href="{{route('company-details')}}" class="profile-split"
                             >HarborView</a
                           >
                         </h2>
@@ -1059,7 +1059,7 @@
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
-                            <a class="dropdown-item" href="leads-details.html"
+                            <a class="dropdown-item" href="{{route('leads-details')}}"
                               ><i class="fa-regular fa-eye"></i> Preview</a
                             >
                           </div>
@@ -1074,19 +1074,19 @@
                       </td>
                       <td>
                         <h2>
-                          <a href="leads-details.html" class="profile-split"
+                          <a href="{{route('leads-details')}}" class="profile-split"
                             >Hansen</a
                           >
                         </h2>
                       </td>
                       <td>
                         <h2 class="table-avatar d-flex align-items-center">
-                          <a href="company-details.html" class="company-img"
+                          <a href="{{route('company-details')}}" class="company-img"
                             ><img
                               src="assets/img/icons/company-icon-09.svg"
                               alt="User Image"
                           /></a>
-                          <a href="company-details.html" class="profile-split"
+                          <a href="{{route('company-details')}}" class="profile-split"
                             >Golden Gate Ltd</a
                           >
                         </h2>
@@ -1130,7 +1130,7 @@
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
-                            <a class="dropdown-item" href="leads-details.html"
+                            <a class="dropdown-item" href="{{route('leads-details')}}"
                               ><i class="fa-regular fa-eye"></i> Preview</a
                             >
                           </div>
@@ -1145,19 +1145,19 @@
                       </td>
                       <td>
                         <h2>
-                          <a href="leads-details.html" class="profile-split"
+                          <a href="{{route('leads-details')}}" class="profile-split"
                             >Leuschke</a
                           >
                         </h2>
                       </td>
                       <td>
                         <h2 class="table-avatar d-flex align-items-center">
-                          <a href="company-details.html" class="company-img"
+                          <a href="{{route('company-details')}}" class="company-img"
                             ><img
                               src="assets/img/icons/company-icon-10.svg"
                               alt="User Image"
                           /></a>
-                          <a href="company-details.html" class="profile-split"
+                          <a href="{{route('company-details')}}" class="profile-split"
                             >Redwood Inc</a
                           >
                         </h2>
@@ -1199,7 +1199,7 @@
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
-                            <a class="dropdown-item" href="leads-details.html"
+                            <a class="dropdown-item" href="{{route('leads-details')}}"
                               ><i class="fa-regular fa-eye"></i> Preview</a
                             >
                           </div>
@@ -1850,7 +1850,7 @@
                         data-bs-dismiss="modal"
                         >Not Now</a
                       >
-                      <a href="leads.html" class="btn btn-primary">Okay</a>
+                      <a href="{{route('leads')}}" class="btn btn-primary">Okay</a>
                     </div>
                   </div>
                 </div>

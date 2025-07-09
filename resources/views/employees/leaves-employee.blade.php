@@ -57,7 +57,7 @@
                         <div class="col">
                             <h3 class="page-title">Leaves</h3>
                             <ul class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="admin-dashboard.html">Dashboard</a></li>
+                                <li class="breadcrumb-item"><a href="{{route('admin-dashboard')}}">Dashboard</a></li>
                                 <li class="breadcrumb-item active">Leaves</li>
                             </ul>
                         </div>
@@ -129,7 +129,7 @@
                                         </td>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar avatar-xs"><img
+                                                <a href="{{route('profile')}}" class="avatar avatar-xs"><img
                                                         src="assets/img/profiles/avatar-09.jpg" alt="User Image"></a>
                                                 <a href="#">Richard Miles</a>
                                             </h2>
@@ -167,7 +167,7 @@
                                         </td>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar avatar-xs"><img
+                                                <a href="{{route('profile')}}" class="avatar avatar-xs"><img
                                                         src="assets/img/profiles/avatar-09.jpg" alt="User Image"></a>
                                                 <a href="#">Richard Miles</a>
                                             </h2>
@@ -205,7 +205,7 @@
                                         </td>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar avatar-xs"><img
+                                                <a href="{{route('profile')}}" class="avatar avatar-xs"><img
                                                         src="assets/img/profiles/avatar-09.jpg" alt="User Image"></a>
                                                 <a href="#">Richard Miles</a>
                                             </h2>
@@ -243,7 +243,7 @@
                                         </td>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar avatar-xs"><img
+                                                <a href="{{route('profile')}}" class="avatar avatar-xs"><img
                                                         src="assets/img/profiles/avatar-09.jpg" alt="User Image"></a>
                                                 <a href="#">Richard Miles</a>
                                             </h2>
@@ -281,7 +281,7 @@
                                         </td>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar avatar-xs"><img
+                                                <a href="{{route('profile')}}" class="avatar avatar-xs"><img
                                                         src="assets/img/profiles/avatar-09.jpg" alt="User Image"></a>
                                                 <a href="#">Richard Miles</a>
                                             </h2>
@@ -319,7 +319,7 @@
                                         </td>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar avatar-xs"><img
+                                                <a href="{{route('profile')}}" class="avatar avatar-xs"><img
                                                         src="assets/img/profiles/avatar-09.jpg" alt="User Image"></a>
                                                 <a href="#">Richard Miles</a>
                                             </h2>
@@ -357,7 +357,7 @@
                                         </td>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar avatar-xs"><img
+                                                <a href="{{route('profile')}}" class="avatar avatar-xs"><img
                                                         src="assets/img/profiles/avatar-09.jpg" alt="User Image"></a>
                                                 <a href="#">Richard Miles</a>
                                             </h2>
@@ -395,7 +395,7 @@
                                         </td>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar avatar-xs"><img
+                                                <a href="{{route('profile')}}" class="avatar avatar-xs"><img
                                                         src="assets/img/profiles/avatar-09.jpg" alt="User Image"></a>
                                                 <a href="#">Richard Miles</a>
                                             </h2>

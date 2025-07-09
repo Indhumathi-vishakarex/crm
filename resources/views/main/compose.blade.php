@@ -7,46 +7,88 @@
   data-sidebar-size="lg"
   data-sidebar-image="none"
 >
-  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/incoming-call by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:22:23 GMT -->
+  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/compose by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:25:06 GMT -->
   <!-- Added by HTTrack --><meta
     http-equiv="content-type"
     content="text/html;charset=UTF-8"
   /><!-- /Added by HTTrack -->
-  <head>
+ <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Smarthr - Bootstrap Admin Template" />
-    <meta
-      name="keywords"
-      content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern, accounts, invoice, html5, responsive, CRM, Projects"
-    />
-    <meta
-      name="author"
-      content="Dreamstechnologies - Bootstrap Admin Template"
-    />
-    <title>Incoming Call - HRMS admin template</title>
-<link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}">
+    <meta name="keywords" content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern, accounts, invoice, html5, responsive, CRM, Projects" />
+    <meta name="author" content="Dreamstechnologies - Bootstrap Admin Template" />
+    <title>Compose - HRMS admin template</title>
 
-<link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}" />
 
-<link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/fontawesome.min.css') }}">
-<link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/all.min.css') }}">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/fontawesome.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/all.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/line-awesome.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/material.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/select2.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/ckeditor.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
+</head>
 
-<link rel="stylesheet" href="{{ asset('assets/css/line-awesome.min.css') }}">
-<link rel="stylesheet" href="{{ asset('assets/css/material.css') }}">
-
-<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
-
-
-  </head>
   <body>
     <div class="main-wrapper">
-     
-@include('layouts.header')
-@include('layouts.sidebar')
+      @include('layouts.header')
+
+      <div class="sidebar" id="sidebar">
+        <div class="sidebar-inner slimscroll">
+          <div id="sidebar-menu" class="sidebar-menu">
+            <ul>
+              <li>
+                <a class href="{{route('inbox')}}"
+                  ><i class="la la-home"></i> <span>Back to Inbox</span></a
+                >
+              </li>
+              <li>
+                <a class href="{{route('inbox')}}"
+                  >Inbox <span class="mail-count">(21)</span></a
+                >
+              </li>
+              <li>
+                <a href="#">Starred</a>
+              </li>
+              <li>
+                <a href="#">Sent Mail</a>
+              </li>
+              <li>
+                <a href="#">Draft <span class="mail-count">(8)</span></a>
+              </li>
+              <li>
+                <a href="#">Trash</a>
+              </li>
+              <li class="menu-title">
+                Label <a href="#"><i class="fa-solid fa-plus"></i></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa fa-circle text-success mail-label"></i> Work</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa fa-circle text-danger mail-label"></i> Office</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa fa-circle text-warning mail-label"></i>
+                  Personal</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
       <div class="two-col-bar" id="two-col-bar">
-        <div class="sidebar sidebar-twocol">
+        <div class="sidebar sidebar-twocol" id="navbar-nav">
           <div class="sidebar-left slimscroll">
             <div
               class="nav flex-column nav-pills"
@@ -67,7 +109,7 @@
                 <span class="material-icons-outlined"> home </span>
               </a>
               <a
-                class="nav-link active"
+                class="nav-link"
                 id="v-pills-apps-tab"
                 title="Apps"
                 data-bs-toggle="pill"
@@ -527,7 +569,7 @@
           <div class="sidebar-right">
             <div class="tab-content" id="v-pills-tabContent">
               <div
-                class="tab-pane fade"
+                class="tab-pane fade show"
                 id="v-pills-dashboard"
                 role="tabpanel"
                 aria-labelledby="v-pills-dashboard-tab"
@@ -551,7 +593,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show active"
+                class="tab-pane fade"
                 id="v-pills-apps"
                 role="tabpanel"
                 aria-labelledby="v-pills-apps-tab"
@@ -559,7 +601,7 @@
                 <p>App</p>
                 <ul>
                   <li>
-                    <a class href="chat.html" class="active">Chat</a>
+                    <a class href="chat.html">Chat</a>
                   </li>
                   <li class="sub-menu">
                     <a href="#">Calls <span class="menu-arrow"></span></a>
@@ -570,9 +612,7 @@
                         <a class href="outgoing-call.html">Outgoing Call</a>
                       </li>
                       <li>
-                        <a class="active" href="incoming-call.html"
-                          >Incoming Call</a
-                        >
+                        <a class href="incoming-call.html">Incoming Call</a>
                       </li>
                     </ul>
                   </li>
@@ -591,7 +631,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade"
+                class="tab-pane fade show"
                 id="v-pills-employees"
                 role="tabpanel"
                 aria-labelledby="v-pills-employees-tab"
@@ -632,7 +672,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade"
+                class="tab-pane fade show"
                 id="v-pills-clients"
                 role="tabpanel"
                 aria-labelledby="v-pills-clients-tab"
@@ -643,7 +683,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade"
+                class="tab-pane fade show"
                 id="v-pills-projects"
                 role="tabpanel"
                 aria-labelledby="v-pills-projects-tab"
@@ -656,7 +696,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade"
+                class="tab-pane fade show"
                 id="v-pills-leads"
                 role="tabpanel"
                 aria-labelledby="v-pills-leads-tab"
@@ -684,7 +724,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade"
+                class="tab-pane fade show"
                 id="v-pills-tickets"
                 role="tabpanel"
                 aria-labelledby="v-pills-tickets-tab"
@@ -698,7 +738,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade"
+                class="tab-pane fade show"
                 id="v-pills-sales"
                 role="tabpanel"
                 aria-labelledby="v-pills-sales-tab"
@@ -716,7 +756,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade"
+                class="tab-pane fade show"
                 id="v-pills-accounting"
                 role="tabpanel"
                 aria-labelledby="v-pills-accounting-tab"
@@ -734,7 +774,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade"
+                class="tab-pane fade show"
                 id="v-pills-payroll"
                 role="tabpanel"
                 aria-labelledby="v-pills-payroll-tab"
@@ -749,7 +789,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade"
+                class="tab-pane fade show"
                 id="v-pills-policies"
                 role="tabpanel"
                 aria-labelledby="v-pills-policies-tab"
@@ -760,7 +800,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade"
+                class="tab-pane fade show"
                 id="v-pills-reports"
                 role="tabpanel"
                 aria-labelledby="v-pills-reports-tab"
@@ -797,7 +837,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade"
+                class="tab-pane fade show"
                 id="v-pills-performance"
                 role="tabpanel"
                 aria-labelledby="v-pills-performance-tab"
@@ -820,7 +860,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade"
+                class="tab-pane fade show"
                 id="v-pills-goals"
                 role="tabpanel"
                 aria-labelledby="v-pills-goals-tab"
@@ -832,7 +872,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade"
+                class="tab-pane fade show"
                 id="v-pills-training"
                 role="tabpanel"
                 aria-labelledby="v-pills-training-tab"
@@ -847,7 +887,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade"
+                class="tab-pane fade show"
                 id="v-pills-promotion"
                 role="tabpanel"
                 aria-labelledby="v-pills-promotion-tab"
@@ -858,7 +898,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade"
+                class="tab-pane fade show"
                 id="v-pills-resignation"
                 role="tabpanel"
                 aria-labelledby="v-pills-resignation-tab"
@@ -869,7 +909,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade"
+                class="tab-pane fade show"
                 id="v-pills-termination"
                 role="tabpanel"
                 aria-labelledby="v-pills-termination-tab"
@@ -880,7 +920,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade"
+                class="tab-pane fade show"
                 id="v-pills-assets"
                 role="tabpanel"
                 aria-labelledby="v-pills-assets-tab"
@@ -891,7 +931,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade"
+                class="tab-pane fade show"
                 id="v-pills-jobs"
                 role="tabpanel"
                 aria-labelledby="v-pills-jobs-tab"
@@ -939,7 +979,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade"
+                class="tab-pane fade show"
                 id="v-pills-knowledgebase"
                 role="tabpanel"
                 aria-labelledby="v-pills-knowledgebase-tab"
@@ -952,7 +992,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade"
+                class="tab-pane fade show"
                 id="v-pills-activities"
                 role="tabpanel"
                 aria-labelledby="v-pills-activities-tab"
@@ -963,7 +1003,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade"
+                class="tab-pane fade show"
                 id="v-pills-users"
                 role="tabpanel"
                 aria-labelledby="v-pills-activities-tab"
@@ -974,7 +1014,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade"
+                class="tab-pane fade show"
                 id="v-pills-settings"
                 role="tabpanel"
                 aria-labelledby="v-pills-settings-tab"
@@ -985,7 +1025,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade"
+                class="tab-pane fade show"
                 id="v-pills-profile"
                 role="tabpanel"
                 aria-labelledby="v-pills-profile-tab"
@@ -999,7 +1039,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade"
+                class="tab-pane fade show"
                 id="v-pills-authentication"
                 role="tabpanel"
                 aria-labelledby="v-pills-authentication-tab"
@@ -1016,7 +1056,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade"
+                class="tab-pane fade show"
                 id="v-pills-errorpages"
                 role="tabpanel"
                 aria-labelledby="v-pills-errorpages-tab"
@@ -1028,7 +1068,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade"
+                class="tab-pane fade show"
                 id="v-pills-subscriptions"
                 role="tabpanel"
                 aria-labelledby="v-pills-subscriptions-tab"
@@ -1053,7 +1093,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade"
+                class="tab-pane fade show"
                 id="v-pills-pages"
                 role="tabpanel"
                 aria-labelledby="v-pills-pages-tab"
@@ -1067,16 +1107,16 @@
                     <a class href="privacy-policy.html"> Privacy Policy </a>
                   </li>
                   <li><a class href="blank-page.html"> Blank Page </a></li>
-                  <li><a class href="coming-soon.html">Coming Soon </a></li>
+                  <li><a class href="coming-soon.html"> Coming Soon </a></li>
                   <li>
-                    <a class href="under-maintenance.html"
-                      >Under Maintanance
+                    <a class href="under-maintenance.html">
+                      Under Maintanance
                     </a>
                   </li>
                 </ul>
               </div>
               <div
-                class="tab-pane fade"
+                class="tab-pane fade show"
                 id="v-pills-baseui"
                 role="tabpanel"
                 aria-labelledby="v-pills-baseui-tab"
@@ -1119,7 +1159,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade"
+                class="tab-pane fade show"
                 id="v-pills-elements"
                 role="tabpanel"
                 aria-labelledby="v-pills-elements-tab"
@@ -1139,7 +1179,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade"
+                class="tab-pane fade show"
                 id="v-pills-charts"
                 role="tabpanel"
                 aria-labelledby="v-pills-charts-tab"
@@ -1155,7 +1195,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade"
+                class="tab-pane fade show"
                 id="v-pills-icons"
                 role="tabpanel"
                 aria-labelledby="v-pills-icons-tab"
@@ -1179,7 +1219,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade"
+                class="tab-pane fade show"
                 id="v-pills-forms"
                 role="tabpanel"
                 aria-labelledby="v-pills-forms-tab"
@@ -1213,7 +1253,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade"
+                class="tab-pane fade show"
                 id="v-pills-tables"
                 role="tabpanel"
                 aria-labelledby="v-pills-tables-tab"
@@ -1285,304 +1325,82 @@
       </div>
 
       <div class="page-wrapper">
-        <div class="call-box incoming-box">
-          <div class="call-wrapper">
-            <div class="call-inner">
-              <div class="call-user">
-                <img
-                  class="call-avatar"
-                  src="assets/img/profiles/avatar-11.jpg"
-                  alt
-                />
-                <h4>Wilmer Deluna</h4>
-                <span>Calling ...</span>
-              </div>
-              <div class="call-items">
-                <a href="chat.html" class="btn call-item call-end"
-                  ><i class="material-icons">call_end</i></a
-                >
-                <a href="video-call.html" class="btn call-item call-start"
-                  ><i class="material-icons">call</i></a
-                >
+        <div class="content container-fluid">
+          <div class="page-header">
+            <div class="row">
+              <div class="col-sm-12">
+                <h3 class="page-title">Compose</h3>
+                <ul class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="{{route('admin-dashboard')}}">Dashboard</a>
+                  </li>
+                  <li class="breadcrumb-item active">Compose</li>
+                </ul>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
 
-    <div id="drag_files" class="modal custom-modal fade" role="dialog">
-      <div class="modal-dialog modal-dialog-centered modal-md" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Drag and drop files upload</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form id="js-upload-form">
-              <div class="upload-drop-zone" id="drop-zone">
-                <i class="fa fa-cloud-upload fa-2x"></i>
-                <span class="upload-text">Just drag and drop files here</span>
-              </div>
-              <h4>Uploading</h4>
-              <ul class="upload-list">
-                <li class="file-list">
-                  <div class="upload-wrap">
-                    <div class="file-name">
-                      <i class="fa fa-photo"></i>
-                      photo.png
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="card">
+                <div class="card-body">
+                  <form>
+                    <div class="input-block mb-3">
+                      <input
+                        type="email"
+                        placeholder="To"
+                        class="form-control"
+                      />
                     </div>
-                    <div class="file-size">1.07 gb</div>
-                    <button type="button" class="file-close">
-                      <i class="fa fa-close"></i>
-                    </button>
-                  </div>
-                  <div class="progress progress-xs progress-striped">
-                    <div
-                      class="progress-bar bg-success"
-                      role="progressbar"
-                      style="width: 65%"
-                    ></div>
-                  </div>
-                  <div class="upload-process">37% done</div>
-                </li>
-                <li class="file-list">
-                  <div class="upload-wrap">
-                    <div class="file-name">
-                      <i class="fa fa-file"></i>
-                      task.doc
-                    </div>
-                    <div class="file-size">5.8 kb</div>
-                    <button type="button" class="file-close">
-                      <i class="fa fa-close"></i>
-                    </button>
-                  </div>
-                  <div class="progress progress-xs progress-striped">
-                    <div
-                      class="progress-bar bg-success"
-                      role="progressbar"
-                      style="width: 65%"
-                    ></div>
-                  </div>
-                  <div class="upload-process">37% done</div>
-                </li>
-                <li class="file-list">
-                  <div class="upload-wrap">
-                    <div class="file-name">
-                      <i class="fa fa-photo"></i>
-                      dashboard.png
-                    </div>
-                    <div class="file-size">2.1 mb</div>
-                    <button type="button" class="file-close">
-                      <i class="fa fa-close"></i>
-                    </button>
-                  </div>
-                  <div class="progress progress-xs progress-striped">
-                    <div
-                      class="progress-bar bg-success"
-                      role="progressbar"
-                      style="width: 65%"
-                    ></div>
-                  </div>
-                  <div class="upload-process">Completed</div>
-                </li>
-              </ul>
-            </form>
-            <div class="submit-section">
-              <button class="btn btn-primary submit-btn">Submit</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="add_group" class="modal custom-modal fade" role="dialog">
-      <div class="modal-dialog modal-dialog-centered modal-md" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Create a group</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p>
-              Groups are where your team communicates. They’re best when
-              organized around a topic — #leads, for example.
-            </p>
-            <form>
-              <div class="input-block mb-3">
-                <label class="col-form-label"
-                  >Group Name <span class="text-danger">*</span></label
-                >
-                <input class="form-control" type="text" />
-              </div>
-              <div class="input-block mb-3">
-                <label class="col-form-label"
-                  >Send invites to:
-                  <span class="text-muted-light">(optional)</span></label
-                >
-                <input class="form-control" type="text" />
-              </div>
-              <div class="submit-section">
-                <button class="btn btn-primary submit-btn">Submit</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="add_chat_user" class="modal custom-modal fade" role="dialog">
-      <div class="modal-dialog modal-dialog-centered modal-md" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Direct Chat</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="input-group m-b-30">
-              <input
-                placeholder="Search to start a chat"
-                class="form-control search-input"
-                type="text"
-              />
-              <button class="btn btn-primary">Search</button>
-            </div>
-            <div>
-              <h5>Recent Conversations</h5>
-              <ul class="chat-user-list">
-                <li>
-                  <a href="#">
-                    <div class="chat-block d-flex">
-                      <span class="avatar align-self-center flex-shrink-0">
-                        <img
-                          src="assets/img/profiles/avatar-16.jpg"
-                          alt="User Image"
-                        />
-                      </span>
-                      <div
-                        class="media-body align-self-center text-nowrap flex-grow-1"
-                      >
-                        <div class="user-name">Jeffery Lalor</div>
-                        <span class="designation">Team Leader</span>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="input-block mb-3">
+                          <input
+                            type="email"
+                            placeholder="Cc"
+                            class="form-control"
+                          />
+                        </div>
                       </div>
-                      <div class="text-nowrap align-self-center">
-                        <div class="online-date">1 day ago</div>
+                      <div class="col-md-6">
+                        <div class="input-block mb-3">
+                          <input
+                            type="email"
+                            placeholder="Bcc"
+                            class="form-control"
+                          />
+                        </div>
                       </div>
                     </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="chat-block d-flex">
-                      <span class="avatar align-self-center flex-shrink-0">
-                        <img
-                          src="assets/img/profiles/avatar-13.jpg"
-                          alt="User Image"
-                        />
-                      </span>
-                      <div
-                        class="media-body align-self-center text-nowrap flex-grow-1"
-                      >
-                        <div class="user-name">Bernardo Galaviz</div>
-                        <span class="designation">Web Developer</span>
-                      </div>
-                      <div class="align-self-center text-nowrap">
-                        <div class="online-date">3 days ago</div>
+                    <div class="input-block mb-3">
+                      <input
+                        type="text"
+                        placeholder="Subject"
+                        class="form-control"
+                      />
+                    </div>
+                    <div class="input-block mb-3">
+                      <div id="editor"></div>
+                    </div>
+                    <div class="input-block mb-0">
+                      <div class="text-center">
+                        <button class="btn btn-primary">
+                          <span>Send</span>
+                          <i class="fa-solid fa-paper-plane m-l-5"></i>
+                        </button>
+                        <button class="btn btn-success m-l-5" type="button">
+                          <span>Draft</span>
+                          <i class="fa-regular fa-floppy-disk m-l-5"></i>
+                        </button>
+                        <button class="btn btn-success m-l-5" type="button">
+                          <span>Delete</span>
+                          <i class="fa-regular fa-trash-can m-l-5"></i>
+                        </button>
                       </div>
                     </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="chat-block d-flex">
-                      <span class="avatar align-self-center flex-shrink-0">
-                        <img
-                          src="assets/img/profiles/avatar-02.jpg"
-                          alt="User Image"
-                        />
-                      </span>
-                      <div
-                        class="media-body text-nowrap align-self-center flex-grow-1"
-                      >
-                        <div class="user-name">John Doe</div>
-                        <span class="designation">Web Designer</span>
-                      </div>
-                      <div class="align-self-center text-nowrap">
-                        <div class="online-date">7 months ago</div>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="submit-section">
-              <button class="btn btn-primary submit-btn">Submit</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="share_files" class="modal custom-modal fade" role="dialog">
-      <div class="modal-dialog modal-dialog-centered modal-md" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Share File</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="files-share-list">
-              <div class="files-cont">
-                <div class="file-type">
-                  <span class="files-icon"
-                    ><i class="fa-regular fa-file-pdf"></i
-                  ></span>
-                </div>
-                <div class="files-info">
-                  <span class="file-name text-ellipsis"
-                    >AHA Selfcare Mobile Application Test-Cases.xls</span
-                  >
-                  <span class="file-author"
-                    ><a href="#">Bernardo Galaviz</a></span
-                  >
-                  <span class="file-date">May 31st at 6:53 PM</span>
+                  </form>
                 </div>
               </div>
-            </div>
-            <div class="input-block mb-3">
-              <label class="col-form-label">Share With</label>
-              <input class="form-control" type="text" />
-            </div>
-            <div class="submit-section">
-              <button class="btn btn-primary submit-btn">Share</button>
             </div>
           </div>
         </div>
@@ -2152,24 +1970,27 @@
         </div>
       </div>
     </div>
-    
+    <!-- Core JS Libraries -->
+<script src="{{ asset('assets/js/jquery-3.7.1.min.js') }}"></script>
+<script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ asset('assets/js/jquery.slimscroll.min.js') }}"></script>
 
-<script src="{{ asset('assets/js/jquery-3.7.1.min.js') }}" type="text/javascript"></script>
-<script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}" type="text/javascript"></script>
-<script src="{{ asset('assets/js/jquery.slimscroll.min.js') }}" type="text/javascript"></script>
-<script src="{{ asset('assets/js/feather.min.js') }}" type="text/javascript"></script>
-<script src="{{ asset('assets/js/layout.js') }}" type="text/javascript"></script>
-<script src="{{ asset('assets/js/theme-settings.js') }}" type="text/javascript"></script>
-<script src="{{ asset('assets/js/greedynav.js') }}" type="text/javascript"></script>
-<script src="{{ asset('assets/js/app.js') }}" type="text/javascript"></script>
+<!-- Plugins -->
+<script src="{{ asset('assets/js/select2.min.js') }}"></script>
+<script src="{{ asset('assets/js/ckeditor.js') }}"></script>
+<script src="{{ asset('assets/js/feather.min.js') }}"></script>
 
-<!-- Optional: Cloudflare Rocket Loader -->
-<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="4c14fb341c4556785564cd28-|49" defer></script>
+<!-- Template Scripts -->
+<script src="{{ asset('assets/js/layout.js') }}"></script>
+<script src="{{ asset('assets/js/theme-settings.js') }}"></script>
+<script src="{{ asset('assets/js/greedynav.js') }}"></script>
+<script src="{{ asset('assets/js/app.js') }}"></script>
 
-
-
+<!-- Cloudflare Rocket Loader (Optional, usually not needed in dev) -->
+<script src="{{ asset('../../../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js') }}" 
+        data-cf-settings="870ceab70738108c006b26e0-|49" defer></script>
 
   </body>
 
-  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/incoming-call by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:22:24 GMT -->
+  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/compose by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:25:06 GMT -->
 </html>

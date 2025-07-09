@@ -7,96 +7,224 @@
   data-sidebar-size="lg"
   data-sidebar-image="none"
 >
-  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/payments by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:23:07 GMT -->
+  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/assets-details by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:24:48 GMT -->
   <!-- Added by HTTrack --><meta
     http-equiv="content-type"
     content="text/html;charset=UTF-8"
   /><!-- /Added by HTTrack -->
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Smarthr - Bootstrap Admin Template" />
-    <meta name="keywords" content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern, accounts, invoice, html5, responsive, CRM, Projects" />
-    <meta name="author" content="Dreamstechnologies - Bootstrap Admin Template" />
-    <title>Payments - HRMS admin template</title>
+    <meta
+      name="keywords"
+      content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern, accounts, invoice, html5, responsive, CRM, Projects"
+    />
+    <meta
+      name="author"
+      content="Dreamstechnologies - Bootstrap Admin Template"
+    />
+    <title>Assets - HRMS admin template</title>
+<!-- Favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}" />
 
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}" />
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}" />
 
-    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/fontawesome.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/all.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/css/line-awesome.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/css/material.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/css/dataTables.bootstrap4.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
-</head>
+<!-- Font Awesome -->
+<link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/fontawesome.min.css') }}" />
+<link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/all.min.css') }}" />
 
+<!-- Icons -->
+<link rel="stylesheet" href="{{ asset('assets/css/feather.css') }}" />
+<link rel="stylesheet" href="{{ asset('assets/css/line-awesome.min.css') }}" />
+<link rel="stylesheet" href="{{ asset('assets/css/material.css') }}" />
+
+<!-- UI Plugins -->
+<link rel="stylesheet" href="{{ asset('assets/css/select2.min.css') }}" />
+<link rel="stylesheet" href="{{ asset('assets/css/bootstrap-datetimepicker.min.css') }}" />
+<link rel="stylesheet" href="{{ asset('assets/plugins/summernote/summernote-bs4.min.css') }}" />
+<link rel="stylesheet" href="{{ asset('assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css') }}" />
+
+<!-- Custom Style -->
+<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
+
+  </head>
   <body>
     <div class="main-wrapper">
-    @include('layouts.header')
-    @include('layouts.sidebar')
+    
 
-      
+
+   
+@include('layouts.header')
+@include('layouts.sidebar')
 
       <div class="page-wrapper">
         <div class="content container-fluid">
           <div class="page-header">
             <div class="row">
               <div class="col-sm-12">
-                <h3 class="page-title">Payments</h3>
+                <h3 class="page-title">Assets</h3>
                 <ul class="breadcrumb">
                   <li class="breadcrumb-item">
-                    <a href="admin-dashboard.html">Dashboard</a>
+                    <a href="{{route('admin-dashboard')}}">Dashboard</a>
                   </li>
-                  <li class="breadcrumb-item active">Payments</li>
+                  <li class="breadcrumb-item active">Assets</li>
                 </ul>
               </div>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-md-12">
-              <div class="table-responsive">
-                <table class="table table-striped custom-table datatable mb-0">
-                  <thead>
-                    <tr>
-                      <th>Invoice ID</th>
-                      <th>Client</th>
-                      <th>Payment Type</th>
-                      <th>Paid Date</th>
-                      <th>Paid Amount</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td><a href="invoice-view.html">#INV-0001</a></td>
-                      <td>
-                        <h2><a href="#">Global Technologies</a></h2>
-                      </td>
-                      <td>Paypal</td>
-                      <td>8 Feb 2019</td>
-                      <td>$500</td>
-                    </tr>
-                    <tr>
-                      <td><a href="invoice-view.html">#INV-0002</a></td>
-                      <td>
-                        <h2><a href="#">Delta Infotech</a></h2>
-                      </td>
-                      <td>Paypal</td>
-                      <td>8 Feb 2019</td>
-                      <td>$500</td>
-                    </tr>
-                    <tr>
-                      <td><a href="invoice-view.html">#INV-0003</a></td>
-                      <td>
-                        <h2><a href="#">Cream Inc</a></h2>
-                      </td>
-                      <td>Paypal</td>
-                      <td>8 Feb 2019</td>
-                      <td>$500</td>
-                    </tr>
-                  </tbody>
-                </table>
+            <div class="col-lg-12">
+              <div class="assign-head">
+                <div class="assign-content">
+                  <img src="assets/img/keyboard.png" alt="img" />
+                  <h6>Dell Keyboard</h6>
+                </div>
+                <div class="assign-content">
+                  <a
+                    href="#"
+                    class="btn btn-assign"
+                    data-bs-toggle="modal"
+                    data-bs-target="#add-assign"
+                    ><i class="fa fa-plus"></i> Assign
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-12">
+              <div class="assets-info">
+                <h2>Asset Info</h2>
+                <ul>
+                  <li>
+                    <span>Type</span>
+                    <p>Keybaord</p>
+                  </li>
+                  <li>
+                    <span>Brand</span>
+                    <p>Dell</p>
+                  </li>
+                  <li>
+                    <span>Model</span>
+                    <p>SE5214 - 2022</p>
+                  </li>
+                  <li>
+                    <span>Serial Number</span>
+                    <p>3647952145678</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6 col-12">
+              <div class="assets-info">
+                <h2>Asset History</h2>
+                <ul>
+                  <li>
+                    <span>Vendor</span>
+                    <p>Compusoft Systems Ltd.,</p>
+                  </li>
+                  <li>
+                    <span>Category</span>
+                    <p>Computer</p>
+                  </li>
+                  <li>
+                    <span>Cost</span>
+                    <p>₹ 1,200</p>
+                  </li>
+                  <li>
+                    <span>Location</span>
+                    <p>123 Street, Vivekanandhar Road, Coimbatore - 32</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6 col-12 d-flex">
+              <div class="assets-info">
+                <h2>Warranty</h2>
+                <ul>
+                  <li>
+                    <span>Start Date</span>
+                    <p>12/11/2022</p>
+                  </li>
+                  <li>
+                    <span>End Date</span>
+                    <p>12/11/2024</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6 col-12 d-flex">
+              <div class="assets-info assets-image">
+                <h2>Asset Images</h2>
+                <ul>
+                  <li>
+                    <img src="assets/img/img1.jpg" alt="img" />
+                  </li>
+                  <li>
+                    <img src="assets/img/img2.jpg" alt="img" />
+                  </li>
+                  <li>
+                    <img src="assets/img/img3.jpg" alt="img" />
+                  </li>
+                  <li>
+                    <img src="assets/img/img4.jpg" alt="img" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="modal custom-modal fade"
+            id="add-assign"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Assign Asset</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="row">
+                      <div class="col-md-12 selectnew">
+                        <div class="input-block mb-3">
+                          <label class="col-form-label">Department</label>
+                          <select class="select">
+                            <option>Department 1</option>
+                            <option>Department 2</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-12 selectnew">
+                        <div class="input-block mb-3">
+                          <label class="col-form-label">Assign to</label>
+                          <select class="select">
+                            <option>Customer</option>
+                            <option>Client</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="submit-section mt-3">
+                        <button class="btn btn-primary submit-btns w-100">
+                          Submit
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
@@ -667,30 +795,32 @@
         </div>
       </div>
     </div>
-    <!-- Core JS Libraries -->
+  <!-- Cloudflare Email Decode -->
+<script data-cfasync="false" src="{{ asset('../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js') }}"></script>
+
+<!-- jQuery & Bootstrap -->
 <script src="{{ asset('assets/js/jquery-3.7.1.min.js') }}"></script>
 <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
-<script src="{{ asset('assets/js/jquery.slimscroll.min.js') }}"></script>
-
-<!-- DataTables -->
-<script src="{{ asset('assets/js/jquery.dataTables.min.js') }}"></script>
-<script src="{{ asset('assets/js/dataTables.bootstrap4.min.js') }}"></script>
 
 <!-- Plugins -->
-<script src="{{ asset('assets/js/feather.min.js') }}"></script>
+<script src="{{ asset('assets/js/jquery.slimscroll.min.js') }}"></script>
+<script src="{{ asset('assets/js/select2.min.js') }}"></script>
+<script src="{{ asset('assets/js/moment.min.js') }}"></script>
+<script src="{{ asset('assets/js/bootstrap-datetimepicker.min.js') }}"></script>
+<script src="{{ asset('assets/plugins/summernote/summernote-bs4.min.js') }}"></script>
+<script src="{{ asset('assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js') }}"></script>
 
-<!-- Custom Template Scripts -->
+<!-- UI & Theme -->
+<script src="{{ asset('assets/js/feather.min.js') }}"></script>
 <script src="{{ asset('assets/js/layout.js') }}"></script>
 <script src="{{ asset('assets/js/theme-settings.js') }}"></script>
 <script src="{{ asset('assets/js/greedynav.js') }}"></script>
 <script src="{{ asset('assets/js/app.js') }}"></script>
 
-<!-- Optional: Cloudflare Rocket Loader -->
-<script src="{{ asset('../../../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js') }}"
-        data-cf-settings="928ee186ea7abb9a4c27a67c-|49"
-        defer></script>
+<!-- Cloudflare Rocket Loader -->
+<script src="{{ asset('../../../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js') }}" data-cf-settings="798090201b2a93ab9fd2641c-|49" defer></script>
 
   </body>
 
-  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/payments by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:23:07 GMT -->
+  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/assets-details by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:24:52 GMT -->
 </html>

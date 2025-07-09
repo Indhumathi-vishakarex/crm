@@ -56,7 +56,7 @@
                         <div class="col">
                             <h3 class="page-title">Clients</h3>
                             <ul class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="admin-dashboard.html">Dashboard</a></li>
+                                <li class="breadcrumb-item"><a href="{{route('admin-dashboard')}}">Dashboard</a></li>
                                 <li class="breadcrumb-item active">Clients</li>
                             </ul>
                         </div>
@@ -110,7 +110,7 @@
                     <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
                         <div class="profile-widget">
                             <div class="profile-img">
-                                <a href="client-profile.html" class="avatar"><img alt
+                                <a href="{{route('client-profile')}}" class="avatar"><img alt
                                         src="assets/img/profiles/avatar-19.jpg"></a>
                             </div>
                             <div class="dropdown profile-action">
@@ -124,19 +124,19 @@
                                             class="fa-regular fa-trash-can m-r-5"></i> Delete</a>
                                 </div>
                             </div>
-                            <h4 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.html">Global
+                            <h4 class="user-name m-t-10 mb-0 text-ellipsis"><a href="{{route('client-profile')}}">Global
                                     Technologies</a></h4>
-                            <h5 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.html">Barry
+                            <h5 class="user-name m-t-10 mb-0 text-ellipsis"><a href="{{route('client-profile')}}">Barry
                                     Cuda</a></h5>
                             <div class="small text-muted">CEO</div>
                             <a href="chat.html" class="btn btn-white btn-sm m-t-10">Message</a>
-                            <a href="client-profile.html" class="btn btn-white btn-sm m-t-10">View Profile</a>
+                            <a href="{{route('client-profile')}}" class="btn btn-white btn-sm m-t-10">View Profile</a>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
                         <div class="profile-widget">
                             <div class="profile-img">
-                                <a href="client-profile.html" class="avatar"><img alt
+                                <a href="{{route('client-profile')}}" class="avatar"><img alt
                                         src="assets/img/profiles/avatar-29.jpg"></a>
                             </div>
                             <div class="dropdown profile-action">
@@ -150,21 +150,21 @@
                                             class="fa-regular fa-trash-can m-r-5"></i> Delete</a>
                                 </div>
                             </div>
-                            <h4 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.html">Delta
+                            <h4 class="user-name m-t-10 mb-0 text-ellipsis"><a href="{{route('client-profile')}}">Delta
                                     Infotech</a>
                             </h4>
-                            <h5 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.html">Tressa
+                            <h5 class="user-name m-t-10 mb-0 text-ellipsis"><a href="{{route('client-profile')}}">Tressa
                                     Wexler</a>
                             </h5>
                             <div class="small text-muted">Manager</div>
                             <a href="chat.html" class="btn btn-white btn-sm m-t-10">Message</a>
-                            <a href="client-profile.html" class="btn btn-white btn-sm m-t-10">View Profile</a>
+                            <a href="{{route('client-profile')}}" class="btn btn-white btn-sm m-t-10">View Profile</a>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
                         <div class="profile-widget">
                             <div class="profile-img">
-                                <a href="client-profile.html" class="avatar"><img
+                                <a href="{{route('client-profile')}}" class="avatar"><img
                                         src="assets/img/profiles/avatar-07.jpg" alt></a>
                             </div>
                             <div class="dropdown profile-action">
@@ -178,20 +178,20 @@
                                             class="fa-regular fa-trash-can m-r-5"></i> Delete</a>
                                 </div>
                             </div>
-                            <h4 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.html">Cream
+                            <h4 class="user-name m-t-10 mb-0 text-ellipsis"><a href="{{route('client-profile')}}">Cream
                                     Inc</a></h4>
-                            <h5 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.html">Ruby
+                            <h5 class="user-name m-t-10 mb-0 text-ellipsis"><a href="{{route('client-profile')}}">Ruby
                                     Bartlett</a>
                             </h5>
                             <div class="small text-muted">CEO</div>
                             <a href="chat.html" class="btn btn-white btn-sm m-t-10">Message</a>
-                            <a href="client-profile.html" class="btn btn-white btn-sm m-t-10">View Profile</a>
+                            <a href="{{route('client-profile')}}" class="btn btn-white btn-sm m-t-10">View Profile</a>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
                         <div class="profile-widget">
                             <div class="profile-img">
-                                <a href="client-profile.html" class="avatar"><img
+                                <a href="{{route('client-profile')}}" class="avatar"><img
                                         src="assets/img/profiles/avatar-06.jpg" alt></a>
                             </div>
                             <div class="dropdown profile-action">
@@ -205,20 +205,20 @@
                                             class="fa-regular fa-trash-can m-r-5"></i> Delete</a>
                                 </div>
                             </div>
-                            <h4 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.html">Wellware
+                            <h4 class="user-name m-t-10 mb-0 text-ellipsis"><a href="{{route('client-profile')}}">Wellware
                                     Company</a></h4>
-                            <h5 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.html">Misty
+                            <h5 class="user-name m-t-10 mb-0 text-ellipsis"><a href="{{route('client-profile')}}">Misty
                                     Tison</a>
                             </h5>
                             <div class="small text-muted">CEO</div>
                             <a href="chat.html" class="btn btn-white btn-sm m-t-10">Message</a>
-                            <a href="client-profile.html" class="btn btn-white btn-sm m-t-10">View Profile</a>
+                            <a href="{{route('client-profile')}}" class="btn btn-white btn-sm m-t-10">View Profile</a>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
                         <div class="profile-widget">
                             <div class="profile-img">
-                                <a href="client-profile.html" class="avatar"><img alt
+                                <a href="{{route('client-profile')}}" class="avatar"><img alt
                                         src="assets/img/profiles/avatar-14.jpg"></a>
                             </div>
                             <div class="dropdown profile-action">
@@ -232,20 +232,20 @@
                                             class="fa-regular fa-trash-can m-r-5"></i> Delete</a>
                                 </div>
                             </div>
-                            <h4 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.html">Mustang
+                            <h4 class="user-name m-t-10 mb-0 text-ellipsis"><a href="{{route('client-profile')}}">Mustang
                                     Technologies</a></h4>
-                            <h5 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.html">Daniel
+                            <h5 class="user-name m-t-10 mb-0 text-ellipsis"><a href="{{route('client-profile')}}">Daniel
                                     Deacon</a>
                             </h5>
                             <div class="small text-muted">CEO</div>
                             <a href="chat.html" class="btn btn-white btn-sm m-t-10">Message</a>
-                            <a href="client-profile.html" class="btn btn-white btn-sm m-t-10">View Profile</a>
+                            <a href="{{route('client-profile')}}" class="btn btn-white btn-sm m-t-10">View Profile</a>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
                         <div class="profile-widget">
                             <div class="profile-img">
-                                <a href="client-profile.html" class="avatar"><img alt
+                                <a href="{{route('client-profile')}}" class="avatar"><img alt
                                         src="assets/img/profiles/avatar-18.jpg"></a>
                             </div>
                             <div class="dropdown profile-action">
@@ -260,20 +260,20 @@
                                 </div>
                             </div>
                             <h4 class="user-name m-t-10 mb-0 text-ellipsis"><a
-                                    href="client-profile.html">International
+                                    href="{{route('client-profile')}}">International
                                     Software Inc</a></h4>
-                            <h5 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.html">Walter
+                            <h5 class="user-name m-t-10 mb-0 text-ellipsis"><a href="{{route('client-profile')}}">Walter
                                     Weaver</a>
                             </h5>
                             <div class="small text-muted">CEO</div>
                             <a href="chat.html" class="btn btn-white btn-sm m-t-10">Message</a>
-                            <a href="client-profile.html" class="btn btn-white btn-sm m-t-10">View Profile</a>
+                            <a href="{{route('client-profile')}}" class="btn btn-white btn-sm m-t-10">View Profile</a>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
                         <div class="profile-widget">
                             <div class="profile-img">
-                                <a href="client-profile.html" class="avatar"><img alt
+                                <a href="{{route('client-profile')}}" class="avatar"><img alt
                                         src="assets/img/profiles/avatar-28.jpg"></a>
                             </div>
                             <div class="dropdown profile-action">
@@ -287,21 +287,21 @@
                                             class="fa-regular fa-trash-can m-r-5"></i> Delete</a>
                                 </div>
                             </div>
-                            <h4 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.html">Mercury
+                            <h4 class="user-name m-t-10 mb-0 text-ellipsis"><a href="{{route('client-profile')}}">Mercury
                                     Software
                                     Inc</a></h4>
-                            <h5 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.html">Amanda
+                            <h5 class="user-name m-t-10 mb-0 text-ellipsis"><a href="{{route('client-profile')}}">Amanda
                                     Warren</a>
                             </h5>
                             <div class="small text-muted">CEO</div>
                             <a href="chat.html" class="btn btn-white btn-sm m-t-10">Message</a>
-                            <a href="client-profile.html" class="btn btn-white btn-sm m-t-10">View Profile</a>
+                            <a href="{{route('client-profile')}}" class="btn btn-white btn-sm m-t-10">View Profile</a>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
                         <div class="profile-widget">
                             <div class="profile-img">
-                                <a href="client-profile.html" class="avatar"><img alt
+                                <a href="{{route('client-profile')}}" class="avatar"><img alt
                                         src="assets/img/profiles/avatar-13.jpg"></a>
                             </div>
                             <div class="dropdown profile-action">
@@ -315,15 +315,15 @@
                                             class="fa-regular fa-trash-can m-r-5"></i> Delete</a>
                                 </div>
                             </div>
-                            <h4 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.html">Carlson
+                            <h4 class="user-name m-t-10 mb-0 text-ellipsis"><a href="{{route('client-profile')}}">Carlson
                                     Tech</a>
                             </h4>
-                            <h5 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.html">Betty
+                            <h5 class="user-name m-t-10 mb-0 text-ellipsis"><a href="{{route('client-profile')}}">Betty
                                     Carlson</a>
                             </h5>
                             <div class="small text-muted">CEO</div>
                             <a href="chat.html" class="btn btn-white btn-sm m-t-10">Message</a>
-                            <a href="client-profile.html" class="btn btn-white btn-sm m-t-10">View Profile</a>
+                            <a href="{{route('client-profile')}}" class="btn btn-white btn-sm m-t-10">View Profile</a>
                         </div>
                     </div>
                 </div>

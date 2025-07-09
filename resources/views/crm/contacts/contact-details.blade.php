@@ -31,49 +31,46 @@
       type="image/x-icon"
       href="assets/img/favicon.png"
     />
+<!-- Favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}" />
 
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}" />
 
-    <link
-      rel="stylesheet"
-      href="assets/plugins/fontawesome/css/fontawesome.min.css"
-    />
-    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css" />
+<!-- Font Awesome -->
+<link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/fontawesome.min.css') }}" />
+<link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/all.min.css') }}" />
 
-    <link rel="stylesheet" href="assets/css/feather.css" />
+<!-- Icons -->
+<link rel="stylesheet" href="{{ asset('assets/css/feather.css') }}" />
+<link rel="stylesheet" href="{{ asset('assets/css/line-awesome.min.css') }}" />
+<link rel="stylesheet" href="{{ asset('assets/css/material.css') }}" />
 
-    <link rel="stylesheet" href="assets/css/line-awesome.min.css" />
+<!-- UI Plugins -->
+<link rel="stylesheet" href="{{ asset('assets/css/select2.min.css') }}" />
+<link rel="stylesheet" href="{{ asset('assets/css/bootstrap-datetimepicker.min.css') }}" />
+<link rel="stylesheet" href="{{ asset('assets/plugins/summernote/summernote-bs4.min.css') }}" />
+<link rel="stylesheet" href="{{ asset('assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css') }}" />
 
-    <link rel="stylesheet" href="assets/css/line-awesome.min.css" />
-    <link rel="stylesheet" href="assets/css/material.css" />
+<!-- Custom Style -->
+<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
 
-    <link rel="stylesheet" href="assets/css/select2.min.css" />
-
-    <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css" />
-
-    <link
-      rel="stylesheet"
-      href="assets/plugins/summernote/summernote-bs4.min.css"
-    />
-
-    <link
-      rel="stylesheet"
-      href="assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css"
-    />
-
-    <link rel="stylesheet" href="assets/css/style.css" />
+  
   </head>
   <body>
     <div class="main-wrapper">
-      <div class="header">
+
+      @include('layouts.header')
+      @include('layouts.sidebar')
+      {{-- <div class="header">
         <div class="header-left">
-          <a href="admin-dashboard.html" class="logo">
+          <a href="{{route('admin-dashboard')}}" class="logo">
             <img src="assets/img/logo.svg" alt="Logo" />
           </a>
-          <a href="admin-dashboard.html" class="logo collapse-logo">
+          <a href="{{route('admin-dashboard')}}" class="logo collapse-logo">
             <img src="assets/img/collapse-logo.svg" alt="Logo" />
           </a>
-          <a href="admin-dashboard.html" class="logo2">
+          <a href="{{route('admin-dashboard')}}" class="logo2">
             <img src="assets/img/logo2.png" width="40" height="40" alt="Logo" />
           </a>
         </div>
@@ -464,9 +461,9 @@
             <a class="dropdown-item" href="index.html">Logout</a>
           </div>
         </div>
-      </div>
+      </div> --}}
 
-      <div class="sidebar" id="sidebar">
+      {{-- <div class="sidebar" id="sidebar">
         <div class="sidebar-inner slimscroll">
           <div id="sidebar-menu" class="sidebar-menu">
             <nav class="greedys sidebar-horizantal">
@@ -481,7 +478,7 @@
                   ></a>
                   <ul>
                     <li>
-                      <a class href="admin-dashboard.html">Admin Dashboard</a>
+                      <a class href="{{route('admin-dashboard')}}">Admin Dashboard</a>
                     </li>
                     <li>
                       <a class href="employee-dashboard.html"
@@ -1163,7 +1160,7 @@
                 ></a>
                 <ul>
                   <li>
-                    <a class href="admin-dashboard.html" class="active"
+                    <a class href="{{route('admin-dashboard')}}" class="active"
                       >Admin Dashboard</a
                     >
                   </li>
@@ -1813,8 +1810,8 @@
             </ul>
           </div>
         </div>
-      </div>
-
+      </div> --}}
+{{-- 
       <div class="two-col-bar" id="two-col-bar">
         <div class="sidebar sidebar-twocol" id="navbar-nav">
           <div class="sidebar-left slimscroll">
@@ -2305,7 +2302,7 @@
                 <p>Dashboard</p>
                 <ul>
                   <li>
-                    <a class href="admin-dashboard.html">Admin Dashboard</a>
+                    <a class href="{{route('admin-dashboard')}}">Admin Dashboard</a>
                   </li>
                   <li>
                     <a class href="employee-dashboard.html"
@@ -3050,7 +3047,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> --}}
 
       <div class="page-wrapper">
         <div class="content container-fluid">
@@ -3060,7 +3057,7 @@
                 <h3 class="page-title">Contact</h3>
                 <ul class="breadcrumb">
                   <li class="breadcrumb-item">
-                    <a href="admin-dashboard.html">Dashboard</a>
+                    <a href="{{route('admin-dashboard')}}">Dashboard</a>
                   </li>
                   <li class="breadcrumb-item active">Contact</li>
                 </ul>
@@ -3091,7 +3088,7 @@
                   <div class="col-sm-6">
                     <ul class="contact-breadcrumb">
                       <li>
-                        <a href="contact-grid.html"
+                        <a href="{{route('contact-grid')}}"
                           ><i class="las la-arrow-left"></i> Contacts</a
                         >
                       </li>
@@ -3103,12 +3100,12 @@
                       <p>1 of 40</p>
                       <ul>
                         <li>
-                          <a href="contact-details.html"
+                          <a href="{{route('contact-details')}}"
                             ><i class="las la-arrow-left"></i
                           ></a>
                         </li>
                         <li>
-                          <a href="contact-details.html"
+                          <a href="{{route('contact-details')}}"
                             ><i class="las la-arrow-right"></i
                           ></a>
                         </li>
@@ -4988,7 +4985,7 @@
                       >”. Now you can access email.
                     </p>
                     <div class="col-lg-12 text-center form-wizard-button">
-                      <a href="contact-details.html" class="btn btn-primary"
+                      <a href="{{route('contact-details')}}" class="btn btn-primary"
                         >Go to email</a
                       >
                     </div>
@@ -7231,7 +7228,7 @@
                         data-bs-dismiss="modal"
                         >Not Now</a
                       >
-                      <a href="contact-details.html" class="btn btn-primary"
+                      <a href="{{route('contact-details')}}" class="btn btn-primary"
                         >Okay</a
                       >
                     </div>
@@ -7807,75 +7804,34 @@
         </div>
       </div>
     </div>
-    <script
-      data-cfasync="false"
-      src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
-    ></script>
-    <script
-      src="assets/js/jquery-3.7.1.min.js"
-      type="798090201b2a93ab9fd2641c-text/javascript"
-    ></script>
+  
+  <!-- Cloudflare Email Decode -->
+<script data-cfasync="false" src="{{ asset('../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js') }}"></script>
 
-    <script
-      src="assets/js/bootstrap.bundle.min.js"
-      type="798090201b2a93ab9fd2641c-text/javascript"
-    ></script>
+<!-- jQuery & Bootstrap -->
+<script src="{{ asset('assets/js/jquery-3.7.1.min.js') }}"></script>
+<script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
 
-    <script
-      src="assets/js/jquery.slimscroll.min.js"
-      type="798090201b2a93ab9fd2641c-text/javascript"
-    ></script>
+<!-- Plugins -->
+<script src="{{ asset('assets/js/jquery.slimscroll.min.js') }}"></script>
+<script src="{{ asset('assets/js/select2.min.js') }}"></script>
+<script src="{{ asset('assets/js/moment.min.js') }}"></script>
+<script src="{{ asset('assets/js/bootstrap-datetimepicker.min.js') }}"></script>
+<script src="{{ asset('assets/plugins/summernote/summernote-bs4.min.js') }}"></script>
+<script src="{{ asset('assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js') }}"></script>
 
-    <script
-      src="assets/js/select2.min.js"
-      type="798090201b2a93ab9fd2641c-text/javascript"
-    ></script>
+<!-- UI & Theme -->
+<script src="{{ asset('assets/js/feather.min.js') }}"></script>
+<script src="{{ asset('assets/js/layout.js') }}"></script>
+<script src="{{ asset('assets/js/theme-settings.js') }}"></script>
+<script src="{{ asset('assets/js/greedynav.js') }}"></script>
+<script src="{{ asset('assets/js/app.js') }}"></script>
 
-    <script
-      src="assets/js/moment.min.js"
-      type="798090201b2a93ab9fd2641c-text/javascript"
-    ></script>
-    <script
-      src="assets/js/bootstrap-datetimepicker.min.js"
-      type="798090201b2a93ab9fd2641c-text/javascript"
-    ></script>
+<!-- Cloudflare Rocket Loader -->
+<script src="{{ asset('../../../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js') }}" data-cf-settings="798090201b2a93ab9fd2641c-|49" defer></script>
 
-    <script
-      src="assets/plugins/summernote/summernote-bs4.min.js"
-      type="798090201b2a93ab9fd2641c-text/javascript"
-    ></script>
-
-    <script
-      src="assets/js/feather.min.js"
-      type="798090201b2a93ab9fd2641c-text/javascript"
-    ></script>
-    <script
-      src="assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js"
-      type="798090201b2a93ab9fd2641c-text/javascript"
-    ></script>
-
-    <script
-      src="assets/js/layout.js"
-      type="798090201b2a93ab9fd2641c-text/javascript"
-    ></script>
-    <script
-      src="assets/js/theme-settings.js"
-      type="798090201b2a93ab9fd2641c-text/javascript"
-    ></script>
-    <script
-      src="assets/js/greedynav.js"
-      type="798090201b2a93ab9fd2641c-text/javascript"
-    ></script>
-
-    <script
-      src="assets/js/app.js"
-      type="798090201b2a93ab9fd2641c-text/javascript"
-    ></script>
-    <script
-      src="../../../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
-      data-cf-settings="798090201b2a93ab9fd2641c-|49"
-      defer
-    ></script>
+  
+  
   </body>
 
   <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/contact-details by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:24:48 GMT -->

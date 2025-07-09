@@ -56,7 +56,7 @@
                         <div class="col">
                             <h3 class="page-title">Users</h3>
                             <ul class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="admin-dashboard.html">Dashboard</a></li>
+                                <li class="breadcrumb-item"><a href="{{route('admin-dashboard')}}">Dashboard</a></li>
                                 <li class="breadcrumb-item active">Users</li>
                             </ul>
                         </div>
@@ -119,8 +119,8 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img src="assets/img/profiles/avatar-21.jpg" alt="User Image"></a>
-                                                <a href="profile.html">Daniel Porter <span>Admin</span></a>
+                                                <a href="{{route('profile')}}" class="avatar"><img src="assets/img/profiles/avatar-21.jpg" alt="User Image"></a>
+                                                <a href="{{route('profile')}}">Daniel Porter <span>Admin</span></a>
                                             </h2>
                                         </td>
                                         <td><a href="https://smarthr.dreamstechnologies.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f99d9897909c9589968b8d9c8bb99c81989489959cd79a9694">[email&#160;protected]</a></td>
@@ -143,8 +143,8 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img src="assets/img/profiles/avatar-02.jpg" alt="User Image"></a>
-                                                <a href="profile.html">John Doe <span>Web Designer</span></a>
+                                                <a href="{{route('profile')}}" class="avatar"><img src="assets/img/profiles/avatar-02.jpg" alt="User Image"></a>
+                                                <a href="{{route('profile')}}">John Doe <span>Web Designer</span></a>
                                             </h2>
                                         </td>
                                         <td><a href="https://smarthr.dreamstechnologies.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9af0f5f2f4fef5ffdaffe2fbf7eaf6ffb4f9f5f7">[email&#160;protected]</a></td>
@@ -167,8 +167,8 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img src="assets/img/profiles/avatar-09.jpg" alt="User Image"></a>
-                                                <a href="profile.html">Richard Miles <span>Admin</span></a>
+                                                <a href="{{route('profile')}}" class="avatar"><img src="assets/img/profiles/avatar-09.jpg" alt="User Image"></a>
+                                                <a href="{{route('profile')}}">Richard Miles <span>Admin</span></a>
                                             </h2>
                                         </td>
                                         <td><a href="https://smarthr.dreamstechnologies.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="92e0fbf1faf3e0f6fffbfef7e1d2f7eaf3ffe2fef7bcf1fdff">[email&#160;protected]</a></td>
@@ -191,8 +191,8 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img src="assets/img/profiles/avatar-10.jpg" alt="User Image"></a>
-                                                <a href="profile.html">John Smith <span>Android Developer</span></a>
+                                                <a href="{{route('profile')}}" class="avatar"><img src="assets/img/profiles/avatar-10.jpg" alt="User Image"></a>
+                                                <a href="{{route('profile')}}">John Smith <span>Android Developer</span></a>
                                             </h2>
                                         </td>
                                         <td><a href="https://smarthr.dreamstechnologies.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="412b2e292f322c283529012439202c312d246f222e2c">[email&#160;protected]</a></td>
@@ -215,8 +215,8 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img src="assets/img/profiles/avatar-05.jpg" alt="User Image"></a>
-                                                <a href="profile.html">Mike Litorus <span>IOS Developer</span></a>
+                                                <a href="{{route('profile')}}" class="avatar"><img src="assets/img/profiles/avatar-05.jpg" alt="User Image"></a>
+                                                <a href="{{route('profile')}}">Mike Litorus <span>IOS Developer</span></a>
                                             </h2>
                                         </td>
                                         <td><a href="https://smarthr.dreamstechnologies.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5c31353739303528332e292f1c39243d312c3039723f3331">[email&#160;protected]</a></td>
@@ -239,8 +239,8 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img src="assets/img/profiles/avatar-11.jpg" alt="User Image"></a>
-                                                <a href="profile.html">Wilmer Deluna <span>Team Leader</span></a>
+                                                <a href="{{route('profile')}}" class="avatar"><img src="assets/img/profiles/avatar-11.jpg" alt="User Image"></a>
+                                                <a href="{{route('profile')}}">Wilmer Deluna <span>Team Leader</span></a>
                                             </h2>
                                         </td>
                                         <td><a href="https://smarthr.dreamstechnologies.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9cebf5f0f1f9eef8f9f0e9f2fddcf9e4fdf1ecf0f9b2fff3f1">[email&#160;protected]</a></td>
@@ -263,8 +263,8 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img src="assets/img/profiles/avatar-19.jpg" alt="User Image"></a>
-                                                <a href="profile.html">Barry Cuda <span>Global Technologies</span></a>
+                                                <a href="{{route('profile')}}" class="avatar"><img src="assets/img/profiles/avatar-19.jpg" alt="User Image"></a>
+                                                <a href="{{route('profile')}}">Barry Cuda <span>Global Technologies</span></a>
                                             </h2>
                                         </td>
                                         <td><a href="https://smarthr.dreamstechnologies.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="32505340404b5147565372574a535f425e571c515d5f">[email&#160;protected]</a></td>

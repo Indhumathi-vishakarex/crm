@@ -7,7 +7,7 @@
   data-sidebar-size="lg"
   data-sidebar-image="none"
 >
-  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/pipeline by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:23:02 GMT -->
+  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/incoming-call by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:22:23 GMT -->
   <!-- Added by HTTrack --><meta
     http-equiv="content-type"
     content="text/html;charset=UTF-8"
@@ -24,37 +24,164 @@
       name="author"
       content="Dreamstechnologies - Bootstrap Admin Template"
     />
-    <title>Pipeline - HRMS admin template</title>
+    <title>Incoming Call - HRMS admin template</title>
+<!-- Favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}">
 
-  <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}">
-
+<!-- Bootstrap CSS -->
 <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
 
+<!-- Font Awesome -->
 <link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/fontawesome.min.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/all.min.css') }}">
 
+<!-- Line Awesome -->
 <link rel="stylesheet" href="{{ asset('assets/css/line-awesome.min.css') }}">
+
+<!-- Material Icons -->
 <link rel="stylesheet" href="{{ asset('assets/css/material.css') }}">
 
-<link rel="stylesheet" href="{{ asset('assets/css/dataTables.bootstrap4.min.css') }}">
-<link rel="stylesheet" href="{{ asset('assets/css/select2.min.css') }}">
-<link rel="stylesheet" href="{{ asset('assets/css/bootstrap-datetimepicker.min.css') }}">
-
-<link rel="stylesheet" href="{{ asset('assets/plugins/daterangepicker/daterangepicker.css') }}">
-<link rel="stylesheet" href="{{ asset('assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css') }}">
-
+<!-- Main Style -->
 <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
   </head>
   <body>
     <div class="main-wrapper">
-    
-   
 @include('layouts.header')
-@include('layouts.sidebar')
+
+
+      <div class="sidebar" id="sidebar">
+        <div class="sidebar-inner slimscroll">
+          <div id="sidebar-menu" class="sidebar-menu">
+            <nav class="greedy">
+              <ul class="link-item">
+                <li>
+                  <a class href="{{route('admin-dashboard')}}"
+                    ><i class="la la-home"></i> <span>Back to Home</span></a
+                  >
+                </li>
+                <li class="menu-title">
+                  <span>Chat Groups</span>
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#add_group"
+                    ><i class="fa-solid fa-plus"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class href="{{route('chat')}}">
+                    <span class="chat-avatar-sm user-img">
+                      <img
+                        class="rounded-circle"
+                        src="assets/img/user.jpg"
+                        alt="User Image"
+                      />
+                    </span>
+                    <span class="chat-user">#General</span>
+                  </a>
+                </li>
+                <li>
+                  <a class href="{{route('chat')}}">
+                    <span class="chat-avatar-sm user-img">
+                      <img
+                        class="rounded-circle"
+                        src="assets/img/user.jpg"
+                        alt="User Image"
+                      />
+                    </span>
+                    <span class="chat-user">#Video Responsive Survey</span>
+                  </a>
+                </li>
+                <li>
+                  <a class href="{{route('chat')}}">
+                    <span class="chat-avatar-sm user-img">
+                      <img
+                        class="rounded-circle"
+                        src="assets/img/user.jpg"
+                        alt="User Image')}}"
+                      />
+                    </span>
+                    <span class="chat-user">#500rs</span>
+                  </a>
+                </li>
+                <li>
+                  <a class href="{{route('chat')}}">
+                    <span class="chat-avatar-sm user-img">
+                      <img
+                        class="rounded-circle"
+                        src="assets/img/user.jpg"
+                        alt="User Image"
+                      />
+                    </span>
+                    <span class="chat-user">#warehouse</span>
+                  </a>
+                </li>
+                <li class="menu-title">
+                  Direct Chats
+                  <a
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#add_chat_user"
+                    ><i class="fa-solid fa-plus"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class href="{{route('chat')}}">
+                    <span class="chat-avatar-sm user-img">
+                      <img
+                        class="rounded-circle"
+                        src="assets/img/profiles/avatar-02.jpg"
+                        alt="User Image"
+                      /><span class="status online"></span>
+                    </span>
+                    <span class="chat-user">John Doe</span>
+                    <span class="badge rounded-pill bg-danger">1</span>
+                  </a>
+                </li>
+                <li>
+                  <a class href="{{route('chat')}}">
+                    <span class="chat-avatar-sm user-img">
+                      <img
+                        class="rounded-circle"
+                        src="assets/img/profiles/avatar-09.jpg"
+                        alt="User Image"
+                      /><span class="status offline"></span>
+                    </span>
+                    <span class="chat-user">Richard Miles</span>
+                    <span class="badge rounded-pill bg-danger">7</span>
+                  </a>
+                </li>
+                <li>
+                  <a class href="{{route('chat')}}">
+                    <span class="chat-avatar-sm user-img">
+                      <img
+                        class="rounded-circle"
+                        src="assets/img/profiles/avatar-10.jpg"
+                        alt="User Image"
+                      /><span class="status away"></span>
+                    </span>
+                    <span class="chat-user">John Smith</span>
+                  </a>
+                </li>
+                <li class="active">
+                  <a class href="{{route('chat')}}">
+                    <span class="chat-avatar-sm user-img">
+                      <img
+                        class="rounded-circle"
+                        src="assets/img/profiles/avatar-05.jpg"
+                        alt="User Image"
+                      /><span class="status online"></span>
+                    </span>
+                    <span class="chat-user">Mike Litorus</span>
+                    <span class="badge rounded-pill bg-danger">2</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
 
       <div class="two-col-bar" id="two-col-bar">
-        <div class="sidebar sidebar-twocol" id="navbar-nav">
+        <div class="sidebar sidebar-twocol">
           <div class="sidebar-left slimscroll">
             <div
               class="nav flex-column nav-pills"
@@ -75,7 +202,7 @@
                 <span class="material-icons-outlined"> home </span>
               </a>
               <a
-                class="nav-link"
+                class="nav-link active"
                 id="v-pills-apps-tab"
                 title="Apps"
                 data-bs-toggle="pill"
@@ -123,7 +250,7 @@
                 <span class="material-icons-outlined"> topic </span>
               </a>
               <a
-                class="nav-link active"
+                class="nav-link"
                 id="v-pills-leads-tab"
                 title="CRM"
                 data-bs-toggle="pill"
@@ -535,7 +662,7 @@
           <div class="sidebar-right">
             <div class="tab-content" id="v-pills-tabContent">
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-dashboard"
                 role="tabpanel"
                 aria-labelledby="v-pills-dashboard-tab"
@@ -543,10 +670,10 @@
                 <p>Dashboard</p>
                 <ul>
                   <li>
-                    <a class href="admin-dashboard.html">Admin Dashboard</a>
+                    <a class href="{{route('admin-dashboard')}}">Admin Dashboard</a>
                   </li>
                   <li>
-                    <a class href="employee-dashboard.html"
+                    <a class href="employee-dashboard"
                       >Employee Dashboard</a
                     >
                   </li>
@@ -559,7 +686,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade"
+                class="tab-pane fade show active"
                 id="v-pills-apps"
                 role="tabpanel"
                 aria-labelledby="v-pills-apps-tab"
@@ -567,18 +694,20 @@
                 <p>App</p>
                 <ul>
                   <li>
-                    <a class href="chat.html">Chat</a>
+                    <a class href="{{route('chat')}}" class="active">Chat</a>
                   </li>
                   <li class="sub-menu">
                     <a href="#">Calls <span class="menu-arrow"></span></a>
                     <ul>
-                      <li><a class href="voice-call.html">Voice Call</a></li>
-                      <li><a class href="video-call.html">Video Call</a></li>
+                      <li><a class href="{{route('voice-call')}}">Voice Call</a></li>
+                      <li><a class href="{{route('video-call')}}">Video Call</a></li>
                       <li>
-                        <a class href="outgoing-call.html">Outgoing Call</a>
+                        <a class href="{{route('outgoing-call')}}">Outgoing Call</a>
                       </li>
                       <li>
-                        <a class href="incoming-call.html">Incoming Call</a>
+                        <a class="active" href="{{route('incoming-call')}}"
+                          >Incoming Call</a
+                        >
                       </li>
                     </ul>
                   </li>
@@ -597,7 +726,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-employees"
                 role="tabpanel"
                 aria-labelledby="v-pills-employees-tab"
@@ -638,7 +767,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-clients"
                 role="tabpanel"
                 aria-labelledby="v-pills-clients-tab"
@@ -649,7 +778,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-projects"
                 role="tabpanel"
                 aria-labelledby="v-pills-projects-tab"
@@ -662,7 +791,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show active"
+                class="tab-pane fade"
                 id="v-pills-leads"
                 role="tabpanel"
                 aria-labelledby="v-pills-leads-tab"
@@ -682,7 +811,7 @@
                     <a class href="leads.html"> Leads </a>
                   </li>
                   <li>
-                    <a class="active" href="pipeline.html">Pipeline </a>
+                    <a class href="pipeline.html">Pipeline </a>
                   </li>
                   <li>
                     <a class href="analytics.html">Analytics</a>
@@ -690,7 +819,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-tickets"
                 role="tabpanel"
                 aria-labelledby="v-pills-tickets-tab"
@@ -704,7 +833,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-sales"
                 role="tabpanel"
                 aria-labelledby="v-pills-sales-tab"
@@ -722,7 +851,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-accounting"
                 role="tabpanel"
                 aria-labelledby="v-pills-accounting-tab"
@@ -740,7 +869,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-payroll"
                 role="tabpanel"
                 aria-labelledby="v-pills-payroll-tab"
@@ -755,7 +884,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-policies"
                 role="tabpanel"
                 aria-labelledby="v-pills-policies-tab"
@@ -766,7 +895,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-reports"
                 role="tabpanel"
                 aria-labelledby="v-pills-reports-tab"
@@ -803,7 +932,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-performance"
                 role="tabpanel"
                 aria-labelledby="v-pills-performance-tab"
@@ -826,7 +955,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-goals"
                 role="tabpanel"
                 aria-labelledby="v-pills-goals-tab"
@@ -838,7 +967,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-training"
                 role="tabpanel"
                 aria-labelledby="v-pills-training-tab"
@@ -853,7 +982,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-promotion"
                 role="tabpanel"
                 aria-labelledby="v-pills-promotion-tab"
@@ -864,7 +993,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-resignation"
                 role="tabpanel"
                 aria-labelledby="v-pills-resignation-tab"
@@ -875,7 +1004,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-termination"
                 role="tabpanel"
                 aria-labelledby="v-pills-termination-tab"
@@ -886,7 +1015,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-assets"
                 role="tabpanel"
                 aria-labelledby="v-pills-assets-tab"
@@ -897,7 +1026,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-jobs"
                 role="tabpanel"
                 aria-labelledby="v-pills-jobs-tab"
@@ -945,7 +1074,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-knowledgebase"
                 role="tabpanel"
                 aria-labelledby="v-pills-knowledgebase-tab"
@@ -958,7 +1087,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-activities"
                 role="tabpanel"
                 aria-labelledby="v-pills-activities-tab"
@@ -969,7 +1098,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-users"
                 role="tabpanel"
                 aria-labelledby="v-pills-activities-tab"
@@ -980,7 +1109,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-settings"
                 role="tabpanel"
                 aria-labelledby="v-pills-settings-tab"
@@ -991,7 +1120,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-profile"
                 role="tabpanel"
                 aria-labelledby="v-pills-profile-tab"
@@ -1005,7 +1134,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-authentication"
                 role="tabpanel"
                 aria-labelledby="v-pills-authentication-tab"
@@ -1022,7 +1151,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-errorpages"
                 role="tabpanel"
                 aria-labelledby="v-pills-errorpages-tab"
@@ -1034,7 +1163,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-subscriptions"
                 role="tabpanel"
                 aria-labelledby="v-pills-subscriptions-tab"
@@ -1059,7 +1188,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-pages"
                 role="tabpanel"
                 aria-labelledby="v-pills-pages-tab"
@@ -1073,16 +1202,16 @@
                     <a class href="privacy-policy.html"> Privacy Policy </a>
                   </li>
                   <li><a class href="blank-page.html"> Blank Page </a></li>
-                  <li><a class href="coming-soon.html"> Coming Soon </a></li>
+                  <li><a class href="coming-soon.html">Coming Soon </a></li>
                   <li>
-                    <a class href="under-maintenance.html">
-                      Under Maintanance
+                    <a class href="under-maintenance.html"
+                      >Under Maintanance
                     </a>
                   </li>
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-baseui"
                 role="tabpanel"
                 aria-labelledby="v-pills-baseui-tab"
@@ -1125,7 +1254,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-elements"
                 role="tabpanel"
                 aria-labelledby="v-pills-elements-tab"
@@ -1145,7 +1274,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-charts"
                 role="tabpanel"
                 aria-labelledby="v-pills-charts-tab"
@@ -1161,7 +1290,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-icons"
                 role="tabpanel"
                 aria-labelledby="v-pills-icons-tab"
@@ -1185,7 +1314,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-forms"
                 role="tabpanel"
                 aria-labelledby="v-pills-forms-tab"
@@ -1219,7 +1348,7 @@
                 </ul>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade"
                 id="v-pills-tables"
                 role="tabpanel"
                 aria-labelledby="v-pills-tables-tab"
@@ -1291,1492 +1420,304 @@
       </div>
 
       <div class="page-wrapper">
-        <div class="content container-fluid">
-          <div class="page-header">
-            <div class="row align-items-center">
-              <div class="col-md-4">
-                <h3 class="page-title">Pipeline</h3>
-                <ul class="breadcrumb">
-                  <li class="breadcrumb-item">
-                    <a href="admin-dashboard.html">Dashboard</a>
-                  </li>
-                  <li class="breadcrumb-item active">Pipeline</li>
-                </ul>
+        <div class="call-box incoming-box">
+          <div class="call-wrapper">
+            <div class="call-inner">
+              <div class="call-user">
+                <img
+                  class="call-avatar"
+                  src="assets/img/profiles/avatar-11.jpg"
+                  alt
+                />
+                <h4>Wilmer Deluna</h4>
+                <span>Calling ...</span>
               </div>
-              <div class="col-md-8 float-end ms-auto">
-                <div class="d-flex title-head">
-                  <div class="view-icons">
-                    <a href="javascript:void(0);" class="grid-view btn btn-link"
-                      ><i class="las la-redo-alt"></i
-                    ></a>
-                    <a
-                      href="javascript:void(0);"
-                      class="list-view btn btn-link"
-                      id="collapse-header"
-                      ><i class="las la-expand-arrows-alt"></i
-                    ></a>
-                    <a
-                      href="javascript:void(0);"
-                      class="list-view btn btn-link"
-                      id="filter_search"
-                      ><i class="las la-filter"></i
-                    ></a>
+              <div class="call-items">
+                <a href="{{route('chat')}}" class="btn call-item call-end"
+                  ><i class="material-icons">call_end</i></a
+                >
+                <a href="{{route('video-call')}}" class="btn call-item call-start"
+                  ><i class="material-icons">call</i></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="drag_files" class="modal custom-modal fade" role="dialog">
+      <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Drag and drop files upload</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="js-upload-form">
+              <div class="upload-drop-zone" id="drop-zone">
+                <i class="fa fa-cloud-upload fa-2x"></i>
+                <span class="upload-text">Just drag and drop files here</span>
+              </div>
+              <h4>Uploading</h4>
+              <ul class="upload-list">
+                <li class="file-list">
+                  <div class="upload-wrap">
+                    <div class="file-name">
+                      <i class="fa fa-photo"></i>
+                      photo.png
+                    </div>
+                    <div class="file-size">1.07 gb</div>
+                    <button type="button" class="file-close">
+                      <i class="fa fa-close"></i>
+                    </button>
                   </div>
-                  <div class="form-sort">
-                    <a
-                      href="javascript:void(0);"
-                      class="list-view btn btn-link"
-                      data-bs-toggle="modal"
-                      data-bs-target="#export"
-                      ><i class="las la-file-export"></i>Export</a
-                    >
+                  <div class="progress progress-xs progress-striped">
+                    <div
+                      class="progress-bar bg-success"
+                      role="progressbar"
+                      style="width: 65%"
+                    ></div>
                   </div>
-                  <a
-                    href="#"
-                    class="btn add-btn"
-                    data-bs-toggle="modal"
-                    data-bs-target="#add_pipeline"
-                    ><i class="la la-plus-circle"></i> Add Pipeline</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="filter-filelds" id="filter_inputs">
-            <div class="row filter-row custom-filter-row">
-              <div class="custom-col">
-                <div class="input-block mb-3 form-focus">
-                  <input type="text" class="form-control floating" />
-                  <label class="focus-label">Pipeline Name</label>
-                </div>
-              </div>
-              <div class="custom-col">
-                <div class="input-block mb-3 form-focus">
-                  <input type="email" class="form-control floating" />
-                  <label class="focus-label">Deal Value</label>
-                </div>
-              </div>
-              <div class="custom-col">
-                <div class="input-block mb-3 form-focus">
-                  <div class="cal-icon">
-                    <input
-                      class="form-control floating datetimepicker"
-                      type="text"
-                    />
+                  <div class="upload-process">37% done</div>
+                </li>
+                <li class="file-list">
+                  <div class="upload-wrap">
+                    <div class="file-name">
+                      <i class="fa fa-file"></i>
+                      task.doc
+                    </div>
+                    <div class="file-size">5.8 kb</div>
+                    <button type="button" class="file-close">
+                      <i class="fa fa-close"></i>
+                    </button>
                   </div>
-                  <label class="focus-label">Created Date</label>
-                </div>
-              </div>
-              <div class="custom-col">
-                <div class="input-block mb-3 form-focus select-focus">
-                  <select class="select floating">
-                    <option>--Select--</option>
-                    <option>Win</option>
-                    <option>In Pipeline</option>
-                    <option>Conversation</option>
-                    <option>Folllow Up</option>
-                    <option>Lost</option>
-                  </select>
-                  <label class="focus-label">Stages</label>
-                </div>
-              </div>
-              <div class="custom-col">
-                <a href="#" class="btn btn-success w-100"> Search </a>
-              </div>
-            </div>
-          </div>
-          <hr />
-
-          <div class="filter-section">
-            <ul>
-              <li>
-                <div class="form-sort">
-                  <i class="las la-sort-alpha-up-alt"></i>
-                  <select class="select">
-                    <option>Sort By Alphabet</option>
-                    <option>Ascending</option>
-                    <option>Descending</option>
-                    <option>Recently Viewed</option>
-                    <option>Recently Added</option>
-                  </select>
-                </div>
-              </li>
-              <li>
-                <div class="search-set">
-                  <div class="search-input">
-                    <a href="#" class="btn btn-searchset"
-                      ><i class="las la-search"></i
-                    ></a>
-                    <div class="dataTables_filter">
-                      <label>
-                        <input
-                          type="search"
-                          class="form-control form-control-sm"
-                          placeholder="Search"
-                      /></label>
-                    </div>
+                  <div class="progress progress-xs progress-striped">
+                    <div
+                      class="progress-bar bg-success"
+                      role="progressbar"
+                      style="width: 65%"
+                    ></div>
                   </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <div class="table-responsive">
-                <table
-                  class="table table-striped custom-table datatable contact-table"
-                >
-                  <thead>
-                    <tr>
-                      <th>Pipeline Name</th>
-                      <th>Total Deal Value</th>
-                      <th>No of Deals</th>
-                      <th>Stages</th>
-                      <th>Created Date</th>
-                      <th>Status</th>
-                      <th class="no-sort text-end">Action</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Sales</td>
-                      <td>$04,51,000</td>
-                      <td>315</td>
-                      <td>
-                        <div
-                          class="pipeline-progress d-flex align-items-center"
-                        >
-                          <div class="progress">
-                            <div
-                              class="progress-bar progress-bar-success"
-                              role="progressbar"
-                            ></div>
-                          </div>
-                          <span>Win</span>
-                        </div>
-                      </td>
-                      <td>10 Feb 2024</td>
-                      <td>
-                        <div class="dropdown action-label">
-                          <a
-                            href="#"
-                            class="btn btn-white btn-sm badge-outline-success"
-                          >
-                            Active
-                          </a>
-                        </div>
-                      </td>
-                      <td class="text-end">
-                        <div class="dropdown dropdown-action">
-                          <a
-                            href="#"
-                            class="action-icon dropdown-toggle"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                            ><i class="material-icons">more_vert</i></a
-                          >
-                          <div class="dropdown-menu dropdown-menu-right">
-                            <a
-                              class="dropdown-item"
-                              href="#"
-                              data-bs-toggle="modal"
-                              data-bs-target="#edit_pipeline"
-                              ><i class="fa-solid fa-pencil m-r-5"></i> Edit</a
-                            >
-                            <a
-                              class="dropdown-item"
-                              href="#"
-                              data-bs-toggle="modal"
-                              data-bs-target="#delete_pipeline"
-                              ><i class="fa-regular fa-trash-can m-r-5"></i>
-                              Delete</a
-                            >
-                            <a class="dropdown-item" href="contact-details.html"
-                              ><i class="fa-regular fa-eye"></i> Preview</a
-                            >
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Marketing</td>
-                      <td>$03,12,500</td>
-                      <td>447</td>
-                      <td>
-                        <div
-                          class="pipeline-progress d-flex align-items-center"
-                        >
-                          <div class="progress">
-                            <div
-                              class="progress-bar progress-bar-success"
-                              role="progressbar"
-                            ></div>
-                          </div>
-                          <span>Win</span>
-                        </div>
-                      </td>
-                      <td>24 Feb 2024</td>
-                      <td>
-                        <div class="dropdown action-label">
-                          <a
-                            href="#"
-                            class="btn btn-white btn-sm badge-outline-success"
-                          >
-                            Active
-                          </a>
-                        </div>
-                      </td>
-                      <td class="text-end">
-                        <div class="dropdown dropdown-action">
-                          <a
-                            href="#"
-                            class="action-icon dropdown-toggle"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                            ><i class="material-icons">more_vert</i></a
-                          >
-                          <div class="dropdown-menu dropdown-menu-right">
-                            <a
-                              class="dropdown-item"
-                              href="#"
-                              data-bs-toggle="modal"
-                              data-bs-target="#edit_pipeline"
-                              ><i class="fa-solid fa-pencil m-r-5"></i> Edit</a
-                            >
-                            <a
-                              class="dropdown-item"
-                              href="#"
-                              data-bs-toggle="modal"
-                              data-bs-target="#delete_pipeline"
-                              ><i class="fa-regular fa-trash-can m-r-5"></i>
-                              Delete</a
-                            >
-                            <a class="dropdown-item" href="contact-details.html"
-                              ><i class="fa-regular fa-eye"></i> Preview</a
-                            >
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Calls</td>
-                      <td>$04,14,400</td>
-                      <td>654</td>
-                      <td>
-                        <div
-                          class="pipeline-progress d-flex align-items-center"
-                        >
-                          <div class="progress">
-                            <div
-                              class="progress-bar progress-bar-violet"
-                              role="progressbar"
-                            ></div>
-                          </div>
-                          <span>In Pipeline</span>
-                        </div>
-                      </td>
-                      <td>05 Mar 2024</td>
-                      <td>
-                        <div class="dropdown action-label">
-                          <a
-                            href="#"
-                            class="btn btn-white btn-sm badge-outline-success"
-                          >
-                            Active
-                          </a>
-                        </div>
-                      </td>
-                      <td class="text-end">
-                        <div class="dropdown dropdown-action">
-                          <a
-                            href="#"
-                            class="action-icon dropdown-toggle"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                            ><i class="material-icons">more_vert</i></a
-                          >
-                          <div class="dropdown-menu dropdown-menu-right">
-                            <a
-                              class="dropdown-item"
-                              href="#"
-                              data-bs-toggle="modal"
-                              data-bs-target="#edit_pipeline"
-                              ><i class="fa-solid fa-pencil m-r-5"></i> Edit</a
-                            >
-                            <a
-                              class="dropdown-item"
-                              href="#"
-                              data-bs-toggle="modal"
-                              data-bs-target="#delete_pipeline"
-                              ><i class="fa-regular fa-trash-can m-r-5"></i>
-                              Delete</a
-                            >
-                            <a class="dropdown-item" href="contact-details.html"
-                              ><i class="fa-regular fa-eye"></i> Preview</a
-                            >
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Email</td>
-                      <td>$09,14,400</td>
-                      <td>545</td>
-                      <td>
-                        <div
-                          class="pipeline-progress d-flex align-items-center"
-                        >
-                          <div class="progress">
-                            <div
-                              class="progress-bar progress-bar-success"
-                              role="progressbar"
-                            ></div>
-                          </div>
-                          <span>Win</span>
-                        </div>
-                      </td>
-                      <td>17 Mar 2024</td>
-                      <td>
-                        <div class="dropdown action-label">
-                          <a
-                            href="#"
-                            class="btn btn-white btn-sm badge-outline-success"
-                          >
-                            Active
-                          </a>
-                        </div>
-                      </td>
-                      <td class="text-end">
-                        <div class="dropdown dropdown-action">
-                          <a
-                            href="#"
-                            class="action-icon dropdown-toggle"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                            ><i class="material-icons">more_vert</i></a
-                          >
-                          <div class="dropdown-menu dropdown-menu-right">
-                            <a
-                              class="dropdown-item"
-                              href="#"
-                              data-bs-toggle="modal"
-                              data-bs-target="#edit_pipeline"
-                              ><i class="fa-solid fa-pencil m-r-5"></i> Edit</a
-                            >
-                            <a
-                              class="dropdown-item"
-                              href="#"
-                              data-bs-toggle="modal"
-                              data-bs-target="#delete_pipeline"
-                              ><i class="fa-regular fa-trash-can m-r-5"></i>
-                              Delete</a
-                            >
-                            <a class="dropdown-item" href="contact-details.html"
-                              ><i class="fa-regular fa-eye"></i> Preview</a
-                            >
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Chats</td>
-                      <td>$11,14,400</td>
-                      <td>787</td>
-                      <td>
-                        <div
-                          class="pipeline-progress d-flex align-items-center"
-                        >
-                          <div class="progress">
-                            <div
-                              class="progress-bar progress-bar-success"
-                              role="progressbar"
-                            ></div>
-                          </div>
-                          <span>Win</span>
-                        </div>
-                      </td>
-                      <td>08 Apr 2024</td>
-                      <td>
-                        <div class="dropdown action-label">
-                          <a
-                            href="#"
-                            class="btn btn-white btn-sm badge-outline-success"
-                          >
-                            Active
-                          </a>
-                        </div>
-                      </td>
-                      <td class="text-end">
-                        <div class="dropdown dropdown-action">
-                          <a
-                            href="#"
-                            class="action-icon dropdown-toggle"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                            ><i class="material-icons">more_vert</i></a
-                          >
-                          <div class="dropdown-menu dropdown-menu-right">
-                            <a
-                              class="dropdown-item"
-                              href="#"
-                              data-bs-toggle="modal"
-                              data-bs-target="#edit_pipeline"
-                              ><i class="fa-solid fa-pencil m-r-5"></i> Edit</a
-                            >
-                            <a
-                              class="dropdown-item"
-                              href="#"
-                              data-bs-toggle="modal"
-                              data-bs-target="#delete_pipeline"
-                              ><i class="fa-regular fa-trash-can m-r-5"></i>
-                              Delete</a
-                            >
-                            <a class="dropdown-item" href="contact-details.html"
-                              ><i class="fa-regular fa-eye"></i> Preview</a
-                            >
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Operational</td>
-                      <td>$16,11,400</td>
-                      <td>142</td>
-                      <td>
-                        <div
-                          class="pipeline-progress d-flex align-items-center"
-                        >
-                          <div class="progress">
-                            <div
-                              class="progress-bar progress-bar-info"
-                              role="progressbar"
-                            ></div>
-                          </div>
-                          <span>Conversation</span>
-                        </div>
-                      </td>
-                      <td>20 Apr 2024</td>
-                      <td>
-                        <div class="dropdown action-label">
-                          <a
-                            href="#"
-                            class="btn btn-white btn-sm badge-outline-success"
-                          >
-                            Active
-                          </a>
-                        </div>
-                      </td>
-                      <td class="text-end">
-                        <div class="dropdown dropdown-action">
-                          <a
-                            href="#"
-                            class="action-icon dropdown-toggle"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                            ><i class="material-icons">more_vert</i></a
-                          >
-                          <div class="dropdown-menu dropdown-menu-right">
-                            <a
-                              class="dropdown-item"
-                              href="#"
-                              data-bs-toggle="modal"
-                              data-bs-target="#edit_pipeline"
-                              ><i class="fa-solid fa-pencil m-r-5"></i> Edit</a
-                            >
-                            <a
-                              class="dropdown-item"
-                              href="#"
-                              data-bs-toggle="modal"
-                              data-bs-target="#delete_pipeline"
-                              ><i class="fa-regular fa-trash-can m-r-5"></i>
-                              Delete</a
-                            >
-                            <a class="dropdown-item" href="contact-details.html"
-                              ><i class="fa-regular fa-eye"></i> Preview</a
-                            >
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Collabrative</td>
-                      <td>$78,11,800</td>
-                      <td>315</td>
-                      <td>
-                        <div
-                          class="pipeline-progress d-flex align-items-center"
-                        >
-                          <div class="progress">
-                            <div
-                              class="progress-bar progress-bar-warning"
-                              role="progressbar"
-                            ></div>
-                          </div>
-                          <span>Folllow Up</span>
-                        </div>
-                      </td>
-                      <td>12 May 2024</td>
-                      <td>
-                        <div class="dropdown action-label">
-                          <a
-                            href="#"
-                            class="btn btn-white btn-sm badge-outline-success"
-                          >
-                            Active
-                          </a>
-                        </div>
-                      </td>
-                      <td class="text-end">
-                        <div class="dropdown dropdown-action">
-                          <a
-                            href="#"
-                            class="action-icon dropdown-toggle"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                            ><i class="material-icons">more_vert</i></a
-                          >
-                          <div class="dropdown-menu dropdown-menu-right">
-                            <a
-                              class="dropdown-item"
-                              href="#"
-                              data-bs-toggle="modal"
-                              data-bs-target="#edit_pipeline"
-                              ><i class="fa-solid fa-pencil m-r-5"></i> Edit</a
-                            >
-                            <a
-                              class="dropdown-item"
-                              href="#"
-                              data-bs-toggle="modal"
-                              data-bs-target="#delete_pipeline"
-                              ><i class="fa-regular fa-trash-can m-r-5"></i>
-                              Delete</a
-                            >
-                            <a class="dropdown-item" href="contact-details.html"
-                              ><i class="fa-regular fa-eye"></i> Preview</a
-                            >
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Differentiate</td>
-                      <td>$09,05,947</td>
-                      <td>478</td>
-                      <td>
-                        <div
-                          class="pipeline-progress d-flex align-items-center"
-                        >
-                          <div class="progress">
-                            <div
-                              class="progress-bar progress-bar-pink"
-                              role="progressbar"
-                            ></div>
-                          </div>
-                          <span>Schedule Service</span>
-                        </div>
-                      </td>
-                      <td>26 May 2024</td>
-                      <td>
-                        <div class="dropdown action-label">
-                          <a
-                            href="#"
-                            class="btn btn-white btn-sm badge-outline-danger"
-                          >
-                            Inactive
-                          </a>
-                        </div>
-                      </td>
-                      <td class="text-end">
-                        <div class="dropdown dropdown-action">
-                          <a
-                            href="#"
-                            class="action-icon dropdown-toggle"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                            ><i class="material-icons">more_vert</i></a
-                          >
-                          <div class="dropdown-menu dropdown-menu-right">
-                            <a
-                              class="dropdown-item"
-                              href="#"
-                              data-bs-toggle="modal"
-                              data-bs-target="#edit_pipeline"
-                              ><i class="fa-solid fa-pencil m-r-5"></i> Edit</a
-                            >
-                            <a
-                              class="dropdown-item"
-                              href="#"
-                              data-bs-toggle="modal"
-                              data-bs-target="#delete_pipeline"
-                              ><i class="fa-regular fa-trash-can m-r-5"></i>
-                              Delete</a
-                            >
-                            <a class="dropdown-item" href="contact-details.html"
-                              ><i class="fa-regular fa-eye"></i> Preview</a
-                            >
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Interact</td>
-                      <td>$04,51,000</td>
-                      <td>664</td>
-                      <td>
-                        <div
-                          class="pipeline-progress d-flex align-items-center"
-                        >
-                          <div class="progress">
-                            <div
-                              class="progress-bar progress-bar-success"
-                              role="progressbar"
-                            ></div>
-                          </div>
-                          <span>Win</span>
-                        </div>
-                      </td>
-                      <td>13 June 2024</td>
-                      <td>
-                        <div class="dropdown action-label">
-                          <a
-                            href="#"
-                            class="btn btn-white btn-sm badge-outline-success"
-                          >
-                            Active
-                          </a>
-                        </div>
-                      </td>
-                      <td class="text-end">
-                        <div class="dropdown dropdown-action">
-                          <a
-                            href="#"
-                            class="action-icon dropdown-toggle"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                            ><i class="material-icons">more_vert</i></a
-                          >
-                          <div class="dropdown-menu dropdown-menu-right">
-                            <a
-                              class="dropdown-item"
-                              href="#"
-                              data-bs-toggle="modal"
-                              data-bs-target="#edit_pipeline"
-                              ><i class="fa-solid fa-pencil m-r-5"></i> Edit</a
-                            >
-                            <a
-                              class="dropdown-item"
-                              href="#"
-                              data-bs-toggle="modal"
-                              data-bs-target="#delete_pipeline"
-                              ><i class="fa-regular fa-trash-can m-r-5"></i>
-                              Delete</a
-                            >
-                            <a class="dropdown-item" href="contact-details.html"
-                              ><i class="fa-regular fa-eye"></i> Preview</a
-                            >
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Identify</td>
-                      <td>$72,14,078</td>
-                      <td>128</td>
-                      <td>
-                        <div
-                          class="pipeline-progress d-flex align-items-center"
-                        >
-                          <div class="progress">
-                            <div
-                              class="progress-bar progress-bar-danger"
-                              role="progressbar"
-                            ></div>
-                          </div>
-                          <span>Lost</span>
-                        </div>
-                      </td>
-                      <td>28 June 2024</td>
-                      <td>
-                        <div class="dropdown action-label">
-                          <a
-                            href="#"
-                            class="btn btn-white btn-sm badge-outline-success"
-                          >
-                            Active
-                          </a>
-                        </div>
-                      </td>
-                      <td class="text-end">
-                        <div class="dropdown dropdown-action">
-                          <a
-                            href="#"
-                            class="action-icon dropdown-toggle"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                            ><i class="material-icons">more_vert</i></a
-                          >
-                          <div class="dropdown-menu dropdown-menu-right">
-                            <a
-                              class="dropdown-item"
-                              href="#"
-                              data-bs-toggle="modal"
-                              data-bs-target="#edit_pipeline"
-                              ><i class="fa-solid fa-pencil m-r-5"></i> Edit</a
-                            >
-                            <a
-                              class="dropdown-item"
-                              href="#"
-                              data-bs-toggle="modal"
-                              data-bs-target="#delete_pipeline"
-                              ><i class="fa-regular fa-trash-can m-r-5"></i>
-                              Delete</a
-                            >
-                            <a class="dropdown-item" href="contact-details.html"
-                              ><i class="fa-regular fa-eye"></i> Preview</a
-                            >
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+                  <div class="upload-process">37% done</div>
+                </li>
+                <li class="file-list">
+                  <div class="upload-wrap">
+                    <div class="file-name">
+                      <i class="fa fa-photo"></i>
+                      dashboard.png
+                    </div>
+                    <div class="file-size">2.1 mb</div>
+                    <button type="button" class="file-close">
+                      <i class="fa fa-close"></i>
+                    </button>
+                  </div>
+                  <div class="progress progress-xs progress-striped">
+                    <div
+                      class="progress-bar bg-success"
+                      role="progressbar"
+                      style="width: 65%"
+                    ></div>
+                  </div>
+                  <div class="upload-process">Completed</div>
+                </li>
+              </ul>
+            </form>
+            <div class="submit-section">
+              <button class="btn btn-primary submit-btn">Submit</button>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
 
-          <div
-            class="modal custom-modal fade custom-modal-two modal-padding"
-            id="add_pipeline"
-            role="dialog"
-          >
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div
-                  class="modal-header header-border justify-content-between p-0"
-                >
-                  <h5 class="modal-title">Add New Pipeline</h5>
-                  <button
-                    type="button"
-                    class="btn-close position-static"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    <span aria-hidden="true">×</span>
-                  </button>
-                </div>
-                <div class="modal-body p-0">
-                  <form
-                    action="https://smarthr.dreamstechnologies.com/laravel/template/public/pipeline"
-                  >
-                    <div class="contact-input-set">
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="input-block mb-3">
-                            <label class="col-form-label"
-                              >Pipeline Name
-                              <span class="text-danger">*</span></label
-                            >
-                            <input class="form-control" type="text" />
-                          </div>
-                        </div>
-                        <div class="col-md-12">
-                          <div
-                            class="pipeline-modal-head d-flex justify-content-between mb-3"
-                          >
-                            <h4>Pipeline Stages</h4>
-                            <a
-                              href="#"
-                              class="add-stage"
-                              data-bs-toggle="modal"
-                              data-bs-target="#add_stage"
-                              ><i class="la la-plus-square me-2"></i>Add New</a
-                            >
-                          </div>
-                          <ul class="pipeline-stages">
-                            <li>
-                              <p>
-                                <i class="la la-grip-vertical"></i>
-                                Inpipeline
-                              </p>
-                              <div class="edit-delete-stage">
-                                <a
-                                  href="#"
-                                  class="edit-stage"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#edit_stage"
-                                  ><i class="la la-edit me-2"></i>Edit</a
-                                >
-                                <a
-                                  href="#"
-                                  class="delete-stage"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#delete_stage"
-                                  ><i class="la la-trash-alt me-2"></i>Delete</a
-                                >
-                              </div>
-                            </li>
-                            <li>
-                              <p>
-                                <i class="la la-grip-vertical"></i>
-                                Follow Up
-                              </p>
-                              <div class="edit-delete-stage">
-                                <a
-                                  href="#"
-                                  class="edit-stage"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#edit_stage"
-                                  ><i class="la la-edit me-2"></i>Edit</a
-                                >
-                                <a
-                                  href="#"
-                                  class="delete-stage"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#delete_stage"
-                                  ><i class="la la-trash-alt me-2"></i>Delete</a
-                                >
-                              </div>
-                            </li>
-                            <li>
-                              <p>
-                                <i class="la la-grip-vertical"></i>
-                                Schedule service
-                              </p>
-                              <div class="edit-delete-stage">
-                                <a
-                                  href="#"
-                                  class="edit-stage"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#edit_stage"
-                                  ><i class="la la-edit me-2"></i>Edit</a
-                                >
-                                <a
-                                  href="#"
-                                  class="delete-stage"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#delete_stage"
-                                  ><i class="la la-trash-alt me-2"></i>Delete</a
-                                >
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="col-md-12">
-                          <div
-                            class="pipeline-modal-head input-blocks add-products"
-                          >
-                            <h4 class="mb-3">Access</h4>
-                            <div class="access-info-tab">
-                              <ul
-                                class="nav nav-pills"
-                                id="pills-tab"
-                                role="tablist"
-                              >
-                                <li class="nav-item" role="presentation">
-                                  <span
-                                    class="custom_radio mb-0"
-                                    id="pills-public-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-public"
-                                    role="tab"
-                                    aria-controls="pills-public"
-                                    aria-selected="true"
-                                  >
-                                    <input
-                                      type="radio"
-                                      class="form-control"
-                                      name="public"
-                                      checked
-                                    />
-                                    <span class="checkmark"></span> All</span
-                                  >
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                  <span
-                                    class="custom_radio mb-0 active"
-                                    id="pills-select-people-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-select-people"
-                                    role="tab"
-                                    aria-controls="pills-select-people"
-                                    aria-selected="false"
-                                  >
-                                    <input
-                                      type="radio"
-                                      class="form-control"
-                                      name="select-people"
-                                    />
-                                    <span class="checkmark"></span> Select
-                                    People</span
-                                  >
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="tab-content" id="pills-tabContent2">
-                            <div
-                              class="tab-pane fade"
-                              id="pills-public"
-                              role="tabpanel"
-                              aria-labelledby="pills-public-tab"
-                            ></div>
-                            <div
-                              class="tab-pane fade show active"
-                              id="pills-select-people"
-                              role="tabpanel"
-                              aria-labelledby="pills-select-people-tab"
-                            >
-                              <ul class="person-selected">
-                                <li>
-                                  <div class="person-profile">
-                                    <a href="#" class="profile-pic">
-                                      <img
-                                        src="assets/img/avatar/avatar-21.jpg"
-                                        alt="Img"
-                                      />
-                                      Vaughan
-                                    </a>
-                                  </div>
-                                  <a href="#" class="remove-person">Remove</a>
-                                </li>
-                                <li>
-                                  <div class="person-profile">
-                                    <a href="#" class="profile-pic">
-                                      <img
-                                        src="assets/img/avatar/avatar-1.jpg"
-                                        alt="Img"
-                                      />
-                                      Jessica
-                                    </a>
-                                  </div>
-                                  <a href="#" class="remove-person">Remove</a>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-12 text-end form-wizard-button">
-                          <button
-                            class="button btn-lights reset-btn"
-                            type="reset"
-                            data-bs-dismiss="modal"
-                          >
-                            Reset
-                          </button>
-                          <button class="btn btn-primary" type="submit">
-                            Save Pipeline
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
+    <div id="add_group" class="modal custom-modal fade" role="dialog">
+      <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Create a group</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-
-          <div
-            class="modal custom-modal fade custom-modal-two modal-padding"
-            id="edit_pipeline"
-            role="dialog"
-          >
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div
-                  class="modal-header header-border justify-content-between p-0"
+          <div class="modal-body">
+            <p>
+              Groups are where your team communicates. They’re best when
+              organized around a topic — #leads, for example.
+            </p>
+            <form>
+              <div class="input-block mb-3">
+                <label class="col-form-label"
+                  >Group Name <span class="text-danger">*</span></label
                 >
-                  <h5 class="modal-title">Edit Pipeline</h5>
-                  <button
-                    type="button"
-                    class="btn-close position-static"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    <span aria-hidden="true">×</span>
-                  </button>
-                </div>
-                <div class="modal-body p-0">
-                  <form
-                    action="https://smarthr.dreamstechnologies.com/laravel/template/public/pipeline"
-                  >
-                    <div class="contact-input-set">
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="input-block mb-3">
-                            <label class="col-form-label"
-                              >Pipeline Name
-                              <span class="text-danger">*</span></label
-                            >
-                            <input
-                              class="form-control"
-                              type="text"
-                              value="Sales"
-                            />
-                          </div>
-                        </div>
-                        <div class="col-md-12">
-                          <div
-                            class="pipeline-modal-head d-flex justify-content-between mb-3"
-                          >
-                            <h4>Pipeline Stages</h4>
-                            <a
-                              href="#"
-                              class="add-stage"
-                              data-bs-toggle="modal"
-                              data-bs-target="#add_stage"
-                              ><i class="la la-plus-square me-2"></i>Add New</a
-                            >
-                          </div>
-                          <ul class="pipeline-stages">
-                            <li>
-                              <p>
-                                <i class="la la-grip-vertical"></i>
-                                Inpipeline
-                              </p>
-                              <div class="edit-delete-stage">
-                                <a
-                                  href="#"
-                                  class="edit-stage"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#edit_stage"
-                                  ><i class="la la-edit me-2"></i>Edit</a
-                                >
-                                <a
-                                  href="#"
-                                  class="delete-stage"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#delete_stage"
-                                  ><i class="la la-trash-alt me-2"></i>Delete</a
-                                >
-                              </div>
-                            </li>
-                            <li>
-                              <p>
-                                <i class="la la-grip-vertical"></i>
-                                Follow Up
-                              </p>
-                              <div class="edit-delete-stage">
-                                <a
-                                  href="#"
-                                  class="edit-stage"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#edit_stage"
-                                  ><i class="la la-edit me-2"></i>Edit</a
-                                >
-                                <a
-                                  href="#"
-                                  class="delete-stage"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#delete_stage"
-                                  ><i class="la la-trash-alt me-2"></i>Delete</a
-                                >
-                              </div>
-                            </li>
-                            <li>
-                              <p>
-                                <i class="la la-grip-vertical"></i>
-                                Schedule service
-                              </p>
-                              <div class="edit-delete-stage">
-                                <a
-                                  href="#"
-                                  class="edit-stage"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#edit_stage"
-                                  ><i class="la la-edit me-2"></i>Edit</a
-                                >
-                                <a
-                                  href="#"
-                                  class="delete-stage"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#delete_stage"
-                                  ><i class="la la-trash-alt me-2"></i>Delete</a
-                                >
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="col-md-12">
-                          <div
-                            class="pipeline-modal-head input-blocks add-products"
-                          >
-                            <h4 class="mb-3">Access</h4>
-                            <div class="access-info-tab">
-                              <ul
-                                class="nav nav-pills"
-                                id="pills-tab2"
-                                role="tablist"
-                              >
-                                <li class="nav-item" role="presentation">
-                                  <span
-                                    class="custom_radio mb-0"
-                                    id="pills-public-tab2"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-public2"
-                                    role="tab"
-                                    aria-controls="pills-public2"
-                                    aria-selected="true"
-                                  >
-                                    <input
-                                      type="radio"
-                                      class="form-control"
-                                      name="public"
-                                      checked
-                                    />
-                                    <span class="checkmark"></span> All</span
-                                  >
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                  <span
-                                    class="custom_radio mb-0 active"
-                                    id="pills-select-people-tab2"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-select-people2"
-                                    role="tab"
-                                    aria-controls="pills-select-people2"
-                                    aria-selected="false"
-                                  >
-                                    <input
-                                      type="radio"
-                                      class="form-control"
-                                      name="select-people"
-                                    />
-                                    <span class="checkmark"></span> Select
-                                    People</span
-                                  >
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="tab-content" id="pills-tabContent3">
-                            <div
-                              class="tab-pane fade"
-                              id="pills-public2"
-                              role="tabpanel"
-                              aria-labelledby="pills-public-tab2"
-                            ></div>
-                            <div
-                              class="tab-pane fade show active"
-                              id="pills-select-people2"
-                              role="tabpanel"
-                              aria-labelledby="pills-select-people-tab2"
-                            >
-                              <ul class="person-selected">
-                                <li>
-                                  <div class="person-profile">
-                                    <a href="#" class="profile-pic">
-                                      <img
-                                        src="assets/img/avatar/avatar-21.jpg"
-                                        alt="Img"
-                                      />
-                                      Vaughan
-                                    </a>
-                                  </div>
-                                  <a href="#" class="remove-person">Remove</a>
-                                </li>
-                                <li>
-                                  <div class="person-profile">
-                                    <a href="#" class="profile-pic">
-                                      <img
-                                        src="assets/img/avatar/avatar-1.jpg"
-                                        alt="Img"
-                                      />
-                                      Jessica
-                                    </a>
-                                  </div>
-                                  <a href="#" class="remove-person">Remove</a>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-12 text-end form-wizard-button">
-                          <button
-                            class="button btn-lights reset-btn"
-                            type="reset"
-                            data-bs-dismiss="modal"
-                          >
-                            Reset
-                          </button>
-                          <button class="btn btn-primary" type="submit">
-                            Save Pipeline
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
+                <input class="form-control" type="text" />
               </div>
-            </div>
-          </div>
-
-          <div
-            class="modal custom-modal fade modal-padding"
-            id="add_stage"
-            role="dialog"
-          >
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div
-                  class="modal-header header-border justify-content-between p-0"
+              <div class="input-block mb-3">
+                <label class="col-form-label"
+                  >Send invites to:
+                  <span class="text-muted-light">(optional)</span></label
                 >
-                  <h5 class="modal-title">Add New Stage</h5>
-                  <button
-                    type="button"
-                    class="btn-close position-static"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    <span aria-hidden="true">×</span>
-                  </button>
-                </div>
-                <div class="modal-body p-0">
-                  <form
-                    action="https://smarthr.dreamstechnologies.com/laravel/template/public/pipeline"
-                  >
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="input-block mb-3">
-                          <label class="col-form-label"
-                            >Stage Name
-                            <span class="text-danger">*</span></label
-                          >
-                          <input class="form-control" type="text" />
-                        </div>
-                      </div>
-                      <div class="col-lg-12 text-end form-wizard-button">
-                        <button
-                          class="button btn-lights reset-btn"
-                          type="reset"
-                          data-bs-dismiss="modal"
-                        >
-                          Reset
-                        </button>
-                        <button class="btn btn-primary" type="submit">
-                          Save Stage
-                        </button>
-                      </div>
-                    </div>
-                  </form>
-                </div>
+                <input class="form-control" type="text" />
               </div>
-            </div>
-          </div>
-
-          <div
-            class="modal custom-modal fade modal-padding"
-            id="edit_stage"
-            role="dialog"
-          >
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div
-                  class="modal-header header-border justify-content-between p-0"
-                >
-                  <h5 class="modal-title">Edit Stage</h5>
-                  <button
-                    type="button"
-                    class="btn-close position-static"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    <span aria-hidden="true">×</span>
-                  </button>
-                </div>
-                <div class="modal-body p-0">
-                  <form
-                    action="https://smarthr.dreamstechnologies.com/laravel/template/public/pipeline"
-                  >
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="input-block mb-3">
-                          <label class="col-form-label"
-                            >Stage Name
-                            <span class="text-danger">*</span></label
-                          >
-                          <input class="form-control" type="text" value="Win" />
-                        </div>
-                      </div>
-                      <div class="col-lg-12 text-end form-wizard-button">
-                        <button
-                          class="button btn-lights reset-btn"
-                          type="reset"
-                          data-bs-dismiss="modal"
-                        >
-                          Reset
-                        </button>
-                        <button class="btn btn-primary" type="submit">
-                          Save Stage
-                        </button>
-                      </div>
-                    </div>
-                  </form>
-                </div>
+              <div class="submit-section">
+                <button class="btn btn-primary submit-btn">Submit</button>
               </div>
-            </div>
+            </form>
           </div>
+        </div>
+      </div>
+    </div>
 
-          <div
-            class="modal custom-modal fade"
-            id="delete_pipeline"
-            role="dialog"
-          >
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-body">
-                  <div class="success-message text-center">
-                    <div class="success-popup-icon bg-danger">
-                      <i class="la la-trash-restore"></i>
-                    </div>
-                    <h3>Are you sure, You want to delete</h3>
-                    <p>Pipeline ”Sales” from your Account</p>
-                    <div class="col-lg-12 text-center form-wizard-button">
-                      <a
-                        href="#"
-                        class="button btn-lights"
-                        data-bs-dismiss="modal"
-                        >Not Now</a
+    <div id="add_chat_user" class="modal custom-modal fade" role="dialog">
+      <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Direct Chat</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="input-group m-b-30">
+              <input
+                placeholder="Search to start a chat"
+                class="form-control search-input"
+                type="text"
+              />
+              <button class="btn btn-primary">Search</button>
+            </div>
+            <div>
+              <h5>Recent Conversations</h5>
+              <ul class="chat-user-list">
+                <li>
+                  <a href="#">
+                    <div class="chat-block d-flex">
+                      <span class="avatar align-self-center flex-shrink-0">
+                        <img
+                          src="assets/img/profiles/avatar-16.jpg"
+                          alt="User Image"
+                        />
+                      </span>
+                      <div
+                        class="media-body align-self-center text-nowrap flex-grow-1"
                       >
-                      <a href="pipeline.html" class="btn btn-primary">Okay</a>
+                        <div class="user-name">Jeffery Lalor</div>
+                        <span class="designation">Team Leader</span>
+                      </div>
+                      <div class="text-nowrap align-self-center">
+                        <div class="online-date">1 day ago</div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="modal custom-modal fade" id="delete_stage" role="dialog">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-body">
-                  <div class="success-message text-center">
-                    <div class="success-popup-icon bg-danger">
-                      <i class="la la-trash-restore"></i>
-                    </div>
-                    <h3>Are you sure, You want to delete</h3>
-                    <p>Stage ”Inpipeline” from your Account</p>
-                    <div class="col-lg-12 text-center form-wizard-button">
-                      <a
-                        href="#"
-                        class="button btn-lights"
-                        data-bs-dismiss="modal"
-                        >Not Now</a
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="chat-block d-flex">
+                      <span class="avatar align-self-center flex-shrink-0">
+                        <img
+                          src="assets/img/profiles/avatar-13.jpg"
+                          alt="User Image"
+                        />
+                      </span>
+                      <div
+                        class="media-body align-self-center text-nowrap flex-grow-1"
                       >
-                      <a href="pipeline.html" class="btn btn-primary">Okay</a>
+                        <div class="user-name">Bernardo Galaviz</div>
+                        <span class="designation">Web Developer</span>
+                      </div>
+                      <div class="align-self-center text-nowrap">
+                        <div class="online-date">3 days ago</div>
+                      </div>
                     </div>
-                  </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="chat-block d-flex">
+                      <span class="avatar align-self-center flex-shrink-0">
+                        <img
+                          src="assets/img/profiles/avatar-02.jpg"
+                          alt="User Image"
+                        />
+                      </span>
+                      <div
+                        class="media-body text-nowrap align-self-center flex-grow-1"
+                      >
+                        <div class="user-name">John Doe</div>
+                        <span class="designation">Web Designer</span>
+                      </div>
+                      <div class="align-self-center text-nowrap">
+                        <div class="online-date">7 months ago</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="submit-section">
+              <button class="btn btn-primary submit-btn">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="share_files" class="modal custom-modal fade" role="dialog">
+      <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Share File</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="files-share-list">
+              <div class="files-cont">
+                <div class="file-type">
+                  <span class="files-icon"
+                    ><i class="fa-regular fa-file-pdf"></i
+                  ></span>
+                </div>
+                <div class="files-info">
+                  <span class="file-name text-ellipsis"
+                    >AHA Selfcare Mobile Application Test-Cases.xls</span
+                  >
+                  <span class="file-author"
+                    ><a href="#">Bernardo Galaviz</a></span
+                  >
+                  <span class="file-date">May 31st at 6:53 PM</span>
                 </div>
               </div>
             </div>
-          </div>
-
-          <div
-            class="modal custom-modal fade modal-padding"
-            id="export"
-            role="dialog"
-          >
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div
-                  class="modal-header header-border justify-content-between p-0"
-                >
-                  <h5 class="modal-title">Export</h5>
-                  <button
-                    type="button"
-                    class="btn-close position-static"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    <span aria-hidden="true">×</span>
-                  </button>
-                </div>
-                <div class="modal-body p-0">
-                  <form
-                    action="https://smarthr.dreamstechnologies.com/laravel/template/public/pipeline"
-                  >
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="input-block mb-3">
-                          <h5 class="mb-3">Export</h5>
-                          <div class="status-radio-btns d-flex">
-                            <div class="people-status-radio">
-                              <input
-                                type="radio"
-                                class="status-radio"
-                                id="pdf"
-                                name="export-type"
-                                checked
-                              />
-                              <label for="pdf">Person</label>
-                            </div>
-                            <div class="people-status-radio">
-                              <input
-                                type="radio"
-                                class="status-radio"
-                                id="excel"
-                                name="export-type"
-                              />
-                              <label for="excel">Organization</label>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <h4 class="mb-3">Filters</h4>
-                        <div class="input-block mb-3">
-                          <label class="col-form-label"
-                            >Fields <span class="text-danger">*</span></label
-                          >
-                          <select class="select">
-                            <option>All Fields</option>
-                            <option>contact</option>
-                            <option>Company</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="input-block mb-3">
-                          <label class="col-form-label"
-                            >From Date <span class="text-danger">*</span></label
-                          >
-                          <div class="cal-icon">
-                            <input
-                              class="form-control floating datetimepicker"
-                              type="text"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="input-block mb-3">
-                          <label class="col-form-label"
-                            >To Date <span class="text-danger">*</span></label
-                          >
-                          <div class="cal-icon">
-                            <input
-                              class="form-control floating datetimepicker"
-                              type="text"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-12 text-end form-wizard-button">
-                        <button
-                          class="button btn-lights reset-btn"
-                          type="reset"
-                          data-bs-dismiss="modal"
-                        >
-                          Reset
-                        </button>
-                        <button class="btn btn-primary" type="submit">
-                          Export Now
-                        </button>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
+            <div class="input-block mb-3">
+              <label class="col-form-label">Share With</label>
+              <input class="form-control" type="text" />
+            </div>
+            <div class="submit-section">
+              <button class="btn btn-primary submit-btn">Share</button>
             </div>
           </div>
         </div>
@@ -3346,25 +2287,32 @@
         </div>
       </div>
     </div>
-  
+  <!-- jQuery -->
 <script src="{{ asset('assets/js/jquery-3.7.1.min.js') }}"></script>
+
+<!-- Bootstrap Bundle -->
 <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
+
+<!-- Slimscroll -->
 <script src="{{ asset('assets/js/jquery.slimscroll.min.js') }}"></script>
-<script src="{{ asset('assets/js/select2.min.js') }}"></script>
-<script src="{{ asset('assets/js/moment.min.js') }}"></script>
-<script src="{{ asset('assets/js/bootstrap-datetimepicker.min.js') }}"></script>
-<script src="{{ asset('assets/plugins/daterangepicker/daterangepicker.js') }}"></script>
-<script src="{{ asset('assets/js/jquery.dataTables.min.js') }}"></script>
-<script src="{{ asset('assets/js/dataTables.bootstrap4.min.js') }}"></script>
+
+<!-- Feather Icons -->
 <script src="{{ asset('assets/js/feather.min.js') }}"></script>
-<script src="{{ asset('assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js') }}"></script>
+
+<!-- Layout Scripts -->
 <script src="{{ asset('assets/js/layout.js') }}"></script>
 <script src="{{ asset('assets/js/theme-settings.js') }}"></script>
 <script src="{{ asset('assets/js/greedynav.js') }}"></script>
 <script src="{{ asset('assets/js/app.js') }}"></script>
 
+<!-- Cloudflare Rocket Loader (optional) -->
+<script 
+  src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" 
+  data-cf-settings="4c14fb341c4556785564cd28-|49" 
+  defer>
+</script>
 
   </body>
 
-  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/pipeline by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:23:02 GMT -->
+  <!-- Mirrored from smarthr.dreamstechnologies.com/laravel/template/public/incoming-call by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:22:24 GMT -->
 </html>

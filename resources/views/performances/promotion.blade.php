@@ -55,7 +55,7 @@
                         <div class="col">
                             <h3 class="page-title">Promotion</h3>
                             <ul class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="admin-dashboard.html">Dashboard</a></li>
+                                <li class="breadcrumb-item"><a href="{{route('admin-dashboard')}}">Dashboard</a></li>
                                 <li class="breadcrumb-item active">Promotion</li>
                             </ul>
                         </div>
@@ -87,10 +87,10 @@
                                         <td>1</td>
                                         <td>
                                             <h2 class="table-avatar blue-link">
-                                                <a href="profile.html" class="avatar"><img
+                                                <a href="{{route('profile')}}" class="avatar"><img
                                                         src="assets/img/profiles/avatar-02.jpg"
                                                         alt="User Image"></a>
-                                                <a href="profile.html">John Doe</a>
+                                                <a href="{{route('profile')}}">John Doe</a>
                                             </h2>
                                         </td>
                                         <td>Web Development</td>

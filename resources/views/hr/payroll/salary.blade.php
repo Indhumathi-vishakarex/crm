@@ -40,7 +40,7 @@
                         <div class="col">
                             <h3 class="page-title">Employee Salary</h3>
                             <ul class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="admin-dashboard.html">Dashboard</a></li>
+                                <li class="breadcrumb-item"><a href="{{ route('admin-dashboard') }}">Dashboard</a></li>
                                 <li class="breadcrumb-item active">Salary</li>
                             </ul>
                         </div>
@@ -120,8 +120,8 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img src="assets/img/profiles/avatar-02.jpg" alt="User Image"></a>
-                                                <a href="profile.html">John Doe <span>Web Designer</span></a>
+                                                <a href="{{route('profile')}}" class="avatar"><img src="assets/img/profiles/avatar-02.jpg" alt="User Image"></a>
+                                                <a href="{{route('profile')}}">John Doe <span>Web Designer</span></a>
                                             </h2>
                                         </td>
                                         <td>FT-0001</td>
@@ -139,7 +139,7 @@
                                             </div>
                                         </td>
                                         <td>$59698</td>
-                                        <td><a class="btn btn-sm btn-primary" href="salary-view.html">Generate Slip</a></td>
+                                        <td><a class="btn btn-sm btn-primary" href="{{route('salary-view')}}">Generate Slip</a></td>
                                         <td class="text-end">
                                             <div class="dropdown dropdown-action">
                                                 <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
@@ -154,8 +154,8 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img src="assets/img/profiles/avatar-09.jpg" alt="User Image"></a>
-                                                <a href="profile.html">Richard Miles <span>Web Developer</span></a>
+                                                <a href="{{route('profile')}}" class="avatar"><img src="assets/img/profiles/avatar-09.jpg" alt="User Image"></a>
+                                                <a href="{{route('profile')}}">Richard Miles <span>Web Developer</span></a>
                                             </h2>
                                         </td>
                                         <td>FT-0002</td>
@@ -173,7 +173,7 @@
                                             </div>
                                         </td>
                                         <td>$72000</td>
-                                        <td><a class="btn btn-sm btn-primary" href="salary-view.html">Generate Slip</a></td>
+                                        <td><a class="btn btn-sm btn-primary" href="{{route('salary-view')}}">Generate Slip</a></td>
                                         <td class="text-end">
                                             <div class="dropdown dropdown-action">
                                                 <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
@@ -188,8 +188,8 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img src="assets/img/profiles/avatar-10.jpg" alt="User Image"></a>
-                                                <a href="profile.html">John Smith <span>Android Developer</span></a>
+                                                <a href="{{route('profile')}}" class="avatar"><img src="assets/img/profiles/avatar-10.jpg" alt="User Image"></a>
+                                                <a href="{{route('profile')}}">John Smith <span>Android Developer</span></a>
                                             </h2>
                                         </td>
                                         <td>FT-0003</td>
@@ -207,7 +207,7 @@
                                             </div>
                                         </td>
                                         <td>$48200</td>
-                                        <td><a class="btn btn-sm btn-primary" href="salary-view.html">Generate Slip</a></td>
+                                        <td><a class="btn btn-sm btn-primary" href="{{route('salary-view')}}">Generate Slip</a></td>
                                         <td class="text-end">
                                             <div class="dropdown dropdown-action">
                                                 <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
@@ -223,8 +223,8 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img src="assets/img/profiles/avatar-05.jpg" alt="User Image"></a>
-                                                <a href="profile.html">Mike Litorus <span>IOS Developer</span></a>
+                                                <a href="{{route('profile')}}" class="avatar"><img src="assets/img/profiles/avatar-05.jpg" alt="User Image"></a>
+                                                <a href="{{route('profile')}}">Mike Litorus <span>IOS Developer</span></a>
                                             </h2>
                                         </td>
                                         <td>FT-0004</td>
@@ -242,7 +242,7 @@
                                             </div>
                                         </td>
                                         <td>$59698</td>
-                                        <td><a class="btn btn-sm btn-primary" href="salary-view.html">Generate Slip</a></td>
+                                        <td><a class="btn btn-sm btn-primary" href="{{route('salary-view')}}">Generate Slip</a></td>
                                         <td class="text-end">
                                             <div class="dropdown dropdown-action">
                                                 <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
@@ -258,8 +258,8 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img src="assets/img/profiles/avatar-11.jpg" alt="User Image"></a>
-                                                <a href="profile.html">Wilmer Deluna <span>Team Leader</span></a>
+                                                <a href="{{route('profile')}}" class="avatar"><img src="assets/img/profiles/avatar-11.jpg" alt="User Image"></a>
+                                                <a href="{{route('profile')}}">Wilmer Deluna <span>Team Leader</span></a>
                                             </h2>
                                         </td>
                                         <td>FT-0005</td>
@@ -277,7 +277,7 @@
                                             </div>
                                         </td>
                                         <td>$43000</td>
-                                        <td><a class="btn btn-sm btn-primary" href="salary-view.html">Generate Slip</a></td>
+                                        <td><a class="btn btn-sm btn-primary" href="{{route('salary-view')}}">Generate Slip</a></td>
                                         <td class="text-end">
                                             <div class="dropdown dropdown-action">
                                                 <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
@@ -293,8 +293,8 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img src="assets/img/profiles/avatar-12.jpg" alt="User Image"></a>
-                                                <a href="profile.html">Jeffrey Warden <span>Web Developer</span></a>
+                                                <a href="{{route('profile')}}" class="avatar"><img src="assets/img/profiles/avatar-12.jpg" alt="User Image"></a>
+                                                <a href="{{route('profile')}}">Jeffrey Warden <span>Web Developer</span></a>
                                             </h2>
                                         </td>
                                         <td>FT-0006</td>
@@ -312,7 +312,7 @@
                                             </div>
                                         </td>
                                         <td>$45000</td>
-                                        <td><a class="btn btn-sm btn-primary" href="salary-view.html">Generate Slip</a></td>
+                                        <td><a class="btn btn-sm btn-primary" href="{{route('salary-view')}}">Generate Slip</a></td>
                                         <td class="text-end">
                                             <div class="dropdown dropdown-action">
                                                 <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
@@ -328,8 +328,8 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img src="assets/img/profiles/avatar-13.jpg" alt="User Image"></a>
-                                                <a href="profile.html">Bernardo Galaviz <span>Web Developer</span></a>
+                                                <a href="{{route('profile')}}" class="avatar"><img src="assets/img/profiles/avatar-13.jpg" alt="User Image"></a>
+                                                <a href="{{route('profile')}}">Bernardo Galaviz <span>Web Developer</span></a>
                                             </h2>
                                         </td>
                                         <td>FT-0007</td>
@@ -347,7 +347,7 @@
                                             </div>
                                         </td>
                                         <td>$38400</td>
-                                        <td><a class="btn btn-sm btn-primary" href="salary-view.html">Generate Slip</a></td>
+                                        <td><a class="btn btn-sm btn-primary" href="{{route('salary-view')}}">Generate Slip</a></td>
                                         <td class="text-end">
                                             <div class="dropdown dropdown-action">
                                                 <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
@@ -363,8 +363,8 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img src="assets/img/profiles/avatar-01.jpg" alt="User Image"></a>
-                                                <a href="profile.html">Lesley Grauer <span>Team Leader</span></a>
+                                                <a href="{{route('profile')}}" class="avatar"><img src="assets/img/profiles/avatar-01.jpg" alt="User Image"></a>
+                                                <a href="{{route('profile')}}">Lesley Grauer <span>Team Leader</span></a>
                                             </h2>
                                         </td>
                                         <td>FT-0008</td>
@@ -382,7 +382,7 @@
                                             </div>
                                         </td>
                                         <td>$75500</td>
-                                        <td><a class="btn btn-sm btn-primary" href="salary-view.html">Generate Slip</a></td>
+                                        <td><a class="btn btn-sm btn-primary" href="{{route('salary-view')}}">Generate Slip</a></td>
                                         <td class="text-end">
                                             <div class="dropdown dropdown-action">
                                                 <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
@@ -398,8 +398,8 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img src="assets/img/profiles/avatar-16.jpg" alt="User Image"></a>
-                                                <a href="profile.html">Jeffery Lalor <span>Team Leader</span></a>
+                                                <a href="{{route('profile')}}" class="avatar"><img src="assets/img/profiles/avatar-16.jpg" alt="User Image"></a>
+                                                <a href="{{route('profile')}}">Jeffery Lalor <span>Team Leader</span></a>
                                             </h2>
                                         </td>
                                         <td>FT-0009</td>
@@ -417,7 +417,7 @@
                                             </div>
                                         </td>
                                         <td>$73550</td>
-                                        <td><a class="btn btn-sm btn-primary" href="salary-view.html">Generate Slip</a></td>
+                                        <td><a class="btn btn-sm btn-primary" href="{{route('salary-view')}}">Generate Slip</a></td>
                                         <td class="text-end">
                                             <div class="dropdown dropdown-action">
                                                 <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
@@ -433,8 +433,8 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img src="assets/img/profiles/avatar-04.jpg" alt="User Image"></a>
-                                                <a href="profile.html">Loren Gatlin <span>Android Developer</span></a>
+                                                <a href="{{route('profile')}}" class="avatar"><img src="assets/img/profiles/avatar-04.jpg" alt="User Image"></a>
+                                                <a href="{{route('profile')}}">Loren Gatlin <span>Android Developer</span></a>
                                             </h2>
                                         </td>
                                         <td>FT-0010</td>
@@ -452,7 +452,7 @@
                                             </div>
                                         </td>
                                         <td>$55000</td>
-                                        <td><a class="btn btn-sm btn-primary" href="salary-view.html">Generate Slip</a></td>
+                                        <td><a class="btn btn-sm btn-primary" href="{{route('salary-view')}}">Generate Slip</a></td>
                                         <td class="text-end">
                                             <div class="dropdown dropdown-action">
                                                 <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
@@ -468,8 +468,8 @@
                                     <tr>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img src="assets/img/profiles/avatar-03.jpg" alt="User Image"></a>
-                                                <a href="profile.html">Tarah Shropshire <span>Android Developer</span></a>
+                                                <a href="{{route('profile')}}" class="avatar"><img src="assets/img/profiles/avatar-03.jpg" alt="User Image"></a>
+                                                <a href="{{route('profile')}}">Tarah Shropshire <span>Android Developer</span></a>
                                             </h2>
                                         </td>
                                         <td>FT-0011</td>
@@ -487,7 +487,7 @@
                                             </div>
                                         </td>
                                         <td>$92400</td>
-                                        <td><a class="btn btn-sm btn-primary" href="salary-view.html">Generate Slip</a></td>
+                                        <td><a class="btn btn-sm btn-primary" href="{{route('salary-view')}}">Generate Slip</a></td>
                                         <td class="text-end">
                                             <div class="dropdown dropdown-action">
                                                 <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>

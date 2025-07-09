@@ -25,27 +25,164 @@
       content="Dreamstechnologies - Bootstrap Admin Template"
     />
     <title>Outgoing Call - HRMS admin template</title>
-<link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}" />
+<!-- Favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png" />
 
-<link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}" />
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
-<link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/fontawesome.min.css') }}" />
-<link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/all.min.css') }}" />
+<!-- Font Awesome -->
+<link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css" />
+<link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css" />
 
-<link rel="stylesheet" href="{{ asset('assets/css/line-awesome.min.css') }}" />
+<!-- Line Awesome (only include once) -->
+<link rel="stylesheet" href="assets/css/line-awesome.min.css" />
 
-<link rel="stylesheet" href="{{ asset('assets/css/material.css') }}" />
+<!-- Material CSS -->
+<link rel="stylesheet" href="assets/css/material.css" />
 
-<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
+<!-- Custom Style -->
+<link rel="stylesheet" href="assets/css/style.css" />
 
    
   </head>
   <body>
     <div class="main-wrapper">
-    
+      
+      
 @include('layouts.header')
-@include('layouts.sidebar')
-  
+
+
+      <div class="sidebar" id="sidebar">
+        <div class="sidebar-inner slimscroll">
+          <div id="sidebar-menu" class="sidebar-menu">
+            <nav class="greedy">
+              <ul class="link-item">
+                <li>
+                  <a class href="{{route('admin-dashboard')}}"
+                    ><i class="la la-home"></i> <span>Back to Home</span></a
+                  >
+                </li>
+                <li class="menu-title">
+                  <span>Chat Groups</span>
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#add_group"
+                    ><i class="fa-solid fa-plus"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class href="{{route('chat')}}">
+                    <span class="chat-avatar-sm user-img">
+                      <img
+                        class="rounded-circle"
+                        src="assets/img/user.jpg"
+                        alt="User Image"
+                      />
+                    </span>
+                    <span class="chat-user">#General</span>
+                  </a>
+                </li>
+                <li>
+                  <a class href="{{route('chat')}}">
+                    <span class="chat-avatar-sm user-img">
+                      <img
+                        class="rounded-circle"
+                        src="assets/img/user.jpg"
+                        alt="User Image"
+                      />
+                    </span>
+                    <span class="chat-user">#Video Responsive Survey</span>
+                  </a>
+                </li>
+                <li>
+                  <a class href="{{route('chat')}}">
+                    <span class="chat-avatar-sm user-img">
+                      <img
+                        class="rounded-circle"
+                        src="assets/img/user.jpg"
+                        alt="User Image')}}"
+                      />
+                    </span>
+                    <span class="chat-user">#500rs</span>
+                  </a>
+                </li>
+                <li>
+                  <a class href="{{route('chat')}}">
+                    <span class="chat-avatar-sm user-img">
+                      <img
+                        class="rounded-circle"
+                        src="assets/img/user.jpg"
+                        alt="User Image"
+                      />
+                    </span>
+                    <span class="chat-user">#warehouse</span>
+                  </a>
+                </li>
+                <li class="menu-title">
+                  Direct Chats
+                  <a
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#add_chat_user"
+                    ><i class="fa-solid fa-plus"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class href="{{route('chat')}}">
+                    <span class="chat-avatar-sm user-img">
+                      <img
+                        class="rounded-circle"
+                        src="assets/img/profiles/avatar-02.jpg"
+                        alt="User Image"
+                      /><span class="status online"></span>
+                    </span>
+                    <span class="chat-user">John Doe</span>
+                    <span class="badge rounded-pill bg-danger">1</span>
+                  </a>
+                </li>
+                <li>
+                  <a class href="{{route('chat')}}">
+                    <span class="chat-avatar-sm user-img">
+                      <img
+                        class="rounded-circle"
+                        src="assets/img/profiles/avatar-09.jpg"
+                        alt="User Image"
+                      /><span class="status offline"></span>
+                    </span>
+                    <span class="chat-user">Richard Miles</span>
+                    <span class="badge rounded-pill bg-danger">7</span>
+                  </a>
+                </li>
+                <li>
+                  <a class href="{{route('chat')}}">
+                    <span class="chat-avatar-sm user-img">
+                      <img
+                        class="rounded-circle"
+                        src="assets/img/profiles/avatar-10.jpg"
+                        alt="User Image"
+                      /><span class="status away"></span>
+                    </span>
+                    <span class="chat-user">John Smith</span>
+                  </a>
+                </li>
+                <li class="active">
+                  <a class href="{{route('chat')}}">
+                    <span class="chat-avatar-sm user-img">
+                      <img
+                        class="rounded-circle"
+                        src="assets/img/profiles/avatar-05.jpg"
+                        alt="User Image"
+                      /><span class="status online"></span>
+                    </span>
+                    <span class="chat-user">Mike Litorus</span>
+                    <span class="badge rounded-pill bg-danger">2</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
       <div class="two-col-bar" id="two-col-bar">
         <div class="sidebar sidebar-twocol">
           <div class="sidebar-left slimscroll">
@@ -536,7 +673,7 @@
                 <p>Dashboard</p>
                 <ul>
                   <li>
-                    <a class href="admin-dashboard.html">Admin Dashboard</a>
+                    <a class href="{{route('admin-dashboard')}}">Admin Dashboard</a>
                   </li>
                   <li>
                     <a class href="employee-dashboard.html"
@@ -560,15 +697,15 @@
                 <p>App</p>
                 <ul>
                   <li>
-                    <a class href="chat.html" class="active">Chat</a>
+                    <a class href="{{route('chat')}}" class="active">Chat</a>
                   </li>
                   <li class="sub-menu">
                     <a href="#">Calls <span class="menu-arrow"></span></a>
                     <ul>
-                      <li><a class href="voice-call.html">Voice Call</a></li>
-                      <li><a class href="video-call.html">Video Call</a></li>
+                      <li><a class href="{{route('voice-call')}}">Voice Call</a></li>
+                      <li><a class href="{{route('video-call')}}">Video Call</a></li>
                       <li>
-                        <a class="active" href="outgoing-call.html"
+                        <a class="active" href="{{route('outgoing-call')}}"
                           >Outgoing Call</a
                         >
                       </li>
@@ -1305,7 +1442,7 @@
                 <a href="javascript:void(0);" class="btn call-item"
                   ><i class="material-icons">videocam</i></a
                 >
-                <a href="chat.html" class="btn call-item call-end"
+                <a href="{{route('chat')}}" class="btn call-item call-end"
                   ><i class="material-icons vcend">call_end</i></a
                 >
                 <a href="javascript:void(0);" class="btn call-item"
@@ -2161,18 +2298,33 @@
           </div>
         </div>
       </div>
-   
     </div>
-  
+   <!-- jQuery -->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
 
-    <script src="{{ asset('assets/js/jquery-3.7.1.min.js') }}" type="text/javascript"></script>
-<script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}" type="text/javascript"></script>
-<script src="{{ asset('assets/js/jquery.slimscroll.min.js') }}" type="text/javascript"></script>
-<script src="{{ asset('assets/js/feather.min.js') }}" type="text/javascript"></script>
-<script src="{{ asset('assets/js/layout.js') }}" type="text/javascript"></script>
-<script src="{{ asset('assets/js/theme-settings.js') }}" type="text/javascript"></script>
-<script src="{{ asset('assets/js/greedynav.js') }}" type="text/javascript"></script>
-<script src="{{ asset('assets/js/app.js') }}" type="text/javascript"></script>
+<!-- Bootstrap Bundle -->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+<!-- Slimscroll -->
+<script src="assets/js/jquery.slimscroll.min.js"></script>
+
+<!-- Feather Icons -->
+<script src="assets/js/feather.min.js"></script>
+
+<!-- Layout Scripts -->
+<script src="assets/js/layout.js"></script>
+<script src="assets/js/theme-settings.js"></script>
+<script src="assets/js/greedynav.js"></script>
+
+<!-- Main App Script -->
+<script src="assets/js/app.js"></script>
+
+<!-- Cloudflare Rocket Loader (leave as-is, if used) -->
+<script
+  src="../../../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
+  data-cf-settings="8f6efbbab786c1238e17a6b6-|49"
+  defer
+></script>
 
   </body>
 

@@ -58,7 +58,7 @@
                 <h3 class="page-title">Deals</h3>
                 <ul class="breadcrumb">
                   <li class="breadcrumb-item">
-                    <a href="admin-dashboard.html">Dashboard</a>
+                    <a href="{{route('admin-dashboard')}}">Dashboard</a>
                   </li>
                   <li class="breadcrumb-item active">Deals</li>
                 </ul>
@@ -563,12 +563,12 @@
                             class="d-flex justify-content-between align-items-center"
                           >
                             <div class="card-user-info">
-                              <a href="deals-details.html" class="avatar"
+                              <a href="{{route('deals-details')}}" class="avatar"
                                 ><img
                                   src="assets/img/avatar/avatar-19.jpg"
                                   alt="Img"
                               /></a>
-                              <a href="deals-details.html" class="user-name"
+                              <a href="{{route('deals-details')}}" class="user-name"
                                 >Darlee Robertson</a
                               >
                             </div>
@@ -634,12 +634,12 @@
                             class="d-flex justify-content-between align-items-center"
                           >
                             <div class="card-user-info">
-                              <a href="deals-details.html" class="avatar"
+                              <a href="{{route('deals-details')}}" class="avatar"
                                 ><img
                                   src="assets/img/avatar/avatar-20.jpg"
                                   alt="Img"
                               /></a>
-                              <a href="deals-details.html" class="user-name"
+                              <a href="{{route('deals-details')}}" class="user-name"
                                 >Darlee Robertson</a
                               >
                             </div>
@@ -705,12 +705,12 @@
                             class="d-flex justify-content-between align-items-center"
                           >
                             <div class="card-user-info">
-                              <a href="deals-details.html" class="avatar"
+                              <a href="{{route('deals-details')}}" class="avatar"
                                 ><img
                                   src="assets/img/avatar/avatar-21.jpg"
                                   alt="Img"
                               /></a>
-                              <a href="deals-details.html" class="user-name"
+                              <a href="{{route('deals-details')}}" class="user-name"
                                 >Darlee Robertson</a
                               >
                             </div>
@@ -821,12 +821,12 @@
                             class="d-flex justify-content-between align-items-center"
                           >
                             <div class="card-user-info">
-                              <a href="deals-details.html" class="avatar"
+                              <a href="{{route('deals-details')}}" class="avatar"
                                 ><img
                                   src="assets/img/avatar/avatar-1.jpg"
                                   alt="Img"
                               /></a>
-                              <a href="deals-details.html" class="user-name"
+                              <a href="{{route('deals-details')}}" class="user-name"
                                 >Jessica</a
                               >
                             </div>
@@ -892,12 +892,12 @@
                             class="d-flex justify-content-between align-items-center"
                           >
                             <div class="card-user-info">
-                              <a href="deals-details.html" class="avatar"
+                              <a href="{{route('deals-details')}}" class="avatar"
                                 ><img
                                   src="assets/img/avatar/avatar-16.jpg"
                                   alt="Img"
                               /></a>
-                              <a href="deals-details.html" class="user-name"
+                              <a href="{{route('deals-details')}}" class="user-name"
                                 >Carol Thomas</a
                               >
                             </div>
@@ -963,12 +963,12 @@
                             class="d-flex justify-content-between align-items-center"
                           >
                             <div class="card-user-info">
-                              <a href="deals-details.html" class="avatar"
+                              <a href="{{route('deals-details')}}" class="avatar"
                                 ><img
                                   src="assets/img/avatar/avatar-22.jpg"
                                   alt="Img"
                               /></a>
-                              <a href="deals-details.html" class="user-name"
+                              <a href="{{route('deals-details')}}" class="user-name"
                                 >Dawn Mercha</a
                               >
                             </div>
@@ -1079,12 +1079,12 @@
                             class="d-flex justify-content-between align-items-center"
                           >
                             <div class="card-user-info">
-                              <a href="deals-details.html" class="avatar"
+                              <a href="{{route('deals-details')}}" class="avatar"
                                 ><img
                                   src="assets/img/avatar/avatar-23.jpg"
                                   alt="Img"
                               /></a>
-                              <a href="deals-details.html" class="user-name"
+                              <a href="{{route('deals-details')}}" class="user-name"
                                 >Rachel Hampton</a
                               >
                             </div>
@@ -1150,12 +1150,12 @@
                             class="d-flex justify-content-between align-items-center"
                           >
                             <div class="card-user-info">
-                              <a href="deals-details.html" class="avatar"
+                              <a href="{{route('deals-details')}}" class="avatar"
                                 ><img
                                   src="assets/img/avatar/avatar-24.jpg"
                                   alt="Img"
                               /></a>
-                              <a href="deals-details.html" class="user-name"
+                              <a href="{{route('deals-details')}}" class="user-name"
                                 >Jonelle Curtiss</a
                               >
                             </div>
@@ -1224,12 +1224,12 @@
                             class="d-flex justify-content-between align-items-center"
                           >
                             <div class="card-user-info">
-                              <a href="deals-details.html" class="avatar"
+                              <a href="{{route('deals-details')}}" class="avatar"
                                 ><img
                                   src="assets/img/avatar/avatar-25.jpg"
                                   alt="Img"
                               /></a>
-                              <a href="deals-details.html" class="user-name"
+                              <a href="{{route('deals-details')}}" class="user-name"
                                 >Jonathan</a
                               >
                             </div>
@@ -1340,12 +1340,12 @@
                             class="d-flex justify-content-between align-items-center"
                           >
                             <div class="card-user-info">
-                              <a href="deals-details.html" class="avatar"
+                              <a href="{{route('deals-details')}}" class="avatar"
                                 ><img
                                   src="assets/img/avatar/avatar-17.jpg"
                                   alt="Img"
                               /></a>
-                              <a href="deals-details.html" class="user-name"
+                              <a href="{{route('deals-details')}}" class="user-name"
                                 >Sidney Franks</a
                               >
                             </div>
@@ -1409,12 +1409,12 @@
                             class="d-flex justify-content-between align-items-center"
                           >
                             <div class="card-user-info">
-                              <a href="deals-details.html" class="avatar"
+                              <a href="{{route('deals-details')}}" class="avatar"
                                 ><img
                                   src="assets/img/avatar/avatar-26.jpg"
                                   alt="Img"
                               /></a>
-                              <a href="deals-details.html" class="user-name"
+                              <a href="{{route('deals-details')}}" class="user-name"
                                 >Brook</a
                               >
                             </div>
@@ -1480,12 +1480,12 @@
                             class="d-flex justify-content-between align-items-center"
                           >
                             <div class="card-user-info">
-                              <a href="deals-details.html" class="avatar"
+                              <a href="{{route('deals-details')}}" class="avatar"
                                 ><img
                                   src="assets/img/avatar/avatar-15.jpg"
                                   alt="Img"
                               /></a>
-                              <a href="deals-details.html" class="user-name"
+                              <a href="{{route('deals-details')}}" class="user-name"
                                 >Mickey</a
                               >
                             </div>

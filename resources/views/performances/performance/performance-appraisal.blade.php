@@ -56,7 +56,7 @@
                         <div class="col">
                             <h3 class="page-title">Performance Appraisal</h3>
                             <ul class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="admin-dashboard.html">Dashboard</a></li>
+                                <li class="breadcrumb-item"><a href="{{route('admin-dashboard')}}">Dashboard</a></li>
                                 <li class="breadcrumb-item active">Performance</li>
                             </ul>
                         </div>
@@ -87,10 +87,10 @@
                                         <td>1</td>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img
+                                                <a href="{{route('profile')}}" class="avatar"><img
                                                         src="assets/img/profiles/avatar-02.jpg"
                                                         alt="User Image"></a>
-                                                <a href="profile.html">John Doe </a>
+                                                <a href="{{route('profile')}}">John Doe </a>
                                             </h2>
                                         </td>
                                         <td>Web Designer </td>
@@ -137,10 +137,10 @@
                                         <td>2</td>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img
+                                                <a href="{{route('profile')}}" class="avatar"><img
                                                         src="assets/img/profiles/avatar-05.jpg"
                                                         alt="User Image"></a>
-                                                <a href="profile.html">Mike Litorus </a>
+                                                <a href="{{route('profile')}}">Mike Litorus </a>
                                             </h2>
                                         </td>
                                         <td>IOS Developer </td>
@@ -187,10 +187,10 @@
                                         <td>3</td>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img
+                                                <a href="{{route('profile')}}" class="avatar"><img
                                                         src="assets/img/profiles/avatar-13.jpg"
                                                         alt="User Image"></a>
-                                                <a href="profile.html">Bernardo Galaviz </a>
+                                                <a href="{{route('profile')}}">Bernardo Galaviz </a>
                                             </h2>
                                         </td>
                                         <td>Web Developer </td>
@@ -236,10 +236,10 @@
                                         <td>4</td>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img
+                                                <a href="{{route('profile')}}" class="avatar"><img
                                                         src="assets/img/profiles/avatar-12.jpg"
                                                         alt="User Image"></a>
-                                                <a href="profile.html">Jeffrey Warden </a>
+                                                <a href="{{route('profile')}}">Jeffrey Warden </a>
                                             </h2>
                                         </td>
                                         <td>Web Developer </td>
@@ -285,10 +285,10 @@
                                         <td>5</td>
                                         <td>
                                             <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar"><img
+                                                <a href="{{route('profile')}}" class="avatar"><img
                                                         src="assets/img/profiles/avatar-11.jpg"
                                                         alt="User Image"></a>
-                                                <a href="profile.html">Wilmer Deluna </a>
+                                                <a href="{{route('profile')}}">Wilmer Deluna </a>
                                             </h2>
                                         </td>
                                         <td>Team Leader </td>

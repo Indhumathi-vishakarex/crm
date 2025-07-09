@@ -31,7 +31,7 @@
 <div class="container">
 
 <div class="account-logo">
-<a href="dashboard.html"><img src="assets/img/logo2.png" alt="Dreamguy's Technologies"></a>
+<a href=""><img src="assets/img/logo2.png" alt="Dreamguy's Technologies"></a>
 </div>
 
 <div class="account-box">
@@ -49,10 +49,11 @@
 <input class="form-control" type="password">
 </div>
 <div class="input-block mb-3 text-center">
-<button class="btn btn-primary account-btn" type="submit">Enter</button>
+<!-- <button class="btn btn-primary account-btn" type="submit">Enter</button> -->
+ <a href="{{ route('admin-dashboard') }}" class="btn btn-primary account-btn">Enter</a>
 </div>
 <div class="account-footer">
-<p>Sign in as a different user? <a href="register.html">Login</a></p>
+<p>Sign in as a different user? <a href="{{ route('login') }}">Login</a></p>
 </div>
 </form>
 

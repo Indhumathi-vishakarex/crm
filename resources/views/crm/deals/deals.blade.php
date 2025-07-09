@@ -63,7 +63,7 @@
                 <h3 class="page-title">Deals</h3>
                 <ul class="breadcrumb">
                   <li class="breadcrumb-item">
-                    <a href="admin-dashboard.html">Dashboard</a>
+                    <a href="{{route('admin-dashboard')}}">Dashboard</a>
                   </li>
                   <li class="breadcrumb-item active">Deals</li>
                 </ul>
@@ -514,7 +514,7 @@
                       </td>
                       <td>
                         <h2>
-                          <a href="deals-details.html" class="profile-split"
+                          <a href="{{route('deals-details')}}" class="profile-split"
                             >Collins</a
                           >
                         </h2>
@@ -555,7 +555,7 @@
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
-                            <a class="dropdown-item" href="deals-details.html"
+                            <a class="dropdown-item" href="{{route('deals-details')}}"
                               ><i class="fa-regular fa-eye"></i> Preview</a
                             >
                           </div>
@@ -570,7 +570,7 @@
                       </td>
                       <td>
                         <h2>
-                          <a href="deals-details.html" class="profile-split"
+                          <a href="{{route('deals-details')}}" class="profile-split"
                             >Konopelski</a
                           >
                         </h2>
@@ -611,7 +611,7 @@
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
-                            <a class="dropdown-item" href="deals-details.html"
+                            <a class="dropdown-item" href="{{route('deals-details')}}"
                               ><i class="fa-regular fa-eye"></i> Preview</a
                             >
                           </div>
@@ -626,7 +626,7 @@
                       </td>
                       <td>
                         <h2>
-                          <a href="deals-details.html" class="profile-split"
+                          <a href="{{route('deals-details')}}" class="profile-split"
                             >Adams</a
                           >
                         </h2>
@@ -667,7 +667,7 @@
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
-                            <a class="dropdown-item" href="deals-details.html"
+                            <a class="dropdown-item" href="{{route('deals-details')}}"
                               ><i class="fa-regular fa-eye"></i> Preview</a
                             >
                           </div>
@@ -682,7 +682,7 @@
                       </td>
                       <td>
                         <h2>
-                          <a href="deals-details.html" class="profile-split"
+                          <a href="{{route('deals-details')}}" class="profile-split"
                             >Schumm</a
                           >
                         </h2>
@@ -723,7 +723,7 @@
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
-                            <a class="dropdown-item" href="deals-details.html"
+                            <a class="dropdown-item" href="{{route('deals-details')}}"
                               ><i class="fa-regular fa-eye"></i> Preview</a
                             >
                           </div>
@@ -738,7 +738,7 @@
                       </td>
                       <td>
                         <h2>
-                          <a href="deals-details.html" class="profile-split"
+                          <a href="{{route('deals-details')}}" class="profile-split"
                             >Wisozk</a
                           >
                         </h2>
@@ -779,7 +779,7 @@
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
-                            <a class="dropdown-item" href="deals-details.html"
+                            <a class="dropdown-item" href="{{route('deals-details')}}"
                               ><i class="fa-regular fa-eye"></i> Preview</a
                             >
                           </div>
@@ -794,7 +794,7 @@
                       </td>
                       <td>
                         <h2>
-                          <a href="deals-details.html" class="profile-split"
+                          <a href="{{route('deals-details')}}" class="profile-split"
                             >Heller</a
                           >
                         </h2>
@@ -835,7 +835,7 @@
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
-                            <a class="dropdown-item" href="deals-details.html"
+                            <a class="dropdown-item" href="{{route('deals-details')}}"
                               ><i class="fa-regular fa-eye"></i> Preview</a
                             >
                           </div>
@@ -850,7 +850,7 @@
                       </td>
                       <td>
                         <h2>
-                          <a href="deals-details.html" class="profile-split"
+                          <a href="{{route('deals-details')}}" class="profile-split"
                             >Gutkowski</a
                           >
                         </h2>
@@ -891,7 +891,7 @@
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
-                            <a class="dropdown-item" href="deals-details.html"
+                            <a class="dropdown-item" href="{{route('deals-details')}}"
                               ><i class="fa-regular fa-eye"></i> Preview</a
                             >
                           </div>
@@ -906,7 +906,7 @@
                       </td>
                       <td>
                         <h2>
-                          <a href="deals-details.html" class="profile-split"
+                          <a href="{{route('deals-details')}}" class="profile-split"
                             >Walter</a
                           >
                         </h2>
@@ -947,7 +947,7 @@
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
-                            <a class="dropdown-item" href="deals-details.html"
+                            <a class="dropdown-item" href="{{route('deals-details')}}"
                               ><i class="fa-regular fa-eye"></i> Preview</a
                             >
                           </div>
@@ -962,7 +962,7 @@
                       </td>
                       <td>
                         <h2>
-                          <a href="deals-details.html" class="profile-split"
+                          <a href="{{route('deals-details')}}" class="profile-split"
                             >Hansen</a
                           >
                         </h2>
@@ -1004,7 +1004,7 @@
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
-                            <a class="dropdown-item" href="deals-details.html"
+                            <a class="dropdown-item" href="{{route('deals-details')}}"
                               ><i class="fa-regular fa-eye"></i> Preview</a
                             >
                           </div>
@@ -1019,7 +1019,7 @@
                       </td>
                       <td>
                         <h2>
-                          <a href="deals-details.html" class="profile-split"
+                          <a href="{{route('deals-details')}}" class="profile-split"
                             >Leuschke</a
                           >
                         </h2>
@@ -1060,7 +1060,7 @@
                               ><i class="fa-regular fa-trash-can m-r-5"></i>
                               Delete</a
                             >
-                            <a class="dropdown-item" href="deals-details.html"
+                            <a class="dropdown-item" href="{{route('deals-details')}}"
                               ><i class="fa-regular fa-eye"></i> Preview</a
                             >
                           </div>
@@ -1611,7 +1611,7 @@
                         data-bs-dismiss="modal"
                         >Not Now</a
                       >
-                      <a href="deals.html" class="btn btn-primary">Okay</a>
+                      <a href="{{route('deals')}}" class="btn btn-primary">Okay</a>
                     </div>
                   </div>
                 </div>
