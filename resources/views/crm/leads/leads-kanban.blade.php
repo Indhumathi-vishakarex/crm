@@ -2229,7 +2229,7 @@
                         data-bs-dismiss="modal"
                         >Not Now</a
                       >
-                      <a href="leads-kanban.html" class="btn btn-primary"
+                      <a href="{{ route('leads-kanban') }}" class="btn btn-primary"
                         >Okay</a
                       >
                     </div>

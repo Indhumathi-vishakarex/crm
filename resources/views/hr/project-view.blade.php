@@ -43,7 +43,7 @@
                         <div class="col">
                             <h3 class="page-title">Hospital Admin</h3>
                             <ul class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="admin-dashboard.html">Dashboard</a></li>
+                                <li class="breadcrumb-item"><a href="{{ route('admin-dashboard') }}">Dashboard</a></li>
                                 <li class="breadcrumb-item active">Project</li>
                             </ul>
                         </div>
@@ -52,7 +52,7 @@
                         <div class="col-auto float-end ms-auto">
                             <a href="#" class="btn add-btn" data-bs-toggle="modal" data-bs-target="#edit_project"><i class="fa-solid fa-plus"></i> Edit
                                 Project</a>
-                            <a href="task-board.html" class="btn btn-white float-end me-3" data-bs-toggle="tooltip" title="Task Board"><i class="fa-solid fa-bars"></i></a>
+                            <a href="{{ route('task-board') }}" class="btn btn-white float-end me-3" data-bs-toggle="tooltip" title="Task Board"><i class="fa-solid fa-bars"></i></a>
                             <div class="view-icons">
                             </div>
                         </div>

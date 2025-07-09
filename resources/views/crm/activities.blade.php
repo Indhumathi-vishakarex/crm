@@ -1116,7 +1116,7 @@
                         data-bs-dismiss="modal"
                         >Not Now</a
                       >
-                      {{-- <a href="pipeline.html" class="btn btn-primary">Okay</a> --}}
+                      {{-- <a href="" class="btn btn-primary">Okay</a> --}}
                     </div>
                   </div>
                 </div>

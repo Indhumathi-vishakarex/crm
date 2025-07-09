@@ -2058,7 +2058,7 @@
                         data-bs-dismiss="modal"
                         >Not Now</a
                       >
-                      <a href="deals-kanban.html" class="btn btn-primary"
+                      <a href="{{ route('deals-kanban') }}" class="btn btn-primary"
                         >Okay</a
                       >
                     </div>
