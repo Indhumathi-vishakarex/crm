@@ -113,12 +113,12 @@
                       <p>1 of 40</p>
                       <ul>
                         <li>
-                          <a href="deals-details.html"
+                          <a href="{{route('deals-details')}}"
                             ><i class="las la-arrow-left"></i
                           ></a>
                         </li>
                         <li>
-                          <a href="deals-details.html"
+                          <a href="{{route('deals-details')}}"
                             ><i class="las la-arrow-right"></i
                           ></a>
                         </li>
@@ -2713,7 +2713,7 @@
                       >”. Now you can access email.
                     </p>
                     <div class="col-lg-12 text-center form-wizard-button">
-                      <a href="deals-details.html" class="btn btn-primary"
+                      <a href="{{route('deals-details')}}" class="btn btn-primary"
                         >Go to email</a
                       >
                     </div>
@@ -3100,7 +3100,7 @@
                         data-bs-dismiss="modal"
                         >Not Now</a
                       >
-                      <a href="deals-details.html" class="btn btn-primary"
+                      <a href="{{route('deals-details')}}" class="btn btn-primary"
                         >Okay</a
                       >
                     </div>
