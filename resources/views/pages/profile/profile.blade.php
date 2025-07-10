@@ -13,7 +13,26 @@
     <meta name="author" content="Dreamstechnologies - Bootstrap Admin Template">
   <title>CRM - Winngoopages</title>
 
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/logo2.png') }}">
+    <link<!-- Core JS Libraries -->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery.slimscroll.min.js"></script>
+
+<!-- Plugins -->
+<script src="assets/js/select2.min.js"></script>
+<script src="assets/js/moment.min.js"></script>
+<script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+<script src="assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+<script src="assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
+<script src="assets/js/multiselect.min.js"></script>
+<script src="assets/js/feather.min.js"></script>
+
+<!-- Custom Scripts -->
+<script src="assets/js/layout.js"></script>
+<script src="assets/js/theme-settings.js"></script>
+<script src="assets/js/greedynav.js"></script>
+<script src="assets/js/app.js"></script>
+ rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/logo2.png') }}">
 
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/fontawesome.min.css') }}">
@@ -218,31 +237,54 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6 d-flex">
-                                <div class="card profile-box flex-fill">
-                                    <div class="card-body">
-                                        <h3 class="card-title">Bank information</h3>
-                                        <ul class="personal-info">
-                                            <li>
-                                                <div class="title">Bank name</div>
-                                                <div class="text">ICICI Bank</div>
-                                            </li>
-                                            <li>
-                                                <div class="title">Bank account No.</div>
-                                                <div class="text">159843014641</div>
-                                            </li>
-                                            <li>
-                                                <div class="title">IFSC Code</div>
-                                                <div class="text">ICI24504</div>
-                                            </li>
-                                            <li>
-                                                <div class="title">PAN No</div>
-                                                <div class="text">TC000Y56</div>
-                                            </li>
-                                        </ul>
+                          <div class="col-md-6 d-flex">
+    <div class="card profile-box flex-fill">
+        <div class="card-body">
+            <h3 class="card-title">Bank Information 
+                <a href="#" class="edit-icon" data-bs-toggle="modal" data-bs-target="#bank_info_modal">
+                    <i class="fa fa-pencil"></i>
+                </a>
+            </h3>
+            <div class="table-responsive">
+                <table class="table table-nowrap">
+                    <thead>
+                        <tr>
+                            <th>Bank Name</th>
+                            <th>Account No.</th>
+                            <th>IFSC Code</th>
+                            <th>PAN No.</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ICICI Bank</td>
+                            <td>159843014641</td>
+                            <td>ICI24504</td>
+                            <td>TC000Y56</td>
+                            <td class="text-end">
+                                <div class="dropdown dropdown-action">
+                                    <a aria-expanded="false" data-bs-toggle="dropdown" class="action-icon dropdown-toggle" href="#">
+                                        <i class="material-icons">more_vert</i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#bank_info_modal">
+                                            <i class="fa-solid fa-pencil m-r-5"></i> Edit
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <i class="fa-regular fa-trash-can m-r-5"></i> Delete
+                                        </a>
                                     </div>
                                 </div>
-                            </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
                             <div class="col-md-6 d-flex">
                                 <div class="card profile-box flex-fill">
                                     <div class="card-body">
@@ -1218,7 +1260,58 @@
                     </div>
                 </div>
             </div>
-
+<div id="bank_info_modal" class="modal custom-modal fade" role="dialog">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Bank Information</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-scroll">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Bank Details</h3>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="input-block mb-3">
+                                            <label class="col-form-label">Bank Name <span class="text-danger">*</span></label>
+                                            <input class="form-control" type="text" value="ICICI Bank">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-block mb-3">
+                                            <label class="col-form-label">Bank Account No. <span class="text-danger">*</span></label>
+                                            <input class="form-control" type="text" value="159843014641">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-block mb-3">
+                                            <label class="col-form-label">IFSC Code <span class="text-danger">*</span></label>
+                                            <input class="form-control" type="text" value="ICI24504">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-block mb-3">
+                                            <label class="col-form-label">PAN No <span class="text-danger">*</span></label>
+                                            <input class="form-control" type="text" value="TC000Y56">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submit-section">
+                        <button class="btn btn-primary submit-btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
             <div id="family_info_modal" class="modal custom-modal fade" role="dialog">
                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -1308,88 +1401,7 @@
                 </div>
             </div>
 
-
-            <div id="emergency_contact_modal" class="modal custom-modal fade" role="dialog">
-                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Personal Information</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h3 class="card-title">Primary Contact</h3>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="input-block mb-3">
-                                                    <label class="col-form-label">Name <span class="text-danger">*</span></label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="input-block mb-3">
-                                                    <label class="col-form-label">Relationship <span class="text-danger">*</span></label>
-                                                    <input class="form-control" type="text">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="input-block mb-3">
-                                                    <label class="col-form-label">Phone <span class="text-danger">*</span></label>
-                                                    <input class="form-control" type="text">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="input-block mb-3">
-                                                    <label class="col-form-label">Phone 2</label>
-                                                    <input class="form-control" type="text">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h3 class="card-title">Primary Contact</h3>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="input-block mb-3">
-                                                    <label class="col-form-label">Name <span class="text-danger">*</span></label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="input-block mb-3">
-                                                    <label class="col-form-label">Relationship <span class="text-danger">*</span></label>
-                                                    <input class="form-control" type="text">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="input-block mb-3">
-                                                    <label class="col-form-label">Phone <span class="text-danger">*</span></label>
-                                                    <input class="form-control" type="text">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="input-block mb-3">
-                                                    <label class="col-form-label">Phone 2</label>
-                                                    <input class="form-control" type="text">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="submit-section">
-                                    <button class="btn btn-primary submit-btn">Submit</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
+       
 
 
             <div id="education_info" class="modal custom-modal fade" role="dialog">

@@ -38,7 +38,7 @@
 
         <ul class="nav user-menu">
           <li class="nav-item">
-            <div class="top-nav-search">
+            {{-- <div class="top-nav-search">
               <a href="javascript:void(0);" class="responsive-search">
                 <i class="fa-solid fa-magnifying-glass"></i>
               </a>
@@ -54,10 +54,10 @@
                   <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
               </form>
-            </div>
+            </div> --}}
           </li>
 
-          <li class="nav-item dropdown has-arrow flag-nav">
+          {{-- <li class="nav-item dropdown has-arrow flag-nav">
             <a
               class="nav-link dropdown-toggle"
               data-bs-toggle="dropdown"
@@ -85,7 +85,7 @@
                 German
               </a>
             </div>
-          </li>
+          </li> --}}
 
           <li class="nav-item dropdown">
             <a
@@ -385,7 +385,7 @@
               <span>Admin</span>
             </a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="{{route('profile')}}">My Profile</a>
+              <a class="dropdown-item" href="{{route('admin-profile')}}">My Profile</a>
               <a class="dropdown-item" href="{{route('settings')}}">Settings</a>
               <a class="dropdown-item" href="{{route('login')}}">Logout</a>
             </div>
@@ -401,7 +401,7 @@
             ><i class="fa-solid fa-ellipsis-vertical"></i
           ></a>
           <div class="dropdown-menu dropdown-menu-right">
-            <a class="dropdown-item" href="{{route('profile')}}">My Profile</a>
+            <a class="dropdown-item" href="{{url('admin-profile')}}">My Profile</a>
             <a class="dropdown-item" href="{{route('settings')}}">Settings</a>
             <a class="dropdown-item" href="{{route('login')}}">Logout</a>
           </div>

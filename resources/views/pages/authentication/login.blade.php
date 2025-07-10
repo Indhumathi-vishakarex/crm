@@ -48,7 +48,7 @@
                             <input type="hidden" name="_token" value="FE7Rz1DQJfUEgPzl3k60B8e0sXZlBhzbPEmbe5AX" autocomplete="off">
                             <div class="input-block mb-4">
                                 <label class="col-form-label">Email Address</label>
-                                <input class="form-control" type="text" value="admin@dreamstech.com" name="email" id="email">
+                                <input class="form-control" type="text" value="" name="email" id="email" placeholder="email">
                                 <div class="text-danger pt-2">
                                 </div>
                             </div>
@@ -64,7 +64,7 @@
                                     </div>
                                 </div>
                                 <div class="position-relative">
-                                    <input class="form-control" type="password" value="123456" id="password" name="password">
+                                    <input class="form-control" type="password" value="" id="password" name="password" placeholder="password">
                                     <span class="fa-solid fa-eye-slash" id="toggle-password"></span>
                                 </div>
                                 <div class="text-danger pt-2">
@@ -77,9 +77,9 @@
                             <div class="input-block mb-4 text-center">
                                 <a href="{{ route('admin-dashboard') }}" class="btn btn-primary account-btn">Login</a>
                             </div>
-                            <div class="account-footer">
+                            {{-- <div class="account-footer">
                                 <p>Don't have an account yet? <a href="{{ route('register') }}">Register</a></p>
-                            </div>
+                            </div> --}}
                         </form>
 
                     </div>
