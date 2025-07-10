@@ -24,7 +24,7 @@ $(document).ready(function() {
 	// Sidebar
 	
 	var Sidemenu = function() {
-		this.$menuItem = $('#sidebar-menu a');
+		// this.$menuItem = $('#sidebar-menu a');
 	};
 	function init() {
 		var $this = Sidemenu;
@@ -42,13 +42,14 @@ $(document).ready(function() {
 				$(this).next('ul').hide(350);
 			}
 		});
-		$('#sidebar-menu ul li.submenu a.active').parents('li:last').children('a:first').addClass('active').trigger('click');
+		 $('#sidebar-menu ul li.submenu a.active').parents('li:last').children('a:first').addClass('active').trigger('click');
 
 		
 	}
 	
 	// Sidebar Initiate
 	init();
+	
 
 	$(document).on('click', '.select-people-checkbox', function() {
 		$(this).toggleClass('checkbox-checked');

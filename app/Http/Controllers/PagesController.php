@@ -59,6 +59,12 @@ class PagesController extends Controller
     {
         return view('pages.profile.profile');
     }
+
+    public function adminProfile(){
+
+        return view('pages.profile.admin-profile');
+    }
+
     public function clientProfile()
     {
         return view('pages.profile.client-profile');

@@ -7,14 +7,12 @@
                                 <span>Main</span>
                             </li>
                             <li class="submenu">
-                                <a href="#"><i class="la la-dashcube"></i> <span> Dashboard</span> <span
-                                        class="menu-arrow"></span></a>
-                                <ul>
-                                    <li><a class="active" href="{{ route('admin-dashboard') }}">Admin Dashboard</a></li>
-                                    <li><a class href="{{ route('employee-dashboard') }}">Employee Dashboard</a></li>
-                                    
-                                </ul>
-                            </li>
+        <a href="#"><i class="la la-dashboard"></i> <span>Dashboard</span> <span class="menu-arrow"></span></a>
+        <ul>
+            <li><a href="{{ route('admin-dashboard') }}">Admin Dashboard</a></li>
+            <li><a href="{{ route('employee-dashboard') }}">Employee Dashboard</a></li>
+        </ul>
+    </li>
                             <li class="submenu">
                                 <a href="#"><i class="la la-cube"></i> <span> Apps</span> <span
                                         class="menu-arrow"></span></a>
@@ -248,7 +246,8 @@
                             <a href="#"><i class="la la-dashcube"></i> <span> Dashboard</span> <span
                                     class="menu-arrow"></span></a>
                             <ul>
-                                <li><a class="active" href="{{ route('admin-dashboard') }}" class="active">Admin Dashboard</a>
+                                {{-- <li><a class="active" href="{{ route('admin-dashboard') }}" class="active">Admin Dashboard</a> --}}
+                                  <li><a href="{{ route('admin-dashboard') }}" >Admin Dashboard</a>
                                 </li>
                                 <li><a class href="{{ route('employee-dashboard') }}">Employee Dashboard</a></li>
                                 
@@ -1511,3 +1510,5 @@
           </div>
         </div>
       </div>
+
+

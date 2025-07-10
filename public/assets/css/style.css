@@ -8863,11 +8863,17 @@ input[type=file].form-control {
   position: relative;
   padding: 9px 10px 9px 50px;
 }
+
+/* sidebar.activeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
+
 .sidebar .sidebar-menu ul ul a.active,
 .two-col-bar .sidebar-menu ul ul a.active {
   color: #FF902F;
   text-decoration: underline;
 }
+
+
+
 
 .badge {
   font-weight: 500 !important;
@@ -17999,7 +18005,8 @@ textarea.form-control {
   padding: 20px 0;
 }
 .account-page .main-wrapper .account-content .account-logo {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  width:320px;
   text-align: center;
 }
 .account-page .main-wrapper .account-content .account-logo img {
