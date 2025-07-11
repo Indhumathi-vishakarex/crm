@@ -61,7 +61,7 @@
                       <input
                         class="form-control"
                         type="text"
-                        value="Dreamguy's Technologies"
+                        value="" placeholder="Company Name"
                       />
                     </div>
                   </div>
@@ -70,8 +70,9 @@
                       <label class="col-form-label">Contact Person</label>
                       <input
                         class="form-control"
-                        value="Daniel Porter"
+                        value=" "
                         type="text"
+                        placeholder="Contact  Person"
                       />
                     </div>
                   </div>
@@ -82,18 +83,21 @@
                       <label class="col-form-label">Address</label>
                       <input
                         class="form-control"
-                        value="3864 Quiet Valley Lane, Sherman Oaks, CA, 91403"
+                        value=""
                         type="text"
+                        placeholder="Address"
                       />
                     </div>
                   </div>
                   <div class="col-sm-6 col-md-6 col-lg-3">
                     <div class="input-block mb-3">
-                      <label class="col-form-label">Country</label>
-                      <select class="form-control select">
-                        <option>USA</option>
-                        <option>United Kingdom</option>
-                      </select>
+                     <label class="col-form-label">Country</label>
+<select class="form-control select">
+    <option value="" disabled selected>Choose a Country</option>
+    <option>USA</option>
+    <option>United Kingdom</option>
+</select>
+
                     </div>
                   </div>
                   <div class="col-sm-6 col-md-6 col-lg-3">
@@ -101,8 +105,9 @@
                       <label class="col-form-label">City</label>
                       <input
                         class="form-control"
-                        value="Sherman Oaks"
+                        value=""
                         type="text"
+                        placeholder="City"
                       />
                     </div>
                   </div>
@@ -110,6 +115,7 @@
                     <div class="input-block mb-3">
                       <label class="col-form-label">State/Province</label>
                       <select class="form-control select">
+                            <option value="" disabled selected>Choose a State</option>
                         <option>California</option>
                         <option>Alaska</option>
                         <option>Alabama</option>
@@ -119,18 +125,19 @@
                   <div class="col-sm-6 col-md-6 col-lg-3">
                     <div class="input-block mb-3">
                       <label class="col-form-label">Postal Code</label>
-                      <input class="form-control" value="91403" type="text" />
+                      <input class="form-control" value="" type="text"  placeholder="Postal Code"/>
                     </div>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="input-block mb-3">
-                      <label class="col-form-label">Email</label>
+                      <label class="col-form-label" >Email</label>
                       <input
                         class="form-control"
-                        value="danielporter@example.com"
+                        value=""
                         type="email"
+                        placeholder="Email"
                       />
                     </div>
                   </div>
@@ -139,8 +146,9 @@
                       <label class="col-form-label">Phone Number</label>
                       <input
                         class="form-control"
-                        value="818-978-7102"
+                        value=""
                         type="text"
+                        placeholder="Phone Number"
                       />
                     </div>
                   </div>
@@ -148,11 +156,12 @@
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="input-block mb-3">
-                      <label class="col-form-label">Mobile Number</label>
+                      <label class="col-form-label">Phone Number</label>
                       <input
                         class="form-control"
-                        value="818-635-5579"
+                        value=""
                         type="text"
+                        placeholder="Phone Number"
                       />
                     </div>
                   </div>
@@ -161,8 +170,9 @@
                       <label class="col-form-label">Fax</label>
                       <input
                         class="form-control"
-                        value="818-978-7102"
+                        value=""
                         type="text"
+                        placeholder="Fax"
                       />
                     </div>
                   </div>
@@ -173,8 +183,9 @@
                       <label class="col-form-label">Website Url</label>
                       <input
                         class="form-control"
-                        value="https://www.example.com"
+                        value=""
                         type="text"
+                        placeholder="Website Url"
                       />
                     </div>
                   </div>

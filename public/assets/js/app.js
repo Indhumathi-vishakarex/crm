@@ -12,6 +12,8 @@ $(document).ready(function() {
 	var $pageWrapper = $('.page-wrapper');
 	var $slimScrolls = $('.slimscroll');
 
+	
+
 	// Loader
 	
 	setTimeout(function () {
@@ -23,8 +25,9 @@ $(document).ready(function() {
 	
 	// Sidebar
 	
+	
 	var Sidemenu = function() {
-		// this.$menuItem = $('#sidebar-menu a');
+		this.$menuItem = $('#sidebar-menu a');
 	};
 	function init() {
 		var $this = Sidemenu;
