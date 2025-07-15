@@ -116,6 +116,7 @@ Route::get('/settings',[AdministrationController::class, 'settings'])->name('set
   Route::get('/leads', [CrmModuleController::class, 'leads'])->name('leads');
  Route::get('/leads-kanban', [CrmModuleController::class, 'leadsKanban'])->name('leads-kanban');
   Route::get('/activities', [CrmModuleController::class, 'activities'])->name('activities');
+  Route::get('/crm-activities', [CrmModuleController::class, 'CrmActivities'])->name('crm-activities');
    
 // end
 

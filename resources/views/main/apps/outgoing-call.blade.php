@@ -694,36 +694,30 @@
               >
                 <p>App</p>
                 <ul>
-                  <li>
-                    <a class href="{{route('chat')}}" class="active">Chat</a>
-                  </li>
-                  <li class="sub-menu">
-                    <a href="#">Calls <span class="menu-arrow"></span></a>
-                    <ul>
-                      <li><a class href="{{route('voice-call')}}">Voice Call</a></li>
-                      <li><a class href="{{route('video-call')}}">Video Call</a></li>
-                      <li>
-                        <a class="active" href="{{route('outgoing-call')}}"
-                          >Outgoing Call</a
-                        >
-                      </li>
-                      <li>
-                        <a class href="incoming-call.html">Incoming Call</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a class href="events.html">Calendar</a>
-                  </li>
-                  <li>
-                    <a class href="contacts.html">Contacts</a>
-                  </li>
-                  <li>
-                    <a class href="inbox.html">Email</a>
-                  </li>
-                  <li>
-                    <a class href="file-manager.html">File Manager</a>
-                  </li>
+                 <li>
+<a class href="{{route('chat')}}" class="active">Chat</a>
+</li>
+<li class="sub-menu">
+<a href="#">Calls <span class="menu-arrow"></span></a>
+<ul>
+<li><a class="active" href="{{route('voice-call')}}">Voice Call</a></li>
+<li><a class href="{{route('video-call')}}">Video Call</a></li>
+<li><a class href="{{route('outgoing-call')}}">Outgoing Call</a></li>
+<li><a class href="{{route('incoming-call')}}">Incoming Call</a></li>
+</ul>
+</li>
+<li>
+<a class href="{{route('events')}}">Calendar</a>
+</li>
+<li>
+<a class href="{{route('contacts')}}">Contacts</a>
+</li>
+<li>
+<a class href="{{route('inbox')}}">Email</a>
+</li>
+<li>
+<a class href="{{route('file-manager')}}">File Manager</a>
+</li>
                 </ul>
               </div>
               <div

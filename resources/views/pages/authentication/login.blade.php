@@ -23,15 +23,15 @@
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 </head>
 
-<body class="account-page">
+<body class="account-page a">
     <div class="main-wrapper">
         <div class="account-content">
             <!-- <a href="job-list.html" class="btn btn-primary apply-btn">Apply Job</a> -->
             <div class="container">
 
-                <div class="account-logo">
-                    <a href=""><img src="assets/img/logo2.png" alt="Dreamguy's Technologies" style="width: 100%;"></a>
-                </div>
+             <div class="account-logo text-center w-100 mb-4">
+    <a href="#"><img src="assets/img/logo2.png" alt="Winngoo CRM" class="img-fluid" style="max-width: 200px;"></a>
+</div>
 
                 <div class="account-box">
                     <div class="account-wrapper">

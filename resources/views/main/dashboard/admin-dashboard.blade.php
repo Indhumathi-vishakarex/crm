@@ -38,6 +38,7 @@
 
         @include('layouts.header')
         @include('layouts.sidebar')
+        
         <div class="page-wrapper">
             <div class="content container-fluid">
 
