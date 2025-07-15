@@ -18002,16 +18002,22 @@ textarea.form-control {
   flex-wrap: wrap;
 }
 .account-page .main-wrapper .account-content {
-  padding: 20px 0;
+  padding:0;
 }
+
+
+
+
 .account-page .main-wrapper .account-content .account-logo {
-  margin-bottom: 20px;
-  width:320px;
+  margin-bottom: 5px;
+  width:200px;
+
   text-align: center;
 }
 .account-page .main-wrapper .account-content .account-logo img {
-  width: 100px;
+  width: 250px;
 }
+
 @media (max-width: 575px) {
   .account-page .main-wrapper .account-content .account-logo img {
     width: 70px;
@@ -18064,7 +18070,7 @@ textarea.form-control {
   padding: 10px 26px;
 }
 .account-page .main-wrapper .account-content .account-box .account-wrapper {
-  padding: 30px;
+  padding:28px 28px;
 }
 .account-page .main-wrapper .account-content .account-box .account-wrapper .account-footer {
   text-align: center;
@@ -20161,8 +20167,17 @@ th.width-64 {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
+   min-height: 80vh;
+  
+   /* height:100vh; */
 }
+
+
+
+.account-box{
+  margin-bottom: 20px;
+}
+
 
 .profile-view {
   position: relative;
@@ -21979,4 +21994,16 @@ textarea.form-control {
   position: absolute;
   top: 15px;
   right: 10px;
+}
+
+#sidebar-menu ul li:not(.submenu) > a.active,
+#sidebar-menu ul li.submenu ul a.active {
+  color: #ff6b00 !important;
+  font-weight: 600;
+}
+
+/* Prevent orange on submenu parent */
+#sidebar-menu ul li.submenu > a.active {
+  color: #fff !important; /* or your default text color */
+  font-weight: normal;
 }

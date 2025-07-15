@@ -24,7 +24,13 @@ $(document).ready(function() {
 	}, 500);
 	
 	// Sidebar
-	
+	$(document).ready(function () {
+  $('#sidebar-menu ul li.submenu a.active').each(function () {
+    $(this).closest('ul').show(); // Show the submenu
+    $(this).closest('li.submenu').children('a').addClass('subdrop active'); // Highlight parent link
+  });
+});
+
 	
 	var Sidemenu = function() {
 		this.$menuItem = $('#sidebar-menu a');
@@ -45,7 +51,13 @@ $(document).ready(function() {
 				$(this).next('ul').hide(350);
 			}
 		});
-		 $('#sidebar-menu ul li.submenu a.active').parents('li:last').children('a:first').addClass('active').trigger('click');
+		//  $('#sidebar-menu ul li.submenu a.active').parents('li:last').children('a:first').addClass('active').trigger('click');
+
+		$('#sidebar-menu ul li.submenu a.active')
+  .parents('li:last')
+  .children('a:first')
+  .addClass('active')
+  .trigger('click');
 
 		
 	}

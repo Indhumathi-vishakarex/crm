@@ -62,5 +62,11 @@ public function contactGrid(){
     public function activities(){
              return view('crm.activities');
     }
+
+
+    public function CrmActivities(){
+          return view('crm.activities');
+
+    }
    
 }
